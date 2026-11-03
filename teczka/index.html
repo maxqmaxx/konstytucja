@@ -3,19 +3,19 @@
 <meta content="Teczka robocza: zebrane przepisy, propozycje i wyniki wyszukiwania z notatkami i przypisami." name="description"/>
 <title>Teczka robocza</title><link href="../panstwa/style.css" rel="stylesheet"/>
 <style>
-.tools{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.tools button{border:1px solid #9fb7ac;background:#fff;border-radius:4px;padding:8px 14px;min-height:42px;cursor:pointer;font-weight:600;color:#006858}
-.tools button.primary{background:#006858;color:#fff;border-color:#006858}.tools button.danger{color:#8a4a2d;border-color:#e3c3ad}
-.doc-title{display:block;font-size:12px;font-weight:700;max-width:760px}.doc-title input{display:block;width:100%;margin-top:4px;padding:10px;min-height:46px;border:1px solid #afbbb1;border-radius:4px;font:600 18px Georgia,serif}
-.items{list-style:none;padding:0;counter-reset:item}.item{background:#fff;border:1px solid var(--line);border-left:4px solid var(--green);padding:14px 18px;margin:12px 0}
+.tools{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.tools button{border:1px solid var(--c-9fb7ac,#9fb7ac);background:var(--c-ffffff,#fff);border-radius:4px;padding:8px 14px;min-height:42px;cursor:pointer;font-weight:600;color:var(--c-006858,#006858)}
+.tools button.primary{background:var(--c-006858,#006858);color:var(--c-ffffff,#fff);border-color:var(--c-006858,#006858)}.tools button.danger{color:var(--c-8a4a2d,#8a4a2d);border-color:var(--c-e3c3ad,#e3c3ad)}
+.doc-title{display:block;font-size:12px;font-weight:700;max-width:760px}.doc-title input{display:block;width:100%;margin-top:4px;padding:10px;min-height:46px;border:1px solid var(--c-afbbb1,#afbbb1);border-radius:4px;font:600 18px Georgia,serif}
+.items{list-style:none;padding:0;counter-reset:item}.item{background:var(--c-ffffff,#fff);border:1px solid var(--line);border-left:4px solid var(--green);padding:14px 18px;margin:12px 0}
 .item h2{font:600 18px/1.3 Georgia,serif;margin:2px 0 4px}.item .type{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--green);font-weight:750}
-.item .cite{font-size:12px;color:var(--muted);margin:0 0 8px}.item .body{white-space:pre-line;font:15px/1.6 Georgia,serif;max-height:16em;overflow:auto;border-left:2px solid #e3e8df;padding-left:12px}
-.item label{display:block;font-size:12px;font-weight:700;margin-top:10px}.item textarea{display:block;width:100%;min-height:70px;margin-top:4px;padding:8px;border:1px solid #afbbb1;border-radius:4px;font:14px/1.5 system-ui,sans-serif}
-.item .row{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.item .row button{border:1px solid var(--line);background:#fff;border-radius:4px;padding:4px 10px;min-height:36px;cursor:pointer}
-#teczka-badge{display:none!important}.empty{background:#fff;border:1px dashed #b9c4b8;padding:20px 24px}.status{font-size:13px;color:var(--muted);min-height:20px}
-@media print{header,.tools,.item .row,.doc-title input,footer,.skip,#teczka-badge{display:none!important}.item{break-inside:avoid;border-color:#888}.item .body{max-height:none;overflow:visible}.item textarea{border:0;padding:0;resize:none}#print-title{display:block!important}}
-</style></head>
+.item .cite{font-size:12px;color:var(--muted);margin:0 0 8px}.item .body{white-space:pre-line;font:15px/1.6 Georgia,serif;max-height:16em;overflow:auto;border-left:2px solid var(--c-e3e8df,#e3e8df);padding-left:12px}
+.item label{display:block;font-size:12px;font-weight:700;margin-top:10px}.item textarea{display:block;width:100%;min-height:70px;margin-top:4px;padding:8px;border:1px solid var(--c-afbbb1,#afbbb1);border-radius:4px;font:14px/1.5 system-ui,sans-serif}
+.item .row{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.item .row button{border:1px solid var(--line);background:var(--c-ffffff,#fff);border-radius:4px;padding:4px 10px;min-height:36px;cursor:pointer}
+#teczka-badge{display:none!important}.empty{background:var(--c-ffffff,#fff);border:1px dashed var(--c-b9c4b8,#b9c4b8);padding:20px 24px}.status{font-size:13px;color:var(--muted);min-height:20px}
+@media print{header,.tools,.item .row,.doc-title input,footer,.skip,#teczka-badge{display:none!important}.item{break-inside:avoid;border-color:var(--c-888888,#888)}.item .body{max-height:none;overflow:visible}.item textarea{border:0;padding:0;resize:none}#print-title{display:block!important}}
+</style><link href="../theme/theme.css" rel="stylesheet"/><script src="../theme/theme.js"></script></head>
 <body><a class="skip" href="#tresc">Przejdź do teczki</a>
-<header><nav aria-label="Serwis" class="site-nav"><a class="brand" href="../ATLAS.html">Konstytucje świata</a><a href="../mapa/index.html">Mapa</a><a href="../rp/index.html">Konstytucja RP</a><a href="../problemy/index.html">Problemy</a><a href="../tematy/index.html">Tematy</a><a href="../panstwa/index.html">Państwa</a><a href="../ATLAS.html">Atlas</a><a href="../polska/index.html">Dla Polski</a></nav></header>
+<header><nav aria-label="Serwis" class="site-nav"><a class="brand" href="../index.html">Konstytucje świata</a><div class="nav-links"><a href="../mapa/index.html">Mapa</a><a href="../rp/index.html">Konstytucja RP</a><a href="../problemy/index.html">Problemy</a><a href="../tematy/index.html">Tematy</a><a href="../konstruktor/index.html">Konstruktor</a><a href="../statystyki/index.html">Statystyki</a><a href="../panstwa/index.html">Państwa</a><a href="../ATLAS.html">Atlas</a><a href="../polska/index.html">Dla Polski</a></div></nav></header>
 <main class="wrap" id="tresc">
 <p class="crumbs">Teczka robocza</p><h1>Teczka robocza</h1>
 <p class="sub">Zebrane przepisy, propozycje i fragmenty z notatkami. Teczka jest zapisywana tylko w tej przeglądarce. Eksport tworzy dokument z przypisami źródłowymi.</p>
@@ -80,8 +80,8 @@
   });
   $('export-doc').addEventListener('click', () => {
     const items = T.load();
-    const body = items.map((i, k) => `<h2>${k + 1}. ${esc(i.title)}</h2><p style="color:#555;font-size:9pt">${esc(TYPES[i.type] || i.type)}<sup>${k + 1}</sup></p>
-      <blockquote style="border-left:2pt solid #999;padding-left:8pt;font-family:Georgia,serif">${esc(i.text).replace(/\n/g, '<br>')}</blockquote>${i.note.trim() ? `<p><b>Notatka:</b> ${esc(i.note.trim()).replace(/\n/g, '<br>')}</p>` : ''}`).join('');
+    const body = items.map((i, k) => `<h2>${k + 1}. ${esc(i.title)}</h2><p style="color:var(--c-555555,#555);font-size:9pt">${esc(TYPES[i.type] || i.type)}<sup>${k + 1}</sup></p>
+      <blockquote style="border-left:2pt solid var(--c-999999,#999);padding-left:8pt;font-family:Georgia,serif">${esc(i.text).replace(/\n/g, '<br>')}</blockquote>${i.note.trim() ? `<p><b>Notatka:</b> ${esc(i.note.trim()).replace(/\n/g, '<br>')}</p>` : ''}`).join('');
     const notes = items.map((i, k) => `<p style="font-size:9pt"><sup>${k + 1}</sup> ${esc(cite(i))}</p>`).join('');
     const html = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8"><title>${esc(title())}</title></head>
       <body style="font-family:Calibri,sans-serif;font-size:11pt"><h1>${esc(title())}</h1><p>Opracowanie z serwisu „Konstytucje świata”, ${today}.</p>${body}<hr><h2>Przypisy</h2>${notes}
