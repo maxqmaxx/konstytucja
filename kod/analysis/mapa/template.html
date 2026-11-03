@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Mapa 331 rozwiązań konstytucyjnych w @@SAMPLE@@ obowiązujących konstytucjach świata, według kodowania Comparative Constitutions Project.">
+  <title>Mapa konstytucji świata</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#mapa">Przejdź do mapy</a>
+<header>
+  <nav class="site-nav" aria-label="Serwis"><a class="brand" href="../ATLAS.html">Konstytucje świata</a><a href="index.html" aria-current="page">Mapa</a><a href="../rp/index.html">Konstytucja RP</a><a href="../problemy/index.html">Problemy</a><a href="../tematy/index.html">Tematy</a><a href="../panstwa/index.html">Państwa</a><a href="../ATLAS.html">Atlas</a><a href="../polska/index.html">Dla Polski</a><a href="../wizualizacje/index.html">Pracownia</a></nav>
+  <div class="hero"><p class="eyebrow">Mapa rozwiązań</p><h1>Które konstytucje to mają?</h1><p class="lead">Wybierz rozwiązanie, a mapa pokaże @@SAMPLE@@ obowiązujących konstytucji, które je zawierają. Kliknij państwo, aby zobaczyć artykuł i źródło.</p></div>
+</header>
+<main class="wrap">
+  <section class="controls" aria-label="Ustawienia mapy">
+    <label class="wide">Rozwiązanie
+      <select id="topic"><optgroup label="Na początek">@@FEATURED@@</optgroup><optgroup label="Wszystkie 331 tematów CCP">@@ALL@@</optgroup></select>
+    </label>
+    <label>Kolor oznacza
+      <select id="mode"><option value="topic">obecność rozwiązania</option><option value="year">rok uchwalenia konstytucji</option></select>
+    </label>
+    <label>Państwo
+      <select id="country"><option value="">Wybierz państwo…</option></select>
+    </label>
+  </section>
+  <p class="summary" id="summary" aria-live="polite"></p>
+  <div class="map-layout">
+    <figure class="map-figure" id="mapa">
+      <svg id="map" viewBox="@@VIEWBOX@@" role="img" aria-labelledby="summary"><g id="lands">@@PATHS@@</g><g id="dots">@@DOTS@@</g></svg>
+      <figcaption><div id="legend" class="legend"></div><p>Rzutowanie Equal Earth, granice Natural Earth 1:50m. Małe państwa oznaczono kółkami. Obszary bez koloru nie mają w próbie obowiązującej konstytucji w wydaniu Constitute.</p></figcaption>
+    </figure>
+    <aside class="panel" id="panel" aria-live="polite"></aside>
+  </div>
+  <details class="table-box"><summary>Lista państw dla wybranego rozwiązania</summary><div id="lists" class="lists"></div></details>
+  <section class="method"><h2>Jak czytać mapę</h2>
+    <p>Dane pochodzą z eksperckiego kodowania <a href="https://comparativeconstitutionsproject.org/">Comparative Constitutions Project</a>, dołączonego do angielskich wydań <a href="https://www.constituteproject.org/">Constitute</a>. Próba obejmuje @@SAMPLE@@ konstytucji oznaczonych przez wydawcę jako obowiązujące, jedną na państwo.</p>
+    <p>Kolor „brak” oznacza, że koderzy CCP nie przypisali tematu żadnemu przepisowi. To nie zawsze znaczy, że konstytucja milczy: w Konstytucji RP CCP nie oznaczył m.in. barw narodowych (art. 28). Luki Polski sprawdzone ręcznie są w <a href="../polska/#na-tle-swiata">widoku dla Polski</a>. Część wydań może nie zawierać najnowszych zmian.</p>
+    <p>Mapa pokazuje, gdzie rozwiązanie zapisano, a nie czy działa. <a href="../features/README.md">Metoda i dane</a> · <a href="../features/prevalence.csv">tabela 331 tematów (CSV)</a></p>
+  </section>
+</main>
+<footer class="wrap"><span>Konstytucje świata · mapa rozwiązań</span><span>Granice: Natural Earth (domena publiczna), world-atlas © M. Bostock, licencja ISC</span></footer>
+<script type="application/json" id="map-data">@@DATA@@</script>
+<script src="app.js"></script>
+</body>
+</html>

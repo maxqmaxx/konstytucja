@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Jeśli korzystasz z tych danych lub analiz, zacytuj repozytorium oraz Comparative Constitutions Project."
+title: "Konstytucje świata: warsztat do myślenia o lepszej konstytucji"
+authors:
+  - family-names: Kusmierek
+    given-names: Max
+repository-code: "https://github.com/maxqmaxx/konstytucja"
+license: CC-BY-4.0
+date-released: "2026-11-03"
+keywords: [konstytucja, Polska, prawo konstytucyjne, comparative constitutional law, Comparative Constitutions Project]
+references:
+  - type: data
+    title: "Comparative Constitutions Project"
+    authors:
+      - family-names: Elkins
+        given-names: Zachary
+      - family-names: Ginsburg
+        given-names: Tom
+      - family-names: Melton
+        given-names: James
+    url: "https://comparativeconstitutionsproject.org/"

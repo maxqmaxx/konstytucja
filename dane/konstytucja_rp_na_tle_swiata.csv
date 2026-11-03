@@ -1,0 +1,400 @@
+﻿artykul,rozdzial,kod_ccp,rozwiazanie,udzial_swiat,liczba_ue27,jak_czesto
+1,I,,,,,
+2,I,,,,,
+3,I,,,,,
+4,I,,,,,
+5,I,env,Ochrona środowiska,0.8138,24,standard światowy
+6,I,cultrght,Prawo do kultury,0.7872,24,standard światowy
+7,I,,,,,
+8,I,,,,,
+9,I,intlaw,Prawo międzynarodowe,0.9202,27,standard światowy
+10,I,,,,,
+11,I,partrght,Prawo do zakładania partii,0.6489,16,częste
+12,I,jointrde,Prawo do zrzeszania się w związkach zawodowych,0.7819,23,standard światowy
+13,I,partprh,Partie zakazane,0.2979,7,rzadsze
+14,I,press,Wolność prasy,0.7819,25,standard światowy
+15,I,,,,,
+16,I,,,,,
+17,I,,,,,
+18,I,marriage,Regulacja małżeństwa,0.4149,15,częste
+18,I,fndfam,Prawo do założenia rodziny,0.5638,15,częste
+19,I,,,,,
+20,I,solid,Odniesienie do solidarności i braterstwa,0.484,11,częste
+20,I,busines,Prawo do prowadzenia działalności gospodarczej,0.4415,16,częste
+21,I,partrght,Prawo do zakładania partii,0.6489,16,częste
+21,I,transfer,Prawo do zbywania własności,0.4787,15,częste
+21,I,exprop,Ochrona przed wywłaszczeniem,0.9255,27,standard światowy
+22,I,,,,,
+23,I,,,,,
+24,I,,,,,
+25,I,seprel,Rozdział kościoła i państwa,0.3723,11,rzadsze
+25,I,intlaw,Prawo międzynarodowe,0.9202,27,standard światowy
+26,I,milrest,Ograniczenia sił zbrojnych,0.4574,16,częste
+27,I,lang,Język urzędowy lub narodowy,0.7553,20,standard światowy
+27,I,intlaw,Prawo międzynarodowe,0.9202,27,standard światowy
+28,I,anthem,Hymn państwowy,0.6064,12,częste
+29,I,capital,Stolica,0.6011,18,częste
+30,II,inalrght,Prawa niezbywalne,0.5479,21,częste
+30,II,dignity,Godność człowieka,0.7766,20,standard światowy
+31,II,env,Ochrona środowiska,0.8138,24,standard światowy
+32,II,equal,Ogólna gwarancja równości,0.9681,26,standard światowy
+33,II,equalgr1,Równość bez względu na płeć,0.867,24,standard światowy
+33,II,matequal,Równość małżonków,0.3723,11,rzadsze
+34,II,citizen,Obywatelstwo z urodzenia,0.8351,22,standard światowy
+34,II,natcit,Naturalizacja,0.6702,14,częste
+34,II,citrev,Utrata obywatelstwa,0.6968,20,częste
+34,II,citren,Prawo do zrzeczenia się obywatelstwa,0.3511,6,rzadsze
+35,II,ethincl,Integracja mniejszości etnicznych,0.2979,9,rzadsze
+35,II,langprot,Ochrona używania języka,0.5053,15,częste
+35,II,cultrght,Prawo do kultury,0.7872,24,standard światowy
+36,II,,,,,
+37,II,rightres,Ograniczenia praw grup,0.1543,5,rzadsze
+38,II,life,Prawo do życia,0.7979,19,standard światowy
+39,II,science,Odniesienie do nauki,0.6755,19,częste
+40,II,torture,Zakaz tortur,0.8138,19,standard światowy
+40,II,cruelty,Zakaz okrutnego traktowania,0.8298,18,standard światowy
+40,II,corppun,Zakaz kar cielesnych,0.1064,4,rzadkie
+41,II,habcorp,Ochrona przed bezpodstawnym zatrzymaniem,0.8989,26,standard światowy
+41,II,falseimp,Ochrona przed bezprawnym pozbawieniem wolności,0.4521,14,częste
+42,II,wolaw,Nie ma kary bez ustawy,0.7926,22,standard światowy
+42,II,intlaw,Prawo międzynarodowe,0.9202,27,standard światowy
+42,II,couns,Prawo do obrońcy,0.8138,17,standard światowy
+42,II,presinoc,Domniemanie niewinności,0.7979,17,standard światowy
+43,II,,,,,
+44,II,,,,,
+45,II,pubtri,Jawność rozprawy,0.7394,23,częste
+45,II,fairtri,Prawo do sprawiedliwego procesu,0.6436,16,częste
+45,II,speedtri,Prawo do rozpatrzenia sprawy bez zwłoki,0.5904,16,częste
+46,II,,,,,
+47,II,libel,Ochrona dobrego imienia,0.4309,16,częste
+47,II,privacy,Prawo do prywatności,0.9096,24,standard światowy
+48,II,childpro,Prawa dziecka,0.6968,19,częste
+49,II,privacy,Prawo do prywatności,0.9096,24,standard światowy
+50,II,evidence,Zasady gromadzenia dowodów,0.7606,17,standard światowy
+50,II,privacy,Prawo do prywatności,0.9096,24,standard światowy
+51,II,infoacc,Prawo do informacji,0.5,16,częste
+51,II,libel,Ochrona dobrego imienia,0.4309,16,częste
+52,II,resenex,Ograniczenia wjazdu i wyjazdu,0.2979,9,rzadsze
+52,II,freemove,Swoboda przemieszczania się,0.8936,20,standard światowy
+53,II,freerel,Wolność religii,0.9628,26,standard światowy
+53,II,parents,Prawa i obowiązki rodziców,0.4787,16,częste
+54,II,press,Wolność prasy,0.7819,25,standard światowy
+54,II,express,Wolność wypowiedzi,0.9468,25,standard światowy
+54,II,radio,Radio,0.4202,13,częste
+54,II,tv,Telewizja,0.4149,11,częste
+55,II,excrim,Ekstradycja,0.5798,19,częste
+55,II,intorgs,Organizacje międzynarodowe,0.734,25,częste
+55,II,intlaw,Prawo międzynarodowe,0.9202,27,standard światowy
+56,II,asylum,Ochrona bezpaństwowców i azyl,0.4574,16,częste
+56,II,intlaw,Prawo międzynarodowe,0.9202,27,standard światowy
+57,II,assem,Wolność zgromadzeń,0.9468,26,standard światowy
+58,II,assoc,Wolność zrzeszania się,0.9362,26,standard światowy
+59,II,jointrde,Prawo do zrzeszania się w związkach zawodowych,0.7819,23,standard światowy
+59,II,strike,Prawo do strajku,0.5,19,częste
+59,II,intlaw,Prawo międzynarodowe,0.9202,27,standard światowy
+60,II,,,,,
+61,II,infoacc,Prawo do informacji,0.5,16,częste
+62,II,voteres,Ograniczenia prawa wyborczego,0.8457,27,standard światowy
+62,II,referen,Referendum,0.766,24,standard światowy
+63,II,petition,Prawo petycji,0.5851,21,częste
+64,II,transfer,Prawo do zbywania własności,0.4787,15,częste
+64,II,proprght,Prawo własności,0.8511,24,standard światowy
+65,II,occupate,Wolność wyboru zawodu,0.5904,20,częste
+65,II,work,Obowiązek pracy,0.2872,5,rzadsze
+65,II,childwrk,Ograniczenie pracy dzieci,0.4362,9,częste
+65,II,standliv,Prawo do godziwego poziomu życia,0.4681,13,częste
+65,II,remuner,Prawo do godziwego wynagrodzenia,0.4947,14,częste
+65,II,provwork,Prawo do pracy,0.6862,20,częste
+66,II,safework,Prawo do bezpiecznych warunków pracy,0.4521,11,częste
+66,II,leisure,Prawo do wypoczynku,0.4202,13,częste
+67,II,finsup2,Wsparcie państwa dla bezrobotnych,0.3404,15,rzadsze
+67,II,finsup3,Wsparcie państwa dla osób z niepełnosprawnościami,0.6702,18,częste
+67,II,finsup1,Wsparcie państwa dla osób starszych,0.617,15,częste
+68,II,health,Prawo do ochrony zdrowia,0.7074,20,częste
+68,II,finsup4,Wsparcie państwa dla dzieci,0.5957,15,częste
+68,II,finsup3,Wsparcie państwa dla osób z niepełnosprawnościami,0.6702,18,częste
+68,II,finsup1,Wsparcie państwa dla osób starszych,0.617,15,częste
+69,II,finsup3,Wsparcie państwa dla osób z niepełnosprawnościami,0.6702,18,częste
+70,II,edcomp,Obowiązek nauki,0.6383,21,częste
+70,II,edfree,Bezpłatna nauka,0.7234,26,częste
+70,II,achighed,Dostęp do szkolnictwa wyższego,0.3298,13,rzadsze
+70,II,acfree,Wolność akademicka,0.4628,19,częste
+71,II,,,,,
+72,II,childpro,Prawa dziecka,0.6968,19,częste
+72,II,finsup4,Wsparcie państwa dla dzieci,0.5957,15,częste
+73,II,science,Odniesienie do nauki,0.6755,19,częste
+73,II,acfree,Wolność akademicka,0.4628,19,częste
+73,II,artists,Odniesienie do sztuki,0.6436,21,częste
+73,II,scifree,Prawo do korzystania z osiągnięć nauki,0.1383,4,rzadkie
+73,II,cultrght,Prawo do kultury,0.7872,24,standard światowy
+74,II,env,Ochrona środowiska,0.8138,24,standard światowy
+75,II,shelter,Prawo do mieszkania,0.4096,10,częste
+76,II,conright,Ochrona konsumentów,0.2553,6,rzadsze
+77,II,illadmin,Działania administracji bez podstawy prawnej,0.5798,17,częste
+78,II,appeal,Prawo do odwołania od orzeczenia,0.6436,16,częste
+79,II,interp,Wykładnia konstytucji,0.8936,23,standard światowy
+79,II,uncon,Kontrola konstytucyjności ustaw,0.8457,25,standard światowy
+80,II,ombuds,Rzecznik praw obywatelskich,0.4415,16,częste
+81,II,,,,,
+82,II,,,,,
+83,II,abide,Obowiązek przestrzegania konstytucji,0.617,14,częste
+84,II,taxes,Obowiązek płacenia podatków,0.4309,10,częste
+85,II,milserv,Obowiązek służby wojskowej,0.6011,20,częste
+85,II,nomil,Prawo do odmowy służby wojskowej,0.3085,16,rzadsze
+86,II,env,Ochrona środowiska,0.8138,24,standard światowy
+87,III,intlaw,Prawo międzynarodowe,0.9202,27,standard światowy
+87,III,mun,Samorząd gminny,0.7872,27,standard światowy
+88,III,intlaw,Prawo międzynarodowe,0.9202,27,standard światowy
+89,III,intlaw,Prawo międzynarodowe,0.9202,27,standard światowy
+89,III,treat,Ratyfikacja umów międzynarodowych,0.8723,26,standard światowy
+89,III,intorgs,Organizacje międzynarodowe,0.734,25,częste
+90,III,intlaw,Prawo międzynarodowe,0.9202,27,standard światowy
+90,III,treat,Ratyfikacja umów międzynarodowych,0.8723,26,standard światowy
+90,III,intorgs,Organizacje międzynarodowe,0.734,25,częste
+91,III,intlaw,Prawo międzynarodowe,0.9202,27,standard światowy
+91,III,treatcon,Status prawny umów międzynarodowych,0.6702,23,częste
+91,III,intorgs,Organizacje międzynarodowe,0.734,25,częste
+92,III,,,,,
+93,III,,,,,
+94,III,mun,Samorząd gminny,0.7872,27,standard światowy
+95,IV,housenum,Struktura parlamentu,0.9894,27,standard światowy
+95,IV,invexe,Kontrola parlamentarna nad rządem,0.7713,25,standard światowy
+96,IV,lhseats,Liczebność izby niższej,0.7819,23,standard światowy
+96,IV,voteun,Powszechne prawo wyborcze,0.7021,22,częste
+96,IV,lhselect,Wybór izby niższej,0.984,27,standard światowy
+96,IV,freeelec,Tajność głosowania,0.7979,25,standard światowy
+97,IV,uhseats,Liczebność izby wyższej,0.3351,9,rzadsze
+97,IV,uhselect,Wybór izby wyższej,0.4521,13,częste
+97,IV,freeelec,Tajność głosowania,0.7979,25,standard światowy
+97,IV,voteun,Powszechne prawo wyborcze,0.7021,22,częste
+98,IV,uhterm,Kadencja izby wyższej,0.3617,10,rzadsze
+98,IV,lhterm,Kadencja izby niższej,0.9468,26,standard światowy
+98,IV,electsch,Terminy wyborów,0.617,21,częste
+98,IV,legdiss,Rozwiązanie parlamentu,0.734,27,częste
+99,IV,lhage,Granica wieku posłów,0.7606,22,standard światowy
+99,IV,lhrest,Wymogi wobec posłów,0.8777,25,standard światowy
+99,IV,uhrest,Wymogi wobec senatorów,0.3989,12,rzadsze
+99,IV,uhage,Granica wieku senatorów,0.3138,8,rzadsze
+100,IV,lhselect,Wybór izby niższej,0.984,27,standard światowy
+100,IV,uhselect,Wybór izby wyższej,0.4521,13,częste
+101,IV,suppow,Kompetencje sądu najwyższego,0.5479,7,częste
+102,IV,,,,,
+103,IV,profleg,Dodatkowe zajęcia parlamentarzystów,0.8245,20,standard światowy
+103,IV,milrest,Ograniczenia sił zbrojnych,0.4574,16,częste
+104,IV,god,Odniesienie do Boga lub bóstw,0.6223,12,częste
+104,IV,oath,Przysięga na konstytucję,0.8404,25,standard światowy
+105,IV,immunity,Immunitet parlamentarny,0.9468,27,standard światowy
+106,IV,,,,,
+107,IV,profleg,Dodatkowe zajęcia parlamentarzystów,0.8245,20,standard światowy
+107,IV,remleg,Odwołanie parlamentarzysty,0.7872,15,standard światowy
+108,IV,oath,Przysięga na konstytucję,0.8404,25,standard światowy
+108,IV,milrest,Ograniczenia sił zbrojnych,0.4574,16,częste
+108,IV,immunity,Immunitet parlamentarny,0.9468,27,standard światowy
+109,IV,,,,,
+110,IV,uhlead,Przewodniczący izby wyższej,0.4149,11,częste
+110,IV,lhlead,Przewodniczący izby niższej,0.9415,27,standard światowy
+110,IV,commit,Komisje parlamentarne,0.867,25,standard światowy
+111,IV,invexe,Kontrola parlamentarna nad rządem,0.7713,25,standard światowy
+112,IV,,,,,
+113,IV,pubmeet,Jawność posiedzeń,0.5479,24,częste
+114,IV,legjoint,Wspólne posiedzenia izb,0.3298,10,rzadsze
+115,IV,invexe,Kontrola parlamentarna nad rządem,0.7713,25,standard światowy
+116,IV,war,Wypowiedzenie wojny,0.6489,25,częste
+116,IV,intlaw,Prawo międzynarodowe,0.9202,27,standard światowy
+117,IV,intlaw,Prawo międzynarodowe,0.9202,27,standard światowy
+118,IV,legini,Inicjatywa ustawodawcza,0.867,26,standard światowy
+118,IV,initiat,Obywatelska inicjatywa ustawodawcza,0.266,10,rzadsze
+119,IV,,,,,
+120,IV,quorum,Kworum,0.766,21,standard światowy
+121,IV,divhouse,Podział zadań między izbami,0.4096,12,częste
+122,IV,legapp,Uchwalanie i weto ustaw,0.9043,24,standard światowy
+122,IV,uncon,Kontrola konstytucyjności ustaw,0.8457,25,standard światowy
+122,IV,override,Odrzucenie weta,0.633,15,częste
+123,IV,,,,,
+124,IV,pubmeet,Jawność posiedzeń,0.5479,24,częste
+124,IV,commit,Komisje parlamentarne,0.867,25,standard światowy
+124,IV,uhlead,Przewodniczący izby wyższej,0.4149,11,częste
+124,IV,quorum,Kworum,0.766,21,standard światowy
+125,IV,referen,Referendum,0.766,24,standard światowy
+125,IV,suppow,Kompetencje sądu najwyższego,0.5479,7,częste
+126,V,execnum,Struktura władzy wykonawczej,0.9947,27,standard światowy
+126,V,abide,Obowiązek przestrzegania konstytucji,0.617,14,częste
+127,V,freeelec,Tajność głosowania,0.7979,25,standard światowy
+127,V,hoselect,Wybór głowy państwa,0.9734,26,standard światowy
+127,V,voteun,Powszechne prawo wyborcze,0.7021,22,częste
+127,V,hosterm,Kadencja głowy państwa,0.8351,23,standard światowy
+127,V,hosterml,Limit kadencji głowy państwa,0.6383,18,częste
+127,V,hosage,Granica wieku głowy państwa,0.7713,22,standard światowy
+127,V,hosrest,Wymogi wobec głowy państwa,0.867,23,standard światowy
+128,V,electsch,Terminy wyborów,0.617,21,częste
+128,V,hossucc,Zastępstwo głowy państwa,0.9309,27,standard światowy
+129,V,suppow,Kompetencje sądu najwyższego,0.5479,7,częste
+130,V,oath,Przysięga na konstytucję,0.8404,25,standard światowy
+130,V,god,Odniesienie do Boga lub bóstw,0.6223,12,częste
+131,V,conpow,Kompetencje sądu konstytucyjnego,0.4628,20,częste
+131,V,hossucc,Zastępstwo głowy państwa,0.9309,27,standard światowy
+131,V,hosdiss,Usunięcie głowy państwa z urzędu,0.8138,23,standard światowy
+132,V,,,,,
+133,V,headforn,Reprezentacja w stosunkach zagranicznych,0.7872,25,standard światowy
+133,V,hospow,Kompetencje głowy państwa,0.8936,23,standard światowy
+133,V,treat,Ratyfikacja umów międzynarodowych,0.8723,26,standard światowy
+133,V,intlaw,Prawo międzynarodowe,0.9202,27,standard światowy
+133,V,intorgs,Organizacje międzynarodowe,0.734,25,częste
+133,V,treatcon,Status prawny umów międzynarodowych,0.6702,23,częste
+134,V,comchief,Zwierzchnictwo nad siłami zbrojnymi,0.8351,24,standard światowy
+134,V,milcom,Powoływanie dowódców wojskowych,0.5798,16,częste
+135,V,hosstaff,Organy doradcze głowy państwa,0.6011,12,częste
+136,V,,,,,
+137,V,hospow,Kompetencje głowy państwa,0.8936,23,standard światowy
+138,V,hospow,Kompetencje głowy państwa,0.8936,23,standard światowy
+139,V,pardon,Prawo łaski,0.9309,27,standard światowy
+140,V,,,,,
+141,V,hosstaff,Organy doradcze głowy państwa,0.6011,12,częste
+142,V,,,,,
+143,V,,,,,
+144,V,hospow,Kompetencje głowy państwa,0.8936,23,standard światowy
+144,V,adsel,Wybór sędziów sądów administracyjnych,0.1862,14,rzadsze
+144,V,hocsel,Wybór sędziów sądu najwyższego,0.8777,24,standard światowy
+145,V,hosdiss,Usunięcie głowy państwa z urzędu,0.8138,23,standard światowy
+146,VI,cabpow,Kompetencje rządu,0.8564,24,standard światowy
+146,VI,cabinet,Ustanowienie rządu i ministrów,0.9734,27,standard światowy
+146,VI,budget,Ustawa budżetowa,0.9202,26,standard światowy
+146,VI,intorgs,Organizacje międzynarodowe,0.734,25,częste
+146,VI,treat,Ratyfikacja umów międzynarodowych,0.8723,26,standard światowy
+146,VI,intlaw,Prawo międzynarodowe,0.9202,27,standard światowy
+147,VI,execnum,Struktura władzy wykonawczej,0.9947,27,standard światowy
+148,VI,hogpow,Kompetencje szefa rządu,0.4309,15,częste
+149,VI,,,,,
+150,VI,,,,,
+151,VI,oath,Przysięga na konstytucję,0.8404,25,standard światowy
+151,VI,god,Odniesienie do Boga lub bóstw,0.6223,12,częste
+152,VI,sub,Samorząd jednostek terytorialnych,0.6489,15,częste
+153,VI,,,,,
+154,VI,hogelect,Wybór szefa rządu,0.6968,25,częste
+154,VI,cabsel,Powoływanie rządu,0.9309,26,standard światowy
+155,VI,legdiss,Rozwiązanie parlamentu,0.734,27,częste
+155,VI,cabsel,Powoływanie rządu,0.9309,26,standard światowy
+155,VI,hogelect,Wybór szefa rządu,0.6968,25,częste
+156,VI,cabdiss,Odwołanie rządu,0.9149,26,standard światowy
+156,VI,hogdiss,Odwołanie szefa rządu,0.6862,24,częste
+157,VI,cabdiss,Odwołanie rządu,0.9149,26,standard światowy
+158,VI,cabdiss,Odwołanie rządu,0.9149,26,standard światowy
+158,VI,hogdlim,Ograniczenia odwołania szefa rządu,0.1596,8,rzadsze
+158,VI,hogdiss,Odwołanie szefa rządu,0.6862,24,częste
+158,VI,hogsucc,Zastępstwo szefa rządu,0.3457,15,rzadsze
+159,VI,cabdiss,Odwołanie rządu,0.9149,26,standard światowy
+159,VI,hogdiss,Odwołanie szefa rządu,0.6862,24,częste
+160,VI,cabdiss,Odwołanie rządu,0.9149,26,standard światowy
+160,VI,hogdiss,Odwołanie szefa rządu,0.6862,24,częste
+161,VI,cabdiss,Odwołanie rządu,0.9149,26,standard światowy
+162,VI,cabdiss,Odwołanie rządu,0.9149,26,standard światowy
+163,VII,,,,,
+164,VII,,,,,
+165,VII,,,,,
+166,VII,judcrts1,Sądy administracyjne,0.2926,18,rzadsze
+167,VII,,,,,
+168,VII,,,,,
+169,VII,,,,,
+170,VII,,,,,
+171,VII,fedrev,Kontrola prawa lokalnego przez państwo,0.2926,13,rzadsze
+171,VII,sub,Samorząd jednostek terytorialnych,0.6489,15,częste
+172,VII,,,,,
+173,VIII,judind,Niezależność sędziowska,0.8723,24,standard światowy
+174,VIII,,,,,
+175,VIII,levjud,Struktura sądownictwa,0.984,27,standard światowy
+175,VIII,judcrts4,Sądy wojskowe,0.4202,12,częste
+175,VIII,judcrts1,Sądy administracyjne,0.2926,18,rzadsze
+176,VIII,appeal,Prawo do odwołania od orzeczenia,0.6436,16,częste
+177,VIII,,,,,
+178,VIII,hocres,Wymogi wobec sędziów sądu najwyższego,0.5904,11,częste
+178,VIII,ordres,Wymogi wobec sędziów sądów powszechnych,0.3564,8,rzadsze
+178,VIII,adres,Wymogi wobec sędziów sądów administracyjnych,0.1064,5,rzadkie
+179,VIII,ordsel,Powoływanie sędziów sądów powszechnych,0.7394,21,częste
+179,VIII,hocsel,Wybór sędziów sądu najwyższego,0.8777,24,standard światowy
+179,VIII,hocterm,Kadencja sędziów sądu najwyższego,0.5426,13,częste
+179,VIII,adsel,Wybór sędziów sądów administracyjnych,0.1862,14,rzadsze
+179,VIII,adterm,Kadencja sędziów sądów administracyjnych,0.0851,6,rzadkie
+179,VIII,ordterm,Kadencja sędziów sądów powszechnych,0.266,11,rzadsze
+180,VIII,jrem,Odwołanie sędziów,0.8191,24,standard światowy
+180,VIII,judretir,Obowiązkowy wiek emerytalny sędziów,0.4787,18,częste
+181,VIII,,,,,
+182,VIII,jury,Udział obywateli w sądzeniu,0.2553,14,rzadsze
+183,VIII,suppow,Kompetencje sądu najwyższego,0.5479,7,częste
+183,VIII,hocsel,Wybór sędziów sądu najwyższego,0.8777,24,standard światowy
+183,VIII,hocterm,Kadencja sędziów sądu najwyższego,0.5426,13,częste
+184,VIII,fedrev,Kontrola prawa lokalnego przez państwo,0.2926,13,rzadsze
+184,VIII,judcrts1,Sądy administracyjne,0.2926,18,rzadsze
+185,VIII,adsel,Wybór sędziów sądów administracyjnych,0.1862,14,rzadsze
+185,VIII,adterm,Kadencja sędziów sądów administracyjnych,0.0851,6,rzadkie
+186,VIII,jc,Rada sądownictwa,0.7181,18,częste
+187,VIII,jc,Rada sądownictwa,0.7181,18,częste
+188,VIII,interp,Wykładnia konstytucji,0.8936,23,standard światowy
+188,VIII,judcrts2,Sąd konstytucyjny,0.4628,21,częste
+188,VIII,conpow,Kompetencje sądu konstytucyjnego,0.4628,20,częste
+188,VIII,treatcon,Status prawny umów międzynarodowych,0.6702,23,częste
+188,VIII,partunco,Kontrola konstytucyjności partii,0.1968,8,rzadsze
+189,VIII,conpow,Kompetencje sądu konstytucyjnego,0.4628,20,częste
+190,VIII,uncon,Kontrola konstytucyjności ustaw,0.8457,25,standard światowy
+191,VIII,uncon,Kontrola konstytucyjności ustaw,0.8457,25,standard światowy
+191,VIII,ombuds,Rzecznik praw obywatelskich,0.4415,16,częste
+191,VIII,atgen,Prokurator generalny,0.7872,20,standard światowy
+192,VIII,,,,,
+193,VIII,interp,Wykładnia konstytucji,0.8936,23,standard światowy
+194,VIII,consel,Wybór sędziów sądu konstytucyjnego,0.4681,21,częste
+194,VIII,conterm,Kadencja sędziów sądu konstytucyjnego,0.3936,16,rzadsze
+194,VIII,conres,Wymogi wobec sędziów sądu konstytucyjnego,0.4043,17,częste
+194,VIII,conlim,Zakaz ponownego wyboru sędziów sądu konstytucyjnego,0.2128,9,rzadsze
+195,VIII,conres,Wymogi wobec sędziów sądu konstytucyjnego,0.4043,17,częste
+196,VIII,,,,,
+197,VIII,judcrts5,Sąd dla najwyższych urzędników (Trybunał Stanu),0.1277,4,rzadkie
+198,VIII,hogdiss,Odwołanie szefa rządu,0.6862,24,częste
+198,VIII,cabdiss,Odwołanie rządu,0.9149,26,standard światowy
+198,VIII,bank,Bank centralny,0.4894,14,częste
+199,VIII,,,,,
+200,VIII,,,,,
+201,VIII,,,,,
+202,IX,,,,,
+203,IX,,,,,
+204,IX,,,,,
+205,IX,,,,,
+206,IX,,,,,
+207,IX,ombuds,Rzecznik praw obywatelskich,0.4415,16,częste
+208,IX,,,,,
+209,IX,,,,,
+210,IX,,,,,
+211,IX,,,,,
+212,IX,tv,Telewizja,0.4149,11,częste
+212,IX,medcom,Konstytucyjny organ ds. mediów,0.1543,5,rzadsze
+212,IX,radio,Radio,0.4202,13,częste
+213,IX,,,,,
+214,IX,,,,,
+215,IX,,,,,
+216,X,,,,,
+217,X,,,,,
+218,X,,,,,
+219,X,budget,Ustawa budżetowa,0.9202,26,standard światowy
+220,X,budget,Ustawa budżetowa,0.9202,26,standard światowy
+221,X,budget,Ustawa budżetowa,0.9202,26,standard światowy
+221,X,finance,Ustawy finansowe,0.2819,9,rzadsze
+222,X,budget,Ustawa budżetowa,0.9202,26,standard światowy
+223,X,budget,Ustawa budżetowa,0.9202,26,standard światowy
+224,X,budget,Ustawa budżetowa,0.9202,26,standard światowy
+225,X,legdiss,Rozwiązanie parlamentu,0.734,27,częste
+226,X,,,,,
+227,X,bank,Bank centralny,0.4894,14,częste
+228,XI,,,,,
+229,XI,,,,,
+230,XI,,,,,
+231,XI,,,,,
+232,XI,,,,,
+233,XI,,,,,
+234,XI,,,,,
+235,XII,amend,Procedura zmiany konstytucji,1.0,27,standard światowy
+236,XIII,,,,,
+237,XIII,,,,,
+238,XIII,,,,,
+239,XIII,,,,,
+240,XIII,,,,,
+241,XIII,,,,,
+242,XIII,,,,,
+243,XIII,,,,,

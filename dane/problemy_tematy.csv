@@ -1,0 +1,921 @@
+﻿kod_problemu,problem,kod_ccp,rozwiazanie,udzial_przepisow_tematu,liczba_przepisow,udzial_konstytucji_swiat
+sady,Niezależność sądów i sędziów,ordterm,Kadencja sędziów sądów powszechnych,1.0,57,0.266
+sady,Niezależność sądów i sędziów,hocsel,Wybór sędziów sądu najwyższego,0.988,337,0.8777
+sady,Niezależność sądów i sędziów,ordsel,Powoływanie sędziów sądów powszechnych,0.983,298,0.7394
+sady,Niezależność sądów i sędziów,hocterm,Kadencja sędziów sądu najwyższego,0.975,119,0.5426
+sady,Niezależność sądów i sędziów,judprec,Moc wiążąca precedensu,0.974,37,0.1702
+sady,Niezależność sądów i sędziów,levjud,Struktura sądownictwa,0.969,437,0.984
+sady,Niezależność sądów i sędziów,adres,Wymogi wobec sędziów sądów administracyjnych,0.963,26,0.1064
+sady,Niezależność sądów i sędziów,judind,Niezależność sędziowska,0.961,247,0.8723
+sady,Niezależność sądów i sędziów,hocsize,Liczba sędziów sądu najwyższego,0.96,95,0.4468
+sady,Niezależność sądów i sędziów,hocterml,Limit kadencji sędziów sądu najwyższego,0.947,36,0.1702
+sady,Niezależność sądów i sędziów,adterm,Kadencja sędziów sądów administracyjnych,0.944,17,0.0851
+sady,Niezależność sądów i sędziów,ordres,Wymogi wobec sędziów sądów powszechnych,0.942,131,0.3564
+sady,Niezależność sądów i sędziów,hocop,Zdania odrębne w sądzie najwyższym,0.938,30,0.1436
+sady,Niezależność sądów i sędziów,adsel,Wybór sędziów sądów administracyjnych,0.936,44,0.1862
+sady,Niezależność sądów i sędziów,pubtri,Jawność rozprawy,0.922,153,0.7394
+sady,Niezależność sądów i sędziów,appeal,Prawo do odwołania od orzeczenia,0.915,225,0.6436
+sady,Niezależność sądów i sędziów,judcrts7,Sądy pracy,0.914,32,0.0851
+sady,Niezależność sądów i sędziów,judcrts8,Sądy religijne,0.909,30,0.0638
+sady,Niezależność sądów i sędziów,fairtri,Prawo do sprawiedliwego procesu,0.906,126,0.6436
+sady,Niezależność sądów i sędziów,jrem,Odwołanie sędziów,0.905,362,0.8191
+sady,Niezależność sądów i sędziów,ordterml,Limit kadencji sędziów sądów powszechnych,0.9,9,0.0479
+sady,Niezależność sądów i sędziów,adtermn,Limit kadencji sędziów sądów administracyjnych,0.9,9,0.0319
+sady,Niezależność sądów i sędziów,jury,Udział obywateli w sądzeniu,0.889,56,0.2553
+sady,Niezależność sądów i sędziów,adage,Granica wieku sędziów sądów administracyjnych,0.889,8,0.0372
+sady,Niezależność sądów i sędziów,judsal,Ochrona wynagrodzeń sędziów,0.887,102,0.4149
+sady,Niezależność sądów i sędziów,hocres,Wymogi wobec sędziów sądu najwyższego,0.886,148,0.5904
+sady,Niezależność sądów i sędziów,judcrts1,Sądy administracyjne,0.878,86,0.2926
+sady,Niezależność sądów i sędziów,judretir,Obowiązkowy wiek emerytalny sędziów,0.874,125,0.4787
+sady,Niezależność sądów i sędziów,jc,Rada sądownictwa,0.856,518,0.7181
+sady,Niezależność sądów i sędziów,suppow,Kompetencje sądu najwyższego,0.855,188,0.5479
+sady,Niezależność sądów i sędziów,ordage,Granica wieku sędziów sądów powszechnych,0.84,21,0.1011
+sady,Niezależność sądów i sędziów,judcrts4,Sądy wojskowe,0.817,107,0.4202
+sady,Niezależność sądów i sędziów,speedtri,Prawo do rozpatrzenia sprawy bez zwłoki,0.797,106,0.5904
+sady,Niezależność sądów i sędziów,amparo,Amparo: szybki środek ochrony praw przed sądem,0.75,24,0.0904
+sady,Niezależność sądów i sędziów,ecterml,Limit kadencji sędziów sądu wyborczego,0.75,3,0.016
+sady,Niezależność sądów i sędziów,hocage,Granica wieku sędziów sądu najwyższego,0.737,28,0.1915
+sady,Niezależność sądów i sędziów,judcrts5,Sąd dla najwyższych urzędników (Trybunał Stanu),0.63,17,0.1277
+sady,Niezależność sądów i sędziów,illadmin,Działania administracji bez podstawy prawnej,0.619,109,0.5798
+sady,Niezależność sądów i sędziów,ecres,Wymogi wobec sędziów sądu wyborczego,0.609,14,0.0691
+sady,Niezależność sądów i sędziów,ecsel,Wybór sędziów sądu wyborczego,0.6,15,0.0798
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,concop,Zdania odrębne w sądzie konstytucyjnym,0.917,11,0.0638
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,uncon,Kontrola konstytucyjności ustaw,0.891,419,0.8457
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,interp,Wykładnia konstytucji,0.88,322,0.8936
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,conlim,Zakaz ponownego wyboru sędziów sądu konstytucyjnego,0.87,40,0.2128
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,judcrts2,Sąd konstytucyjny,0.851,97,0.4628
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,consel,Wybór sędziów sądu konstytucyjnego,0.844,141,0.4681
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,conterm,Kadencja sędziów sądu konstytucyjnego,0.824,70,0.3936
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,conres,Wymogi wobec sędziów sądu konstytucyjnego,0.77,87,0.4043
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,conpow,Kompetencje sądu konstytucyjnego,0.731,244,0.4628
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,conrem,Tryb odwołania sędziów sądu konstytucyjnego,0.644,47,0.2128
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,conage,Granica wieku sędziów sądu konstytucyjnego,0.615,16,0.1223
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,amparo,Amparo: szybki środek ochrony praw przed sądem,0.5,16,0.0904
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,partunco,Kontrola konstytucyjności partii,0.413,19,0.1968
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,fedrev,Kontrola prawa lokalnego przez państwo,0.407,59,0.2926
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,treatcon,Status prawny umów międzynarodowych,0.349,102,0.6702
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,orglaw,Ustawy organiczne,0.235,20,0.1915
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,suppow,Kompetencje sądu najwyższego,0.173,38,0.5479
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,fedsep,Prawo krajowe a prawo lokalne,0.167,18,0.3511
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,hocop,Zdania odrębne w sądzie najwyższym,0.156,5,0.1436
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,judprec,Moc wiążąca precedensu,0.132,5,0.1702
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,hosdiss,Usunięcie głowy państwa z urzędu,0.122,41,0.8138
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,rellaw,Status prawa religijnego,0.12,6,0.1117
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,legapp,Uchwalanie i weto ustaw,0.097,31,0.9043
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,illadmin,Działania administracji bez podstawy prawnej,0.097,17,0.5798
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,levjud,Struktura sądownictwa,0.095,43,0.984
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,override,Odrzucenie weta,0.09,13,0.633
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,intlaw,Prawo międzynarodowe,0.088,94,0.9202
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,tranprov,Przepisy przejściowe,0.087,23,0.7394
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,partprh,Partie zakazane,0.077,5,0.2979
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,hocsize,Liczba sędziów sądu najwyższego,0.071,7,0.4468
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,ombuds,Rzecznik praw obywatelskich,0.07,15,0.4415
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,appeal,Prawo do odwołania od orzeczenia,0.069,17,0.6436
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,judcrts4,Sądy wojskowe,0.069,9,0.4202
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,hocsel,Wybór sędziów sądu najwyższego,0.065,22,0.8777
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,hosdec,Uprawnienia dekretowe głowy państwa,0.06,16,0.5585
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,judcrts7,Sądy pracy,0.057,2,0.0851
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,ecpow,Kompetencje sądu wyborczego,0.053,2,0.0904
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,intrght,Międzynarodowe traktaty praw człowieka,0.051,7,0.3191
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,judcrts1,Sądy administracyjne,0.051,5,0.2926
+kontrola_konstytucyjnosci,Sąd konstytucyjny i kontrola ustaw,referen,Referendum,0.05,28,0.766
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",cc,Komisja antykorupcyjna,0.981,51,0.1649
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",ombuds,Rzecznik praw obywatelskich,0.883,188,0.4415
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",hr,Komisja praw człowieka,0.822,125,0.2287
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",assets,Jawność majątku osób publicznych,0.667,30,0.1968
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",medcom,Konstytucyjny organ ds. mediów,0.553,21,0.1543
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",judcrts6,Sądy podatkowe,0.5,2,0.0106
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",ecrdet,Odwołanie sędziów sądu wyborczego,0.286,4,0.0426
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",truthcom,Komisja prawdy i pojednania,0.286,2,0.0319
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",ecom,Komisja wyborcza,0.276,107,0.5106
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",ecsel,Wybór sędziów sądu wyborczego,0.2,5,0.0798
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",bank,Bank centralny,0.184,36,0.4894
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",judcrts1,Sądy administracyjne,0.153,15,0.2926
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",judcrts5,Sąd dla najwyższych urzędników (Trybunał Stanu),0.148,4,0.1277
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",judsal,Ochrona wynagrodzeń sędziów,0.139,16,0.4149
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",ecpow,Kompetencje sądu wyborczego,0.132,5,0.0904
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",invexe,Kontrola parlamentarna nad rządem,0.125,53,0.7713
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",atgen,Prokurator generalny,0.118,49,0.7872
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",ecage,Granica wieku sędziów sądu wyborczego,0.1,1,0.0372
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",commit,Komisje parlamentarne,0.091,55,0.867
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",ecres,Wymogi wobec sędziów sądu wyborczego,0.087,2,0.0691
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",vicright,Prawa ofiar przestępstw,0.083,5,0.1702
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",ecterm,Kadencja sędziów sądu wyborczego,0.077,1,0.0638
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",jrem,Odwołanie sędziów,0.068,27,0.8191
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",govmed,Media państwowe,0.062,5,0.2926
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",ethincl,Integracja mniejszości etnicznych,0.061,8,0.2979
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",illadmin,Działania administracji bez podstawy prawnej,0.057,10,0.5798
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",civil,Rekrutacja do służby cywilnej,0.057,6,0.3298
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",adterm,Kadencja sędziów sądów administracyjnych,0.056,1,0.0851
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",hospow,Kompetencje głowy państwa,0.055,34,0.8936
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",conrem,Tryb odwołania sędziów sądu konstytucyjnego,0.055,4,0.2128
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",hocsel,Wybór sędziów sądu najwyższego,0.05,17,0.8777
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",radio,Radio,0.048,9,0.4202
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",telecom,Telekomunikacja,0.045,10,0.5532
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",hogimm,Immunitet szefa rządu,0.045,2,0.1702
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",adsel,Wybór sędziów sądów administracyjnych,0.043,2,0.1862
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",consel,Wybór sędziów sądu konstytucyjnego,0.042,7,0.4681
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",execindp,Niezależność władzy wykonawczej,0.042,1,0.117
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",jc,Rada sądownictwa,0.04,24,0.7181
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",freecomp,Prawo do konkurencyjnego rynku,0.038,4,0.3723
+organy_kontroli,"Rzecznicy, izby kontroli, komisje niezależne",opgroup,Redystrybucja bogactwa,0.038,2,0.1755
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,unamend,Przepisy niezmienialne (klauzula wieczysta),0.968,90,0.3883
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,amend,Procedura zmiany konstytucji,0.864,337,1.0
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,overthrw,Prawo do obalenia rządu,0.842,16,0.0904
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,partprh,Partie zakazane,0.446,29,0.2979
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,partprf,Partie uprzywilejowane,0.286,2,0.0319
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,abide,Obowiązek przestrzegania konstytucji,0.238,54,0.617
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,referen,Referendum,0.197,110,0.766
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,partunco,Kontrola konstytucyjności partii,0.196,9,0.1968
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,hosdiss,Usunięcie głowy państwa z urzędu,0.179,60,0.8138
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,legsupr,Kwalifikowana większość dla ustaw,0.177,17,0.2766
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,binding,Bezpośrednio wiążąca moc praw konstytucyjnych,0.125,7,0.25
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,initiat,Obywatelska inicjatywa ustawodawcza,0.114,9,0.266
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,tranprov,Przepisy przejściowe,0.083,22,0.7394
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,judcrts5,Sąd dla najwyższych urzędników (Trybunał Stanu),0.074,2,0.1277
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,ecrdet,Odwołanie sędziów sądu wyborczego,0.071,1,0.0426
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,legjoint,Wspólne posiedzenia izb,0.062,14,0.3298
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,hosimm,Immunitet głowy państwa,0.06,9,0.6383
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,prevlead,Zbrodnie poprzedniego reżimu,0.054,2,0.1011
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,conpow,Kompetencje sądu konstytucyjnego,0.054,18,0.4628
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,partreg,Ograniczenia partii politycznych,0.051,9,0.5213
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,treatcon,Status prawny umów międzynarodowych,0.051,15,0.6702
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,em,Przepisy o stanach nadzwyczajnych,0.05,37,0.9309
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,oath,Przysięga na konstytucję,0.046,27,0.8404
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,uncon,Kontrola konstytucyjności ustaw,0.045,21,0.8457
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,assoc,Wolność zrzeszania się,0.044,10,0.9362
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,execindp,Niezależność władzy wykonawczej,0.042,1,0.117
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,conrem,Tryb odwołania sędziów sądu konstytucyjnego,0.041,3,0.2128
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,offrel,Religia państwowa,0.037,4,0.4521
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,orglaw,Ustawy organiczne,0.035,3,0.1915
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,stdcom,Stałe komisje parlamentarne,0.032,8,0.2979
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,amparo,Amparo: szybki środek ochrony praw przed sądem,0.031,1,0.0904
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,execnum,Struktura władzy wykonawczej,0.031,11,0.9947
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,ecpow,Kompetencje sądu wyborczego,0.026,1,0.0904
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,hogdiss,Odwołanie szefa rządu,0.025,9,0.6862
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,intlaw,Prawo międzynarodowe,0.023,25,0.9202
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,hogimm,Immunitet szefa rządu,0.023,1,0.1702
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,jrem,Odwołanie sędziów,0.022,9,0.8191
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,treat,Ratyfikacja umów międzynarodowych,0.022,10,0.8723
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,partrght,Prawo do zakładania partii,0.021,3,0.6489
+ochrona_konstytucji,Zmiana konstytucji i ochrona przed demontażem,remleg,Odwołanie parlamentarzysty,0.02,6,0.7872
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",cabsel,Powoływanie rządu,0.992,264,0.9309
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hogsucc,Zastępstwo szefa rządu,0.989,92,0.3457
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",cabinet,Ustanowienie rządu i ministrów,0.989,270,0.9734
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",execnum,Struktura władzy wykonawczej,0.986,355,0.9947
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hossucc,Zastępstwo głowy państwa,0.958,251,0.9309
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hogelect,Wybór szefa rządu,0.945,223,0.6968
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",cabdiss,Odwołanie rządu,0.941,514,0.9149
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",headforn,Reprezentacja w stosunkach zagranicznych,0.939,200,0.7872
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hogdiss,Odwołanie szefa rządu,0.938,335,0.6862
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",depexec,Zastępca szefa władzy wykonawczej,0.934,271,0.6064
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hosimm,Immunitet głowy państwa,0.906,135,0.6383
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",pardon,Prawo łaski,0.901,173,0.9309
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",cabpow,Kompetencje rządu,0.901,273,0.8564
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",override,Odrzucenie weta,0.896,129,0.633
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hogterml,Limit kadencji szefa rządu,0.889,8,0.0479
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hoglegr,Rola szefa rządu w parlamencie,0.878,72,0.3883
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hosdiss,Usunięcie głowy państwa z urzędu,0.875,293,0.8138
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hogpow,Kompetencje szefa rządu,0.87,154,0.4309
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hogdec,Uprawnienia dekretowe szefa rządu,0.859,85,0.2234
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",legapp,Uchwalanie i weto ustaw,0.838,268,0.9043
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hosterm,Kadencja głowy państwa,0.833,140,0.8351
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hosterml,Limit kadencji głowy państwa,0.831,108,0.6383
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",comchief,Zwierzchnictwo nad siłami zbrojnymi,0.819,194,0.8351
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hosdec,Uprawnienia dekretowe głowy państwa,0.802,215,0.5585
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hospow,Kompetencje głowy państwa,0.784,482,0.8936
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",milcom,Powoływanie dowódców wojskowych,0.776,114,0.5798
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hogdlim,Ograniczenia odwołania szefa rządu,0.758,25,0.1596
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",legdiss,Rozwiązanie parlamentu,0.748,202,0.734
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hosstaff,Organy doradcze głowy państwa,0.733,228,0.6011
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",invexe,Kontrola parlamentarna nad rządem,0.711,302,0.7713
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hoselect,Wybór głowy państwa,0.709,251,0.9734
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hogimm,Immunitet szefa rządu,0.705,31,0.1702
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",judcrts5,Sąd dla najwyższych urzędników (Trybunał Stanu),0.704,19,0.1277
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",cabrest,Wymogi wobec członków rządu,0.655,209,0.8085
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hosrest,Wymogi wobec głowy państwa,0.65,173,0.867
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",execindp,Niezależność władzy wykonawczej,0.583,14,0.117
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hogterm,Kadencja szefa rządu,0.576,19,0.1117
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hogrest,Wymogi wobec szefa rządu,0.562,72,0.3723
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",hosage,Granica wieku głowy państwa,0.559,90,0.7713
+egzekutywa,"Prezydent, rząd i ich relacje z parlamentem",oath,Przysięga na konstytucję,0.535,316,0.8404
+kadencje,Kadencje i ich limity,hosterml,Limit kadencji głowy państwa,1.0,130,0.6383
+kadencje,Kadencje i ich limity,conlim,Zakaz ponownego wyboru sędziów sądu konstytucyjnego,1.0,46,0.2128
+kadencje,Kadencje i ich limity,lhtrmlim,Limit kadencji posłów,1.0,9,0.0479
+kadencje,Kadencje i ich limity,hogterml,Limit kadencji szefa rządu,1.0,9,0.0479
+kadencje,Kadencje i ich limity,ecterml,Limit kadencji sędziów sądu wyborczego,1.0,4,0.016
+kadencje,Kadencje i ich limity,lhterm,Kadencja izby niższej,0.99,192,0.9468
+kadencje,Kadencje i ich limity,uhterm,Kadencja izby wyższej,0.962,75,0.3617
+kadencje,Kadencje i ich limity,conterm,Kadencja sędziów sądu konstytucyjnego,0.929,79,0.3936
+kadencje,Kadencje i ich limity,ecterm,Kadencja sędziów sądu wyborczego,0.923,12,0.0638
+kadencje,Kadencje i ich limity,hosterm,Kadencja głowy państwa,0.923,155,0.8351
+kadencje,Kadencje i ich limity,uhtrmlim,Limit kadencji senatorów,0.875,7,0.0426
+kadencje,Kadencje i ich limity,hocterml,Limit kadencji sędziów sądu najwyższego,0.842,32,0.1702
+kadencje,Kadencje i ich limity,hogterm,Kadencja szefa rządu,0.818,27,0.1117
+kadencje,Kadencje i ich limity,adtermn,Limit kadencji sędziów sądów administracyjnych,0.8,8,0.0319
+kadencje,Kadencje i ich limity,hocterm,Kadencja sędziów sądu najwyższego,0.779,95,0.5426
+kadencje,Kadencje i ich limity,adterm,Kadencja sędziów sądów administracyjnych,0.722,13,0.0851
+kadencje,Kadencje i ich limity,judretir,Obowiązkowy wiek emerytalny sędziów,0.657,94,0.4787
+kadencje,Kadencje i ich limity,ordterm,Kadencja sędziów sądów powszechnych,0.649,37,0.266
+kadencje,Kadencje i ich limity,electsch,Terminy wyborów,0.53,105,0.617
+kadencje,Kadencje i ich limity,ordterml,Limit kadencji sędziów sądów powszechnych,0.4,4,0.0479
+kadencje,Kadencje i ich limity,hossucc,Zastępstwo głowy państwa,0.332,87,0.9309
+kadencje,Kadencje i ich limity,judcrts2,Sąd konstytucyjny,0.281,32,0.4628
+kadencje,Kadencje i ich limity,consel,Wybór sędziów sądu konstytucyjnego,0.275,46,0.4681
+kadencje,Kadencje i ich limity,conrem,Tryb odwołania sędziów sądu konstytucyjnego,0.26,19,0.2128
+kadencje,Kadencje i ich limity,legdiss,Rozwiązanie parlamentu,0.248,67,0.734
+kadencje,Kadencje i ich limity,ombuds,Rzecznik praw obywatelskich,0.225,48,0.4415
+kadencje,Kadencje i ich limity,tranprov,Przepisy przejściowe,0.208,55,0.7394
+kadencje,Kadencje i ich limity,ecsel,Wybór sędziów sądu wyborczego,0.2,5,0.0798
+kadencje,Kadencje i ich limity,ecage,Granica wieku sędziów sądu wyborczego,0.2,2,0.0372
+kadencje,Kadencje i ich limity,hoselect,Wybór głowy państwa,0.195,69,0.9734
+kadencje,Kadencje i ich limity,atgen,Prokurator generalny,0.158,66,0.7872
+kadencje,Kadencje i ich limity,cc,Komisja antykorupcyjna,0.154,8,0.1649
+kadencje,Kadencje i ich limity,conage,Granica wieku sędziów sądu konstytucyjnego,0.154,4,0.1223
+kadencje,Kadencje i ich limity,judcrts5,Sąd dla najwyższych urzędników (Trybunał Stanu),0.148,4,0.1277
+kadencje,Kadencje i ich limity,voteun,Powszechne prawo wyborcze,0.147,37,0.7021
+kadencje,Kadencje i ich limity,truthcom,Komisja prawdy i pojednania,0.143,1,0.0319
+kadencje,Kadencje i ich limity,conres,Wymogi wobec sędziów sądu konstytucyjnego,0.142,16,0.4043
+kadencje,Kadencje i ich limity,jc,Rada sądownictwa,0.134,81,0.7181
+kadencje,Kadencje i ich limity,depexec,Zastępca szefa władzy wykonawczej,0.131,38,0.6064
+kadencje,Kadencje i ich limity,ecres,Wymogi wobec sędziów sądu wyborczego,0.13,3,0.0691
+parlament,Parlament i proces ustawodawczy,divhouse,Podział zadań między izbami,1.0,136,0.4096
+parlament,Parlament i proces ustawodawczy,session,Długość sesji parlamentu,1.0,125,0.5585
+parlament,Parlament i proces ustawodawczy,hogdlim,Ograniczenia odwołania szefa rządu,1.0,33,0.1596
+parlament,Parlament i proces ustawodawczy,recvote,Tajność głosowań w parlamencie,1.0,24,0.1223
+parlament,Parlament i proces ustawodawczy,uhtrmlim,Limit kadencji senatorów,1.0,8,0.0426
+parlament,Parlament i proces ustawodawczy,override,Odrzucenie weta,0.993,143,0.633
+parlament,Parlament i proces ustawodawczy,housenum,Struktura parlamentu,0.992,253,0.9894
+parlament,Parlament i proces ustawodawczy,quorum,Kworum,0.988,167,0.766
+parlament,Parlament i proces ustawodawczy,lhlead,Przewodniczący izby niższej,0.988,241,0.9415
+parlament,Parlament i proces ustawodawczy,immunity,Immunitet parlamentarny,0.985,259,0.9468
+parlament,Parlament i proces ustawodawczy,attend,Obecność parlamentarzystów na posiedzeniach,0.979,93,0.4468
+parlament,Parlament i proces ustawodawczy,pubmeet,Jawność posiedzeń,0.974,114,0.5479
+parlament,Parlament i proces ustawodawczy,uhlead,Przewodniczący izby wyższej,0.968,91,0.4149
+parlament,Parlament i proces ustawodawczy,exsess,Nadzwyczajne sesje parlamentu,0.963,232,0.8245
+parlament,Parlament i proces ustawodawczy,invexe,Kontrola parlamentarna nad rządem,0.955,406,0.7713
+parlament,Parlament i proces ustawodawczy,legdiss,Rozwiązanie parlamentu,0.952,257,0.734
+parlament,Parlament i proces ustawodawczy,uhseats,Liczebność izby wyższej,0.947,71,0.3351
+parlament,Parlament i proces ustawodawczy,pubmin,Publikacja obrad,0.935,43,0.2287
+parlament,Parlament i proces ustawodawczy,lhseats,Liczebność izby niższej,0.927,153,0.7819
+parlament,Parlament i proces ustawodawczy,commit,Komisje parlamentarne,0.922,559,0.867
+parlament,Parlament i proces ustawodawczy,lhspleg,Wyłączne sprawy izby niższej,0.921,93,0.3404
+parlament,Parlament i proces ustawodawczy,remleg,Odwołanie parlamentarzysty,0.904,265,0.7872
+parlament,Parlament i proces ustawodawczy,legini,Inicjatywa ustawodawcza,0.902,229,0.867
+parlament,Parlament i proces ustawodawczy,legrep,Zastępowanie parlamentarzystów,0.901,154,0.6117
+parlament,Parlament i proces ustawodawczy,uhterm,Kadencja izby wyższej,0.897,70,0.3617
+parlament,Parlament i proces ustawodawczy,lhterm,Kadencja izby niższej,0.892,173,0.9468
+parlament,Parlament i proces ustawodawczy,legapp,Uchwalanie i weto ustaw,0.887,284,0.9043
+parlament,Parlament i proces ustawodawczy,stdcom,Stałe komisje parlamentarne,0.884,221,0.2979
+parlament,Parlament i proces ustawodawczy,legjoint,Wspólne posiedzenia izb,0.879,197,0.3298
+parlament,Parlament i proces ustawodawczy,uhselect,Wybór izby wyższej,0.843,134,0.4521
+parlament,Parlament i proces ustawodawczy,income,Uposażenie parlamentarzystów,0.825,85,0.4574
+parlament,Parlament i proces ustawodawczy,legsupr,Kwalifikowana większość dla ustaw,0.823,79,0.2766
+parlament,Parlament i proces ustawodawczy,uhspleg,Wyłączne sprawy izby wyższej,0.815,44,0.1809
+parlament,Parlament i proces ustawodawczy,lhtrmlim,Limit kadencji posłów,0.778,7,0.0479
+parlament,Parlament i proces ustawodawczy,uhrest,Wymogi wobec senatorów,0.762,99,0.3989
+parlament,Parlament i proces ustawodawczy,spend,Ustawy o wydatkach,0.733,126,0.3298
+parlament,Parlament i proces ustawodawczy,profleg,Dodatkowe zajęcia parlamentarzystów,0.728,203,0.8245
+parlament,Parlament i proces ustawodawczy,finance,Ustawy finansowe,0.723,86,0.2819
+parlament,Parlament i proces ustawodawczy,uhquota,Parytety w izbie wyższej,0.686,24,0.1223
+parlament,Parlament i proces ustawodawczy,orglaw,Ustawy organiczne,0.682,58,0.1915
+wybory_partie,"Wybory, partie i ich finansowanie",freeelec,Tajność głosowania,0.98,245,0.7979
+wybory_partie,"Wybory, partie i ich finansowanie",partrght,Prawo do zakładania partii,0.979,137,0.6489
+wybory_partie,"Wybory, partie i ich finansowanie",camppubf,Finansowanie kampanii wyborczych,0.978,91,0.2606
+wybory_partie,"Wybory, partie i ich finansowanie",voteun,Powszechne prawo wyborcze,0.972,244,0.7021
+wybory_partie,"Wybory, partie i ich finansowanie",district,Okręgi wyborcze,0.966,168,0.4521
+wybory_partie,"Wybory, partie i ich finansowanie",partunco,Kontrola konstytucyjności partii,0.957,44,0.1968
+wybory_partie,"Wybory, partie i ich finansowanie",partreg,Ograniczenia partii politycznych,0.954,167,0.5213
+wybory_partie,"Wybory, partie i ich finansowanie",partprh,Partie zakazane,0.954,62,0.2979
+wybory_partie,"Wybory, partie i ich finansowanie",voteres,Ograniczenia prawa wyborczego,0.949,242,0.8457
+wybory_partie,"Wybory, partie i ich finansowanie",lhselect,Wybór izby niższej,0.895,340,0.984
+wybory_partie,"Wybory, partie i ich finansowanie",compvote,Obowiązek głosowania,0.882,15,0.0798
+wybory_partie,"Wybory, partie i ich finansowanie",lhrest,Wymogi wobec posłów,0.88,243,0.8777
+wybory_partie,"Wybory, partie i ich finansowanie",electsch,Terminy wyborów,0.869,172,0.617
+wybory_partie,"Wybory, partie i ich finansowanie",lhage,Granica wieku posłów,0.863,138,0.7606
+wybory_partie,"Wybory, partie i ich finansowanie",partprf,Partie uprzywilejowane,0.857,6,0.0319
+wybory_partie,"Wybory, partie i ich finansowanie",ecom,Komisja wyborcza,0.843,327,0.5106
+wybory_partie,"Wybory, partie i ich finansowanie",ecpow,Kompetencje sądu wyborczego,0.842,32,0.0904
+wybory_partie,"Wybory, partie i ich finansowanie",ecsel,Wybór sędziów sądu wyborczego,0.76,19,0.0798
+wybory_partie,"Wybory, partie i ich finansowanie",indpolgr1,Prawo wyborcze ludów rdzennych,0.75,9,0.0319
+wybory_partie,"Wybory, partie i ich finansowanie",ecres,Wymogi wobec sędziów sądu wyborczego,0.696,16,0.0691
+wybory_partie,"Wybory, partie i ich finansowanie",uhage,Granica wieku senatorów,0.694,43,0.3138
+wybory_partie,"Wybory, partie i ich finansowanie",ecterm,Kadencja sędziów sądu wyborczego,0.692,9,0.0638
+wybory_partie,"Wybory, partie i ich finansowanie",legrep,Zastępowanie parlamentarzystów,0.684,117,0.6117
+wybory_partie,"Wybory, partie i ich finansowanie",hosrest,Wymogi wobec głowy państwa,0.673,179,0.867
+wybory_partie,"Wybory, partie i ich finansowanie",uhrest,Wymogi wobec senatorów,0.654,85,0.3989
+wybory_partie,"Wybory, partie i ich finansowanie",lhquota,Parytety w izbie niższej,0.617,50,0.2553
+wybory_partie,"Wybory, partie i ich finansowanie",lhseats,Liczebność izby niższej,0.612,101,0.7819
+wybory_partie,"Wybory, partie i ich finansowanie",hoselect,Wybór głowy państwa,0.61,216,0.9734
+wybory_partie,"Wybory, partie i ich finansowanie",uhselect,Wybór izby wyższej,0.604,96,0.4521
+wybory_partie,"Wybory, partie i ich finansowanie",ecage,Granica wieku sędziów sądu wyborczego,0.6,6,0.0372
+wybory_partie,"Wybory, partie i ich finansowanie",hosage,Granica wieku głowy państwa,0.59,95,0.7713
+wybory_partie,"Wybory, partie i ich finansowanie",census,Spis powszechny,0.505,47,0.2819
+wybory_partie,"Wybory, partie i ich finansowanie",ecterml,Limit kadencji sędziów sądu wyborczego,0.5,2,0.016
+wybory_partie,"Wybory, partie i ich finansowanie",hogrest,Wymogi wobec szefa rządu,0.422,54,0.3723
+wybory_partie,"Wybory, partie i ich finansowanie",uhquota,Parytety w izbie wyższej,0.4,14,0.1223
+wybory_partie,"Wybory, partie i ich finansowanie",indpolgr2,Reprezentacja ludów rdzennych,0.393,11,0.0745
+wybory_partie,"Wybory, partie i ich finansowanie",milrest,Ograniczenia sił zbrojnych,0.362,58,0.4574
+wybory_partie,"Wybory, partie i ich finansowanie",hogage,Granica wieku szefa rządu,0.338,23,0.2181
+wybory_partie,"Wybory, partie i ich finansowanie",lhterm,Kadencja izby niższej,0.273,53,0.9468
+wybory_partie,"Wybory, partie i ich finansowanie",uhseats,Liczebność izby wyższej,0.267,20,0.3351
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,initiat,Obywatelska inicjatywa ustawodawcza,0.949,75,0.266
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,referen,Referendum,0.937,523,0.766
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,amend,Procedura zmiany konstytucji,0.359,140,1.0
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,seccess,Secesja terytorium,0.333,9,0.1117
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,compvote,Obowiązek głosowania,0.294,5,0.0798
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,ecpow,Kompetencje sądu wyborczego,0.184,7,0.0904
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,access,Przyłączenie terytorium,0.182,12,0.2713
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,legini,Inicjatywa ustawodawcza,0.134,34,0.867
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,voteres,Ograniczenia prawa wyborczego,0.125,32,0.8457
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,freeelec,Tajność głosowania,0.116,29,0.7979
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,voteun,Powszechne prawo wyborcze,0.116,29,0.7021
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,ecom,Komisja wyborcza,0.093,36,0.5106
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,petition,Prawo petycji,0.092,12,0.5851
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,hosdiss,Usunięcie głowy państwa z urzędu,0.075,25,0.8138
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,conpow,Kompetencje sądu konstytucyjnego,0.072,24,0.4628
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,remleg,Odwołanie parlamentarzysty,0.065,19,0.7872
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,orglaw,Ustawy organiczne,0.059,5,0.1915
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,auth,Źródło władzy konstytucyjnej,0.057,11,0.75
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,mun,Samorząd gminny,0.056,34,0.7872
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,legsupr,Kwalifikowana większość dla ustaw,0.052,5,0.2766
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,colony,Kolonie,0.05,1,0.0798
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,treat,Ratyfikacja umów międzynarodowych,0.05,23,0.8723
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,tranprov,Przepisy przejściowe,0.045,12,0.7394
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,judcrts2,Sąd konstytucyjny,0.044,5,0.4628
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,unamend,Przepisy niezmienialne (klauzula wieczysta),0.043,4,0.3883
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,legdiss,Rozwiązanie parlamentu,0.041,11,0.734
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,cc,Komisja antykorupcyjna,0.038,2,0.1649
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,indpolgr6,Samorząd ludów rdzennych,0.036,2,0.0851
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,region,Grupy regionalne,0.035,7,0.4468
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,system,Określenie ustroju państwa,0.033,6,0.8883
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,camppubf,Finansowanie kampanii wyborczych,0.032,3,0.2606
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,legjoint,Wspólne posiedzenia izb,0.031,7,0.3298
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,hocop,Zdania odrębne w sądzie najwyższym,0.031,1,0.1436
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,sub,Samorząd jednostek terytorialnych,0.031,25,0.6489
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,intorgs,Organizacje międzynarodowe,0.028,11,0.734
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,hocage,Granica wieku sędziów sądu najwyższego,0.026,1,0.1915
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,finance,Ustawy finansowe,0.025,3,0.2819
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,legapp,Uchwalanie i weto ustaw,0.025,8,0.9043
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,interp,Wykładnia konstytucji,0.025,9,0.8936
+demokracja_bezposrednia,Referenda i inicjatywy obywatelskie,intlaw,Prawo międzynarodowe,0.024,26,0.9202
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,em,Przepisy o stanach nadzwyczajnych,0.938,693,0.9309
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,prisonrg,Rejestr więźniów,0.6,6,0.0479
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,war,Wypowiedzenie wojny,0.369,73,0.6489
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,hosdec,Uprawnienia dekretowe głowy państwa,0.295,79,0.5585
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,slave,Zakaz niewolnictwa,0.208,33,0.7128
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,hogdec,Uprawnienia dekretowe szefa rządu,0.192,19,0.2234
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,exsess,Nadzwyczajne sesje parlamentu,0.129,31,0.8245
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,legjoint,Wspólne posiedzenia izb,0.112,25,0.3298
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,judcrts4,Sądy wojskowe,0.107,14,0.4202
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,balbudgt,Zrównoważony budżet,0.1,3,0.1223
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,lhterm,Kadencja izby niższej,0.098,19,0.9468
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,uhterm,Kadencja izby wyższej,0.09,7,0.3617
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,legdiss,Rozwiązanie parlamentu,0.081,22,0.734
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,hosstaff,Organy doradcze głowy państwa,0.077,24,0.6011
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,comchief,Zwierzchnictwo nad siłami zbrojnymi,0.068,16,0.8351
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,amparo,Amparo: szybki środek ochrony praw przed sądem,0.062,2,0.0904
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,stdcom,Stałe komisje parlamentarne,0.056,14,0.2979
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,inalrght,Prawa niezbywalne,0.045,9,0.5479
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,conpow,Kompetencje sądu konstytucyjnego,0.045,15,0.4628
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,hospow,Kompetencje głowy państwa,0.044,27,0.8936
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,habcorp,Ochrona przed bezpodstawnym zatrzymaniem,0.043,11,0.8989
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,amend,Procedura zmiany konstytucji,0.041,16,1.0
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,terror,Terroryzm,0.041,2,0.1809
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,exprop,Ochrona przed wywłaszczeniem,0.038,10,0.9255
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,cabpow,Kompetencje rządu,0.036,11,0.8564
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,judcrts2,Sąd konstytucyjny,0.035,4,0.4628
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,citdep,Wydalenie obywateli,0.03,2,0.2553
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,lhspleg,Wyłączne sprawy izby niższej,0.03,3,0.3404
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,intlaw,Prawo międzynarodowe,0.029,31,0.9202
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,judcrts7,Sądy pracy,0.029,1,0.0851
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,life,Prawo do życia,0.028,5,0.7979
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,prevlead,Zbrodnie poprzedniego reżimu,0.027,1,0.1011
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,electsch,Terminy wyborów,0.025,5,0.617
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,commit,Komisje parlamentarne,0.025,15,0.867
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,torture,Zakaz tortur,0.024,4,0.8138
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,orglaw,Ustawy organiczne,0.024,2,0.1915
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,press,Wolność prasy,0.023,5,0.7819
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,hogpow,Kompetencje szefa rządu,0.023,4,0.4309
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,milserv,Obowiązek służby wojskowej,0.022,3,0.6011
+stany_nadzwyczajne,Stany nadzwyczajne i ograniczanie praw,unamend,Przepisy niezmienialne (klauzula wieczysta),0.022,2,0.3883
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",balbudgt,Zrównoważony budżet,1.0,30,0.1223
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",taxes,Obowiązek płacenia podatków,0.964,81,0.4309
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",budget,Ustawa budżetowa,0.947,432,0.9202
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",spend,Ustawy o wydatkach,0.895,154,0.3298
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",tax,Ustawy podatkowe,0.867,150,0.4628
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",finance,Ustawy finansowe,0.832,99,0.2819
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",bank,Bank centralny,0.801,157,0.4894
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",lhspleg,Wyłączne sprawy izby niższej,0.525,53,0.3404
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",reltax,Opodatkowanie związków wyznaniowych,0.5,4,0.0426
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",judcrts6,Sądy podatkowe,0.5,2,0.0106
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",uhspleg,Wyłączne sprawy izby wyższej,0.444,24,0.1809
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",econplan,Planowanie gospodarcze,0.371,46,0.2872
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",camppubf,Finansowanie kampanii wyborczych,0.366,34,0.2606
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",income,Uposażenie parlamentarzystów,0.262,27,0.4574
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",mun,Samorząd gminny,0.24,147,0.7872
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",sub,Samorząd jednostek terytorialnych,0.2,161,0.6489
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",judsal,Ochrona wynagrodzeń sędziów,0.191,22,0.4149
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",divhouse,Podział zadań między izbami,0.169,23,0.4096
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",cabpow,Kompetencje rządu,0.162,49,0.8564
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",resrce,Własność zasobów naturalnych,0.108,26,0.6702
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",legini,Inicjatywa ustawodawcza,0.106,27,0.867
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",judcrts1,Sądy administracyjne,0.102,10,0.2926
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",assets,Jawność majątku osób publicznych,0.089,4,0.1968
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",indpolgr6,Samorząd ludów rdzennych,0.073,4,0.0851
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",stdcom,Stałe komisje parlamentarne,0.068,17,0.2979
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",hosdec,Uprawnienia dekretowe głowy państwa,0.063,17,0.5585
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",commit,Komisje parlamentarne,0.059,36,0.867
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",opgroup,Redystrybucja bogactwa,0.058,3,0.1755
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",hospow,Kompetencje głowy państwa,0.057,35,0.8936
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",solid,Odniesienie do solidarności i braterstwa,0.057,14,0.484
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",session,Długość sesji parlamentu,0.056,7,0.5585
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",prevlead,Zbrodnie poprzedniego reżimu,0.054,2,0.1011
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",census,Spis powszechny,0.054,5,0.2819
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",tranprov,Przepisy przejściowe,0.053,14,0.7394
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",ecpow,Kompetencje sądu wyborczego,0.053,2,0.0904
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",invexe,Kontrola parlamentarna nad rządem,0.052,22,0.7713
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",freecomp,Prawo do konkurencyjnego rynku,0.048,5,0.3723
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",cabinet,Ustanowienie rządu i ministrów,0.044,12,0.9734
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",socclas,Odniesienia do klas społecznych,0.039,4,0.3032
+finanse_publiczne,"Budżet, dług i przejrzystość finansów",cc,Komisja antykorupcyjna,0.038,2,0.1649
+samorzad,Samorząd i decentralizacja,mun,Samorząd gminny,0.897,549,0.7872
+samorzad,Samorząd i decentralizacja,sub,Samorząd jednostek terytorialnych,0.808,652,0.6489
+samorzad,Samorząd i decentralizacja,fedsep,Prawo krajowe a prawo lokalne,0.787,85,0.3511
+samorzad,Samorząd i decentralizacja,fedrev,Kontrola prawa lokalnego przez państwo,0.697,101,0.2926
+samorzad,Samorząd i decentralizacja,indpolgr6,Samorząd ludów rdzennych,0.691,38,0.0851
+samorzad,Samorząd i decentralizacja,indcit,Obywatelstwo ludów rdzennych,0.455,5,0.0372
+samorzad,Samorząd i decentralizacja,indpolgr1,Prawo wyborcze ludów rdzennych,0.417,5,0.0319
+samorzad,Samorząd i decentralizacja,colony,Kolonie,0.4,8,0.0798
+samorzad,Samorząd i decentralizacja,uhspleg,Wyłączne sprawy izby wyższej,0.315,17,0.1809
+samorzad,Samorząd i decentralizacja,access,Przyłączenie terytorium,0.227,15,0.2713
+samorzad,Samorząd i decentralizacja,seccess,Secesja terytorium,0.222,6,0.1117
+samorzad,Samorząd i decentralizacja,uhseats,Liczebność izby wyższej,0.16,12,0.3351
+samorzad,Samorząd i decentralizacja,uhselect,Wybór izby wyższej,0.151,24,0.4521
+samorzad,Samorząd i decentralizacja,ethincl,Integracja mniejszości etnicznych,0.144,19,0.2979
+samorzad,Samorząd i decentralizacja,solid,Odniesienie do solidarności i braterstwa,0.142,35,0.484
+samorzad,Samorząd i decentralizacja,selfdet,Prawo do samostanowienia,0.135,7,0.2074
+samorzad,Samorząd i decentralizacja,capital,Stolica,0.128,15,0.6011
+samorzad,Samorząd i decentralizacja,uhtrmlim,Limit kadencji senatorów,0.125,1,0.0426
+samorzad,Samorząd i decentralizacja,indpolgr2,Reprezentacja ludów rdzennych,0.107,3,0.0745
+samorzad,Samorząd i decentralizacja,balbudgt,Zrównoważony budżet,0.1,3,0.1223
+samorzad,Samorząd i decentralizacja,lhspleg,Wyłączne sprawy izby niższej,0.099,10,0.3404
+samorzad,Samorząd i decentralizacja,opgroup,Redystrybucja bogactwa,0.096,5,0.1755
+samorzad,Samorząd i decentralizacja,cultrght,Prawo do kultury,0.096,42,0.7872
+samorzad,Samorząd i decentralizacja,voteun,Powszechne prawo wyborcze,0.096,24,0.7021
+samorzad,Samorząd i decentralizacja,initiat,Obywatelska inicjatywa ustawodawcza,0.089,7,0.266
+samorzad,Samorząd i decentralizacja,resrce,Własność zasobów naturalnych,0.087,21,0.6702
+samorzad,Samorząd i decentralizacja,legsupr,Kwalifikowana większość dla ustaw,0.083,8,0.2766
+samorzad,Samorząd i decentralizacja,orglaw,Ustawy organiczne,0.082,7,0.1915
+samorzad,Samorząd i decentralizacja,tranprov,Przepisy przejściowe,0.076,20,0.7394
+samorzad,Samorząd i decentralizacja,lang,Język urzędowy lub narodowy,0.074,14,0.7553
+samorzad,Samorząd i decentralizacja,langprot,Ochrona używania języka,0.073,11,0.5053
+samorzad,Samorząd i decentralizacja,freeelec,Tajność głosowania,0.072,18,0.7979
+samorzad,Samorząd i decentralizacja,hospow,Kompetencje głowy państwa,0.07,43,0.8936
+samorzad,Samorząd i decentralizacja,env,Ochrona środowiska,0.069,38,0.8138
+samorzad,Samorząd i decentralizacja,hosstaff,Organy doradcze głowy państwa,0.064,20,0.6011
+samorzad,Samorząd i decentralizacja,seprel,Rozdział kościoła i państwa,0.062,6,0.3723
+samorzad,Samorząd i decentralizacja,compvote,Obowiązek głosowania,0.059,1,0.0798
+samorzad,Samorząd i decentralizacja,uhquota,Parytety w izbie wyższej,0.057,2,0.1223
+samorzad,Samorząd i decentralizacja,econplan,Planowanie gospodarcze,0.056,7,0.2872
+samorzad,Samorząd i decentralizacja,amend,Procedura zmiany konstytucji,0.054,21,1.0
+wolnosci,Wolności osobiste i polityczne,assem,Wolność zgromadzeń,1.0,210,0.9468
+wolnosci,Wolności osobiste i polityczne,opinion,Wolność sumienia i poglądów,0.987,224,0.8511
+wolnosci,Wolności osobiste i polityczne,assoc,Wolność zrzeszania się,0.987,223,0.9362
+wolnosci,Wolności osobiste i polityczne,freemove,Swoboda przemieszczania się,0.984,182,0.8936
+wolnosci,Wolności osobiste i polityczne,privacy,Prawo do prywatności,0.981,310,0.9096
+wolnosci,Wolności osobiste i polityczne,life,Prawo do życia,0.978,177,0.7979
+wolnosci,Wolności osobiste i polityczne,express,Wolność wypowiedzi,0.976,243,0.9468
+wolnosci,Wolności osobiste i polityczne,slave,Zakaz niewolnictwa,0.925,147,0.7128
+wolnosci,Wolności osobiste i polityczne,torture,Zakaz tortur,0.915,151,0.8138
+wolnosci,Wolności osobiste i polityczne,jointrde,Prawo do zrzeszania się w związkach zawodowych,0.911,164,0.7819
+wolnosci,Wolności osobiste i polityczne,cruelty,Zakaz okrutnego traktowania,0.908,158,0.8298
+wolnosci,Wolności osobiste i polityczne,acfree,Wolność akademicka,0.882,90,0.4628
+wolnosci,Wolności osobiste i polityczne,press,Wolność prasy,0.879,188,0.7819
+wolnosci,Wolności osobiste i polityczne,proprght,Prawo własności,0.873,186,0.8511
+wolnosci,Wolności osobiste i polityczne,freerel,Wolność religii,0.873,206,0.9628
+wolnosci,Wolności osobiste i polityczne,corppun,Zakaz kar cielesnych,0.864,19,0.1064
+wolnosci,Wolności osobiste i polityczne,resenex,Ograniczenia wjazdu i wyjazdu,0.846,66,0.2979
+wolnosci,Wolności osobiste i polityczne,arms,Prawo do posiadania broni,0.833,5,0.0319
+wolnosci,Wolności osobiste i polityczne,inalrght,Prawa niezbywalne,0.825,165,0.5479
+wolnosci,Wolności osobiste i polityczne,libel,Ochrona dobrego imienia,0.815,75,0.4309
+wolnosci,Wolności osobiste i polityczne,nomil,Prawo do odmowy służby wojskowej,0.797,51,0.3085
+wolnosci,Wolności osobiste i polityczne,exprop,Ochrona przed wywłaszczeniem,0.785,208,0.9255
+wolnosci,Wolności osobiste i polityczne,busines,Prawo do prowadzenia działalności gospodarczej,0.776,83,0.4415
+wolnosci,Wolności osobiste i polityczne,citdep,Wydalenie obywateli,0.758,50,0.2553
+wolnosci,Wolności osobiste i polityczne,petition,Prawo petycji,0.754,98,0.5851
+wolnosci,Wolności osobiste i polityczne,debtors,Prawa dłużników,0.75,27,0.1702
+wolnosci,Wolności osobiste i polityczne,infoacc,Prawo do informacji,0.705,91,0.5
+wolnosci,Wolności osobiste i polityczne,evidence,Zasady gromadzenia dowodów,0.668,171,0.7606
+wolnosci,Wolności osobiste i polityczne,occupate,Wolność wyboru zawodu,0.653,81,0.5904
+wolnosci,Wolności osobiste i polityczne,binding,Bezpośrednio wiążąca moc praw konstytucyjnych,0.625,35,0.25
+wolnosci,Wolności osobiste i polityczne,strike,Prawo do strajku,0.615,64,0.5
+wolnosci,Wolności osobiste i polityczne,partrght,Prawo do zakładania partii,0.593,83,0.6489
+wolnosci,Wolności osobiste i polityczne,transfer,Prawo do zbywania własności,0.545,60,0.4787
+wolnosci,Wolności osobiste i polityczne,habcorp,Ochrona przed bezpodstawnym zatrzymaniem,0.527,135,0.8989
+wolnosci,Wolności osobiste i polityczne,dignity,Godność człowieka,0.503,188,0.7766
+wolnosci,Wolności osobiste i polityczne,amparo,Amparo: szybki środek ochrony praw przed sądem,0.5,16,0.0904
+wolnosci,Wolności osobiste i polityczne,devlpers,Prawo do rozwoju osobowości,0.481,26,0.2447
+wolnosci,Wolności osobiste i polityczne,asylum,Ochrona bezpaństwowców i azyl,0.475,48,0.4574
+wolnosci,Wolności osobiste i polityczne,excrim,Ekstradycja,0.429,63,0.5798
+wolnosci,Wolności osobiste i polityczne,prisonrg,Rejestr więźniów,0.4,4,0.0479
+rownosc,Równość i zakaz dyskryminacji,equalgr4,Równość bez względu na rasę,1.0,178,0.7074
+rownosc,Równość i zakaz dyskryminacji,equalgr3,Równość bez względu na pochodzenie,1.0,129,0.5266
+rownosc,Równość i zakaz dyskryminacji,equalgr15,Równość bez względu na przynależność partyjną,1.0,116,0.4894
+rownosc,Równość i zakaz dyskryminacji,equalgr10,Równość bez względu na kolor skóry,1.0,100,0.3936
+rownosc,Równość i zakaz dyskryminacji,equalgr5,Równość bez względu na język,1.0,94,0.4309
+rownosc,Równość i zakaz dyskryminacji,equalgr12,Równość bez względu na pozycję społeczną,1.0,92,0.4628
+rownosc,Równość i zakaz dyskryminacji,equalgr9,Równość osób z niepełnosprawnościami,1.0,64,0.2926
+rownosc,Równość i zakaz dyskryminacji,equalgr13,Równość bez względu na majątek,1.0,64,0.3085
+rownosc,Równość i zakaz dyskryminacji,equalgr16,Równość bez względu na pochodzenie rodzinne,1.0,52,0.25
+rownosc,Równość i zakaz dyskryminacji,equalgr2,Równość bez względu na narodowość,1.0,33,0.1755
+rownosc,Równość i zakaz dyskryminacji,equalgr8,Równość bez względu na wiek,1.0,30,0.1543
+rownosc,Równość i zakaz dyskryminacji,equalgr14,Równość bez względu na plemię lub klan,1.0,23,0.0957
+rownosc,Równość i zakaz dyskryminacji,equalgr7,Równość bez względu na orientację seksualną,1.0,13,0.0585
+rownosc,Równość i zakaz dyskryminacji,equalgr1,Równość bez względu na płeć,0.996,275,0.867
+rownosc,Równość i zakaz dyskryminacji,equalgr11,Równość bez względu na wyznanie lub przekonania,0.992,119,0.5
+rownosc,Równość i zakaz dyskryminacji,matequal,Równość małżonków,0.987,74,0.3723
+rownosc,Równość i zakaz dyskryminacji,equalgr6,Równość bez względu na religię,0.982,166,0.6862
+rownosc,Równość i zakaz dyskryminacji,equal,Ogólna gwarancja równości,0.971,267,0.9681
+rownosc,Równość i zakaz dyskryminacji,lhquota,Parytety w izbie niższej,0.741,60,0.2553
+rownosc,Równość i zakaz dyskryminacji,opgroup,Redystrybucja bogactwa,0.615,32,0.1755
+rownosc,Równość i zakaz dyskryminacji,uhquota,Parytety w izbie wyższej,0.6,21,0.1223
+rownosc,Równość i zakaz dyskryminacji,remuner,Prawo do godziwego wynagrodzenia,0.554,62,0.4947
+rownosc,Równość i zakaz dyskryminacji,ethincl,Integracja mniejszości etnicznych,0.53,70,0.2979
+rownosc,Równość i zakaz dyskryminacji,marriage,Regulacja małżeństwa,0.512,44,0.4149
+rownosc,Równość i zakaz dyskryminacji,socclas,Odniesienia do klas społecznych,0.476,49,0.3032
+rownosc,Równość i zakaz dyskryminacji,civil,Rekrutacja do służby cywilnej,0.434,46,0.3298
+rownosc,Równość i zakaz dyskryminacji,achighed,Dostęp do szkolnictwa wyższego,0.377,26,0.3298
+rownosc,Równość i zakaz dyskryminacji,finsup3,Wsparcie państwa dla osób z niepełnosprawnościami,0.361,70,0.6702
+rownosc,Równość i zakaz dyskryminacji,rightres,Ograniczenia praw grup,0.341,14,0.1543
+rownosc,Równość i zakaz dyskryminacji,childpro,Prawa dziecka,0.324,77,0.6968
+rownosc,Równość i zakaz dyskryminacji,indpolgr2,Reprezentacja ludów rdzennych,0.286,8,0.0745
+rownosc,Równość i zakaz dyskryminacji,langprot,Ochrona używania języka,0.258,39,0.5053
+rownosc,Równość i zakaz dyskryminacji,reltax,Opodatkowanie związków wyznaniowych,0.25,2,0.0426
+rownosc,Równość i zakaz dyskryminacji,civmar,Małżeństwo cywilne,0.24,6,0.117
+rownosc,Równość i zakaz dyskryminacji,parents,Prawa i obowiązki rodziców,0.211,36,0.4787
+rownosc,Równość i zakaz dyskryminacji,fndfam,Prawo do założenia rodziny,0.189,24,0.5638
+rownosc,Równość i zakaz dyskryminacji,standliv,Prawo do godziwego poziomu życia,0.152,19,0.4681
+rownosc,Równość i zakaz dyskryminacji,finsup4,Wsparcie państwa dla dzieci,0.152,27,0.5957
+rownosc,Równość i zakaz dyskryminacji,cultrght,Prawo do kultury,0.151,66,0.7872
+rownosc,Równość i zakaz dyskryminacji,dignity,Godność człowieka,0.15,56,0.7766
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",finsup2,Wsparcie państwa dla bezrobotnych,1.0,81,0.3404
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",finsup1,Wsparcie państwa dla osób starszych,0.987,147,0.617
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",health,Prawo do ochrony zdrowia,0.985,194,0.7074
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",edcomp,Obowiązek nauki,0.984,127,0.6383
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",leisure,Prawo do wypoczynku,0.981,101,0.4202
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",safework,Prawo do bezpiecznych warunków pracy,0.978,88,0.4521
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",shelter,Prawo do mieszkania,0.977,86,0.4096
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",edfree,Bezpłatna nauka,0.971,166,0.7234
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",finsup4,Wsparcie państwa dla dzieci,0.961,171,0.5957
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",finsup3,Wsparcie państwa dla osób z niepełnosprawnościami,0.948,184,0.6702
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",childwrk,Ograniczenie pracy dzieci,0.945,103,0.4362
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",remuner,Prawo do godziwego wynagrodzenia,0.938,105,0.4947
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",provwork,Prawo do pracy,0.936,161,0.6862
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",standliv,Prawo do godziwego poziomu życia,0.936,117,0.4681
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",strike,Prawo do strajku,0.923,96,0.5
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",achighed,Dostęp do szkolnictwa wyższego,0.899,62,0.3298
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",water,Prawo do wody,0.78,39,0.1809
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",childpro,Prawa dziecka,0.739,176,0.6968
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",fndfam,Prawo do założenia rodziny,0.646,82,0.5638
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",work,Obowiązek pracy,0.621,36,0.2872
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",jointrde,Prawo do zrzeszania się w związkach zawodowych,0.544,98,0.7819
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",occupate,Wolność wyboru zawodu,0.468,58,0.5904
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",conright,Ochrona konsumentów,0.397,25,0.2553
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",socclas,Odniesienia do klas społecznych,0.369,38,0.3032
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",opgroup,Redystrybucja bogactwa,0.365,19,0.1755
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",parents,Prawa i obowiązki rodziców,0.363,62,0.4787
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",devlpers,Prawo do rozwoju osobowości,0.333,18,0.2447
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",marriage,Regulacja małżeństwa,0.279,24,0.4149
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",acfree,Wolność akademicka,0.216,22,0.4628
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",cultrght,Prawo do kultury,0.172,75,0.7872
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",scifree,Prawo do korzystania z osiągnięć nauki,0.156,5,0.1383
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",vicright,Prawa ofiar przestępstw,0.15,9,0.1702
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",solid,Odniesienie do solidarności i braterstwa,0.142,35,0.484
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",science,Odniesienie do nauki,0.141,62,0.6755
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",equalgr9,Równość osób z niepełnosprawnościami,0.125,8,0.2926
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",civmar,Małżeństwo cywilne,0.12,3,0.117
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",artists,Odniesienie do sztuki,0.109,28,0.6436
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",equalgr8,Równość bez względu na wiek,0.1,3,0.1543
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",illsub,"Narkotyki, alkohol i substancje zakazane",0.098,8,0.2766
+prawa_socjalne,"Zdrowie, edukacja, praca, mieszkanie, zabezpieczenie",dignity,Godność człowieka,0.091,34,0.7766
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",env,Ochrona środowiska,0.894,495,0.8138
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",resrce,Własność zasobów naturalnych,0.662,159,0.6702
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",water,Prawo do wody,0.38,19,0.1809
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",cultrght,Prawo do kultury,0.082,36,0.7872
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",freecomp,Prawo do konkurencyjnego rynku,0.067,7,0.3723
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",conright,Ochrona konsumentów,0.063,4,0.2553
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",opgroup,Redystrybucja bogactwa,0.058,3,0.1755
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",health,Prawo do ochrony zdrowia,0.056,11,0.7074
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",econplan,Planowanie gospodarcze,0.048,6,0.2872
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",proprght,Prawo własności,0.047,10,0.8511
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",busines,Prawo do prowadzenia działalności gospodarczej,0.047,5,0.4415
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",preamble,Preambuła,0.042,7,0.8191
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",artists,Odniesienie do sztuki,0.039,10,0.6436
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",science,Odniesienie do nauki,0.039,17,0.6755
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",motive,Cele ustanowienia konstytucji,0.038,8,0.7181
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",solid,Odniesienie do solidarności i braterstwa,0.036,9,0.484
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",indpolgr6,Samorząd ludów rdzennych,0.036,2,0.0851
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",intprop,Własność intelektualna,0.036,5,0.4734
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",work,Obowiązek pracy,0.034,2,0.2872
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",shelter,Prawo do mieszkania,0.034,3,0.4096
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",standliv,Prawo do godziwego poziomu życia,0.032,4,0.4681
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",socclas,Odniesienia do klas społecznych,0.029,3,0.3032
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",custlaw,Zwyczajowe prawo międzynarodowe,0.027,3,0.3511
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",exprop,Ochrona przed wywłaszczeniem,0.026,7,0.9255
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",rightres,Ograniczenia praw grup,0.024,1,0.1543
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",ethincl,Integracja mniejszości etnicznych,0.023,3,0.2979
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",auth,Źródło władzy konstytucyjnej,0.021,4,0.75
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",intlaw,Prawo międzynarodowe,0.02,21,0.9202
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",selfdet,Prawo do samostanowienia,0.019,1,0.2074
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",transfer,Prawo do zbywania własności,0.018,2,0.4787
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",binding,Bezpośrednio wiążąca moc praw konstytucyjnych,0.018,1,0.25
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",vicright,Prawa ofiar przestępstw,0.017,1,0.1702
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",mun,Samorząd gminny,0.016,10,0.7872
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",equalgr9,Równość osób z niepełnosprawnościami,0.016,1,0.2926
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",langprot,Ochrona używania języka,0.013,2,0.5053
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",sub,Samorząd jednostek terytorialnych,0.012,10,0.6489
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",illsub,"Narkotyki, alkohol i substancje zakazane",0.012,1,0.2766
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",taxes,Obowiązek płacenia podatków,0.012,1,0.4309
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",safework,Prawo do bezpiecznych warunków pracy,0.011,1,0.4521
+srodowisko,"Środowisko, klimat, przyszłe pokolenia",equalgr10,Równość bez względu na kolor skóry,0.01,1,0.3936
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",infoacc,Prawo do informacji,0.481,62,0.5
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",privacy,Prawo do prywatności,0.399,126,0.9096
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",scifree,Prawo do korzystania z osiągnięć nauki,0.375,12,0.1383
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",telecom,Telekomunikacja,0.355,78,0.5532
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",evidence,Zasady gromadzenia dowodów,0.16,41,0.7606
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",libel,Ochrona dobrego imienia,0.12,11,0.4309
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",inalrght,Prawa niezbywalne,0.11,22,0.5479
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",census,Spis powszechny,0.065,6,0.2819
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",science,Odniesienie do nauki,0.064,28,0.6755
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",radio,Radio,0.059,11,0.4202
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",medcom,Konstytucyjny organ ds. mediów,0.053,2,0.1543
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",govmed,Media państwowe,0.049,4,0.2926
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",corppun,Zakaz kar cielesnych,0.045,1,0.1064
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",amparo,Amparo: szybki środek ochrony praw przed sądem,0.031,1,0.0904
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",tv,Telewizja,0.024,4,0.4149
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",press,Wolność prasy,0.023,5,0.7819
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",ecom,Komisja wyborcza,0.023,9,0.5106
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",intprop,Własność intelektualna,0.022,3,0.4734
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",express,Wolność wypowiedzi,0.016,4,0.9468
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",juvenile,Szczególne prawa nieletnich w procesie karnym,0.013,1,0.2979
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",torture,Zakaz tortur,0.012,2,0.8138
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",habcorp,Ochrona przed bezpodstawnym zatrzymaniem,0.012,3,0.8989
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",cruelty,Zakaz okrutnego traktowania,0.011,2,0.8298
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",dignity,Godność człowieka,0.011,4,0.7766
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",legsupr,Kwalifikowana większość dla ustaw,0.01,1,0.2766
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",ombuds,Rzecznik praw obywatelskich,0.009,2,0.4415
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",econplan,Planowanie gospodarcze,0.008,1,0.2872
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",fndfam,Prawo do założenia rodziny,0.008,1,0.5638
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",miranda,Ochrona przed samooskarżeniem,0.008,1,0.5638
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",ordsel,Powoływanie sędziów sądów powszechnych,0.007,2,0.7394
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",hr,Komisja praw człowieka,0.007,1,0.2287
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",pubtri,Jawność rozprawy,0.006,1,0.7394
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",opinion,Wolność sumienia i poglądów,0.004,1,0.8511
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",childpro,Prawa dziecka,0.004,1,0.6968
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",em,Przepisy o stanach nadzwyczajnych,0.004,3,0.9309
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",stdcom,Stałe komisje parlamentarne,0.004,1,0.2979
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",tranprov,Przepisy przejściowe,0.004,1,0.7394
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",sub,Samorząd jednostek terytorialnych,0.004,3,0.6489
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",env,Ochrona środowiska,0.004,2,0.8138
+dane_technologia,"Prywatność, dane, technologia, informacja publiczna",treatcon,Status prawny umów międzynarodowych,0.003,1,0.6702
+media,Media i wolność prasy,press,Wolność prasy,0.963,206,0.7819
+media,Media i wolność prasy,tv,Telewizja,0.957,157,0.4149
+media,Media i wolność prasy,govmed,Media państwowe,0.951,77,0.2926
+media,Media i wolność prasy,radio,Radio,0.888,167,0.4202
+media,Media i wolność prasy,medcom,Konstytucyjny organ ds. mediów,0.868,33,0.1543
+media,Media i wolność prasy,express,Wolność wypowiedzi,0.578,144,0.9468
+media,Media i wolność prasy,telecom,Telekomunikacja,0.391,86,0.5532
+media,Media i wolność prasy,infoacc,Prawo do informacji,0.31,40,0.5
+media,Media i wolność prasy,libel,Ochrona dobrego imienia,0.304,28,0.4309
+media,Media i wolność prasy,camppubf,Finansowanie kampanii wyborczych,0.183,17,0.2606
+media,Media i wolność prasy,opinion,Wolność sumienia i poglądów,0.181,41,0.8511
+media,Media i wolność prasy,pubmin,Publikacja obrad,0.13,6,0.2287
+media,Media i wolność prasy,pubmeet,Jawność posiedzeń,0.103,12,0.5479
+media,Media i wolność prasy,assem,Wolność zgromadzeń,0.076,16,0.9468
+media,Media i wolność prasy,artists,Odniesienie do sztuki,0.054,14,0.6436
+media,Media i wolność prasy,assoc,Wolność zrzeszania się,0.053,12,0.9362
+media,Media i wolność prasy,acfree,Wolność akademicka,0.049,5,0.4628
+media,Media i wolność prasy,jury,Udział obywateli w sądzeniu,0.048,3,0.2553
+media,Media i wolność prasy,conright,Ochrona konsumentów,0.048,3,0.2553
+media,Media i wolność prasy,pubtri,Jawność rozprawy,0.042,7,0.7394
+media,Media i wolność prasy,recvote,Tajność głosowań w parlamencie,0.042,1,0.1223
+media,Media i wolność prasy,petition,Prawo petycji,0.031,4,0.5851
+media,Media i wolność prasy,langprot,Ochrona używania języka,0.026,4,0.5053
+media,Media i wolność prasy,fairtri,Prawo do sprawiedliwego procesu,0.022,3,0.6436
+media,Media i wolność prasy,partrght,Prawo do zakładania partii,0.021,3,0.6489
+media,Media i wolność prasy,stdcom,Stałe komisje parlamentarne,0.02,5,0.2979
+media,Media i wolność prasy,cultrght,Prawo do kultury,0.018,8,0.7872
+media,Media i wolność prasy,partreg,Ograniczenia partii politycznych,0.017,3,0.5213
+media,Media i wolność prasy,freerel,Wolność religii,0.017,4,0.9628
+media,Media i wolność prasy,freemove,Swoboda przemieszczania się,0.016,3,0.8936
+media,Media i wolność prasy,dignity,Godność człowieka,0.016,6,0.7766
+media,Media i wolność prasy,science,Odniesienie do nauki,0.016,7,0.6755
+media,Media i wolność prasy,speedtri,Prawo do rozpatrzenia sprawy bez zwłoki,0.015,2,0.5904
+media,Media i wolność prasy,intprop,Własność intelektualna,0.014,2,0.4734
+media,Media i wolność prasy,juvenile,Szczególne prawa nieletnich w procesie karnym,0.013,1,0.2979
+media,Media i wolność prasy,illsub,"Narkotyki, alkohol i substancje zakazane",0.012,1,0.2766
+media,Media i wolność prasy,orglaw,Ustawy organiczne,0.012,1,0.1915
+media,Media i wolność prasy,evidence,Zasady gromadzenia dowodów,0.012,3,0.7606
+media,Media i wolność prasy,immunity,Immunitet parlamentarny,0.011,3,0.9468
+media,Media i wolność prasy,lang,Język urzędowy lub narodowy,0.011,2,0.7553
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,presinoc,Domniemanie niewinności,1.0,158,0.7979
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,miranda,Ochrona przed samooskarżeniem,0.992,132,0.5638
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,prerel,Zwolnienie przed procesem,0.986,70,0.3457
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,doubjep,Zakaz ponownego sądzenia za ten sam czyn,0.983,113,0.5532
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,examwit,Prawo do przesłuchania świadków i badania dowodów,0.959,70,0.3511
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,cappun,Zakaz kary śmierci,0.951,77,0.4255
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,expost,Zakaz wstecznego karania,0.94,188,0.8138
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,habcorp,Ochrona przed bezpodstawnym zatrzymaniem,0.938,240,0.8989
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,wolaw,Nie ma kary bez ustawy,0.904,179,0.7926
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,trilang,Proces w języku oskarżonego,0.871,128,0.4468
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,pardon,Prawo łaski,0.865,166,0.9309
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,couns,Prawo do obrońcy,0.84,226,0.8138
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,dueproc,Gwarancja rzetelnej procedury,0.781,50,0.234
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,corppun,Zakaz kar cielesnych,0.727,16,0.1064
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,evidence,Zasady gromadzenia dowodów,0.727,186,0.7606
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,speedtri,Prawo do rozpatrzenia sprawy bez zwłoki,0.714,95,0.5904
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,fairtri,Prawo do sprawiedliwego procesu,0.698,97,0.6436
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,falseimp,Ochrona przed bezprawnym pozbawieniem wolności,0.676,73,0.4521
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,juvenile,Szczególne prawa nieletnich w procesie karnym,0.667,52,0.2979
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,vicright,Prawa ofiar przestępstw,0.617,37,0.1702
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,torture,Zakaz tortur,0.558,92,0.8138
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,excrim,Ekstradycja,0.551,81,0.5798
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,cruelty,Zakaz okrutnego traktowania,0.529,92,0.8298
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,prisonrg,Rejestr więźniów,0.5,5,0.0479
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,immunity,Immunitet parlamentarny,0.494,130,0.9468
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,prevlead,Zbrodnie poprzedniego reżimu,0.486,18,0.1011
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,hogimm,Immunitet szefa rządu,0.477,21,0.1702
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,jury,Udział obywateli w sądzeniu,0.476,30,0.2553
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,hosimm,Immunitet głowy państwa,0.456,68,0.6383
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,pubtri,Jawność rozprawy,0.452,75,0.7394
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,atgen,Prokurator generalny,0.384,160,0.7872
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,life,Prawo do życia,0.348,63,0.7979
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,citdep,Wydalenie obywateli,0.333,22,0.2553
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,terror,Terroryzm,0.306,15,0.1809
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,judcrts4,Sądy wojskowe,0.29,38,0.4202
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,ecrdet,Odwołanie sędziów sądu wyborczego,0.286,4,0.0426
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,privacy,Prawo do prywatności,0.256,81,0.9096
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,appeal,Prawo do odwołania od orzeczenia,0.244,60,0.6436
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,debtors,Prawa dłużników,0.222,8,0.1702
+proces_karny,Prawa w procesie karnym i pozbawienie wolności,judcrts5,Sąd dla najwyższych urzędników (Trybunał Stanu),0.222,6,0.1277
+bezpieczenstwo,"Obrona, wojsko, służby",milserv,Obowiązek służby wojskowej,0.963,129,0.6011
+bezpieczenstwo,"Obrona, wojsko, służby",comchief,Zwierzchnictwo nad siłami zbrojnymi,0.89,211,0.8351
+bezpieczenstwo,"Obrona, wojsko, służby",arms,Prawo do posiadania broni,0.833,5,0.0319
+bezpieczenstwo,"Obrona, wojsko, służby",war,Wypowiedzenie wojny,0.818,162,0.6489
+bezpieczenstwo,"Obrona, wojsko, służby",milcom,Powoływanie dowódców wojskowych,0.714,105,0.5798
+bezpieczenstwo,"Obrona, wojsko, służby",terror,Terroryzm,0.612,30,0.1809
+bezpieczenstwo,"Obrona, wojsko, służby",nomil,Prawo do odmowy służby wojskowej,0.609,39,0.3085
+bezpieczenstwo,"Obrona, wojsko, służby",civilmil,Ograniczenia dla ministra obrony,0.6,3,0.0266
+bezpieczenstwo,"Obrona, wojsko, służby",milrest,Ograniczenia sił zbrojnych,0.562,90,0.4574
+bezpieczenstwo,"Obrona, wojsko, służby",hosstaff,Organy doradcze głowy państwa,0.328,102,0.6011
+bezpieczenstwo,"Obrona, wojsko, służby",judcrts4,Sądy wojskowe,0.16,21,0.4202
+bezpieczenstwo,"Obrona, wojsko, służby",overthrw,Prawo do obalenia rządu,0.158,3,0.0904
+bezpieczenstwo,"Obrona, wojsko, służby",illsub,"Narkotyki, alkohol i substancje zakazane",0.122,10,0.2766
+bezpieczenstwo,"Obrona, wojsko, służby",em,Przepisy o stanach nadzwyczajnych,0.108,80,0.9309
+bezpieczenstwo,"Obrona, wojsko, służby",prevlead,Zbrodnie poprzedniego reżimu,0.108,4,0.1011
+bezpieczenstwo,"Obrona, wojsko, służby",hogpow,Kompetencje szefa rządu,0.107,19,0.4309
+bezpieczenstwo,"Obrona, wojsko, służby",rightres,Ograniczenia praw grup,0.098,4,0.1543
+bezpieczenstwo,"Obrona, wojsko, służby",recvote,Tajność głosowań w parlamencie,0.083,2,0.1223
+bezpieczenstwo,"Obrona, wojsko, służby",partprh,Partie zakazane,0.077,5,0.2979
+bezpieczenstwo,"Obrona, wojsko, służby",intorgs,Organizacje międzynarodowe,0.076,30,0.734
+bezpieczenstwo,"Obrona, wojsko, służby",cabpow,Kompetencje rządu,0.076,23,0.8564
+bezpieczenstwo,"Obrona, wojsko, służby",hospow,Kompetencje głowy państwa,0.075,46,0.8936
+bezpieczenstwo,"Obrona, wojsko, służby",intlaw,Prawo międzynarodowe,0.075,80,0.9202
+bezpieczenstwo,"Obrona, wojsko, służby",headforn,Reprezentacja w stosunkach zagranicznych,0.066,14,0.7872
+bezpieczenstwo,"Obrona, wojsko, służby",resenex,Ograniczenia wjazdu i wyjazdu,0.064,5,0.2979
+bezpieczenstwo,"Obrona, wojsko, służby",citren,Prawo do zrzeczenia się obywatelstwa,0.053,4,0.3511
+bezpieczenstwo,"Obrona, wojsko, służby",colony,Kolonie,0.05,1,0.0798
+bezpieczenstwo,"Obrona, wojsko, służby",legjoint,Wspólne posiedzenia izb,0.049,11,0.3298
+bezpieczenstwo,"Obrona, wojsko, służby",infoacc,Prawo do informacji,0.047,6,0.5
+bezpieczenstwo,"Obrona, wojsko, służby",partreg,Ograniczenia partii politycznych,0.046,8,0.5213
+bezpieczenstwo,"Obrona, wojsko, służby",execnum,Struktura władzy wykonawczej,0.044,16,0.9947
+bezpieczenstwo,"Obrona, wojsko, służby",citrev,Utrata obywatelstwa,0.044,8,0.6968
+bezpieczenstwo,"Obrona, wojsko, służby",pubmin,Publikacja obrad,0.043,2,0.2287
+bezpieczenstwo,"Obrona, wojsko, służby",pubmeet,Jawność posiedzeń,0.043,5,0.5479
+bezpieczenstwo,"Obrona, wojsko, służby",solid,Odniesienie do solidarności i braterstwa,0.04,10,0.484
+bezpieczenstwo,"Obrona, wojsko, służby",ethincl,Integracja mniejszości etnicznych,0.038,5,0.2979
+bezpieczenstwo,"Obrona, wojsko, służby",custlaw,Zwyczajowe prawo międzynarodowe,0.035,4,0.3511
+bezpieczenstwo,"Obrona, wojsko, służby",fedrev,Kontrola prawa lokalnego przez państwo,0.034,5,0.2926
+bezpieczenstwo,"Obrona, wojsko, służby",jury,Udział obywateli w sądzeniu,0.032,2,0.2553
+bezpieczenstwo,"Obrona, wojsko, służby",hogdec,Uprawnienia dekretowe szefa rządu,0.03,3,0.2234
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),custlaw,Zwyczajowe prawo międzynarodowe,0.947,107,0.3511
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),treat,Ratyfikacja umów międzynarodowych,0.926,428,0.8723
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),treatcon,Status prawny umów międzynarodowych,0.901,263,0.6702
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),intlaw,Prawo międzynarodowe,0.832,891,0.9202
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),intrght,Międzynarodowe traktaty praw człowieka,0.801,109,0.3191
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),intorgs,Organizacje międzynarodowe,0.748,294,0.734
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),headforn,Reprezentacja w stosunkach zagranicznych,0.704,150,0.7872
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),region,Grupy regionalne,0.704,140,0.4468
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),asylum,Ochrona bezpaństwowców i azyl,0.644,65,0.4574
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),excrim,Ekstradycja,0.565,83,0.5798
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),selfdet,Prawo do samostanowienia,0.404,21,0.2074
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),colony,Kolonie,0.35,7,0.0798
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),access,Przyłączenie terytorium,0.333,22,0.2713
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),seccess,Secesja terytorium,0.259,7,0.1117
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),terror,Terroryzm,0.204,10,0.1809
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),citdep,Wydalenie obywateli,0.182,12,0.2553
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),hospow,Kompetencje głowy państwa,0.135,83,0.8936
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),preamble,Preambuła,0.126,21,0.8191
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),rightres,Ograniczenia praw grup,0.122,5,0.1543
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),solid,Odniesienie do solidarności i braterstwa,0.121,30,0.484
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),conpow,Kompetencje sądu konstytucyjnego,0.108,36,0.4628
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),war,Wypowiedzenie wojny,0.106,21,0.6489
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),motive,Cele ustanowienia konstytucji,0.104,22,0.7181
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),auth,Źródło władzy konstytucyjnej,0.093,18,0.75
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),indcit,Obywatelstwo ludów rdzennych,0.091,1,0.0372
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),cabpow,Kompetencje rządu,0.086,26,0.8564
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),interp,Wykładnia konstytucji,0.077,28,0.8936
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),uhspleg,Wyłączne sprawy izby wyższej,0.074,4,0.1809
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),illsub,"Narkotyki, alkohol i substancje zakazane",0.073,6,0.2766
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),fedsep,Prawo krajowe a prawo lokalne,0.065,7,0.3511
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),resenex,Ograniczenia wjazdu i wyjazdu,0.064,5,0.2979
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),equalgr2,Równość bez względu na narodowość,0.061,2,0.1755
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),uncon,Kontrola konstytucyjności ustaw,0.055,26,0.8457
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),prevlead,Zbrodnie poprzedniego reżimu,0.054,2,0.1011
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),unamend,Przepisy niezmienialne (klauzula wieczysta),0.054,5,0.3883
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),judcrts2,Sąd konstytucyjny,0.053,6,0.4628
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),overthrw,Prawo do obalenia rządu,0.053,1,0.0904
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),hogpow,Kompetencje szefa rządu,0.051,9,0.4309
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),initiat,Obywatelska inicjatywa ustawodawcza,0.051,4,0.266
+prawo_miedzynarodowe,Prawo międzynarodowe i organizacje (UE),hogdec,Uprawnienia dekretowe szefa rządu,0.051,5,0.2234
+religia,Religia i państwo,rellaw,Status prawa religijnego,1.0,50,0.1117
+religia,Religia i państwo,reltax,Opodatkowanie związków wyznaniowych,1.0,8,0.0426
+religia,Religia i państwo,freerel,Wolność religii,0.979,231,0.9628
+religia,Religia i państwo,offrel,Religia państwowa,0.935,101,0.4521
+religia,Religia i państwo,seprel,Rozdział kościoła i państwa,0.927,89,0.3723
+religia,Religia i państwo,judcrts8,Sądy religijne,0.667,22,0.0638
+religia,Religia i państwo,god,Odniesienie do Boga lub bóstw,0.593,162,0.6223
+religia,Religia i państwo,opinion,Wolność sumienia i poglądów,0.515,117,0.8511
+religia,Religia i państwo,civmar,Małżeństwo cywilne,0.4,10,0.117
+religia,Religia i państwo,preamble,Preambuła,0.371,62,0.8191
+religia,Religia i państwo,arms,Prawo do posiadania broni,0.333,2,0.0319
+religia,Religia i państwo,auth,Źródło władzy konstytucyjnej,0.242,47,0.75
+religia,Religia i państwo,figures,Odniesienia do myślicieli i postaci politycznych,0.224,17,0.1436
+religia,Religia i państwo,nomil,Prawo do odmowy służby wojskowej,0.219,14,0.3085
+religia,Religia i państwo,motive,Cele ustanowienia konstytucji,0.213,45,0.7181
+religia,Religia i państwo,unamend,Przepisy niezmienialne (klauzula wieczysta),0.183,17,0.3883
+religia,Religia i państwo,system,Określenie ustroju państwa,0.168,31,0.8883
+religia,Religia i państwo,partprh,Partie zakazane,0.154,10,0.2979
+religia,Religia i państwo,equalgr6,Równość bez względu na religię,0.124,21,0.6862
+religia,Religia i państwo,prevlead,Zbrodnie poprzedniego reżimu,0.108,4,0.1011
+religia,Religia i państwo,rightres,Ograniczenia praw grup,0.098,4,0.1543
+religia,Religia i państwo,parents,Prawa i obowiązki rodziców,0.094,16,0.4787
+religia,Religia i państwo,oath,Przysięga na konstytucję,0.093,55,0.8404
+religia,Religia i państwo,indcit,Obywatelstwo ludów rdzennych,0.091,1,0.0372
+religia,Religia i państwo,hosrest,Wymogi wobec głowy państwa,0.086,23,0.867
+religia,Religia i państwo,ethincl,Integracja mniejszości etnicznych,0.076,10,0.2979
+religia,Religia i państwo,express,Wolność wypowiedzi,0.072,18,0.9468
+religia,Religia i państwo,inalrght,Prawa niezbywalne,0.07,14,0.5479
+religia,Religia i państwo,prevcond,Odniesienie do historii kraju,0.069,14,0.4149
+religia,Religia i państwo,partreg,Ograniczenia partii politycznych,0.069,12,0.5213
+religia,Religia i państwo,cultrght,Prawo do kultury,0.066,29,0.7872
+religia,Religia i państwo,milserv,Obowiązek służby wojskowej,0.06,8,0.6011
+religia,Religia i państwo,langprot,Ochrona używania języka,0.06,9,0.5053
+religia,Religia i państwo,marriage,Regulacja małżeństwa,0.058,5,0.4149
+religia,Religia i państwo,selfdet,Prawo do samostanowienia,0.058,3,0.2074
+religia,Religia i państwo,equalgr16,Równość bez względu na pochodzenie rodzinne,0.058,3,0.25
+religia,Religia i państwo,fndfam,Prawo do założenia rodziny,0.055,7,0.5638
+religia,Religia i państwo,equalgr3,Równość bez względu na pochodzenie,0.054,7,0.5266
+religia,Religia i państwo,motto,Dewiza państwowa,0.054,2,0.1755
+religia,Religia i państwo,hocage,Granica wieku sędziów sądu najwyższego,0.053,2,0.1915
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",anthem,Hymn państwowy,1.0,137,0.6064
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",motto,Dewiza państwowa,1.0,37,0.1755
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",flag,Barwy narodowe,0.988,159,0.6862
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",lang,Język urzędowy lub narodowy,0.958,181,0.7553
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",langprot,Ochrona używania języka,0.954,144,0.5053
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",preamble,Preambuła,0.844,141,0.8191
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",citizen,Obywatelstwo z urodzenia,0.84,242,0.8351
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",natcit,Naturalizacja,0.828,197,0.6702
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",citren,Prawo do zrzeczenia się obywatelstwa,0.816,62,0.3511
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",citrev,Utrata obywatelstwa,0.791,144,0.6968
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",system,Określenie ustroju państwa,0.788,145,0.8883
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",ethincl,Integracja mniejszości etnicznych,0.72,95,0.2979
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",capital,Stolica,0.709,83,0.6011
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",cultrght,Prawo do kultury,0.652,285,0.7872
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",indcit,Obywatelstwo ludów rdzennych,0.636,7,0.0372
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",prevcond,Odniesienie do historii kraju,0.632,129,0.4149
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",motive,Cele ustanowienia konstytucji,0.626,132,0.7181
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",indpolgr6,Samorząd ludów rdzennych,0.6,33,0.0851
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",auth,Źródło władzy konstytucyjnej,0.588,114,0.75
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",partprf,Partie uprzywilejowane,0.571,4,0.0319
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",selfdet,Prawo do samostanowienia,0.558,29,0.2074
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",indpolgr2,Reprezentacja ludów rdzennych,0.536,15,0.0745
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",figures,Odniesienia do myślicieli i postaci politycznych,0.526,40,0.1436
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",indpolgr1,Prawo wyborcze ludów rdzennych,0.5,6,0.0319
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",seccess,Secesja terytorium,0.444,12,0.1117
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",offrel,Religia państwowa,0.324,35,0.4521
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",god,Odniesienie do Boga lub bóstw,0.289,79,0.6223
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",artists,Odniesienie do sztuki,0.288,74,0.6436
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",truthcom,Komisja prawdy i pojednania,0.286,2,0.0319
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",solid,Odniesienie do solidarności i braterstwa,0.283,70,0.484
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",seprel,Rozdział kościoła i państwa,0.271,26,0.3723
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",opgroup,Redystrybucja bogactwa,0.25,13,0.1755
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",ecterml,Limit kadencji sędziów sądu wyborczego,0.25,1,0.016
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",region,Grupy regionalne,0.231,46,0.4468
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",rellaw,Status prawa religijnego,0.2,10,0.1117
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",colony,Kolonie,0.2,4,0.0798
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",access,Przyłączenie terytorium,0.197,13,0.2713
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",rightres,Ograniczenia praw grup,0.195,8,0.1543
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",prevlead,Zbrodnie poprzedniego reżimu,0.162,6,0.1011
+tozsamosc,"Język, symbole, mniejszości, obywatelstwo",dignity,Godność człowieka,0.128,48,0.7766

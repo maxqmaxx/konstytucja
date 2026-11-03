@@ -1,0 +1,2279 @@
+[
+ {
+  "id": "A001",
+  "country_code": "EC",
+  "country": "Ekwador",
+  "document_title": "Ecuador 2008 (rev. 2021)",
+  "period": "wydanie z archiwum",
+  "title": "Przyroda jako podmiot praw",
+  "provision": "art. 71-72",
+  "categories": [
+   "oryginalne",
+   "ciekawe",
+   "wazne"
+  ],
+  "meaning": "Przyroda ma własne prawa do istnienia i odtwarzania procesów życiowych. Ludzie i wspólnoty mogą występować do władz o ich ochronę; art. 72 dodaje prawo do przywrócenia stanu przyrody.",
+  "why": "Środowisko staje się podmiotem ochrony, a nie wyłącznie rzeczą służącą ludziom. Zmienia to pytanie, czyjej szkody i czyjego interesu trzeba dowodzić.",
+  "caveat": "Nie oznacza identycznych praw przyrody i człowieka ani automatycznego zakazu wszystkich inwestycji. Liczą się procedury i wykładnia.",
+  "source_url": "https://www.constituteproject.org/constitution/Ecuador_2021?lang=en#s591"
+ },
+ {
+  "id": "A002",
+  "country_code": "BT",
+  "country": "Bhutan",
+  "document_title": "Bhutan 2008",
+  "period": "wydanie z archiwum",
+  "title": "Co najmniej 60 procent państwa pod lasem",
+  "provision": "art. 5 ust. 3",
+  "categories": [
+   "oryginalne",
+   "panstwo",
+   "dziwne"
+  ],
+  "meaning": "Rząd ma zapewnić, by co najmniej 60 procent powierzchni kraju pozostawało pod pokrywą leśną przez cały czas.",
+  "why": "Zamiast ogólnego celu ekologicznego wpisano mierzalny próg i zobowiązanie międzypokoleniowe. To rzadki przykład konstytucyjnej liczby odnoszącej się bezpośrednio do krajobrazu.",
+  "caveat": "Tekst nie rozstrzyga samodzielnie sposobu mierzenia pokrywy leśnej ani nie dowodzi, jak skutecznie obowiązek jest wykonywany.",
+  "source_url": "https://www.constituteproject.org/constitution/Bhutan_2008?lang=en#s206"
+ },
+ {
+  "id": "A003",
+  "country_code": "BT",
+  "country": "Bhutan",
+  "document_title": "Bhutan 2008",
+  "period": "wydanie z archiwum",
+  "title": "Szczęście narodowe jako cel państwa",
+  "provision": "art. 9 ust. 2",
+  "categories": [
+   "oryginalne",
+   "panstwo",
+   "trudne"
+  ],
+  "meaning": "Państwo powinno tworzyć warunki umożliwiające dążenie do szczęścia narodowego brutto.",
+  "why": "To próba konstytucyjnego przesunięcia celu rozwoju poza sam dochód i produkcję. Może wspierać ocenę jakości życia, ale wymaga decyzji, kto i jak definiuje szczęście.",
+  "caveat": "Jest to zasada polityki państwa. Z tego zdania nie wynika indywidualne roszczenie o zapewnienie szczęścia ani konkretny wskaźnik statystyczny.",
+  "source_url": "https://www.constituteproject.org/constitution/Bhutan_2008?lang=en#s334"
+ },
+ {
+  "id": "A004",
+  "country_code": "CH",
+  "country": "Szwajcaria",
+  "document_title": "Switzerland 1999 (rev. 2014)",
+  "period": "wydanie z archiwum",
+  "title": "Godność istot żywych w biotechnologii",
+  "provision": "art. 120 ust. 2",
+  "categories": [
+   "oryginalne",
+   "dziwne",
+   "trudne"
+  ],
+  "meaning": "Przy regulowaniu technologii genetycznych dotyczących zwierząt, roślin i innych organizmów federacja ma uwzględniać godność istot żywych oraz bezpieczeństwo i różnorodność genetyczną.",
+  "why": "Przepis przenosi kategorię godności poza sam gatunek ludzki. Łączy etykę biotechnologii z normą kompetencyjną dla ustawodawcy.",
+  "caveat": "Nie zrównuje praw roślin z prawami ludzi. Dotyczy określonej dziedziny technologii, a nie każdego kontaktu człowieka z przyrodą.",
+  "source_url": "https://www.constituteproject.org/constitution/Switzerland_2014?lang=en#s1063"
+ },
+ {
+  "id": "A005",
+  "country_code": "CH",
+  "country": "Szwajcaria",
+  "document_title": "Switzerland 1999 (rev. 2014)",
+  "period": "wydanie z archiwum",
+  "title": "Konstytucyjny zakaz budowy minaretów",
+  "provision": "art. 72 ust. 3",
+  "categories": [
+   "kontrowersyjne",
+   "dziwne"
+  ],
+  "meaning": "Budowa minaretów jest zakazana.",
+  "why": "Bardzo szczegółowy wybór dotyczący jednej tradycji religijnej został umieszczony na najwyższym poziomie prawa. Powstaje wyraźne napięcie z ogólnymi zasadami równości i wolności religii.",
+  "caveat": "Nie jest to zakaz całego islamu ani wszystkich meczetów. Omawiam konkretną wersję dokumentu, bez rozstrzygania jej zgodności z innymi zobowiązaniami państwa.",
+  "source_url": "https://www.constituteproject.org/constitution/Switzerland_2014?lang=en#s545"
+ },
+ {
+  "id": "A006",
+  "country_code": "BO",
+  "country": "Boliwia",
+  "document_title": "Bolivia (Plurinational State of) 2009",
+  "period": "wydanie z archiwum",
+  "title": "Nie kradnij, nie kłam, nie bądź leniwy",
+  "provision": "art. 8 ust. I",
+  "categories": [
+   "oryginalne",
+   "dziwne"
+  ],
+  "meaning": "Państwo przyjmuje m.in. zasady niebycia leniwym, niekłamania i niekradzenia oraz pojęcia dobrego i harmonijnego życia zaczerpnięte z tradycji rdzennych.",
+  "why": "Konstytucyjny język nie ogranicza się do europejskiej teorii prawa. To także deklaracja uznania różnych źródeł etyki wspólnotowej.",
+  "caveat": "Przepis o wartościach nie tworzy sam z siebie przestępstwa lenistwa. Nie należy czytać go jak kodeksu karnego.",
+  "source_url": "https://www.constituteproject.org/constitution/Bolivia_2009?lang=en#s33"
+ },
+ {
+  "id": "A007",
+  "country_code": "BO",
+  "country": "Boliwia",
+  "document_title": "Bolivia (Plurinational State of) 2009",
+  "period": "wydanie z archiwum",
+  "title": "Niezbywalne roszczenie do dostępu do Pacyfiku",
+  "provision": "art. 267",
+  "categories": [
+   "ciekawe",
+   "kontrowersyjne",
+   "panstwo"
+  ],
+  "meaning": "Państwo deklaruje niezbywalne prawo do terytorium zapewniającego dostęp do Pacyfiku i wskazuje pokojowe rozwiązanie sporu jako stały cel.",
+  "why": "Cel geopolityczny zostaje zabezpieczony przed zwykłą zmianą programu rządu. Przepis utrwala pamięć terytorialną i wiąże politykę zagraniczną.",
+  "caveat": "Jednostronna deklaracja konstytucyjna nie przesądza tytułu prawnego wobec innych państw. Sam tekst nakazuje korzystanie ze środków pokojowych.",
+  "source_url": "https://www.constituteproject.org/constitution/Bolivia_2009?lang=en#s1891"
+ },
+ {
+  "id": "A008",
+  "country_code": "AD",
+  "country": "Andora",
+  "document_title": "Andorra 1993",
+  "period": "wydanie z archiwum",
+  "title": "Państwo z dwoma współksiążętami",
+  "provision": "art. 43",
+  "categories": [
+   "oryginalne",
+   "wazne",
+   "trudne"
+  ],
+  "meaning": "Głową państwa są wspólnie i niepodzielnie biskup Urgell oraz prezydent Republiki Francuskiej, jako współksiążęta o równych kompetencjach.",
+  "why": "Łączą się urząd religijny i urząd republikański pochodzące spoza zwykłego krajowego mechanizmu wyboru monarchy. To szczególnie oryginalna konstrukcja ciągłości państwa.",
+  "caveat": "Nie oznacza to, że Francja albo Kościół mogą dowolnie rządzić Andorrą. Kompetencje współksiążąt wynikają z tej konstytucji.",
+  "source_url": "https://www.constituteproject.org/constitution/Andorra_1993?lang=en#s180"
+ },
+ {
+  "id": "A009",
+  "country_code": "LI",
+  "country": "Liechtenstein",
+  "document_title": "Liechtenstein 1921 (rev. 2020)",
+  "period": "wydanie z archiwum",
+  "title": "Gmina może wszcząć secesję",
+  "provision": "art. 4 ust. 2",
+  "categories": [
+   "oryginalne",
+   "kontrowersyjne"
+  ],
+  "meaning": "Poszczególne gminy mają prawo wystąpić z państwa. Miejscowi uprawnieni do głosowania decydują o wszczęciu procedury; dalszy tryb reguluje ustawa albo traktat.",
+  "why": "Prawo do wyjścia przyznano bardzo małej jednostce terytorialnej. Dobrowolność przynależności można odczytać jako źródło legitymizacji państwa, ale też ryzyko fragmentacji.",
+  "caveat": "Pierwsze głosowanie nie powoduje natychmiastowej niepodległości. Przy rozwiązaniu traktatowym przewidziano kolejne głosowanie po negocjacjach.",
+  "source_url": "https://www.constituteproject.org/constitution/Liechtenstein_2020?lang=en#s13"
+ },
+ {
+  "id": "A010",
+  "country_code": "LI",
+  "country": "Liechtenstein",
+  "document_title": "Liechtenstein 1921 (rev. 2020)",
+  "period": "wydanie z archiwum",
+  "title": "Obywatele mogą uruchomić zniesienie monarchii",
+  "provision": "art. 113",
+  "categories": [
+   "oryginalne",
+   "ciekawe"
+  ],
+  "meaning": "Co najmniej 1500 obywateli może zainicjować zniesienie monarchii. Po akceptacji inicjatywy parlament przygotowuje konstytucję republikańską, a książę może przedstawić konkurencyjny projekt.",
+  "why": "Monarchia zawiera procedurę własnego demokratycznego zakończenia. Interesujące jest zestawienie tej drogi z silnym udziałem księcia w zwykłym ustawodawstwie.",
+  "caveat": "Nie chodzi o natychmiastowe odwołanie księcia zwykłą petycją. Procedura jest wieloetapowa i kończy się głosowaniem nad rozwiązaniem ustrojowym.",
+  "source_url": "https://www.constituteproject.org/constitution/Liechtenstein_2020?lang=en#s607"
+ },
+ {
+  "id": "A011",
+  "country_code": "PW",
+  "country": "Palau",
+  "document_title": "Palau 1981 (rev. 1992)",
+  "period": "wydanie z archiwum",
+  "title": "Próg trzech czwartych dla szczególnych zagrożeń jądrowych",
+  "provision": "art. XIII sekcja 6 i sekcja 14A",
+  "categories": [
+   "oryginalne",
+   "trudne"
+  ],
+  "meaning": "Sekcja 6 wymaga zgody co najmniej trzech czwartych głosów w referendum dla wskazanych zastosowań substancji i instalacji jądrowych oraz innych zagrożeń. Sekcja 14A przewiduje jednak wyłączenie związane z układem swobodnego stowarzyszenia.",
+  "why": "To świetny przykład, jak dramatycznie brzmiąca zasada zmienia znaczenie po przeczytaniu przepisu szczególnego. Próg referendum osłania społeczeństwo, ale nie jest jedyną normą w dokumencie.",
+  "caveat": "Nie wolno opisywać tego jako bezwzględnego zakazu atomu. W tym samym źródle trzeba czytać łącznie sekcje 6 i 14A.",
+  "source_url": "https://www.constituteproject.org/constitution/Palau_1992?lang=en#s272"
+ },
+ {
+  "id": "A012",
+  "country_code": "FM",
+  "country": "Mikronezja",
+  "document_title": "Micronesia (Federated States of) 1978 (rev. 1990)",
+  "period": "wydanie z archiwum",
+  "title": "Substancje radioaktywne wymagają wyraźnej zgody rządu",
+  "provision": "art. XIII sekcja 2",
+  "categories": [
+   "oryginalne",
+   "ciekawe"
+  ],
+  "meaning": "Testowanie, przechowywanie, używanie i usuwanie substancji radioaktywnych, toksycznych chemikaliów i innych szkodliwych materiałów wymaga wyraźnej zgody rządu krajowego.",
+  "why": "Zagrożenie środowiskowe wpisano bezpośrednio w konstytucję, jednocześnie zastrzegając decyzję dla określonego poziomu władzy. W porównaniu z Palau mechanizm jest inny: zgoda rządu zamiast wskazanego tam referendum.",
+  "caveat": "To zakaz warunkowy, nie absolutny. Usunięcie z opisu wyjątku zgody rządu odwracałoby sens przepisu.",
+  "source_url": "https://www.constituteproject.org/constitution/Micronesia_1990?lang=en#s280"
+ },
+ {
+  "id": "A013",
+  "country_code": "CR",
+  "country": "Kostaryka",
+  "document_title": "Costa Rica 1949 (rev. 2020)",
+  "period": "wydanie z archiwum",
+  "title": "Zniesienie armii jako stałej instytucji",
+  "provision": "art. 12",
+  "categories": [
+   "oryginalne",
+   "panstwo",
+   "wazne"
+  ],
+  "meaning": "Armia jako stała instytucja jest zakazana. Dopuszczono policję oraz organizowanie sił zbrojnych na podstawie porozumienia kontynentalnego albo na potrzeby obrony narodowej, pod władzą cywilną.",
+  "why": "Państwo może projektować bezpieczeństwo bez stałego establishmentu wojskowego. Potencjalną korzyścią jest ograniczenie rywala władz cywilnych i kosztów stałej armii.",
+  "caveat": "Nie oznacza całkowitej rezygnacji z obrony ani dowodu, że każdy kraj może bez kosztów skopiować to rozwiązanie.",
+  "source_url": "https://www.constituteproject.org/constitution/Costa_Rica_2020?lang=en#s38"
+ },
+ {
+  "id": "A014",
+  "country_code": "JP",
+  "country": "Japonia",
+  "document_title": "Japan 1946",
+  "period": "wydanie z archiwum",
+  "title": "Wyrzeczenie się wojny i sił zbrojnych",
+  "provision": "art. 9",
+  "categories": [
+   "wazne",
+   "trudne",
+   "kontrowersyjne"
+  ],
+  "meaning": "Naród wyrzeka się wojny jako suwerennego prawa oraz groźby i użycia siły do rozwiązywania sporów międzynarodowych. Kolejny akapit dotyczy nieutrzymywania potencjału wojennego i nieuznawania prawa do prowadzenia wojny.",
+  "why": "To jedno z najbardziej radykalnych tekstowych ograniczeń tradycyjnej kompetencji państwa. Pokazuje różnicę między potęgą militarną a bezpieczeństwem budowanym innymi środkami.",
+  "caveat": "Nie wyprowadzam z samego brzmienia wniosku o wszystkich dopuszczalnych formach samoobrony. Źródło jest oznaczone rokiem 1946; nie jest to data wejścia konstytucji w życie.",
+  "source_url": "https://www.constituteproject.org/constitution/Japan_1946?lang=en#s36"
+ },
+ {
+  "id": "A015",
+  "country_code": "IN",
+  "country": "Indie",
+  "document_title": "India 1949 (rev. 2023)",
+  "period": "wydanie z archiwum",
+  "title": "Obywatelski obowiązek naukowego myślenia",
+  "provision": "art. 51A lit. h",
+  "categories": [
+   "oryginalne",
+   "panstwo"
+  ],
+  "meaning": "Obywatele mają rozwijać naukowe usposobienie, humanizm oraz ducha dociekania i reformy.",
+  "why": "Konstytucja wskazuje pożądaną postawę poznawczą społeczeństwa, nie tylko kompetencje państwowego aparatu. Potencjalnym mechanizmem rozwoju jest lepsza jakość wiedzy i debaty.",
+  "caveat": "To katalog obowiązków obywatelskich. Samo zdanie nie ustanawia kar za nienaukowy pogląd ani nie dowodzi skuteczności polityki naukowej.",
+  "source_url": "https://www.constituteproject.org/constitution/India_2023?lang=en#s410"
+ },
+ {
+  "id": "A016",
+  "country_code": "IN",
+  "country": "Indie",
+  "document_title": "India 1949 (rev. 2023)",
+  "period": "wydanie z archiwum",
+  "title": "Ochrona krów w programie polityki państwa",
+  "provision": "art. 48",
+  "categories": [
+   "oryginalne",
+   "kontrowersyjne",
+   "dziwne"
+  ],
+  "meaning": "Państwo ma rozwijać nowoczesne rolnictwo i hodowlę oraz podejmować kroki służące ochronie ras i zakazowi uboju krów, cieląt oraz innego bydła mlecznego i pociągowego.",
+  "why": "Na poziom konstytucyjny trafia bardzo konkretna kwestia gospodarcza i kulturowa. Spór obejmuje równocześnie żywność, religię, dobrostan zwierząt i swobodę działalności.",
+  "caveat": "Jest to zasada kierunkowa polityki państwa. Nie utożsamiam jej z pełną treścią aktualnych zakazów karnych w poszczególnych stanach.",
+  "source_url": "https://www.constituteproject.org/constitution/India_2023?lang=en#s391"
+ },
+ {
+  "id": "A017",
+  "country_code": "LR",
+  "country": "Liberia",
+  "document_title": "Liberia 1986",
+  "period": "wydanie z archiwum",
+  "title": "Obywatelstwo ograniczone pochodzeniem rasowym",
+  "provision": "art. 27 lit. b",
+  "categories": [
+   "kontrowersyjne",
+   "niebezpieczne"
+  ],
+  "meaning": "Kwalifikację do obywatelstwa przez urodzenie lub naturalizację uzależniono od przynależności do wskazanej w tekście kategorii rasowej lub takiego pochodzenia.",
+  "why": "Konstytucja może jednocześnie ustanawiać prawa i zamykać dostęp do wspólnoty politycznej. Ryzykiem jest dziedziczne wykluczenie oparte na pochodzeniu.",
+  "caveat": "Omawiam dosłowne kryterium w zarchiwizowanym wydaniu z 1986 r. Nie wyprowadzam stąd automatycznie wszystkich skutków dotyczących pobytu czy własności.",
+  "source_url": "https://www.constituteproject.org/constitution/Liberia_1986?lang=en#s138"
+ },
+ {
+  "id": "A018",
+  "country_code": "HT",
+  "country": "Haiti",
+  "document_title": "Haïti, Constitution impériale du 20 mai 1805, Digithèque MJP",
+  "period": "historyczny",
+  "title": "Czarne obywatelstwo, biali właściciele i wyjątek dla Polaków",
+  "provision": "art. 12-14 przepisów ogólnych",
+  "categories": [
+   "kontrowersyjne",
+   "trudne",
+   "dziwne"
+  ],
+  "meaning": "Zakazowi nabywania własności przez białych towarzyszą wyjątki m.in. dla naturalizowanych kobiet i ich dzieci oraz naturalizowanych Niemców i Polaków. Następnie wszyscy Haitańczycy zostają objęci wspólną nazwą czarnych.",
+  "why": "Dokument konstruuje tożsamość polityczną w odpowiedzi na porządek kolonialny i niewolniczy, ale posługuje się także wykluczającym językiem rasowym. Zaskakujące jest literalne wymienienie Polaków.",
+  "caveat": "To tekst historyczny z 1805 r. Nie jest to prosty zakaz wjazdu każdej białej osoby ani opis współczesnego obywatelstwa Haiti.",
+  "source_url": "https://mjp.univ-perp.fr/constit/ht1805.htm"
+ },
+ {
+  "id": "A019",
+  "country_code": "AR",
+  "country": "Argentyna",
+  "document_title": "Argentina 1853 (reinst. 1983, rev. 1994)",
+  "period": "wydanie z archiwum",
+  "title": "Konstytucyjne wspieranie imigracji europejskiej",
+  "provision": "art. 25",
+  "categories": [
+   "kontrowersyjne",
+   "dziwne"
+  ],
+  "meaning": "Rząd federalny ma wspierać imigrację europejską i nie utrudniać przyjazdu cudzoziemcom zamierzającym uprawiać ziemię, rozwijać przemysł, naukę i sztukę.",
+  "why": "Program budowy ludnościowego i gospodarczego potencjału zawiera wyraźne preferowanie określonego pochodzenia. Jeden przepis łączy strategię rozwoju z hierarchizacją grup przybyszów.",
+  "caveat": "Z tego artykułu nie wynika samodzielnie zakaz imigracji spoza Europy. Nie ustalam tu aktualnej praktyki imigracyjnej.",
+  "source_url": "https://www.constituteproject.org/constitution/Argentina_1994?lang=en#s58"
+ },
+ {
+  "id": "A020",
+  "country_code": "IE",
+  "country": "Irlandia",
+  "document_title": "Ireland 1937 (rev. 2019)",
+  "period": "wydanie z archiwum",
+  "title": "Kobieta, dom i obowiązki matki",
+  "provision": "art. 41 ust. 2",
+  "categories": [
+   "kontrowersyjne",
+   "trudne"
+  ],
+  "meaning": "Państwo uznaje szczególny wkład kobiety przez życie w domu i ma dążyć do tego, aby ekonomiczna konieczność nie zmuszała matek do pracy kosztem obowiązków domowych.",
+  "why": "Ochronę pracy opiekuńczej zapisano przy użyciu konkretnego wzorca płci i rodziny. Ten sam tekst można oceniać jako zabezpieczenie opieki lub utrwalenie tradycyjnej roli kobiet.",
+  "caveat": "Nie jest to konstytucyjny zakaz pracy zawodowej kobiet. Odwołuję się do wydania źródłowego z 2019 r.",
+  "source_url": "https://www.constituteproject.org/constitution/Ireland_2019?lang=en#s984"
+ },
+ {
+  "id": "A021",
+  "country_code": "MV",
+  "country": "Malediwy",
+  "document_title": "Maldives 2008",
+  "period": "wydanie z archiwum",
+  "title": "Wyznanie jako warunek obywatelstwa",
+  "provision": "art. 9 lit. d",
+  "categories": [
+   "kontrowersyjne",
+   "niebezpieczne"
+  ],
+  "meaning": "Przepis stanowi, że niemuzułmanin nie może uzyskać obywatelstwa Malediwów.",
+  "why": "Granica wspólnoty politycznej jest tu zbudowana na wyznaniu, a nie tylko urodzeniu, zamieszkaniu lub naturalizacji. Oceniam to jako silny mechanizm wykluczający.",
+  "caveat": "Nie przesądzam wszystkich skutków zmiany wyznania już posiadanego obywatela. To wymaga odrębnej analizy właściwych norm i praktyki.",
+  "source_url": "https://www.constituteproject.org/constitution/Maldives_2008?lang=en#s18"
+ },
+ {
+  "id": "A022",
+  "country_code": "BN",
+  "country": "Brunei",
+  "document_title": "Brunei Darussalam 1959 (rev. 2006)",
+  "period": "wydanie z archiwum",
+  "title": "Wyłączenie kontroli sądowej działań sułtana",
+  "provision": "art. 84C",
+  "categories": [
+   "wladca",
+   "niebezpieczne",
+   "wazne"
+  ],
+  "meaning": "Wyłączono kontrolę sądową aktów, decyzji i działań sułtana oraz wskazanych osób działających w jego imieniu lub z jego upoważnienia.",
+  "why": "Ograniczenie możliwości zakwestionowania działania jest niekiedy ważniejsze od samego katalogu kompetencji. Ryzykiem jest władza bez skutecznego środka prawnego przeciw jej wykonywaniu.",
+  "caveat": "Zakres trzeba czytać razem z definicją kontroli sądowej i sąsiednimi przepisami. Właściwym numerem tego mechanizmu jest 84C, nie 84B.",
+  "source_url": "https://www.constituteproject.org/constitution/Brunei_2006?lang=en#s806"
+ },
+ {
+  "id": "A023",
+  "country_code": "BN",
+  "country": "Brunei",
+  "document_title": "Brunei Darussalam 1959 (rev. 2006)",
+  "period": "wydanie z archiwum",
+  "title": "Sułtan nie może postąpić źle w sensie odpowiedzialności prawnej",
+  "provision": "art. 84B",
+  "categories": [
+   "wladca",
+   "niebezpieczne"
+  ],
+  "meaning": "Sułtan nie odpowiada przed sądem za wskazane działania i zaniechania w charakterze urzędowym lub osobistym, podczas panowania ani po nim. Tekst używa formuły, że nie może postąpić źle.",
+  "why": "To wyjątkowo daleko idące połączenie osobistego immunitetu i odpowiedzialności urzędu. Ocena zagrożenia wynika z braku zwykłej drogi pociągnięcia władcy do odpowiedzialności.",
+  "caveat": "Formuła dotyczy konstrukcji prawnej, nie oceny moralnej zachowania. Właściwy przepis to 84B, a nie 84A.",
+  "source_url": "https://www.constituteproject.org/constitution/Brunei_2006?lang=en#s798"
+ },
+ {
+  "id": "A024",
+  "country_code": "SA",
+  "country": "Arabia Saudyjska",
+  "document_title": "Saudi Arabia 1992 (rev. 2013)",
+  "period": "wydanie z archiwum",
+  "title": "Koran i Sunna wskazane jako konstytucja",
+  "provision": "art. 1",
+  "categories": [
+   "wazne",
+   "trudne"
+  ],
+  "meaning": "Ustawa zasadnicza przedstawia Koran i Sunnę jako konstytucję państwa.",
+  "why": "Dokument nie wskazuje wyłącznie jednego świeckiego aktu jako ostatecznego źródła ustroju. Zrozumienie hierarchii norm wymaga uwzględnienia religijnych źródeł prawa.",
+  "caveat": "Nie oznacza to braku spisanych aktów ustrojowych: właśnie jednym z nich jest omawiana ustawa zasadnicza.",
+  "source_url": "https://www.constituteproject.org/constitution/Saudi_Arabia_2013?lang=en#s3"
+ },
+ {
+  "id": "A025",
+  "country_code": "IR",
+  "country": "Iran",
+  "document_title": "Iran (Islamic Republic of) 1979 (rev. 1989)",
+  "period": "wydanie z archiwum",
+  "title": "Religijna kontrola wszystkich przepisów",
+  "provision": "art. 4",
+  "categories": [
+   "wazne",
+   "wladca",
+   "trudne"
+  ],
+  "meaning": "Wszystkie wskazane dziedziny prawodawstwa mają odpowiadać kryteriom islamskim. Zasada obejmuje także artykuły konstytucji, a ocenę powierzono jurystom Rady Strażników.",
+  "why": "To reguła o regułach: określa filtr interpretacji całego porządku. Potencjalnie silniejsza od pojedynczej kompetencji organu jest władza ustalania, jaki sens wolno nadać każdemu prawu.",
+  "caveat": "Nie sprowadza to całej konstytucji do jednego organu. Dokument przewiduje także wybory, instytucje przedstawicielskie i inne źródła legitymizacji.",
+  "source_url": "https://www.constituteproject.org/constitution/Iran_1989?lang=en#s100"
+ },
+ {
+  "id": "A026",
+  "country_code": "IR",
+  "country": "Iran",
+  "document_title": "Iran (Islamic Republic of) 1979 (rev. 1989)",
+  "period": "wydanie z archiwum",
+  "title": "Jeden przywódca nad polityką, wojskiem i kluczowymi nominacjami",
+  "provision": "art. 110",
+  "categories": [
+   "wladca",
+   "niebezpieczne",
+   "wazne"
+  ],
+  "meaning": "Przywódca wyznacza politykę ogólną, nadzoruje jej wykonanie, dowodzi siłami zbrojnymi i uczestniczy w kluczowych nominacjach, w tym dotyczących sądownictwa oraz mediów państwowych.",
+  "why": "Znaczenie ma kumulacja narzędzi: strategiczny kierunek, przymus, kadry i komunikacja. To opis koncentracji władzy, która nie jest tożsama ze sprawnością państwa.",
+  "caveat": "Art. 111 przewiduje szczególny mechanizm usunięcia przywódcy. Nie należy pomijać go przy ocenie całego modelu.",
+  "source_url": "https://www.constituteproject.org/constitution/Iran_1989?lang=en#s386"
+ },
+ {
+  "id": "A027",
+  "country_code": "IR",
+  "country": "Iran",
+  "document_title": "Iran (Islamic Republic of) 1979 (rev. 1989)",
+  "period": "wydanie z archiwum",
+  "title": "Przywódca podlega szczególnemu mechanizmowi usunięcia",
+  "provision": "art. 111",
+  "categories": [
+   "ciekawe",
+   "trudne"
+  ],
+  "meaning": "Przywódca tracący wymagane kwalifikacje lub zdolność wykonywania obowiązków podlega usunięciu przez właściwy organ ekspertów; przewidziano również zastępstwo przejściowe.",
+  "why": "Konstytucja nawet bardzo silnego urzędu może definiować warunki jego zakończenia. Trudność polega na ocenie niezależności i realnej zdolności instytucji, która ma egzekwować tę regułę.",
+  "caveat": "Sam przepis nie dowodzi, że kontrola działa skutecznie. Nie opisuję aktualnej obsady stanowisk ani wydarzeń politycznych.",
+  "source_url": "https://www.constituteproject.org/constitution/Iran_1989?lang=en#s422"
+ },
+ {
+  "id": "A028",
+  "country_code": "MM",
+  "country": "Mjanma (Birma)",
+  "document_title": "Myanmar 2008 (rev. 2015)",
+  "period": "wydanie z archiwum",
+  "title": "Wojskowi mają zagwarantowane miejsca w parlamencie",
+  "provision": "art. 109 lit. b i 141 lit. b",
+  "categories": [
+   "wladca",
+   "niebezpieczne",
+   "wazne"
+  ],
+  "meaning": "W obu izbach parlamentu wydzielono miejsca dla wojskowych wskazywanych przez dowódcę sił zbrojnych: do 110 z 440 oraz do 56 z 224.",
+  "why": "Reprezentacja wojskowa jest zakotwiczona poza normalną konkurencją wyborczą. W połączeniu z progiem zmian konstytucji tworzy mechanizm utrwalania wpływów wojska.",
+  "caveat": "To opis konstytucji z 2008 r. w wydaniu z 2015 r., a nie potwierdzenie aktualnego faktycznego działania parlamentu.",
+  "source_url": "https://www.constituteproject.org/constitution/Myanmar_2015?lang=en#s667"
+ },
+ {
+  "id": "A029",
+  "country_code": "MM",
+  "country": "Mjanma (Birma)",
+  "document_title": "Myanmar 2008 (rev. 2015)",
+  "period": "wydanie z archiwum",
+  "title": "Próg poprawek dający wojsku możliwość blokowania zmian",
+  "provision": "art. 436",
+  "categories": [
+   "wladca",
+   "niebezpieczne",
+   "trudne"
+  ],
+  "meaning": "Zmiany konstytucji wymagają ponad 75 procent wszystkich przedstawicieli, a w szczególnie wskazanych sprawach także referendum z poparciem ponad połowy uprawnionych.",
+  "why": "Połączenie tego progu z rezerwacją jednej czwartej mandatów dla wojskowych daje im potencjał blokowania zmian przy pełnym obsadzeniu konstytucyjnego składu.",
+  "caveat": "Nie chodzi o zwykłe trzy czwarte oddanych głosów. Istotne są słowo ponad, mianownik wszystkich przedstawicieli i dodatkowe wymogi referendum.",
+  "source_url": "https://www.constituteproject.org/constitution/Myanmar_2015?lang=en#s3118"
+ },
+ {
+  "id": "A030",
+  "country_code": "EG",
+  "country": "Egipt",
+  "document_title": "Egypt 2014 (rev. 2019)",
+  "period": "wydanie z archiwum",
+  "title": "Armia jako strażnik demokracji i cywilnego charakteru państwa",
+  "provision": "art. 200",
+  "categories": [
+   "wladca",
+   "kontrowersyjne",
+   "niebezpieczne"
+  ],
+  "meaning": "Do zadań sił zbrojnych dodano ochronę konstytucji, demokracji, podstaw cywilnego charakteru państwa oraz praw i zdobyczy społeczeństwa.",
+  "why": "Wojsko staje się nie tylko obrońcą terytorium, ale także strażnikiem sposobu rządzenia. Ryzykiem jest szeroka legitymizacja ingerowania w spory cywilnej polityki.",
+  "caveat": "Sam art. 200 nie daje wprost nieograniczonego prawa do zamachu stanu. Taki wniosek przekraczałby treść źródła.",
+  "source_url": "https://www.constituteproject.org/constitution/Egypt_2019?lang=en#s662"
+ },
+ {
+  "id": "A031",
+  "country_code": "FR",
+  "country": "Francja",
+  "document_title": "France 1958 (rev. 2024)",
+  "period": "wydanie z archiwum",
+  "title": "Nadzwyczajne uprawnienia prezydenta",
+  "provision": "art. 16",
+  "categories": [
+   "wladca",
+   "niebezpieczne",
+   "trudne"
+  ],
+  "meaning": "Po łącznym spełnieniu przesłanek poważnego zagrożenia i przerwania prawidłowego działania władz prezydent może podejmować wymagane sytuacją środki.",
+  "why": "Elastyczna klauzula może umożliwić ratowanie ciągłości państwa, ale skupia nadzwyczajne instrumenty w jednym urzędzie. Dlatego kluczowa jest konstrukcja kontroli i powrotu do normalności.",
+  "caveat": "Są konsultacje, zakaz rozwiązania Zgromadzenia Narodowego oraz kontrola Rady Konstytucyjnej po 30 i obowiązkowo po 60 dniach. To nie jest kompetencja bezwarunkowa.",
+  "source_url": "https://www.constituteproject.org/constitution/France_2024?lang=en#s74"
+ },
+ {
+  "id": "A032",
+  "country_code": "FR",
+  "country": "Francja",
+  "document_title": "France 1958 (rev. 2024)",
+  "period": "wydanie z archiwum",
+  "title": "Ustawa bez zwykłego głosowania, chyba że upadnie rząd",
+  "provision": "art. 49 ust. 3",
+  "categories": [
+   "wladca",
+   "trudne",
+   "kontrowersyjne"
+  ],
+  "meaning": "Premier może powiązać przyjęcie wskazanej ustawy z odpowiedzialnością rządu. Ustawa jest uznana za przyjętą, chyba że przejdzie uchwała nieufności w odpowiednim trybie.",
+  "why": "Zamiast zbierać większość za ustawą, rząd zmusza przeciwników do zbudowania większości przeciw sobie. To znacząca zmiana ciężaru politycznego decyzji.",
+  "caveat": "Dotyczy ustaw finansowych, finansowania zabezpieczenia społecznego oraz jednego innego projektu na sesję. Nie jest ogólnym prawem do uchwalania każdej ustawy bez parlamentu.",
+  "source_url": "https://www.constituteproject.org/constitution/France_2024?lang=en#s246"
+ },
+ {
+  "id": "A033",
+  "country_code": "FR",
+  "country": "Francja",
+  "document_title": "France 1958 (rev. 2024)",
+  "period": "wydanie z archiwum",
+  "title": "Gwarantowana wolność przerwania ciąży",
+  "provision": "art. 34",
+  "categories": [
+   "wazne",
+   "kontrowersyjne",
+   "oryginalne"
+  ],
+  "meaning": "Ustawodawca określa warunki wykonywania gwarantowanej kobiecie wolności dobrowolnego przerwania ciąży.",
+  "why": "Bardzo konkretną wolność reprodukcyjną umieszczono w konstytucyjnym wyliczeniu materii ustawowych. Znaczenie ma jednoczesne użycie pojęcia gwarancji i pozostawienie warunków ustawie.",
+  "caveat": "Nie jest to zdanie o całkowitym braku dopuszczalnych regulacji. Omawiana norma pochodzi z wersji zawierającej zmianę z 2024 r.",
+  "source_url": "https://www.constituteproject.org/constitution/France_2024?lang=en#s145"
+ },
+ {
+  "id": "A034",
+  "country_code": "FR",
+  "country": "Francja",
+  "document_title": "France 1958 (rev. 2024)",
+  "period": "wydanie z archiwum",
+  "title": "Republika wyłączona spod zwykłej rewizji ustroju",
+  "provision": "art. 89",
+  "categories": [
+   "wazne",
+   "trudne"
+  ],
+  "meaning": "Republikańska forma rządu nie może być przedmiotem zmiany konstytucji w przewidzianym przez nią trybie.",
+  "why": "Wola aktualnej większości nie obejmuje wszystkiego. Przepis oddziela zmianę reguł wewnątrz ustroju od wymiany jego podstawowej tożsamości.",
+  "caveat": "Nie rozstrzyga sam z siebie filozoficznego problemu pierwotnej władzy ustrojodawczej ani skuteczności rewolucyjnego zerwania z konstytucją.",
+  "source_url": "https://www.constituteproject.org/constitution/France_2024?lang=en#s468"
+ },
+ {
+  "id": "A035",
+  "country_code": "DE",
+  "country": "Niemcy",
+  "document_title": "Germany 1949 (rev. 2014)",
+  "period": "wydanie z archiwum",
+  "title": "Klauzula wieczysta ograniczająca zmianę konstytucji",
+  "provision": "art. 79 ust. 3",
+  "categories": [
+   "wazne",
+   "trudne",
+   "panstwo"
+  ],
+  "meaning": "Niedopuszczalne są poprawki naruszające federalny podział, zasadniczy udział krajów związkowych w ustawodawstwie oraz zasady wskazane w art. 1 i 20.",
+  "why": "Konstytucja chroni określone fundamenty także przed formalnie poprawną większością konstytucyjną. To mechanizm obrony ustroju przed legalistycznym samounicestwieniem.",
+  "caveat": "Klauzula nie unieruchamia całej konstytucji ani wszystkich szczegółowych rozwiązań. Chroni wymienione zasady i konstrukcje.",
+  "source_url": "https://www.constituteproject.org/constitution/German_Federal_Republic_2014?lang=en#s671"
+ },
+ {
+  "id": "A036",
+  "country_code": "DE",
+  "country": "Niemcy",
+  "document_title": "Germany 1949 (rev. 2014)",
+  "period": "wydanie z archiwum",
+  "title": "Prawo oporu jako środek ostateczny",
+  "provision": "art. 20 ust. 4",
+  "categories": [
+   "wazne",
+   "ciekawe"
+  ],
+  "meaning": "Niemcom przysługuje prawo oporu wobec osoby dążącej do obalenia konstytucyjnego porządku, jeżeli nie jest dostępny inny środek zaradczy.",
+  "why": "Ostateczna obrona ustroju zostaje powierzona także obywatelom. Przepis jest ważny przez wyjątkowe połączenie prawa z warunkiem wyczerpania innych dróg.",
+  "caveat": "Nie stanowi zwykłego upoważnienia do przemocy wobec nielubianego rządu lub dowolnej polityki większości.",
+  "source_url": "https://www.constituteproject.org/constitution/German_Federal_Republic_2014?lang=en#s162"
+ },
+ {
+  "id": "A037",
+  "country_code": "DE",
+  "country": "Niemcy",
+  "document_title": "Germany 1949 (rev. 2014)",
+  "period": "wydanie z archiwum",
+  "title": "Rząd można obalić przez wybór następcy",
+  "provision": "art. 67",
+  "categories": [
+   "panstwo",
+   "wazne",
+   "oryginalne"
+  ],
+  "meaning": "Bundestag może wyrazić kanclerzowi brak zaufania wyłącznie przez wybór następcy i zwrócenie się o odwołanie dotychczasowego kanclerza.",
+  "why": "Większość destrukcyjna musi równocześnie stać się większością zdolną powołać władzę. Potencjalnie zwiększa to ciągłość rządzenia i ogranicza trwałe bezkrólewie parlamentarne.",
+  "caveat": "Nie gwarantuje kompetencji rządu ani nie eliminuje kryzysów politycznych. Dotyczy określonego trybu parlamentarnego odwołania.",
+  "source_url": "https://www.constituteproject.org/constitution/German_Federal_Republic_2014?lang=en#s477"
+ },
+ {
+  "id": "A038",
+  "country_code": "DE",
+  "country": "Niemcy",
+  "document_title": "Germany 1949 (rev. 2014)",
+  "period": "wydanie z archiwum",
+  "title": "Liczbowy hamulec zadłużenia",
+  "provision": "art. 115 ust. 2",
+  "categories": [
+   "panstwo",
+   "kontrowersyjne",
+   "trudne"
+  ],
+  "meaning": "W omawianej wersji limit strukturalnego zaciągania kredytu przez federację powiązano z 0,35 procent nominalnego PKB, z korektami cyklicznymi i wyjątkami nadzwyczajnymi.",
+  "why": "Państwo wiąże sobie ręce w finansach, próbując chronić długoterminową stabilność. Spór dotyczy kosztu tej stabilności dla inwestycji i reagowania na kryzysy.",
+  "caveat": "Analizowana jest wersja z 2014 r. Nie należy używać tego opisu jako potwierdzenia obecnej treści niemieckich reguł fiskalnych.",
+  "source_url": "https://www.constituteproject.org/constitution/German_Federal_Republic_2014?lang=en#s1124"
+ },
+ {
+  "id": "A039",
+  "country_code": "DE",
+  "country": "Niemcy",
+  "document_title": "Germany 1949 (rev. 2014)",
+  "period": "wydanie z archiwum",
+  "title": "Socjalizacja ziemi i środków produkcji",
+  "provision": "art. 15",
+  "categories": [
+   "kontrowersyjne",
+   "trudne"
+  ],
+  "meaning": "Ziemia, zasoby naturalne i środki produkcji mogą zostać uspołecznione na podstawie ustawy określającej rodzaj i zakres odszkodowania.",
+  "why": "Ustrój chroniący własność prywatną może jednocześnie pozostawić drogę jej przekształcenia w określonych dziedzinach. To podważa uproszczenie, że konstytucja musi wybierać jeden czysty model gospodarki.",
+  "caveat": "Nie jest to ogólne zezwolenie na konfiskatę bez rekompensaty ani automatyczne uspołecznienie po przyjęciu konstytucji.",
+  "source_url": "https://www.constituteproject.org/constitution/German_Federal_Republic_2014?lang=en#s125"
+ },
+ {
+  "id": "A040",
+  "country_code": "US",
+  "country": "Stany Zjednoczone",
+  "document_title": "United States of America 1789 (rev. 1992)",
+  "period": "wydanie z archiwum",
+  "title": "Wyłączność autorów i wynalazców jako narzędzie postępu",
+  "provision": "art. I sekcja 8, klauzula o nauce i wynalazkach",
+  "categories": [
+   "panstwo",
+   "wazne"
+  ],
+  "meaning": "Kongres może zapewniać autorom i wynalazcom czasową wyłączność, aby wspierać postęp nauki i użytecznych umiejętności.",
+  "why": "Konstytucja ujmuje monopol prawny jako narzędzie tworzenia wiedzy, a nie cel sam w sobie. To szczególnie czytelny przykład potencjalnego mechanizmu budowy zdolności innowacyjnej.",
+  "caveat": "Wyłączność ma być ograniczona w czasie. Sam przepis nie ustala optymalnej długości ochrony ani nie dowodzi wzrostu gospodarczego.",
+  "source_url": "https://www.constituteproject.org/constitution/United_States_of_America_1992?lang=en#s36"
+ },
+ {
+  "id": "A041",
+  "country_code": "US",
+  "country": "Stany Zjednoczone",
+  "document_title": "United States of America 1789 (rev. 1992)",
+  "period": "wydanie z archiwum",
+  "title": "Kompetencje nieprzekazane federacji pozostają przy stanach lub ludzie",
+  "provision": "poprawka X",
+  "categories": [
+   "wazne",
+   "trudne"
+  ],
+  "meaning": "Kompetencje nieprzekazane przez konstytucję federacji, a zarazem niezabronione stanom, pozostają przy stanach lub ludzie.",
+  "why": "To reguła domyślnego przypisywania władzy w federacji. Jej znaczenie ujawnia się dopiero po zestawieniu z kompetencjami wyraźnymi i innymi klauzulami konstytucji.",
+  "caveat": "Nie oznacza, że każde nowe zagadnienie automatycznie pozostaje poza prawem federalnym. Nie zastępuje wykładni pozostałych przepisów.",
+  "source_url": "https://www.constituteproject.org/constitution/United_States_of_America_1992?lang=en#s157"
+ },
+ {
+  "id": "A042",
+  "country_code": "US",
+  "country": "Stany Zjednoczone",
+  "document_title": "United States of America 1789 (rev. 1992)",
+  "period": "wydanie z archiwum",
+  "title": "Zakaz niewolnictwa z wyjątkiem kary za przestępstwo",
+  "provision": "poprawka XIII sekcja 1",
+  "categories": [
+   "kontrowersyjne",
+   "niebezpieczne",
+   "trudne"
+  ],
+  "meaning": "Zakaz niewolnictwa i przymusowej służby zawiera wyjątek dla kary za przestępstwo po prawidłowym skazaniu.",
+  "why": "Wyjątek w zdaniu ustanawiającym fundamentalną wolność może wyznaczać ogromną przestrzeń przymusu. Dlatego tę normę trzeba czytać z zakazami nadużyć i gwarancjami postępowania.",
+  "caveat": "Nie jest to ogólne zezwolenie na każdą formę traktowania skazanych. Nie przedstawiam tu pełnej oceny dopuszczalności współczesnej pracy więźniów.",
+  "source_url": "https://www.constituteproject.org/constitution/United_States_of_America_1992?lang=en#s165"
+ },
+ {
+  "id": "A043",
+  "country_code": "US",
+  "country": "Stany Zjednoczone",
+  "document_title": "United States of America 1789 (rev. 1992)",
+  "period": "wydanie z archiwum",
+  "title": "Zakaz ustanawiania religii i ochrona debaty publicznej",
+  "provision": "poprawka I",
+  "categories": [
+   "wazne",
+   "panstwo"
+  ],
+  "meaning": "Pierwsza poprawka zakazuje Kongresowi określonych ingerencji dotyczących religii, słowa, prasy, zgromadzeń i petycji.",
+  "why": "Chronione są warunki powstawania krytyki i opozycji, czyli mechanizmu korygowania decyzji państwa. Znaczenie jest ustrojowe, nie tylko indywidualne.",
+  "caveat": "Nie utożsamiam brzmienia przepisu z absolutną ochroną każdego zachowania w każdej sytuacji. Szczegółowy zakres wymaga orzecznictwa.",
+  "source_url": "https://www.constituteproject.org/constitution/United_States_of_America_1992?lang=en#s139"
+ },
+ {
+  "id": "A044",
+  "country_code": "CA",
+  "country": "Kanada",
+  "document_title": "Canada 1867 (rev. 2011)",
+  "period": "wydanie z archiwum",
+  "title": "Ustawa może czasowo działać mimo części praw konstytucyjnych",
+  "provision": "Karta, sekcja 33",
+  "categories": [
+   "kontrowersyjne",
+   "trudne",
+   "niebezpieczne"
+  ],
+  "meaning": "Parlament lub ustawodawca prowincji może wyraźnie zastrzec działanie ustawy mimo sekcji 2 lub sekcji 7-15 Karty. Deklaracja wygasa najpóźniej po pięciu latach, ale może być ponawiana.",
+  "why": "Wbudowano polityczny wentyl wobec części ochrony praw. Czytelny koszt polityczny i czasowość współistnieją z ryzykiem obchodzenia ograniczeń władzy.",
+  "caveat": "Nie można tym trybem zawiesić całej konstytucji ani wszystkich praw Karty. Ważne są zamknięte wyliczenie, wyraźna deklaracja i termin.",
+  "source_url": "https://www.constituteproject.org/constitution/Canada_2011?lang=en#s969"
+ },
+ {
+  "id": "A045",
+  "country_code": "CA",
+  "country": "Kanada",
+  "document_title": "Canada 1867 (rev. 2011)",
+  "period": "wydanie z archiwum",
+  "title": "Zmiana konstytucji wymaga większości według kilku miar",
+  "provision": "część V, sekcja 38",
+  "categories": [
+   "trudne",
+   "wazne"
+  ],
+  "meaning": "Ogólna formuła zmiany wymaga udziału izb federalnych i co najmniej dwóch trzecich prowincji, które skupiają przynajmniej połowę ludności prowincji.",
+  "why": "Większość jest liczona jednocześnie instytucjonalnie, terytorialnie i demograficznie. Chroni to federację przed prostym utożsamieniem największej grupy wyborców z całością państwa.",
+  "caveat": "To jedna z formuł zmiany konstytucji, a nie jedyny tryb dla każdej materii. Pozostałe artykuły przewidują szczególne reguły.",
+  "source_url": "https://www.constituteproject.org/constitution/Canada_2011?lang=en#s1016"
+ },
+ {
+  "id": "A046",
+  "country_code": "IN",
+  "country": "Indie",
+  "document_title": "India 1949 (rev. 2023)",
+  "period": "wydanie z archiwum",
+  "title": "Federacja może przejąć rządzenie stanem",
+  "provision": "art. 356",
+  "categories": [
+   "wladca",
+   "niebezpieczne",
+   "trudne"
+  ],
+  "meaning": "Prezydent może przejąć wskazane funkcje władz stanu, gdy rządzenie zgodnie z konstytucją stało się niemożliwe, oraz przekazać wykonywanie uprawnień ustawodawczych parlamentowi federacji.",
+  "why": "Mechanizm ratowania federacji stwarza równocześnie ryzyko politycznego podporządkowania jednostki składowej centrum. Kluczowa jest kontrola przesłanki niewydolności konstytucyjnej.",
+  "caveat": "Przepis wyłącza przejęcie kompetencji sądu najwyższego stanu i przewiduje parlamentarną akceptację oraz terminy. Nie oznacza swobodnego przejęcia dowolnego stanu na zawsze.",
+  "source_url": "https://www.constituteproject.org/constitution/India_2023?lang=en#s3635"
+ },
+ {
+  "id": "A047",
+  "country_code": "IN",
+  "country": "Indie",
+  "document_title": "India 1949 (rev. 2023)",
+  "period": "wydanie z archiwum",
+  "title": "Zawieszanie dochodzenia praw z pozostawieniem szczególnych wyjątków",
+  "provision": "art. 359",
+  "categories": [
+   "trudne",
+   "niebezpieczne"
+  ],
+  "meaning": "Podczas określonego stanu nadzwyczajnego można zawiesić prawo dochodzenia wskazanych praw przed sądem, ale wyłączono z tego mechanizmu art. 20 i 21.",
+  "why": "Prawa zapisane na papierze mogą utracić najważniejszy praktyczny element: możliwość ich wyegzekwowania. Sam katalog wolności nie pokazuje więc odporności systemu na stan wyjątkowy.",
+  "caveat": "Nie chodzi o dowolne zawieszenie wszystkich praw. Trzeba czytać określone wyjątki, zakres zarządzenia oraz powiązane normy o stanach nadzwyczajnych.",
+  "source_url": "https://www.constituteproject.org/constitution/India_2023?lang=en#s3683"
+ },
+ {
+  "id": "A048",
+  "country_code": "NG",
+  "country": "Nigeria",
+  "document_title": "Nigeria 1999 (rev. 2023)",
+  "period": "wydanie z archiwum",
+  "title": "Cele socjalne mogą pozostawać poza zwykłą drogą sądową",
+  "provision": "art. 6 ust. 6 lit. c",
+  "categories": [
+   "wazne",
+   "trudne"
+  ],
+  "meaning": "Władza sądownicza co do zasady nie obejmuje ustalania zgodności działań i prawa z celami podstawowymi i zasadami polityki państwa z rozdziału II, z zastrzeżeniem wyjątków konstytucyjnych.",
+  "why": "Wysokie obietnice socjalne mogą mieć inny charakter niż indywidualnie egzekwowalne prawa. Dla oceny konstytucji równie ważne jest pytanie o środek prawny, co o piękne sformułowanie.",
+  "caveat": "Nie oznacza to, że wszystkie prawa w Nigerii są niewykonalne sądowo. Przepis odnosi się do konkretnego rozdziału i dopuszcza konstytucyjne wyjątki.",
+  "source_url": "https://www.constituteproject.org/constitution/Nigeria_2023?lang=en#s99"
+ },
+ {
+  "id": "A049",
+  "country_code": "PT",
+  "country": "Portugalia",
+  "document_title": "Portugal 1976 (rev. 2005)",
+  "period": "wydanie z archiwum",
+  "title": "Rewizja ograniczona także treścią modelu społeczno-gospodarczego",
+  "provision": "art. 288",
+  "categories": [
+   "wazne",
+   "trudne",
+   "kontrowersyjne"
+  ],
+  "meaning": "Rewizja ma respektować m.in. prawa pracowników, współistnienie kilku sektorów własności i założenia gospodarki mieszanej, obok demokracji, praw obywatelskich i podziału władz.",
+  "why": "Granice zmian obejmują nie tylko technikę rządzenia, lecz również część modelu społeczno-gospodarczego. Zwykła większość konstytucyjna nie uzyskuje nieograniczonej swobody programowej.",
+  "caveat": "Nie jest to nakaz pełnej gospodarki państwowej. Przepis wyraźnie chroni współistnienie także sektora prywatnego.",
+  "source_url": "https://www.constituteproject.org/constitution/Portugal_2005?lang=en#s2793"
+ },
+ {
+  "id": "A050",
+  "country_code": "ZA",
+  "country": "Republika Południowej Afryki",
+  "document_title": "South Africa 1996 (rev. 2012)",
+  "period": "wydanie z archiwum",
+  "title": "Prawo do mieszkania połączone z testem zasobów i postępu",
+  "provision": "sekcja 26",
+  "categories": [
+   "wazne",
+   "trudne",
+   "panstwo"
+  ],
+  "meaning": "Każdy ma prawo dostępu do odpowiedniego mieszkania; państwo ma podejmować rozsądne środki w granicach dostępnych zasobów, stopniowo realizując to prawo. Arbitralna eksmisja jest zakazana.",
+  "why": "Roszczenie socjalne połączono z językiem racjonalnej realizacji, a nie prostą obietnicą natychmiastowego świadczenia dla każdego. To ważna konstrukcja relacji praw, budżetu i sądów.",
+  "caveat": "Nie wynika stąd bezwarunkowe prawo do natychmiastowego otrzymania dowolnego mieszkania od państwa.",
+  "source_url": "https://www.constituteproject.org/constitution/South_Africa_2012?lang=en#s295"
+ },
+ {
+  "id": "A051",
+  "country_code": "ZA",
+  "country": "Republika Południowej Afryki",
+  "document_title": "South Africa 1996 (rev. 2012)",
+  "period": "wydanie z archiwum",
+  "title": "Ograniczanie praw musi przejść test proporcjonalności",
+  "provision": "sekcja 36",
+  "categories": [
+   "wazne",
+   "trudne"
+  ],
+  "meaning": "Ograniczenia praw wymagają ustawy o ogólnym zastosowaniu i uzasadnienia w otwartym, demokratycznym społeczeństwie, z uwzględnieniem celu, zakresu ingerencji i łagodniejszych środków.",
+  "why": "Władza musi wykazać nie tylko dobry cel, lecz także adekwatność sposobu działania. Jest to narzędzie porównywania realnych kosztów ograniczenia wolności.",
+  "caveat": "Nie każdy spór ma jedno mechanicznie poprawne rozwiązanie. Istotne pozostają również odrębne reguły stanu nadzwyczajnego z sekcji 37.",
+  "source_url": "https://www.constituteproject.org/constitution/South_Africa_2012?lang=en#s489"
+ },
+ {
+  "id": "A052",
+  "country_code": "ZA",
+  "country": "Republika Południowej Afryki",
+  "document_title": "South Africa 1996 (rev. 2012)",
+  "period": "wydanie z archiwum",
+  "title": "Konstytucyjny zestaw niezależnych instytucji kontrolnych",
+  "provision": "sekcja 181",
+  "categories": [
+   "panstwo",
+   "wazne"
+  ],
+  "meaning": "Konstytucja ustanawia niezależne instytucje ochrony demokracji, w tym rzecznika ochrony publicznej, organy praw człowieka, audytora i komisję wyborczą.",
+  "why": "Kontrola jest rozproszona między wyspecjalizowane organy zamiast ograniczona do wyborów lub jednego sądu. Potencjalną korzyścią jest wcześniejsze wykrywanie różnych rodzajów nadużyć.",
+  "caveat": "Instytucje mają odpowiadać przed parlamentem i składać sprawozdania. Sama nazwa niezależna nie dowodzi faktycznej autonomii kadrowej i finansowej.",
+  "source_url": "https://www.constituteproject.org/constitution/South_Africa_2012?lang=en#s2696"
+ },
+ {
+  "id": "A053",
+  "country_code": "ZA",
+  "country": "Republika Południowej Afryki",
+  "document_title": "South Africa 1996 (rev. 2012)",
+  "period": "wydanie z archiwum",
+  "title": "Prawo do informacji także wobec podmiotów prywatnych",
+  "provision": "sekcja 32",
+  "categories": [
+   "panstwo",
+   "oryginalne"
+  ],
+  "meaning": "Dostęp do informacji obejmuje nie tylko zasoby państwa, lecz także informacje innej osoby, gdy są wymagane do wykonywania lub ochrony praw.",
+  "why": "To rozszerzenie przejrzystości na relacje, w których realną władzę informacyjną ma podmiot prywatny. Ochrona praw podąża za potrzebą informacji, a nie wyłącznie za publicznym statusem jej posiadacza.",
+  "caveat": "Nie jest to powszechne prawo wglądu do wszystkich cudzych danych. Wymagana jest wskazana w normie potrzeba ochrony lub wykonywania praw.",
+  "source_url": "https://www.constituteproject.org/constitution/South_Africa_2012?lang=en#s384"
+ },
+ {
+  "id": "A054",
+  "country_code": "BR",
+  "country": "Brazylia",
+  "document_title": "Brazil 1988 (rev. 2017)",
+  "period": "wydanie z archiwum",
+  "title": "Środowisko chronione również dla przyszłych pokoleń",
+  "provision": "art. 225",
+  "categories": [
+   "wazne",
+   "panstwo"
+  ],
+  "meaning": "Państwo i społeczność mają bronić środowiska dla obecnych i przyszłych pokoleń; artykuł obejmuje również konkretne instrumenty, np. publiczną ocenę oddziaływania przedsięwzięć.",
+  "why": "Długoterminowy interes ludzi nieobecnych w dzisiejszych wyborach uzyskuje konstytucyjną reprezentację. Połączenie celu z narzędziami jest istotniejsze od samej deklaracji ekologicznej.",
+  "caveat": "Norma nie oznacza zakazu każdej działalności oddziałującej na środowisko. Nie mierzę tu faktycznych rezultatów ochrony.",
+  "source_url": "https://www.constituteproject.org/constitution/Brazil_2017?lang=en#s4378"
+ },
+ {
+  "id": "A055",
+  "country_code": "BR",
+  "country": "Brazylia",
+  "document_title": "Brazil 1988 (rev. 2017)",
+  "period": "wydanie z archiwum",
+  "title": "Habeas data: konstytucyjne narzędzie kontroli własnych danych",
+  "provision": "art. 5 pkt LXXII",
+  "categories": [
+   "oryginalne",
+   "panstwo"
+  ],
+  "meaning": "Habeas data służy uzyskaniu wiedzy o własnych informacjach w określonych publicznych rejestrach i bankach danych oraz ich poprawieniu.",
+  "why": "Osoba otrzymuje specjalne narzędzie przeciw informacyjnej przewadze instytucji. To przykład konstytucyjnej ochrony, która zyskuje dodatkową wagę w państwie cyfrowym.",
+  "caveat": "Nie jest to nieograniczony dostęp do dowolnej bazy ani pełny odpowiednik wszystkich współczesnych praw ochrony danych.",
+  "source_url": "https://www.constituteproject.org/constitution/Brazil_2017?lang=en#s56"
+ },
+ {
+  "id": "A056",
+  "country_code": "CO",
+  "country": "Kolumbia",
+  "document_title": "Colombia 1991 (rev. 2015)",
+  "period": "wydanie z archiwum",
+  "title": "Szybka ochrona praw przez acción de tutela",
+  "provision": "art. 86",
+  "categories": [
+   "panstwo",
+   "wazne",
+   "oryginalne"
+  ],
+  "meaning": "Każdy może żądać szybkiej sądowej ochrony podstawowych praw zagrożonych działaniem lub zaniechaniem władzy. Przewidziano co do zasady nie więcej niż dziesięć dni do rozstrzygnięcia.",
+  "why": "Prawo dostaje krótki i dostępny mechanizm realizacji. Potencjał państwa może rosnąć przez zdolność korygowania bezprawia, nie tylko przez zwiększanie prerogatyw wykonawczych.",
+  "caveat": "Środek ma warunki, m.in. relację do innych sposobów obrony i wyjątek dla grożącej nieodwracalnej szkody. Nie każda zwykła sprawa cywilna automatycznie trafia do tego trybu.",
+  "source_url": "https://www.constituteproject.org/constitution/Colombia_2015?lang=en#s311"
+ },
+ {
+  "id": "A057",
+  "country_code": "KE",
+  "country": "Kenia",
+  "document_title": "Kenya 2010",
+  "period": "wydanie z archiwum",
+  "title": "Jawność i uczestnictwo społeczne w finansach publicznych",
+  "provision": "art. 201",
+  "categories": [
+   "panstwo",
+   "wazne"
+  ],
+  "meaning": "Finanse publiczne mają podlegać jawności, rozliczalności, udziałowi społeczeństwa, odpowiedzialnemu wydawaniu pieniędzy i uczciwemu podziałowi obciążeń między pokolenia.",
+  "why": "Konstytucja opisuje jakość procesu zarządzania pieniędzmi, a nie tylko uprawnienie do nakładania podatków. To potencjalna podstawa ograniczania marnotrawstwa i ukrywania kosztów.",
+  "caveat": "Sama ogólna zasada nie określa procedury każdego budżetu ani nie dowodzi istnienia realnego wpływu obywateli.",
+  "source_url": "https://www.constituteproject.org/constitution/Kenya_2010?lang=en#s3439"
+ },
+ {
+  "id": "A058",
+  "country_code": "KR",
+  "country": "Korea Południowa",
+  "document_title": "Korea (Republic of) 1948 (rev. 1987)",
+  "period": "wydanie z archiwum",
+  "title": "Nauka, technologia i informacja jako konstytucyjna polityka rozwoju",
+  "provision": "art. 127",
+  "categories": [
+   "panstwo",
+   "wazne"
+  ],
+  "meaning": "Państwo ma rozwijać gospodarkę przez naukę, technologię, informację i zasoby ludzkie, a prezydent może powołać organ doradczy do tych zagadnień.",
+  "why": "Kompetencję rozwojową powiązano z tworzeniem wiedzy i koordynacją polityki. To jeden z czytelniejszych przepisów dotyczących potencjalnych źródeł długotrwałej siły państwa.",
+  "caveat": "Konstytucyjny nakaz nie jest samodzielnym dowodem przyczyn gospodarczego sukcesu ani gwarancją finansowania badań.",
+  "source_url": "https://www.constituteproject.org/constitution/Republic_of_Korea_1987?lang=en#s706"
+ },
+ {
+  "id": "A059",
+  "country_code": "CN",
+  "country": "Chiny",
+  "document_title": "China (People’s Republic of) 1982 (rev. 2018)",
+  "period": "wydanie z archiwum",
+  "title": "Kierownicza rola partii jako cecha definiująca system",
+  "provision": "art. 1",
+  "categories": [
+   "wladca",
+   "wazne",
+   "niebezpieczne"
+  ],
+  "meaning": "Kierownictwo Komunistycznej Partii Chin jest przedstawione jako cecha definiująca socjalizm o chińskiej specyfice; zakazano podważania systemu socjalistycznego.",
+  "why": "Konkurencja o władzę zostaje podporządkowana zasadzie nadrzędnej roli jednej organizacji. To klucz do czytania przepisów o organach państwowych i prawach politycznych.",
+  "caveat": "Ocena koncentracji nie jest dowodem efektywności ani jej braku. Nie sprowadzam pełnego sposobu podejmowania decyzji do jednego zdania.",
+  "source_url": "https://www.constituteproject.org/constitution/China_2018?lang=en#s15"
+ },
+ {
+  "id": "A060",
+  "country_code": "CN",
+  "country": "Chiny",
+  "document_title": "China (People’s Republic of) 1982 (rev. 2018)",
+  "period": "wydanie z archiwum",
+  "title": "Ustrój gospodarki oparty na publicznej własności",
+  "provision": "art. 6",
+  "categories": [
+   "wazne",
+   "panstwo",
+   "trudne"
+  ],
+  "meaning": "Podstawą ustroju gospodarczego jest własność publiczna, ale dokument jednocześnie przewiduje współistnienie wielu sektorów i sposobów dystrybucji.",
+  "why": "Tekst wymaga odróżnienia dominującej zasady od dopuszczalnego pluralizmu gospodarczego. Pokazuje, dlaczego proste etykiety państwowe albo rynkowe bywają niewystarczające.",
+  "caveat": "Z tego artykułu nie wynika zakaz każdej własności prywatnej ani bezpośredni pomiar udziału sektora państwowego w gospodarce.",
+  "source_url": "https://www.constituteproject.org/constitution/China_2018?lang=en#s37"
+ },
+ {
+  "id": "A061",
+  "country_code": "PL",
+  "country": "Polska",
+  "document_title": "Poland 1997 (rev. 2009)",
+  "period": "wydanie z archiwum",
+  "title": "Konstytucyjny limit długu wynoszący trzy piąte PKB",
+  "provision": "art. 216 ust. 5",
+  "categories": [
+   "panstwo",
+   "trudne"
+  ],
+  "meaning": "Nie wolno zaciągać zobowiązań ani udzielać gwarancji i poręczeń powodujących przekroczenie przez państwowy dług publiczny trzech piątych wartości rocznego PKB.",
+  "why": "Liczbowy bezpiecznik próbuje ograniczyć przerzucanie kosztów dzisiejszej polityki na przyszłość. Jego praktyczne znaczenie zależy od sposobu liczenia długu i PKB.",
+  "caveat": "Tekst pozostawia metodę liczenia ustawie. Nie utożsamiam automatycznie krajowego długu konstytucyjnego z każdym międzynarodowym wskaźnikiem zadłużenia.",
+  "source_url": "https://www.constituteproject.org/constitution/Poland_2009?lang=en#s1275"
+ },
+ {
+  "id": "A062",
+  "country_code": "PL",
+  "country": "Polska",
+  "document_title": "Poland 1997 (rev. 2009)",
+  "period": "wydanie z archiwum",
+  "title": "Kilka progów zmiany konstytucji i szczególny tryb dla zasad ustroju",
+  "provision": "art. 235",
+  "categories": [
+   "wazne",
+   "trudne"
+  ],
+  "meaning": "Zmiana wymaga większości dwóch trzecich w Sejmie przy wymaganym kworum i bezwzględnej większości w Senacie. Dla rozdziałów I, II i XII przewidziano dodatkowe terminy i możliwość referendum zatwierdzającego.",
+  "why": "Różne części konstytucji otrzymują różne zabezpieczenia proceduralne. Ochrona ważnych rozdziałów polega także na czasie do namysłu i dodatkowej ścieżce weryfikacji.",
+  "caveat": "Referendum w tym trybie nie jest automatycznie obowiązkowe dla każdej zmiany. Trzeba uwzględnić uprawnionych wnioskodawców i terminy.",
+  "source_url": "https://www.constituteproject.org/constitution/Poland_2009?lang=en#s1377"
+ },
+ {
+  "id": "A063",
+  "country_code": "EC",
+  "country": "Ekwador",
+  "document_title": "Ecuador 2008 (rev. 2021)",
+  "period": "wydanie z archiwum",
+  "title": "Rozwiązanie parlamentu uruchamia także nowe wybory prezydenta",
+  "provision": "art. 148",
+  "categories": [
+   "wladca",
+   "trudne",
+   "kontrowersyjne"
+  ],
+  "meaning": "Prezydent może rozwiązać parlament w określonych okolicznościach, lecz uruchamia to wybory zarówno parlamentarne, jak i prezydenckie, na pozostały okres kadencji.",
+  "why": "Instrument kryzysowy obciąża także osobę, która z niego korzysta. To próba ograniczenia pokusy jednostronnego rozprawienia się z przeciwnym parlamentem.",
+  "caveat": "Uprawnienie jest ograniczone czasowo i do jednego użycia; niektóre przesłanki oraz nadzwyczajne akty gospodarcze wymagają udziału sądu konstytucyjnego.",
+  "source_url": "https://www.constituteproject.org/constitution/Ecuador_2021?lang=en#s1147"
+ },
+ {
+  "id": "A064",
+  "country_code": "EC",
+  "country": "Ekwador",
+  "document_title": "Ecuador 2008 (rev. 2021)",
+  "period": "wydanie z archiwum",
+  "title": "Obywatelstwo powszechne jako zasada stosunków międzynarodowych",
+  "provision": "art. 416 pkt 6",
+  "categories": [
+   "oryginalne",
+   "kontrowersyjne"
+  ],
+  "meaning": "Państwo ma promować obywatelstwo powszechne, swobodny ruch mieszkańców planety i stopniowe zanikanie statusu cudzoziemca jako element przebudowy relacji międzynarodowych.",
+  "why": "W konstytucji państwa narodowego zapisano cel wykraczający poza narodowy podział ludzi. To oryginalna wizja normatywna polityki zagranicznej.",
+  "caveat": "Nie oznacza automatycznego światowego obywatelstwa ani braku przepisów granicznych. Artykuł dotyczy zasad relacji międzynarodowych.",
+  "source_url": "https://www.constituteproject.org/constitution/Ecuador_2021?lang=en#s2612"
+ },
+ {
+  "id": "A065",
+  "country_code": "EC",
+  "country": "Ekwador",
+  "document_title": "Ecuador 2008 (rev. 2021)",
+  "period": "wydanie z archiwum",
+  "title": "Zakaz organizmów zdolnych trwale zmienić dziedzictwo genetyczne",
+  "provision": "art. 73",
+  "categories": [
+   "oryginalne",
+   "panstwo",
+   "trudne"
+  ],
+  "meaning": "Zakazane jest wprowadzanie organizmów oraz materiałów organicznych i nieorganicznych zdolnych definitywnie zmienić krajowe zasoby genetyczne; państwo ma też przeciwdziałać wymieraniu gatunków i niszczeniu ekosystemów.",
+  "why": "Ochrona obejmuje tożsamość biologiczną kraju, nie tylko szkodę dla konkretnej osoby. Trudne jest praktyczne znaczenie trwałości i zakres objętych zmian.",
+  "caveat": "Nie opisuję tego jako prostego, absolutnego zakazu wszystkich GMO. Takie skrócenie wymagałoby analizy również innych przepisów, w tym art. 401.",
+  "source_url": "https://www.constituteproject.org/constitution/Ecuador_2021?lang=en#s598"
+ },
+ {
+  "id": "A066",
+  "country_code": "CH",
+  "country": "Szwajcaria",
+  "document_title": "Switzerland 1999 (rev. 2014)",
+  "period": "wydanie z archiwum",
+  "title": "Inicjatywa obywateli do zmiany konstytucji",
+  "provision": "art. 139",
+  "categories": [
+   "oryginalne",
+   "wazne"
+  ],
+  "meaning": "Sto tysięcy uprawnionych może w osiemnaście miesięcy zażądać częściowej rewizji konstytucji; przewidziano różne ścieżki dla ogólnej propozycji i gotowego projektu.",
+  "why": "Obywatele otrzymują konstytucyjną inicjatywę programową, a nie tylko możliwość wybierania reprezentantów. Zwykłe partie nie mają wyłączności na otwieranie debaty ustrojowej.",
+  "caveat": "Są warunki poprawności i ograniczenie wynikające z bezwzględnie wiążących norm prawa międzynarodowego. Podpisy nie zastępują ostatecznych głosowań.",
+  "source_url": "https://www.constituteproject.org/constitution/Switzerland_2014?lang=en#s1237"
+ },
+ {
+  "id": "A067",
+  "country_code": "CH",
+  "country": "Szwajcaria",
+  "document_title": "Switzerland 1999 (rev. 2014)",
+  "period": "wydanie z archiwum",
+  "title": "Referendum fakultatywne jako kontrola ustawodawcy",
+  "provision": "art. 141",
+  "categories": [
+   "oryginalne",
+   "panstwo"
+  ],
+  "meaning": "Pięćdziesiąt tysięcy uprawnionych albo osiem kantonów może w sto dni zażądać referendum w określonych sprawach ustawowych i traktatowych.",
+  "why": "Weto obywatelskie działa jako stałe ograniczenie wyłączności parlamentu i może zwiększać znaczenie negocjacji przed uchwaleniem prawa.",
+  "caveat": "Wyliczenie spraw jest określone. Nie każde działanie administracyjne lub dowolna decyzja rządu podlega temu samemu trybowi.",
+  "source_url": "https://www.constituteproject.org/constitution/Switzerland_2014?lang=en#s1275"
+ },
+ {
+  "id": "A068",
+  "country_code": "IS",
+  "country": "Islandia",
+  "document_title": "Iceland 2011",
+  "period": "projekt",
+  "title": "Zasoby naturalne jako wspólna własność narodu",
+  "provision": "art. 34 projektu",
+  "categories": [
+   "oryginalne",
+   "kontrowersyjne"
+  ],
+  "meaning": "Projekt uznaje zasoby naturalne nienależące do prywatnych właścicieli za wspólne i wieczyste dobro narodu oraz przewiduje odpłatne, czasowo ograniczone zezwolenia na ich wykorzystywanie.",
+  "why": "Oddzielono korzystanie z zasobu od trwałego przejęcia nad nim kontroli. To interesująca konstrukcja ochrony długoterminowego majątku wspólnego.",
+  "caveat": "To projekt z 2011 r., nie przyjęta konstytucja Islandii. Nie dotyczy automatycznego odebrania wszystkich istniejących zasobów prywatnych.",
+  "source_url": "https://www.constituteproject.org/constitution/Iceland_2011D?lang=en#s115"
+ },
+ {
+  "id": "A069",
+  "country_code": "IS",
+  "country": "Islandia",
+  "document_title": "Iceland 2011",
+  "period": "projekt",
+  "title": "Obywatele mogą żądać referendum w sprawie ustawy",
+  "provision": "art. 65 projektu",
+  "categories": [
+   "oryginalne",
+   "panstwo"
+  ],
+  "meaning": "Według projektu dziesięć procent elektoratu mogłoby w określonym terminie zażądać referendum nad ustawą przyjętą przez parlament.",
+  "why": "Rozwiązanie pokazuje alternatywny podział inicjatywy między reprezentantami i obywatelami. Obywatele mogliby reagować na konkretną ustawę bez czekania na następne wybory.",
+  "caveat": "To przepis projektu. Dokument przewiduje terminy i dalsze ograniczenia przedmiotowe; nie przedstawiam go jako obowiązującego mechanizmu islandzkiego.",
+  "source_url": "https://www.constituteproject.org/constitution/Iceland_2011D?lang=en#s221"
+ },
+ {
+  "id": "A070",
+  "country_code": "NO",
+  "country": "Norwegia",
+  "document_title": "Norway 1814 (rev. 2016)",
+  "period": "wydanie z archiwum",
+  "title": "Poprawka nie może przeczyć duchowi konstytucji",
+  "provision": "art. 121",
+  "categories": [
+   "trudne",
+   "wazne"
+  ],
+  "meaning": "Poprawka nie może przeczyć zasadom konstytucji ani zmieniać jej ducha, a decyzję podejmuje się dopiero po kolejnych wyborach i wymaganą większością.",
+  "why": "Ochrona tożsamości opiera się na pojęciu o otwartej treści. Powstaje trudne pytanie, gdzie kończy się dopuszczalne udoskonalenie, a zaczyna zmiana natury ustroju.",
+  "caveat": "To nie jest precyzyjna lista niezmienialnych artykułów. Ocena ducha dokumentu wymaga argumentacji interpretacyjnej.",
+  "source_url": "https://www.constituteproject.org/constitution/Norway_2016?lang=en#s369"
+ },
+ {
+  "id": "A071",
+  "country_code": "BA",
+  "country": "Bośnia i Hercegowina",
+  "document_title": "Bosnia and Herzegovina 1995 (rev. 2009)",
+  "period": "wydanie z archiwum",
+  "title": "Decyzje blokowane przez sprzeciw przedstawicieli jednostek składowych",
+  "provision": "art. IV ust. 3 lit. d",
+  "categories": [
+   "trudne",
+   "wazne",
+   "kontrowersyjne"
+  ],
+  "meaning": "Obok zwykłej większości działają reguły uwzględniania reprezentacji każdej jednostki składowej, procedura uzgodnienia i możliwość zablokowania decyzji określoną większością przedstawicieli jednej z nich.",
+  "why": "Ochrona wspólnot może zapobiegać dominacji, ale podwyższa ryzyko paraliżu. Ta sama konstrukcja może służyć utrzymaniu pokoju albo strategicznemu blokowaniu państwa.",
+  "caveat": "Nie należy mieszać tej reguły terytorialnej z odrębnym trybem ochrony żywotnych interesów grup narodowych w art. IV ust. 3 lit. e-f.",
+  "source_url": "https://www.constituteproject.org/constitution/Bosnia_Herzegovina_2009?lang=en#s138"
+ },
+ {
+  "id": "A072",
+  "country_code": "LB",
+  "country": "Liban",
+  "document_title": "Lebanon 1926 (rev. 2004)",
+  "period": "wydanie z archiwum",
+  "title": "Zniesienie wyznaniowości przy zachowaniu podziału wyznaniowego",
+  "provision": "art. 95",
+  "categories": [
+   "trudne",
+   "kontrowersyjne",
+   "wazne"
+  ],
+  "meaning": "Parlament wybrany w równych częściach przez chrześcijan i muzułmanów ma podjąć działania prowadzące do zniesienia politycznej wyznaniowości. Na okres przejściowy zachowano określone podziały wyznaniowe.",
+  "why": "Konstytucja wyznacza kierunek odejścia od systemu, który sama jednocześnie utrzymuje jako zabezpieczenie równowagi. Cel i mechanizm przejściowy pozostają w napięciu.",
+  "caveat": "Nie jest to prosta sprzeczność logiczna bez żadnego rozwiązania: tekst zakłada proces przejścia. Nie ustalam, na jakim etapie faktycznie się znajduje.",
+  "source_url": "https://www.constituteproject.org/constitution/Lebanon_2004?lang=en#s325"
+ },
+ {
+  "id": "A073",
+  "country_code": "ET",
+  "country": "Etiopia",
+  "document_title": "Ethiopia 1994",
+  "period": "wydanie z archiwum",
+  "title": "Konstytucyjne prawo narodów do secesji",
+  "provision": "art. 39",
+  "categories": [
+   "oryginalne",
+   "kontrowersyjne",
+   "wazne"
+  ],
+  "meaning": "Narodom, narodowościom i ludom przysługuje prawo samostanowienia, w tym secesji, wykonywane przez określone głosowania, referendum i procedurę przekazania władzy.",
+  "why": "Federacja opiera się na uznaniu możliwości legalnego wyjścia jej wspólnot. Może to zwiększać dobrowolną legitymizację, lecz tworzy również instytucjonalny kanał podziału państwa.",
+  "caveat": "Prawo nie sprowadza się do jednostronnego oświadczenia dowolnej osoby. Konstytucja definiuje podmioty i warunki procedury.",
+  "source_url": "https://www.constituteproject.org/constitution/Ethiopia_1994?lang=en#s302"
+ },
+ {
+  "id": "A074",
+  "country_code": "ES",
+  "country": "Hiszpania",
+  "document_title": "Spain 1978 (rev. 2011)",
+  "period": "wydanie z archiwum",
+  "title": "Nierozerwalna jedność połączona z autonomią narodowości",
+  "provision": "art. 2",
+  "categories": [
+   "wazne",
+   "trudne",
+   "kontrowersyjne"
+  ],
+  "meaning": "Konstytucja łączy nierozerwalną jedność narodu hiszpańskiego z prawem do samorządności tworzących go narodowości i regionów oraz solidarnością między nimi.",
+  "why": "Trudność polega na wyznaczeniu granicy autonomii wewnątrz wspólnoty, której niepodzielność jest zarazem zasadą podstawową.",
+  "caveat": "Nie jest to odpowiednik etiopskiego prawa secesji. Wniosek o prawie do jednostronnego wystąpienia nie wynika z tego przepisu.",
+  "source_url": "https://www.constituteproject.org/constitution/Spain_2011?lang=en#s18"
+ },
+ {
+  "id": "A075",
+  "country_code": "ID",
+  "country": "Indonezja",
+  "document_title": "Indonesia 1945 (reinst. 1959, rev. 2002)",
+  "period": "wydanie z archiwum",
+  "title": "Strategiczne gałęzie produkcji pod kontrolą państwa",
+  "provision": "art. 33",
+  "categories": [
+   "panstwo",
+   "kontrowersyjne",
+   "wazne"
+  ],
+  "meaning": "Ważne sektory produkcji i zasoby naturalne mają pozostawać pod władzą państwa i służyć największej korzyści ludności; organizacja gospodarki odwołuje się też do wspólnego działania i sprawiedliwości.",
+  "why": "Przepis uzasadnia strategiczną rolę państwa w gospodarce. Potencjał koordynacji współistnieje jednak z ryzykiem politycznego zawłaszczania kontroli nad zasobami.",
+  "caveat": "Nie utożsamiam samego sformułowania pod władzą państwa z jedną konkretną formą własności lub zarządzania.",
+  "source_url": "https://www.constituteproject.org/constitution/Indonesia_2002?lang=en#s425"
+ },
+ {
+  "id": "A076",
+  "country_code": "AR",
+  "country": "Argentyna",
+  "document_title": "Argentina 1853 (reinst. 1983, rev. 1994)",
+  "period": "wydanie z archiwum",
+  "title": "Prawa pracownicze jako osobny fundament konstytucji",
+  "provision": "art. 14 bis",
+  "categories": [
+   "wazne",
+   "panstwo"
+  ],
+  "meaning": "Ochrona pracy obejmuje m.in. sprawiedliwe wynagrodzenie, udział w dochodach przedsiębiorstw i współpracę w zarządzaniu, ochronę zatrudnienia, związki zawodowe i zabezpieczenie społeczne.",
+  "why": "Prawa pracownicze są częścią projektu podziału siły w gospodarce. Wpisano tu nie tylko ochronę przed nadużyciem, ale również pewien model uczestnictwa w rezultatach produkcji.",
+  "caveat": "Nie opisuję konstytucyjnego sformułowania jako automatycznie identycznej, wykonanej praktyki we wszystkich przedsiębiorstwach.",
+  "source_url": "https://www.constituteproject.org/constitution/Argentina_1994?lang=en#s33"
+ },
+ {
+  "id": "A077",
+  "country_code": "MX",
+  "country": "Meksyk",
+  "document_title": "Mexico 1917 (rev. 2015)",
+  "period": "wydanie z archiwum",
+  "title": "Naród pierwotnym właścicielem ziemi i wód",
+  "provision": "art. 27",
+  "categories": [
+   "panstwo",
+   "kontrowersyjne",
+   "trudne"
+  ],
+  "meaning": "Naród jest pierwotnym właścicielem ziemi i wód i może przenosić własność na osoby prywatne; konstytucja określa też podstawy regulowania i wywłaszczania.",
+  "why": "Własność prywatna zostaje osadzona w uprzedniej kompetencji wspólnoty politycznej. To silna podstawa interwencji w zasoby i strukturę przestrzenną państwa.",
+  "caveat": "Wywłaszczenie powiązano z interesem publicznym i odszkodowaniem. Nie wynika stąd dowolna konfiskata każdego majątku.",
+  "source_url": "https://www.constituteproject.org/constitution/Mexico_2015?lang=en#s394"
+ },
+ {
+  "id": "A078",
+  "country_code": "MX",
+  "country": "Meksyk",
+  "document_title": "Mexico 1917 (rev. 2015)",
+  "period": "wydanie z archiwum",
+  "title": "Prezydent nie może wrócić na urząd",
+  "provision": "art. 83",
+  "categories": [
+   "wazne",
+   "panstwo"
+  ],
+  "meaning": "Osoba, która sprawowała urząd prezydenta w wymienionych formach, nie może ponownie objąć tego stanowiska.",
+  "why": "Zakaz jest silniejszy niż ograniczenie dwóch kolejnych kadencji: zamyka drogę powrotu po przerwie. Może ograniczać personalne utrwalanie władzy kosztem utraty możliwości ponownego wyboru sprawdzonej osoby.",
+  "caveat": "Omawiam wersję źródłową z 2015 r. Szczegóły kategorii zastępstwa trzeba odczytywać razem z jej przepisami przejściowymi i pozostałymi artykułami.",
+  "source_url": "https://www.constituteproject.org/constitution/Mexico_2015?lang=en#s1346"
+ },
+ {
+  "id": "A079",
+  "country_code": "RW",
+  "country": "Rwanda",
+  "document_title": "Rwanda 2003 (rev. 2015)",
+  "period": "wydanie z archiwum",
+  "title": "Przepis przejściowy zmienia praktyczny sens limitu kadencji",
+  "provision": "art. 172",
+  "categories": [
+   "wladca",
+   "kontrowersyjne",
+   "trudne"
+  ],
+  "meaning": "Przepis przejściowy wprowadza siedmioletnią kadencję następującą po wskazanej kadencji dotychczasowej, a stosowanie art. 101 przesuwa na okres po tej dodatkowej kadencji.",
+  "why": "Realne znaczenie ograniczenia kadencji może wynikać z końca dokumentu, a nie z rozdziału o prezydencie. To przykład ustrojowej mocy przepisów przejściowych.",
+  "caveat": "Nie podaję z tego przepisu aktualnej daty zakończenia czyjegoś urzędowania. Analiza odnosi się do wydania z 2015 r.",
+  "source_url": "https://www.constituteproject.org/constitution/Rwanda_2015?lang=en#s962"
+ },
+ {
+  "id": "A080",
+  "country_code": "BD",
+  "country": "Bangladesz",
+  "document_title": "Bangladesh 1972 (reinst. 1986, rev. 2018)",
+  "period": "wydanie z archiwum",
+  "title": "Poseł może stracić mandat za głosowanie przeciw swojej partii",
+  "provision": "art. 70",
+  "categories": [
+   "wladca",
+   "kontrowersyjne"
+  ],
+  "meaning": "Poseł wybrany jako kandydat partii traci mandat, jeśli z niej wystąpi albo zagłosuje w parlamencie przeciw niej, bez automatycznego zakazu ponownego kandydowania.",
+  "why": "Stabilność partyjna zostaje chroniona kosztem niezależności przedstawiciela. Gdy kierownictwo partii kontroluje także rząd, może to osłabić parlamentarną kontrolę egzekutywy.",
+  "caveat": "To nie jest twierdzenie, że każda różnica poglądów poza głosowaniem automatycznie odbiera mandat. Omawiam konkretną normę z wydania źródłowego.",
+  "source_url": "https://www.constituteproject.org/constitution/Bangladesh_2018?lang=en#s548"
+ },
+ {
+  "id": "A081",
+  "country_code": "BD",
+  "country": "Bangladesz",
+  "document_title": "Bangladesh 1972 (reinst. 1986, rev. 2018)",
+  "period": "wydanie z archiwum",
+  "title": "Bardzo szeroki obszar konstytucji uznany za niezmienialny",
+  "provision": "art. 7B",
+  "categories": [
+   "trudne",
+   "kontrowersyjne",
+   "wladca"
+  ],
+  "meaning": "Niepodlegające zmianie mają być rozległe części dokumentu, obejmujące preambułę, całe wskazane części i elementy podstawowej struktury.",
+  "why": "Zakres usztywnienia jest znacznie większy niż wąska ochrona republiki czy godności. Może chronić podstawy państwa, ale też przenosić rozstrzyganie sporów ustrojowych poza zwykłą procedurę poprawkową.",
+  "caveat": "Nie przesądzam aktualnej mocy tego postanowienia po późniejszych wydarzeniach i orzeczeniach. Analizuję wydanie oznaczone rokiem 2018.",
+  "source_url": "https://www.constituteproject.org/constitution/Bangladesh_2018?lang=en#s63"
+ },
+ {
+  "id": "A082",
+  "country_code": "HU",
+  "country": "Węgry",
+  "document_title": "Hungary 2011 (rev. 2016)",
+  "period": "wydanie z archiwum",
+  "title": "Rozliczenie komunizmu wpisane w samą konstytucję",
+  "provision": "art. U",
+  "categories": [
+   "kontrowersyjne",
+   "trudne"
+  ],
+  "meaning": "Dokument określa dawne organizacje komunistyczne jako przestępcze i wskazuje odpowiedzialność ich kierownictwa za rozbudowany katalog historycznych działań.",
+  "why": "Konstytucja staje się równocześnie aktem rozliczenia i urzędowej interpretacji historii. Powstaje napięcie między sprawiedliwością przejściową a indywidualizacją odpowiedzialności.",
+  "caveat": "Nie jest to podstawa do przypisywania winy konkretnej osobie bez analizy dalszych norm, procedur i stanu faktycznego.",
+  "source_url": "https://www.constituteproject.org/constitution/Hungary_2016?lang=en#s165"
+ },
+ {
+  "id": "A083",
+  "country_code": "HN",
+  "country": "Honduras",
+  "document_title": "Honduras 1982 (rev. 2013)",
+  "period": "wydanie z archiwum",
+  "title": "Sankcja za samo proponowanie powrotu do prezydentury",
+  "provision": "art. 239",
+  "categories": [
+   "kontrowersyjne",
+   "niebezpieczne",
+   "trudne"
+  ],
+  "meaning": "Wydanie z 2013 r. przewiduje utratę urzędu i dziesięcioletnią dyskwalifikację także wobec osób popierających zmianę zakazu ponownego objęcia prezydentury.",
+  "why": "Norma chroniąca rotację władzy wchodzi w konflikt ze swobodą debaty o zmianie ustroju. Zagrożeniem jest penalizowanie lub wykluczanie politycznego postulatu, nie tylko bezprawnego czynu.",
+  "caveat": "To opis archiwalnego brzmienia. Nie wolno używać go bez dalszej weryfikacji jako informacji o obecnie stosowanym prawie Hondurasu.",
+  "source_url": "https://www.constituteproject.org/constitution/Honduras_2013?lang=en#s1064"
+ },
+ {
+  "id": "A084",
+  "country_code": "TW",
+  "country": "Tajwan",
+  "document_title": "Taiwan (Republic of China) 1947 (rev. 2005)",
+  "period": "wydanie z archiwum",
+  "title": "Zmiana konstytucji wymaga poparcia połowy ogółu elektoratu",
+  "provision": "przepisy dodatkowe, art. 12",
+  "categories": [
+   "trudne",
+   "wazne"
+  ],
+  "meaning": "Do zatwierdzenia poprawki potrzeba wskazanych większości w parlamencie, a w referendum liczba ważnych głosów za musi przekroczyć połowę wszystkich uprawnionych.",
+  "why": "Mianownik obejmuje cały elektorat, nie tylko głosujących. Nieuczestniczenie może więc mieć dla wyniku skutek zbliżony do sprzeciwu.",
+  "caveat": "To przepis dodatkowy z odrębnego reżimu zmian, który zastępuje wskazany dawny artykuł konstytucji. Nie należy mylić obu procedur.",
+  "source_url": "https://www.constituteproject.org/constitution/Taiwan_2005?lang=en#s760"
+ },
+ {
+  "id": "A085",
+  "country_code": "LI",
+  "country": "Liechtenstein",
+  "document_title": "Liechtenstein 1921 (rev. 2020)",
+  "period": "wydanie z archiwum",
+  "title": "Ustawa wymaga zgody księcia",
+  "provision": "art. 9",
+  "categories": [
+   "wladca",
+   "wazne"
+  ],
+  "meaning": "Każda ustawa wymaga sankcji panującego księcia, aby uzyskać ważność.",
+  "why": "Monarcha jest realnym uczestnikiem stanowienia prawa, nie jedynie ceremonialnym podpisującym. Ten sam porządek przewiduje jednak odrębną drogę obywatelskiego zniesienia monarchii.",
+  "caveat": "Zwykłe ustawodawstwo i szczególna procedura z art. 113 nie są tym samym. Nie opisuję sankcji jako nieograniczonej kontroli nad każdym działaniem społecznym.",
+  "source_url": "https://www.constituteproject.org/constitution/Liechtenstein_2020?lang=en#s33"
+ },
+ {
+  "id": "A086",
+  "country_code": "SG",
+  "country": "Singapur",
+  "document_title": "Singapore 1963 (rev. 2016)",
+  "period": "wydanie z archiwum",
+  "title": "Prezydent jako strażnik wcześniej zgromadzonych rezerw",
+  "provision": "art. 148A",
+  "categories": [
+   "panstwo",
+   "trudne",
+   "wladca"
+  ],
+  "meaning": "Prezydent może odmówić zgody na określone ustawy budżetowe, jeśli grożą sięgnięciem po rezerwy niezgromadzone przez rząd w jego aktualnej kadencji.",
+  "why": "Bieżąca większość napotyka osobnego strażnika majątku odziedziczonego po poprzednikach. To pomysł ochrony ciągłości finansowej przed krótkoterminową konsumpcją polityczną.",
+  "caveat": "Weto nie jest opisane jako absolutne: przepis odsyła do parlamentarnego trybu jego przełamania i zapewnia określone rozwiązania finansowania zastępczego.",
+  "source_url": "https://www.constituteproject.org/constitution/Singapore_2016?lang=en#s2718"
+ },
+ {
+  "id": "A087",
+  "country_code": "SG",
+  "country": "Singapur",
+  "document_title": "Singapore 1963 (rev. 2016)",
+  "period": "wydanie z archiwum",
+  "title": "Ustawy bezpieczeństwa mogą odstępować od części praw",
+  "provision": "art. 149",
+  "categories": [
+   "niebezpieczne",
+   "trudne"
+  ],
+  "meaning": "Ustawy przeciwdziałające określonym zagrożeniom mogą pozostawać ważne mimo sprzeczności z wyliczonymi prawami konstytucyjnymi; szczególne reguły obejmują również kontrolę działań wykonawczych.",
+  "why": "Ochrona bezpieczeństwa jest tu konstrukcją nadrzędną wobec części zwykłych gwarancji. Ryzyko zależy m.in. od szerokości rozpoznawania zagrożenia i kontroli korzystania z wyjątku.",
+  "caveat": "To nie jest blankietowe unieważnienie całej konstytucji. Artykuł wymienia przesłanki, konkretne prawa i parlamentarną możliwość uchylenia ustawy.",
+  "source_url": "https://www.constituteproject.org/constitution/Singapore_2016?lang=en#s2827"
+ },
+ {
+  "id": "A088",
+  "country_code": "JP",
+  "country": "Japonia",
+  "document_title": "Japan 1889",
+  "period": "historyczny",
+  "title": "Cesarz święty i nietykalny",
+  "provision": "art. 3",
+  "categories": [
+   "wladca",
+   "wazne"
+  ],
+  "meaning": "Konstytucja określa cesarza jako świętego i nietykalnego.",
+  "why": "Najwyższy urząd jest chroniony nie tylko kompetencyjnie, ale również przez sakralizację osoby. To bardzo zwięzłe zdanie ma dużą wagę dla całej konstrukcji odpowiedzialności.",
+  "caveat": "Jest to historyczna konstytucja Meiji z 1889 r., nie współczesna konstytucja Japonii.",
+  "source_url": "https://www.constituteproject.org/constitution/Japan_1889?lang=en#s6"
+ },
+ {
+  "id": "A089",
+  "country_code": "BO",
+  "country": "Boliwia",
+  "document_title": "Bolivia (Plurinational State of) 1826",
+  "period": "historyczny",
+  "title": "Prezydent dożywotni",
+  "provision": "art. 77 (LXXVII)",
+  "categories": [
+   "wladca",
+   "niebezpieczne",
+   "dziwne"
+  ],
+  "meaning": "Władzę wykonawczą ma sprawować prezydent dożywotni wraz z wiceprezydentem i ministrami.",
+  "why": "Republikańska nazwa ustroju nie wyklucza skrajnie długiej personalizacji władzy. Bez analizy długości kadencji samo słowo prezydent może wprowadzać w błąd.",
+  "caveat": "To konstytucja Boliwii z 1826 r. Nie jest to opis obecnego ustroju ani dowód dziedziczności urzędu.",
+  "source_url": "https://www.constituteproject.org/constitution/Bolivia_1826?lang=en#s376"
+ },
+ {
+  "id": "A090",
+  "country_code": "FR",
+  "country": "Francja",
+  "document_title": "Constitution de 1793, an 1 de la République, France, MJP, université de Perpignan",
+  "period": "historyczny",
+  "title": "Powstanie jako najświętsze prawo i obowiązek",
+  "provision": "Deklaracja praw, art. 35",
+  "categories": [
+   "oryginalne",
+   "niebezpieczne",
+   "trudne"
+  ],
+  "meaning": "Gdy rząd narusza prawa ludu, powstanie zostaje uznane za szczególnie doniosłe prawo i obowiązek ludu oraz jego części.",
+  "why": "Konstytucja próbuje legitymizować opór także przeciw własnym wykonawcom. Problemem jest ustalenie, kto autorytatywnie stwierdza naruszenie i kiedy uruchamia się ta skrajna reguła.",
+  "caveat": "To historyczny tekst z 1793 r. Nie jest współczesnym upoważnieniem do przemocy ani dowodem, że taki mechanizm daje się stosować bez konfliktu.",
+  "source_url": "https://mjp.univ-perp.fr/france/co1793.htm"
+ },
+ {
+  "id": "A091",
+  "country_code": "FR",
+  "country": "Francja",
+  "document_title": "Constitution 1795, an III de la République, France, MJP, université de Perpignan",
+  "period": "historyczny",
+  "title": "Dobry obywatel ma być dobrym synem, ojcem i mężem",
+  "provision": "Deklaracja obowiązków, art. 4",
+  "categories": [
+   "dziwne",
+   "kontrowersyjne"
+  ],
+  "meaning": "Dobry obywatel ma być zarazem dobrym synem, ojcem, bratem, przyjacielem i mężem.",
+  "why": "Konstytucyjny wzorzec człowieka łączy cnotę publiczną z życiem prywatnym i określonym modelem relacji. Jest to zaskakujący przykład moralnej pedagogiki na poziomie ustrojowym.",
+  "caveat": "Przepis deklaracji obowiązków z 1795 r. nie jest sam w sobie gotową procedurą prawną karania za bycie złym krewnym.",
+  "source_url": "https://mjp.univ-perp.fr/france/co1795.htm"
+ },
+ {
+  "id": "A092",
+  "country_code": "FR",
+  "country": "Francja",
+  "document_title": "Constitution an XII, 1804, France, MJP, université de Perpignan",
+  "period": "historyczny",
+  "title": "Rząd republiki powierzony cesarzowi",
+  "provision": "art. 1",
+  "categories": [
+   "dziwne",
+   "wladca",
+   "wazne"
+  ],
+  "meaning": "Rząd republiki powierzono cesarzowi noszącemu tytuł cesarza Francuzów; wymiar sprawiedliwości ma działać w jego imieniu.",
+  "why": "Jedno zdanie łączy republikańską ciągłość języka z imperialnym centrum władzy. Pokazuje, dlaczego etykieta ustroju nie wystarcza do jego zrozumienia.",
+  "caveat": "To akt konstytucyjny z 1804 r. Nie należy z tej formuły wyprowadzać współczesnej definicji republiki.",
+  "source_url": "https://mjp.univ-perp.fr/france/co1804.htm"
+ },
+ {
+  "id": "A093",
+  "country_code": "FR",
+  "country": "Francja",
+  "document_title": "Constitution de 1848, 2e République, France, MJP, université de Perpignan",
+  "period": "historyczny",
+  "title": "Prezydent rozwiązujący parlament jest automatycznie usunięty",
+  "provision": "art. 68",
+  "categories": [
+   "oryginalne",
+   "trudne"
+  ],
+  "meaning": "Rozwiązanie lub uniemożliwienie działania Zgromadzenia przez prezydenta stanowi zdradę; sam ten fakt ma powodować utratę urzędu, odmowę posłuszeństwa i przejście egzekutywy do parlamentu.",
+  "why": "Próba zamachu otrzymuje natychmiastową sankcję konstytucyjną. Ciekawa jest ambicja stworzenia mechanizmu samowykonującego się w chwili załamania normalnej procedury.",
+  "caveat": "Tekst nie dowodzi, że sankcja wyegzekwuje się sama bez lojalności urzędników, sądów i sił wykonawczych. To wydanie historyczne z 1848 r.",
+  "source_url": "https://mjp.univ-perp.fr/france/co1848.htm"
+ },
+ {
+  "id": "A094",
+  "country_code": "DE",
+  "country": "Niemcy",
+  "document_title": "Allemagne, Constitution de Weimar, 1919, Digithèque MJP",
+  "period": "historyczny",
+  "title": "Prawa podstawowe zawieszane w obronie porządku publicznego",
+  "provision": "art. 48",
+  "categories": [
+   "niebezpieczne",
+   "wladca",
+   "wazne"
+  ],
+  "meaning": "Prezydent może podejmować nadzwyczajne środki dla przywrócenia bezpieczeństwa i porządku, w tym zawiesić wykonywanie wymienionych praw podstawowych.",
+  "why": "Niebezpieczeństwo wynika z połączenia pojemnej przesłanki porządku z daleko idącym środkiem. To klasyczny problem ratowania konstytucji za pomocą czasowego ograniczenia jej gwarancji.",
+  "caveat": "Reichstag miał być niezwłocznie informowany i mógł żądać uchylenia środków. Nie przedstawiam historycznego art. 48 jako formalnie pozbawionego wszelkiej kontroli.",
+  "source_url": "https://mjp.univ-perp.fr/constit/de1919.htm"
+ },
+ {
+  "id": "A095",
+  "country_code": "DE",
+  "country": "Niemcy",
+  "document_title": "Allemagne nazie, Hitler, Troisième Reich, 1933, MJP",
+  "period": "historyczny",
+  "title": "Rządowe ustawy mogą odstępować od konstytucji",
+  "provision": "ustawa z 24 marca 1933 r., art. 2",
+  "categories": [
+   "niebezpieczne",
+   "wladca",
+   "wazne"
+  ],
+  "meaning": "Ustawa o pełnomocnictwach pozwala rządowym ustawom odstępować od konstytucji z określonymi wyłączeniami dotyczącymi organizacji izb i praw prezydenta.",
+  "why": "Zasadnicza zmiana polega na przekształceniu wykonawcy w źródło prawa zdolne omijać najwyższy akt. Formalne pozostawienie części instytucji może maskować zmianę faktycznej hierarchii norm.",
+  "caveat": "Chodzi o art. 2 ustawy z 24 marca 1933 r., nie o dowolną zwykłą ustawę ani inny art. 2 na tej samej stronie zawierającej kilka aktów.",
+  "source_url": "https://mjp.univ-perp.fr/constit/de1933.htm"
+ },
+ {
+  "id": "A096",
+  "country_code": "SU",
+  "country": "Soviet Union",
+  "document_title": "Constitution de l'Union soviétique, URSS, 1936, Digithèque MJP",
+  "period": "historyczny",
+  "title": "Partia jako kierowniczy rdzeń organizacji społecznych",
+  "provision": "art. 126",
+  "categories": [
+   "wladca",
+   "wazne",
+   "niebezpieczne"
+  ],
+  "meaning": "Partia komunistyczna jest przedstawiona jako awangarda i kierowniczy rdzeń organizacji pracowniczych, zarówno społecznych, jak i państwowych.",
+  "why": "Wskazano polityczne centrum wspólne dla instytucji formalnie różnych rodzajów. Pozwala to odczytywać katalog organów państwa w świetle nadrzędnej struktury partyjnej.",
+  "caveat": "To konstytucja ZSRR z 1936 r. Nie zakładam, że same zapisane kompetencje wyczerpują historyczny opis sprawowania władzy.",
+  "source_url": "https://mjp.univ-perp.fr/constit/su1936.htm"
+ },
+ {
+  "id": "A097",
+  "country_code": "SU",
+  "country": "Soviet Union",
+  "document_title": "Constitution de l'Union soviétique, URSS, 1936, Digithèque MJP",
+  "period": "historyczny",
+  "title": "Wolność słowa podporządkowana interesom ustroju socjalistycznego",
+  "provision": "art. 125",
+  "categories": [
+   "kontrowersyjne",
+   "trudne"
+  ],
+  "meaning": "Wolności słowa, prasy, zgromadzeń i demonstracji zagwarantowano zgodnie z interesami ludzi pracy i w celu umocnienia ustroju socjalistycznego, z zapewnieniem wskazanych materialnych środków realizacji.",
+  "why": "Wolność zostaje związana z celem politycznym ustroju. Kluczowe pytanie brzmi, kto określa zgodność korzystania z wolności z tym celem.",
+  "caveat": "Samo porównanie tekstów nie dowodzi zakresu faktycznych represji. Opis dotyczy konstrukcji gwarancji w historycznym dokumencie.",
+  "source_url": "https://mjp.univ-perp.fr/constit/su1936.htm"
+ },
+ {
+  "id": "A098",
+  "country_code": "RU",
+  "country": "Rosja",
+  "document_title": "Russian Federation 1918",
+  "period": "historyczny",
+  "title": "Pozbawienie praw wyborczych według roli klasowej",
+  "provision": "art. 65",
+  "categories": [
+   "kontrowersyjne",
+   "niebezpieczne"
+  ],
+  "meaning": "Czynne i bierne prawa wyborcze wyłączono m.in. dla określonych pracodawców, osób żyjących z dochodów bez pracy, prywatnych kupców i duchownych.",
+  "why": "Ustrój definiuje lud polityczny poprzez rolę klasową i zawodową. Deklaracja władzy ludu może więc współistnieć z szerokim wykluczeniem grup społecznych.",
+  "caveat": "To konstytucja Rosji sowieckiej z 1918 r. Nie odnoszę tych kryteriów do obywateli współczesnej Rosji.",
+  "source_url": "https://www.constituteproject.org/constitution/Russia_1918?lang=en#s292"
+ },
+ {
+  "id": "A099",
+  "country_code": "PL",
+  "country": "Polska",
+  "document_title": "Poland 1791",
+  "period": "historyczny",
+  "title": "Zniesienie liberum veto i konfederacji",
+  "provision": "rozdział VI",
+  "categories": [
+   "wazne",
+   "panstwo"
+  ],
+  "meaning": "Decyzje mają zapadać większością, a liberum veto, konfederacje i sejmy konfederackie zostają zniesione.",
+  "why": "Potencjał państwa zwiększa tu zdolność doprowadzenia procedury do rozstrzygnięcia. Ograniczenie indywidualnego weta ma usuwać mechanizm blokowania wspólnego działania.",
+  "caveat": "Nie jest to twierdzenie, że każda większość zawsze powinna móc wszystko. Pozostałe zabezpieczenia ustroju należy czytać osobno; dokument jest historyczny.",
+  "source_url": "https://www.constituteproject.org/constitution/Poland_1791?lang=en#s15"
+ },
+ {
+  "id": "A100",
+  "country_code": "PL",
+  "country": "Polska",
+  "document_title": "Poland 1791",
+  "period": "historyczny",
+  "title": "Tron elekcyjny zastąpiony dziedziczeniem dynastii",
+  "provision": "rozdział VII",
+  "categories": [
+   "wazne",
+   "kontrowersyjne"
+  ],
+  "meaning": "Tron ma przechodzić według dziedziczenia w wskazanej rodzinie, z opisaniem linii sukcesji i zachowaniem prawa wyboru innego domu po wygaśnięciu dynastii.",
+  "why": "Ciągłość państwa ma zostać wzmocniona przez ograniczenie destabilizujących bezkrólewi i rywalizacji o każdorazową elekcję. Rozwiązanie łączy element dynastyczny z rezerwową kompetencją wspólnoty politycznej.",
+  "caveat": "Nie jest to zniesienie wszelkiego wyboru dynastii na zawsze. Właściwy fragment to rozdział VII, a nie dziedziczna własność mieszczan z dołączonego aktu o miastach.",
+  "source_url": "https://www.constituteproject.org/constitution/Poland_1791?lang=en#s25"
+ },
+ {
+  "id": "A101",
+  "country_code": "US",
+  "country": "Stany Zjednoczone",
+  "document_title": "United States of America 1789 (rev. 1992)",
+  "period": "historyczny fragment później zmienionego tekstu",
+  "title": "Trzy piąte osoby w dawnym mechanizmie reprezentacji",
+  "provision": "art. I sekcja 2, klauzula historyczna",
+  "categories": [
+   "kontrowersyjne",
+   "niebezpieczne"
+  ],
+  "meaning": "W dawnej formule podziału reprezentacji i podatków bezpośrednich część ludności niewolnej liczono jako trzy piąte, obok innych odmiennie ujmowanych kategorii.",
+  "why": "Niesprawiedliwy status osoby może zostać przeliczony na siłę polityczną jej właścicieli i regionu. Mechanizm reprezentacji jest tu równie istotny jak sam język równości.",
+  "caveat": "To historyczny składnik tekstu zastąpiony późniejszym porządkiem, w tym poprawką XIV. Nie oznaczał prawa oddania trzech piątych głosu przez osobę zniewoloną.",
+  "source_url": "https://www.constituteproject.org/constitution/United_States_of_America_1992?lang=en#s7"
+ },
+ {
+  "id": "A102",
+  "country_code": "BT",
+  "country": "Bhutan",
+  "document_title": "Bhutan 2008",
+  "period": "wydanie z archiwum",
+  "title": "Król ma obowiązek oddać tron w wieku 65 lat",
+  "provision": "art. 2 ust. 6",
+  "categories": [
+   "oryginalne",
+   "panstwo"
+  ],
+  "meaning": "Po ukończeniu 65 lat król ma oddać tron następcy, pod warunkiem że następca osiągnął wymaganą dojrzałość.",
+  "why": "Konstytucja ogranicza długość osobistego sprawowania władzy także w monarchii dziedzicznej. Sukcesja jest częścią planowania ciągłości instytucji.",
+  "caveat": "Ważny jest warunek dotyczący następcy i sąsiednie przepisy o regencji. Nie sprowadzam całej procedury do automatycznej zmiany w dniu urodzin.",
+  "source_url": "https://www.constituteproject.org/constitution/Bhutan_2008?lang=en#s33"
+ },
+ {
+  "id": "A103",
+  "country_code": "BT",
+  "country": "Bhutan",
+  "document_title": "Bhutan 2008",
+  "period": "wydanie z archiwum",
+  "title": "Parlament i referendum mogą wymusić abdykację króla",
+  "provision": "art. 2 ust. 20-26",
+  "categories": [
+   "oryginalne",
+   "trudne"
+  ],
+  "meaning": "Celowe naruszenie konstytucji lub trwała niezdolność mogą uruchomić procedurę abdykacji: inicjatywę wymaganej części parlamentu, kwalifikowaną decyzję i referendum.",
+  "why": "Monarcha ma silną pozycję, ale urząd nie jest całkowicie oderwany od odpowiedzialności konstytucyjnej. Wielostopniowość ma chronić zarówno państwo, jak i ciągłość korony.",
+  "caveat": "Nie jest to zwykłe odwołanie króla przez większość rządową. Trzeba zachować rozróżnienie między progami wszczęcia, uchwały i referendum.",
+  "source_url": "https://www.constituteproject.org/constitution/Bhutan_2008?lang=en#s33"
+ },
+ {
+  "id": "A104",
+  "country_code": "UY",
+  "country": "Urugwaj",
+  "document_title": "Uruguay 1966 (reinst. 1985, rev. 2004)",
+  "period": "wydanie z archiwum",
+  "title": "Woda jako prawo człowieka i usługa zastrzeżona dla państwa",
+  "provision": "art. 47",
+  "categories": [
+   "panstwo",
+   "kontrowersyjne",
+   "oryginalne"
+  ],
+  "meaning": "Dostęp do wody pitnej i sanitacji uznano za prawa podstawowe, a określone usługi zastrzeżono dla państwowych podmiotów publicznych, z priorytetem racji społecznych.",
+  "why": "Prawo człowieka połączono z decyzją o strukturze świadczenia usługi. Konstytucja ogranicza więc nie tylko cel, ale i dostępne narzędzia polityki gospodarczej.",
+  "caveat": "Nie chodzi o zakaz każdego prywatnego używania wody. Zakres praw, usług i kompetencji państwa trzeba rozróżniać.",
+  "source_url": "https://www.constituteproject.org/constitution/Uruguay_2004?lang=en#s110"
+ },
+ {
+  "id": "A105",
+  "country_code": "UY",
+  "country": "Urugwaj",
+  "document_title": "Uruguay 1966 (reinst. 1985, rev. 2004)",
+  "period": "wydanie z archiwum",
+  "title": "Waloryzacja emerytur związana ze wskaźnikiem płac",
+  "provision": "art. 67",
+  "categories": [
+   "panstwo",
+   "kontrowersyjne"
+  ],
+  "meaning": "Podwyżki określonych świadczeń emerytalnych i rentowych nie mogą być niższe od zmiany wskazanego indeksu wynagrodzeń.",
+  "why": "Powiązano stabilność dochodu emerytów z konkretnym punktem odniesienia. Takie zabezpieczenie chroni beneficjentów, lecz może ograniczać swobodę fiskalną w okresie trudności.",
+  "caveat": "To nie jest automatyczna waloryzacja według dowolnego wskaźnika płacy minimalnej. W źródle wskazano konkretny indeks i zasady terminów.",
+  "source_url": "https://www.constituteproject.org/constitution/Uruguay_2004?lang=en#s195"
+ },
+ {
+  "id": "A106",
+  "country_code": "PA",
+  "country": "Panama",
+  "document_title": "Panama 1972 (rev. 2004)",
+  "period": "wydanie z archiwum",
+  "title": "Państwo bez armii, ale z możliwością szczególnej obrony",
+  "provision": "art. 310",
+  "categories": [
+   "oryginalne",
+   "panstwo"
+  ],
+  "meaning": "Państwo nie ma armii, ale obywatele mają obowiązek bronić niepodległości, istnieją służby policyjne, a przy agresji zewnętrznej można czasowo tworzyć szczególne służby.",
+  "why": "Antymilitaryzm ustrojowy został połączony z zachowaniem instrumentów obrony. To kolejny przykład różnicy między rezygnacją ze stałej armii a rezygnacją z bezpieczeństwa.",
+  "caveat": "Nie należy przedstawiać tego jako zakazu posiadania przez państwo jakichkolwiek uzbrojonych formacji.",
+  "source_url": "https://www.constituteproject.org/constitution/Panama_2004?lang=en#s1381"
+ },
+ {
+  "id": "A107",
+  "country_code": "BT",
+  "country": "Bhutan",
+  "document_title": "Bhutan 2008",
+  "period": "wydanie z archiwum",
+  "title": "Wybory parlamentarne sprowadzone do dwóch partii",
+  "provision": "art. 15 ust. 5",
+  "categories": [
+   "oryginalne",
+   "trudne",
+   "wazne"
+  ],
+  "meaning": "Wybory do Zgromadzenia Narodowego mają etap wstępny otwarty dla zarejestrowanych partii, który wyłania dwie partie do wyborów zasadniczych.",
+  "why": "Konstytucja konstruuje dwupartyjną rywalizację na końcowym etapie zamiast pozostawiać jej ukształtowanie wyłącznie ordynacji i praktyce politycznej.",
+  "caveat": "Nie oznacza zakazu istnienia więcej niż dwóch partii w państwie. Ważne są etap wstępny i wskazana izba parlamentu.",
+  "source_url": "https://www.constituteproject.org/constitution/Bhutan_2008?lang=en#s518"
+ },
+ {
+  "id": "A108",
+  "country_code": "PK",
+  "country": "Pakistan",
+  "document_title": "Pakistan 1973 (reinst. 2002, rev. 2018)",
+  "period": "wydanie z archiwum",
+  "title": "Kandydat ma być prawy, roztropny i wiarygodny",
+  "provision": "art. 62 ust. 1 lit. f",
+  "categories": [
+   "kontrowersyjne",
+   "niebezpieczne",
+   "trudne"
+  ],
+  "meaning": "Wymogi wobec parlamentarzysty obejmują m.in. prawość, roztropność, uczciwość i wiarygodność, z odniesieniem do braku przeciwnego stwierdzenia sądu.",
+  "why": "Otwarte kryteria moralne mogą podnosić standard służby, ale tworzą też duże pole uznania przy wykluczaniu kandydatów. Ryzyko leży w tym, kto nadaje im wiążące znaczenie.",
+  "caveat": "Sam ten opis nie przesądza czasu dyskwalifikacji ani aktualnej linii orzecznictwa. Nie dopisuję do konstytucji automatycznej dożywotniej sankcji.",
+  "source_url": "https://www.constituteproject.org/constitution/Pakistan_2018?lang=en#s564"
+ },
+ {
+  "id": "A109",
+  "country_code": "BD",
+  "country": "Bangladesz",
+  "document_title": "Bangladesh 1972 (reinst. 1986, rev. 2018)",
+  "period": "wydanie z archiwum",
+  "title": "Religia państwowa współistnieje z zasadą świeckości",
+  "provision": "art. 2A i 12",
+  "categories": [
+   "trudne",
+   "kontrowersyjne"
+  ],
+  "meaning": "Islam jest religią państwową, a jednocześnie część zasad polityki państwa wymienia świeckość i usuwanie dyskryminacji oraz politycznego uprzywilejowania religii.",
+  "why": "Dokument łączy dwie tradycje konstytucyjne, których granice nie są oczywiste. To dobry przykład potrzeby odróżniania symbolicznej tożsamości, kompetencji państwa i praw jednostki.",
+  "caveat": "Nie rozstrzygam, że każda postać religii państwowej jest logicznie niezgodna z każdą definicją świeckości. Wskazuję napięcie wymagające interpretacji.",
+  "source_url": "https://www.constituteproject.org/constitution/Bangladesh_2018?lang=en#s16"
+ },
+ {
+  "id": "A110",
+  "country_code": "TR",
+  "country": "Turcja",
+  "document_title": "Turkey 1982 (rev. 2017)",
+  "period": "wydanie z archiwum",
+  "title": "Zakaz nawet proponowania zmiany zasad tożsamości państwa",
+  "provision": "art. 4",
+  "categories": [
+   "wazne",
+   "trudne"
+  ],
+  "meaning": "Zakaz obejmuje zmianę wskazanych zasad republiki oraz nawet zgłaszanie propozycji ich zmiany.",
+  "why": "Ochrona tożsamości państwa sięga etapu otwierania procedury poprawkowej. Jest dalej idąca tekstowo niż samo ustanowienie trudnej większości.",
+  "caveat": "Nie oznacza to bez odrębnej analizy, że każda rozmowa akademicka o tych zasadach jest przestępstwem.",
+  "source_url": "https://www.constituteproject.org/constitution/Turkey_2017?lang=en#s25"
+ },
+ {
+  "id": "A111",
+  "country_code": "TN",
+  "country": "Tunezja",
+  "document_title": "Tunisia 2022",
+  "period": "wydanie z archiwum",
+  "title": "Państwo realizuje cele islamu w ustroju demokratycznym",
+  "provision": "art. 5",
+  "categories": [
+   "wazne",
+   "kontrowersyjne",
+   "trudne"
+  ],
+  "meaning": "Państwo ma w demokratycznym porządku realizować wskazane cele prawdziwego islamu, m.in. ochronę życia, honoru, majątku, religii i wolności.",
+  "why": "Norma łączy religijny cel działania z demokratyczną ramą. Trudność polega na ustaleniu, kto rozstrzyga treść celów i ich relację do innych praw.",
+  "caveat": "To art. 5 konstytucji z 2022 r., a nie tylko religijne zdanie preambuły. Nie wywodzę stąd nieograniczonej kompetencji dowolnego organu.",
+  "source_url": "https://www.constituteproject.org/constitution/Tunisia_2022?lang=en#s2372006"
+ },
+ {
+  "id": "A112",
+  "country_code": "RU",
+  "country": "Rosja",
+  "document_title": "Russie, Constitution russe 1993, révisée 2020, MJP",
+  "period": "wydanie z archiwum",
+  "title": "Wyzerowanie wcześniej odbytych kadencji prezydenta",
+  "provision": "art. 81 ust. 3.1",
+  "categories": [
+   "wladca",
+   "niebezpieczne",
+   "trudne"
+  ],
+  "meaning": "Limit kadencji ma być stosowany do określonych byłych i aktualnych prezydentów bez uwzględnienia kadencji odbytych przed wejściem odpowiedniej zmiany w życie.",
+  "why": "Ogólna zasada ograniczenia władzy zostaje osłabiona przez szczególną regułę liczenia. To mechanizm samoutrwalenia, który łatwo przeoczyć, czytając wyłącznie zdanie o limicie.",
+  "caveat": "Nie jest to dosłowne ustanowienie prezydentury dożywotniej. Analizuję wersję z 2020 r. i konkretny wyjątek przejściowy.",
+  "source_url": "https://mjp.univ-perp.fr/constit/ru2020.htm"
+ },
+ {
+  "id": "A113",
+  "country_code": "RU",
+  "country": "Rosja",
+  "document_title": "Russie, Constitution russe 1993, révisée 2020, MJP",
+  "period": "wydanie z archiwum",
+  "title": "Decyzje organów międzynarodowych mogą nie podlegać wykonaniu",
+  "provision": "art. 79",
+  "categories": [
+   "wladca",
+   "kontrowersyjne",
+   "trudne"
+  ],
+  "meaning": "Decyzje organów międzypaństwowych wydane w interpretacji sprzecznej z konstytucją mają nie podlegać wykonaniu w kraju.",
+  "why": "Krajowa konstytucja staje się filtrem dla skutków zobowiązań zewnętrznych. Może to chronić autonomię, ale też ograniczać zewnętrzne mechanizmy odpowiedzialności.",
+  "caveat": "Reguła wewnętrznego wykonania nie rozstrzyga sama odpowiedzialności państwa w prawie międzynarodowym ani wszystkich jego zobowiązań traktatowych.",
+  "source_url": "https://mjp.univ-perp.fr/constit/ru2020.htm"
+ },
+ {
+  "id": "A114",
+  "country_code": "UA",
+  "country": "Ukraina",
+  "document_title": "Ukraine 1996 (rev. 2019)",
+  "period": "wydanie z archiwum",
+  "title": "Zakaz zmiany konstytucji podczas stanu wojennego",
+  "provision": "art. 157",
+  "categories": [
+   "wazne",
+   "trudne"
+  ],
+  "meaning": "Konstytucji nie można zmieniać podczas stanu wojennego lub nadzwyczajnego; artykuł zawiera również materialne ograniczenia dotyczące praw, niepodległości i integralności terytorialnej.",
+  "why": "Sytuacja kryzysowa ma nie stać się okazją do trwałego przepisania reguł ustroju. Chroni to konstytucję wtedy, gdy zwykła debata i konkurencja polityczna mogą być ograniczone.",
+  "caveat": "Nie wnioskuję stąd automatycznie o ważności konkretnego współczesnego aktu lub o dopuszczalności każdego innego działania państwa podczas wojny.",
+  "source_url": "https://www.constituteproject.org/constitution/Ukraine_2019?lang=en#s1101"
+ },
+ {
+  "id": "A115",
+  "country_code": "GH",
+  "country": "Ghana",
+  "document_title": "Ghana 1992 (rev. 1996)",
+  "period": "wydanie z archiwum",
+  "title": "Obowiązek oporu przeciw obaleniu konstytucji",
+  "provision": "art. 3 ust. 4-5",
+  "categories": [
+   "oryginalne",
+   "niebezpieczne",
+   "trudne"
+  ],
+  "meaning": "Obywatele mają prawo i obowiązek bronić konstytucji i przeciwdziałać jej obaleniu; działania obronne otrzymują określoną ochronę prawną i przewidziano mechanizmy rehabilitacji po przywróceniu ustroju.",
+  "why": "Obrona konstytucji zostaje powiązana z odpowiedzialnością zwykłych obywateli, a nie tylko organów. Silna gwarancja może jednak prowadzić do sporów o to, kto naprawdę broni legalnego porządku.",
+  "caveat": "To nie jest generalna zgoda na dowolną przemoc w sporze politycznym. Przesłanką jest wskazana w tekście próba zniesienia konstytucji.",
+  "source_url": "https://www.constituteproject.org/constitution/Ghana_1996?lang=en#s39"
+ },
+ {
+  "id": "A116",
+  "country_code": "VE",
+  "country": "Wenezuela",
+  "document_title": "Venezuela (Bolivarian Republic of) 1999 (rev. 2009)",
+  "period": "wydanie z archiwum",
+  "title": "Odwołanie wybieranego urzędnika przed końcem kadencji",
+  "provision": "art. 72",
+  "categories": [
+   "oryginalne",
+   "panstwo"
+  ],
+  "meaning": "Po upływie połowy kadencji uprawnieni mogą zainicjować referendum odwoławcze; wymagane są określone liczby podpisów, głosów za odwołaniem i uczestników.",
+  "why": "Mandat wyborczy nie jest traktowany jako nieodwołalny do następnych wyborów. Mechanizm może zwiększać rozliczalność, ale także podtrzymywać permanentną kampanię.",
+  "caveat": "Sama większość oddanych głosów nie wystarcza do opisu warunków powodzenia. Liczą się dodatkowe progi i ograniczenie liczby wniosków.",
+  "source_url": "https://www.constituteproject.org/constitution/Venezuela_2009?lang=en#s255"
+ },
+ {
+  "id": "A117",
+  "country_code": "VE",
+  "country": "Wenezuela",
+  "document_title": "Venezuela (Bolivarian Republic of) 1999 (rev. 2009)",
+  "period": "wydanie z archiwum",
+  "title": "Naród może odrzucić władzę naruszającą demokratyczne wartości",
+  "provision": "art. 350",
+  "categories": [
+   "oryginalne",
+   "trudne",
+   "niebezpieczne"
+  ],
+  "meaning": "Naród ma odrzucić porządek, ustawodawstwo lub władzę naruszające demokratyczne wartości, gwarancje albo prawa człowieka.",
+  "why": "Przepis dostarcza języka legitymizowania nieposłuszeństwa także wobec formalnie działających organów. Zarazem wymaga odpowiedzi, kto może mówić w imieniu całego narodu.",
+  "caveat": "Nie jest to gotowa instrukcja procedury usunięcia dowolnego rządu. Nie należy zastępować nią pozostałych zasad odpowiedzialności i działania organów.",
+  "source_url": "https://www.constituteproject.org/constitution/Venezuela_2009?lang=en#s1487"
+ },
+ {
+  "id": "A118",
+  "country_code": "VA",
+  "country": "Watykan",
+  "document_title": "Saint-Siège, Etat de la Cité du Vatican, constitution 2023, MJP",
+  "period": "wydanie z archiwum",
+  "title": "Pełnia trzech władz w osobie papieża",
+  "provision": "art. 1",
+  "categories": [
+   "wladca",
+   "wazne",
+   "trudne"
+  ],
+  "meaning": "Papież jako suweren państwa skupia pełnię władzy rządzenia, obejmującą ustawodawstwo, wykonawstwo i sądownictwo.",
+  "why": "Trójpodział funkcji nie oznacza tu rozdziału najwyższej władzy między niezależnych suwerenów. To szczególnie czytelny przykład konstytucyjnej koncentracji.",
+  "caveat": "Nie oznacza nieistnienia sądów, ustaw czy powierzania zadań innym organom. Dotyczy ustawy zasadniczej Państwa Watykańskiego z 2023 r., nie całego prawa kanonicznego.",
+  "source_url": "https://mjp.univ-perp.fr/constit/va2023.htm"
+ },
+ {
+  "id": "A119",
+  "country_code": "SM",
+  "country": "San Marino",
+  "document_title": "Capitaines régents de Saint-Marin, 2005, Digithèque MJP",
+  "period": "wydanie z archiwum",
+  "title": "Dwie głowy państwa działające kolegialnie",
+  "provision": "art. 1 i 3",
+  "categories": [
+   "oryginalne",
+   "panstwo",
+   "trudne"
+  ],
+  "meaning": "Kapitanowie regenci wykonują funkcję głowy państwa kolegialnie, reprezentują państwo i pełnią rolę gwarantów jego porządku konstytucyjnego.",
+  "why": "Na szczycie państwa umieszczono współdziałający duet zamiast jednej osoby. Potencjalnym mechanizmem ograniczenia personalizacji jest konieczność działania według reguły kolegialności.",
+  "caveat": "Nie twierdzę, że każda czynność zawsze bez wyjątku wymaga obecności obu osób: dalsze przepisy regulują szczególne przypadki zastępstwa.",
+  "source_url": "https://mjp.univ-perp.fr/constit/sm2005cr.htm"
+ },
+ {
+  "id": "A120",
+  "country_code": "DE",
+  "country": "Niemcy",
+  "document_title": "Germany 1949 (rev. 2014)",
+  "period": "wydanie z archiwum",
+  "title": "Godność człowieka wiąże wszystkie władze",
+  "provision": "art. 1",
+  "categories": [
+   "wazne",
+   "panstwo"
+  ],
+  "meaning": "Godność człowieka jest nienaruszalna, jej poszanowanie i ochrona obowiązują całą władzę, a prawa podstawowe wiążą ustawodawcę, egzekutywę i sądy bezpośrednio.",
+  "why": "To fundament wyznaczający cel i granicę państwa przed katalogiem jego kompetencji. W połączeniu z art. 79 ust. 3 stanowi punkt odniesienia także dla zmian konstytucji.",
+  "caveat": "Nie jest to hasło pozwalające bez argumentacji rozwiązać każdy spór. Trzeba odróżnić nienaruszalność zasady od ustalania jej skutków w konkretnej sprawie.",
+  "source_url": "https://www.constituteproject.org/constitution/German_Federal_Republic_2014?lang=en#s4"
+ },
+ {
+  "id": "A121",
+  "country_code": "CD",
+  "country": "Demokratyczna Republika Konga",
+  "document_title": "Congo (Democratic Republic of the) 2005 (rev. 2011)",
+  "period": "wydanie z archiwum",
+  "title": "Konstytucyjna ochrona dzieci przed oskarżeniami o czary",
+  "provision": "art. 41",
+  "categories": [
+   "oryginalne",
+   "wazne",
+   "ciekawe"
+  ],
+  "meaning": "W przepisie o ochronie dzieci oskarżanie ich o czary wymieniono obok innych form maltretowania jako zachowanie zabronione i podlegające karze.",
+  "why": "To bardzo konkretna odpowiedź na zagrożenie dla dziecka wynikające ze stygmatyzacji. Konstytucja reaguje na szczególny mechanizm przemocy, zamiast poprzestać na ogólnej deklaracji praw dziecka.",
+  "caveat": "Nie chodzi o konstytucyjny zakaz wierzeń ani o karanie dzieci za rzekome czary. Sens normy jest ochronny wobec oskarżanych.",
+  "source_url": "https://www.constituteproject.org/constitution/Democratic_Republic_of_the_Congo_2011?lang=en#s196"
+ },
+ {
+  "id": "A122",
+  "country_code": "IQ",
+  "country": "Irak",
+  "document_title": "Iraq 2005",
+  "period": "wydanie z archiwum",
+  "title": "Zakaz wskazanego z nazwy nurtu baasizmu",
+  "provision": "art. 7",
+  "categories": [
+   "kontrowersyjne",
+   "wazne",
+   "trudne"
+  ],
+  "meaning": "Zakazano podmiotów i programów propagujących wskazane formy rasizmu, terroryzmu, uznawania innych za niewiernych lub czystek etnicznych, ze szczególnym wymienieniem baasizmu saddamowskiego i jego symboli.",
+  "why": "Powojenna tożsamość ustroju jest konstruowana także przez wskazanie konkretnego wykluczonego nurtu politycznego. Ochrona przed powrotem przemocy może współistnieć ze sporami o granice pluralizmu.",
+  "caveat": "Przepis nie zastępuje dowodu odpowiedzialności konkretnej osoby. Nie opisuję tu całości późniejszego ustawodawstwa ani aktualnych decyzji o kandydowaniu.",
+  "source_url": "https://www.constituteproject.org/constitution/Iraq_2005?lang=en#s51"
+ },
+ {
+  "id": "A123",
+  "country_code": "CL",
+  "country": "Chile",
+  "document_title": "Chile 2022",
+  "period": "projekt",
+  "title": "Neuroróżnorodność i autonomia jako przedmiot konstytucji",
+  "provision": "art. 29 projektu",
+  "categories": [
+   "oryginalne",
+   "ciekawe"
+  ],
+  "meaning": "Projekt uznaje neuroróżnorodność i gwarantuje osobom neuroatypowym autonomiczne życie, rozwijanie osobowości i tożsamości oraz wykonywanie zdolności prawnej i praw.",
+  "why": "Do konstytucyjnego języka równości wprowadzono nazwę różnorodności poznawczej i neurologicznej. Nacisk pada na autonomię, a nie wyłącznie opiekę lub medyczną klasyfikację.",
+  "caveat": "To projekt konstytucji Chile z 2022 r., nie przepis przedstawiany jako prawo obowiązujące. Nie jest też ogólną regulacją wszystkich neurotechnologii.",
+  "source_url": "https://www.constituteproject.org/constitution/Chile_2022D?lang=en#s3593233"
+ },
+ {
+  "id": "A124",
+  "country_code": "ZW",
+  "country": "Zimbabwe",
+  "document_title": "Zimbabwe 2013 (rev. 2021)",
+  "period": "wydanie z archiwum",
+  "title": "Rachunek za reformę rolną przypisany dawnej potędze kolonialnej",
+  "provision": "sekcja 72 ust. 7 lit. c i ust. 8",
+  "categories": [
+   "kontrowersyjne",
+   "panstwo",
+   "niebezpieczne",
+   "trudne"
+  ],
+  "meaning": "W kontekście określonej reformy rolnej tekst przypisuje obowiązek zapłaty odszkodowań dawnej potędze kolonialnej, a przy braku jej zapłaty odmawia takiego obowiązku rządowi Zimbabwe.",
+  "why": "Koszt wewnętrznej redystrybucji zostaje w krajowej konstytucji przypisany podmiotowi zewnętrznemu. Łączy to historyczną sprawiedliwość, finanse państwa i bardzo silną ingerencję we własność.",
+  "caveat": "Konstytucja krajowa nie ustanawia sama przez się wiążącego zobowiązania innego państwa w prawie międzynarodowym. Nie pomijam odrębności rekompensat za ulepszenia ani innych właściwych przepisów.",
+  "source_url": "https://www.constituteproject.org/constitution/Zimbabwe_2021?lang=en#s896"
+ },
+ {
+  "id": "A125",
+  "country_code": "PH",
+  "country": "Filipiny",
+  "document_title": "Philippines 1987",
+  "period": "wydanie z archiwum",
+  "title": "Zakaz dynastii politycznych zależny od definicji ustawowej",
+  "provision": "art. II sekcja 26",
+  "categories": [
+   "wazne",
+   "panstwo",
+   "trudne"
+  ],
+  "meaning": "Państwo ma zapewniać równy dostęp do służby publicznej i zakazywać dynastii politycznych zgodnie z ich ustawowym zdefiniowaniem.",
+  "why": "Cel ograniczenia nepotyzmu zależy od doprecyzowania przez ustawodawcę, którego członkowie mogą być nim zainteresowani osobiście. To przykład napięcia między samodzielną normą a odesłaniem wykonawczym.",
+  "caveat": "Nie twierdzę na tej podstawie, czy i w jakim zakresie odpowiednia definicja została później uchwalona. Nie jest to bezwarunkowy zakaz kandydowania każdej osobie spokrewnionej z politykiem.",
+  "source_url": "https://www.constituteproject.org/constitution/Philippines_1987?lang=en#s57"
+ },
+ {
+  "id": "A126",
+  "country_code": "HT",
+  "country": "Haiti",
+  "document_title": "Haiti, Constitution du 25 mai 1964, Digithèque MJP",
+  "period": "historyczny",
+  "title": "Konstytucja powierza dożywotnią władzę osobie wskazanej z nazwiska",
+  "provision": "art. 197 w związku z art. 92",
+  "categories": [
+   "wladca",
+   "niebezpieczne",
+   "dziwne"
+  ],
+  "meaning": "Po rozbudowanej konstytucyjnej pochwale zasług wskazano, że doktor François Duvalier ma sprawować najwyższe funkcje dożywotnio.",
+  "why": "Najwyższy akt przestaje regulować wyłącznie bezosobowy urząd i przydziela władzę oznaczonej jednostce. To szczególnie jednoznaczna konstrukcja personalnego utrwalenia rządów.",
+  "caveat": "To historyczna konstytucja z 1964 r. Lista zasług w źródle jest elementem jego uzasadnienia politycznego, nie zweryfikowaną przeze mnie oceną dokonań.",
+  "source_url": "https://mjp.univ-perp.fr/constit/ht1964.htm"
+ },
+ {
+  "id": "A127",
+  "country_code": "HT",
+  "country": "Haiti",
+  "document_title": "Haiti, Constitution de 1964, amendée en 1971,\nDigithèque MJP",
+  "period": "historyczny",
+  "title": "Dożywotni prezydent wskazuje następcę na dożywotnią prezydenturę",
+  "provision": "art. 100-104",
+  "categories": [
+   "wladca",
+   "niebezpieczne",
+   "trudne"
+  ],
+  "meaning": "Dożywotni prezydent uzyskuje prawo wyznaczenia następcy, którego wybór ma zostać ratyfikowany przez lud. Następca obejmuje urząd w systemie dożywotniej prezydentury.",
+  "why": "Przeniesienie władzy zostaje zaprojektowane przez jej aktualnego posiadacza. Formalna aprobata nie usuwa pytania o realną konkurencję i możliwość swobodnego odrzucenia wskazania.",
+  "caveat": "Nie jest to wprost dziedziczenie z mocy samego pokrewieństwa: tekst przewiduje desygnację i ratyfikację. Nie ustalam tu uczciwości konkretnego historycznego głosowania.",
+  "source_url": "https://mjp.univ-perp.fr/constit/ht1971.htm"
+ },
+ {
+  "id": "A128",
+  "country_code": "KP",
+  "country": "Korea Północna",
+  "document_title": "Korea (Democratic People's Republic of) 1972 (rev. 2016)",
+  "period": "wydanie z archiwum",
+  "title": "Konstytucja deklarująca zniesienie podatków",
+  "provision": "art. 25",
+  "categories": [
+   "dziwne",
+   "ciekawe",
+   "kontrowersyjne"
+  ],
+  "meaning": "Dokument opisuje kraj jako miejsce, w którym podatki zostały zniesione, a rosnący majątek społeczeństwa ma służyć dobrobytowi ludzi pracy.",
+  "why": "To niezwykła konstytucyjna deklaracja o sposobie finansowania i dystrybucji. Daje okazję do odróżnienia ideologicznego opisu ustroju od badania rzeczywistych ciężarów ekonomicznych.",
+  "caveat": "Nie przyjmuję deklaracji za dowód, że mieszkańcy nie ponoszą żadnych obciążeń, potrąceń czy obowiązków ekonomicznych. To tekst wydania z 2016 r.",
+  "source_url": "https://www.constituteproject.org/constitution/Peoples_Republic_of_Korea_2016?lang=en#s67"
+ },
+ {
+  "id": "A129",
+  "country_code": "TV",
+  "country": "Tuvalu",
+  "document_title": "Tuvalu 2023",
+  "period": "wydanie z archiwum",
+  "title": "Państwowość ma przetrwać utratę fizycznego terytorium",
+  "provision": "sekcja 2 ust. 1-3",
+  "categories": [
+   "oryginalne",
+   "panstwo",
+   "trudne"
+  ],
+  "meaning": "Państwowość ma trwać mimo utraty fizycznego terytorium wskutek zmian klimatu lub innych przyczyn. Wskazane współrzędne bazowe mają pozostać niezmienne mimo zmian wybrzeża, z zastrzeżeniem decyzji ustawowej.",
+  "why": "Konstytucja próbuje zabezpieczyć ciągłość podmiotu politycznego w sytuacji, gdy zanika tradycyjna materialna podstawa jego istnienia. Łączy adaptację klimatyczną z problemem granic i tożsamości państwa.",
+  "caveat": "Deklaracja krajowa nie rozstrzyga sama uznania międzynarodowego ani wszystkich skutków prawa morza. Tekst nie wyklucza określonej zmiany ustawowej współrzędnych.",
+  "source_url": "https://www.constituteproject.org/constitution/Tuvalu_2023?lang=en#s82f02f49-8061-430f-b2ec-a4c8c5c98d8c"
+ },
+ {
+  "id": "A130",
+  "country_code": "HT",
+  "country": "Haiti",
+  "document_title": "Haïti, Constitution haitienne 1987, MJP",
+  "period": "wydanie z archiwum",
+  "title": "Imienne uchylenie dawnych ustaw ograniczających wolności",
+  "provision": "art. 297",
+  "categories": [
+   "oryginalne",
+   "wazne"
+  ],
+  "meaning": "Wprost uchylono dawne akty arbitralnie ograniczające wolności, w tym dekret o wierzeniach uznanych za przesądne oraz ustawę powołującą szczególny trybunał bezpieczeństwa.",
+  "why": "Zmiana ustroju zostaje połączona z konkretnym uporządkowaniem starego prawa. To mechanizm bardziej bezpośredni niż pozostawienie każdej sprzecznej ustawy do późniejszego sporu sądowego.",
+  "caveat": "Artykuł wylicza akty w historycznym momencie przyjęcia konstytucji. Nie jest zakazem ścigania rzeczywistych czynów przemocy motywowanych wierzeniami.",
+  "source_url": "https://mjp.univ-perp.fr/constit/ht1987.htm"
+ }
+]

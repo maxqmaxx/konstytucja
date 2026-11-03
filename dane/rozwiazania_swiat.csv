@@ -1,0 +1,332 @@
+﻿kod_ccp,rozwiazanie,nazwa_ccp_en,liczba_konstytucji,udzial_swiat,liczba_od_2000,udzial_od_2000,liczba_ue27,udzial_ue27,jak_czesto,konstytucja_rp,artykuly_rp
+amend,Procedura zmiany konstytucji,Constitution amendment procedure,188,1.0,49,1.0,27,1.0,standard światowy,tak,art. 235
+execnum,Struktura władzy wykonawczej,Name/structure of executive(s),187,0.9947,49,1.0,27,1.0,standard światowy,tak,art. 126; art. 147
+housenum,Struktura parlamentu,Structure of legislative chamber(s),186,0.9894,49,1.0,27,1.0,standard światowy,tak,art. 95
+levjud,Struktura sądownictwa,Structure of the courts,185,0.984,47,0.9592,27,1.0,standard światowy,tak,art. 175
+lhselect,Wybór izby niższej,First chamber selection,185,0.984,48,0.9796,27,1.0,standard światowy,tak,art. 96; art. 100
+cabinet,Ustanowienie rządu i ministrów,Establishment of cabinet/ministers,183,0.9734,47,0.9592,27,1.0,standard światowy,tak,art. 146
+hoselect,Wybór głowy państwa,Head of state selection,183,0.9734,49,1.0,26,0.963,standard światowy,tak,art. 127
+equal,Ogólna gwarancja równości,General guarantee of equality,182,0.9681,49,1.0,26,0.963,standard światowy,tak,art. 32
+freerel,Wolność religii,Freedom of religion,181,0.9628,47,0.9592,26,0.963,standard światowy,tak,art. 53
+assem,Wolność zgromadzeń,Freedom of assembly,178,0.9468,49,1.0,26,0.963,standard światowy,tak,art. 57
+express,Wolność wypowiedzi,Freedom of expression,178,0.9468,47,0.9592,25,0.9259,standard światowy,tak,art. 54
+immunity,Immunitet parlamentarny,Immunity of legislators,178,0.9468,48,0.9796,27,1.0,standard światowy,tak,art. 105; art. 108
+lhterm,Kadencja izby niższej,Term length for first chamber,178,0.9468,46,0.9388,26,0.963,standard światowy,tak,art. 98
+lhlead,Przewodniczący izby niższej,Leader of first chamber,177,0.9415,48,0.9796,27,1.0,standard światowy,tak,art. 110
+assoc,Wolność zrzeszania się,Freedom of association,176,0.9362,48,0.9796,26,0.963,standard światowy,tak,art. 58
+cabsel,Powoływanie rządu,Cabinet selection,175,0.9309,46,0.9388,26,0.963,standard światowy,tak,art. 154; art. 155
+em,Przepisy o stanach nadzwyczajnych,Emergency provisions,175,0.9309,48,0.9796,25,0.9259,standard światowy,tak,Chapter XI. EXTRAORDINARY MEASURES
+hossucc,Zastępstwo głowy państwa,Head of state replacement,175,0.9309,47,0.9592,27,1.0,standard światowy,tak,art. 128; art. 131
+pardon,Prawo łaski,Power to pardon,175,0.9309,48,0.9796,27,1.0,standard światowy,tak,art. 139
+exprop,Ochrona przed wywłaszczeniem,Protection from expropriation,174,0.9255,46,0.9388,27,1.0,standard światowy,tak,art. 21
+budget,Ustawa budżetowa,Budget bills,173,0.9202,45,0.9184,26,0.963,standard światowy,tak,art. 146; art. 219; art. 220; art. 221; art. 222; art. 223; art. 224
+intlaw,Prawo międzynarodowe,International law,173,0.9202,46,0.9388,27,1.0,standard światowy,tak,art. 9; art. 25; art. 27; art. 42; art. 55; art. 56; art. 59; art. 87; art. 88; art. 89; art. 90; art. 91; art. 116; art. 117; art. 133; art. 146
+cabdiss,Odwołanie rządu,Cabinet removal,172,0.9149,45,0.9184,26,0.963,standard światowy,tak,art. 156; art. 157; art. 158; art. 159; art. 160; art. 161; art. 162; art. 198
+privacy,Prawo do prywatności,Right to privacy,171,0.9096,48,0.9796,24,0.8889,standard światowy,tak,art. 47; art. 49; art. 50
+legapp,Uchwalanie i weto ustaw,Approval or veto of general legislation,170,0.9043,47,0.9592,24,0.8889,standard światowy,tak,art. 122
+habcorp,Ochrona przed bezpodstawnym zatrzymaniem,Protection from unjustified restraint,169,0.8989,43,0.8776,26,0.963,standard światowy,tak,art. 41
+freemove,Swoboda przemieszczania się,Freedom of movement,168,0.8936,49,1.0,20,0.7407,standard światowy,tak,art. 52
+hospow,Kompetencje głowy państwa,Head of state powers,168,0.8936,47,0.9592,23,0.8519,standard światowy,tak,art. 133; art. 137; art. 138; art. 144
+interp,Wykładnia konstytucji,Constitutional interpretation,168,0.8936,46,0.9388,23,0.8519,standard światowy,tak,art. 79; art. 188; art. 193
+system,Określenie ustroju państwa,Type of government envisioned,167,0.8883,49,1.0,24,0.8889,standard światowy,brak tagu CCP,
+hocsel,Wybór sędziów sądu najwyższego,Supreme court selection,165,0.8777,42,0.8571,24,0.8889,standard światowy,tak,art. 144; art. 179; art. 183
+lhrest,Wymogi wobec posłów,Eligibility for first chamber,165,0.8777,42,0.8571,25,0.9259,standard światowy,tak,art. 99
+judind,Niezależność sędziowska,Judicial independence,164,0.8723,47,0.9592,24,0.8889,standard światowy,tak,art. 173
+treat,Ratyfikacja umów międzynarodowych,Treaty ratification,164,0.8723,48,0.9796,26,0.963,standard światowy,tak,art. 89; art. 90; art. 133; art. 146
+commit,Komisje parlamentarne,Legislative committees,163,0.867,44,0.898,25,0.9259,standard światowy,tak,art. 110; art. 124
+equalgr1,Równość bez względu na płeć,Equality regardless of gender,163,0.867,48,0.9796,24,0.8889,standard światowy,tak,art. 33
+hosrest,Wymogi wobec głowy państwa,Eligibility for head of state,163,0.867,46,0.9388,23,0.8519,standard światowy,tak,art. 127
+legini,Inicjatywa ustawodawcza,Initiation of general legislation,163,0.867,47,0.9592,26,0.963,standard światowy,tak,art. 118
+cabpow,Kompetencje rządu,Powers of cabinet,161,0.8564,45,0.9184,24,0.8889,standard światowy,tak,art. 146
+opinion,Wolność sumienia i poglądów,Freedom of opinion/thought/conscience,160,0.8511,44,0.898,21,0.7778,standard światowy,brak tagu CCP,
+proprght,Prawo własności,Right to own property,160,0.8511,47,0.9592,24,0.8889,standard światowy,tak,art. 64
+uncon,Kontrola konstytucyjności ustaw,Constitutionality of legislation,159,0.8457,44,0.898,25,0.9259,standard światowy,tak,art. 79; art. 122; art. 190; art. 191
+voteres,Ograniczenia prawa wyborczego,Restrictions on voting,159,0.8457,40,0.8163,27,1.0,standard światowy,tak,art. 62
+oath,Przysięga na konstytucję,Oaths to abide by constitution,158,0.8404,40,0.8163,25,0.9259,standard światowy,tak,art. 104; art. 108; art. 130; art. 151
+citizen,Obywatelstwo z urodzenia,Requirements for birthright citizenship,157,0.8351,40,0.8163,22,0.8148,standard światowy,tak,art. 34
+comchief,Zwierzchnictwo nad siłami zbrojnymi,Designation of commander in chief,157,0.8351,47,0.9592,24,0.8889,standard światowy,tak,art. 134
+hosterm,Kadencja głowy państwa,Head of state term length,157,0.8351,45,0.9184,23,0.8519,standard światowy,tak,art. 127
+cruelty,Zakaz okrutnego traktowania,Prohibition of cruel treatment,156,0.8298,45,0.9184,18,0.6667,standard światowy,tak,art. 40
+exsess,Nadzwyczajne sesje parlamentu,Extraordinary legislative sessions,155,0.8245,43,0.8776,22,0.8148,standard światowy,brak tagu CCP,
+profleg,Dodatkowe zajęcia parlamentarzystów,Outside professions of legislators,155,0.8245,46,0.9388,20,0.7407,standard światowy,tak,art. 103; art. 107
+jrem,Odwołanie sędziów,Supreme/ordinary court judge removal,154,0.8191,40,0.8163,24,0.8889,standard światowy,tak,art. 180
+preamble,Preambuła,Preamble,154,0.8191,46,0.9388,15,0.5556,standard światowy,tak,Preamble
+couns,Prawo do obrońcy,Right to counsel,153,0.8138,48,0.9796,17,0.6296,standard światowy,tak,art. 42
+env,Ochrona środowiska,Protection of environment,153,0.8138,48,0.9796,24,0.8889,standard światowy,tak,art. 5; art. 31; art. 74; art. 86
+expost,Zakaz wstecznego karania,Protection from ex post facto laws,153,0.8138,43,0.8776,19,0.7037,standard światowy,brak tagu CCP,
+hosdiss,Usunięcie głowy państwa z urzędu,Head of state removal,153,0.8138,43,0.8776,23,0.8519,standard światowy,tak,art. 131; art. 145
+torture,Zakaz tortur,Prohibition of torture,153,0.8138,47,0.9592,19,0.7037,standard światowy,tak,art. 40
+cabrest,Wymogi wobec członków rządu,Eligibility for cabinet,152,0.8085,39,0.7959,19,0.7037,standard światowy,brak tagu CCP,
+freeelec,Tajność głosowania,Secret ballot,150,0.7979,42,0.8571,25,0.9259,standard światowy,tak,art. 96; art. 97; art. 127
+life,Prawo do życia,Right to life,150,0.7979,42,0.8571,19,0.7037,standard światowy,tak,art. 38
+presinoc,Domniemanie niewinności,Presumption of innocence in trials,150,0.7979,46,0.9388,17,0.6296,standard światowy,tak,art. 42
+wolaw,Nie ma kary bez ustawy,Principle of no punishment without law,149,0.7926,42,0.8571,22,0.8148,standard światowy,tak,art. 42
+atgen,Prokurator generalny,Attorney general,148,0.7872,42,0.8571,20,0.7407,standard światowy,tak,art. 191
+cultrght,Prawo do kultury,Right to culture,148,0.7872,47,0.9592,24,0.8889,standard światowy,tak,art. 6; art. 35; art. 73
+headforn,Reprezentacja w stosunkach zagranicznych,Foreign affairs representative,148,0.7872,44,0.898,25,0.9259,standard światowy,tak,art. 133
+mun,Samorząd gminny,Municipal government,148,0.7872,40,0.8163,27,1.0,standard światowy,tak,art. 87; art. 94; Chapter VII. LOCAL SELF-GOVERNMENT
+remleg,Odwołanie parlamentarzysty,Removal of individual legislators,148,0.7872,40,0.8163,15,0.5556,standard światowy,tak,art. 107
+jointrde,Prawo do zrzeszania się w związkach zawodowych,Right to join trade unions,147,0.7819,42,0.8571,23,0.8519,standard światowy,tak,art. 12; art. 59
+lhseats,Liczebność izby niższej,Size of first chamber,147,0.7819,40,0.8163,23,0.8519,standard światowy,tak,art. 96
+press,Wolność prasy,Freedom of press,147,0.7819,45,0.9184,25,0.9259,standard światowy,tak,art. 14; art. 54
+dignity,Godność człowieka,Human dignity,146,0.7766,45,0.9184,20,0.7407,standard światowy,tak,Preamble; art. 30
+hosage,Granica wieku głowy państwa,Age restrictions on head of state,145,0.7713,43,0.8776,22,0.8148,standard światowy,tak,art. 127
+invexe,Kontrola parlamentarna nad rządem,Legislative oversight of the executive,145,0.7713,45,0.9184,25,0.9259,standard światowy,tak,art. 95; art. 111; art. 115
+quorum,Kworum,Quorum for legislative sessions,144,0.766,32,0.6531,21,0.7778,standard światowy,tak,art. 120; art. 124
+referen,Referendum,Referenda,144,0.766,46,0.9388,24,0.8889,standard światowy,tak,art. 62; art. 125
+evidence,Zasady gromadzenia dowodów,Regulation of evidence collection,143,0.7606,40,0.8163,17,0.6296,standard światowy,tak,art. 50
+lhage,Granica wieku posłów,Age restrictions on first chamber,143,0.7606,34,0.6939,22,0.8148,standard światowy,tak,art. 99
+lang,Język urzędowy lub narodowy,Official or national languages,142,0.7553,45,0.9184,20,0.7407,standard światowy,tak,art. 27
+auth,Źródło władzy konstytucyjnej,Source of constitutional authority,141,0.75,43,0.8776,14,0.5185,standard światowy,tak,Preamble
+ordsel,Powoływanie sędziów sądów powszechnych,Ordinary court selection,139,0.7394,37,0.7551,21,0.7778,częste,tak,art. 179
+pubtri,Jawność rozprawy,Right to public trial,139,0.7394,36,0.7347,23,0.8519,częste,tak,art. 45
+tranprov,Przepisy przejściowe,Transitional provisions,139,0.7394,41,0.8367,19,0.7037,częste,tak,Chapter XIII. FINAL AND TRANSITIONAL PROVISIONS
+intorgs,Organizacje międzynarodowe,International organizations,138,0.734,43,0.8776,25,0.9259,częste,tak,art. 55; art. 89; art. 90; art. 91; art. 133; art. 146
+legdiss,Rozwiązanie parlamentu,Dismissal of the legislature,138,0.734,35,0.7143,27,1.0,częste,tak,art. 98; art. 155; art. 225
+edfree,Bezpłatna nauka,Free education,136,0.7234,43,0.8776,26,0.963,częste,tak,art. 70
+jc,Rada sądownictwa,Establishment of judicial council,135,0.7181,44,0.898,18,0.6667,częste,tak,art. 186; art. 187
+motive,Cele ustanowienia konstytucji,Motives for writing constitution,135,0.7181,42,0.8571,11,0.4074,częste,tak,Preamble
+slave,Zakaz niewolnictwa,Prohibition of slavery,134,0.7128,38,0.7755,15,0.5556,częste,brak tagu CCP,
+equalgr4,Równość bez względu na rasę,Equality regardless of race,133,0.7074,37,0.7551,18,0.6667,częste,brak tagu CCP,
+health,Prawo do ochrony zdrowia,Right to health care,133,0.7074,47,0.9592,20,0.7407,częste,tak,art. 68
+voteun,Powszechne prawo wyborcze,Claim of universal suffrage,132,0.7021,40,0.8163,22,0.8148,częste,tak,art. 96; art. 97; art. 127
+childpro,Prawa dziecka,Rights of children,131,0.6968,45,0.9184,19,0.7037,częste,tak,art. 48; art. 72
+citrev,Utrata obywatelstwa,Conditions for revoking citizenship,131,0.6968,33,0.6735,20,0.7407,częste,tak,art. 34
+hogelect,Wybór szefa rządu,Head of government selection,131,0.6968,36,0.7347,25,0.9259,częste,tak,art. 154; art. 155
+equalgr6,Równość bez względu na religię,Equality regardless of religion,129,0.6862,43,0.8776,20,0.7407,częste,brak tagu CCP,
+flag,Barwy narodowe,National flag,129,0.6862,43,0.8776,19,0.7037,częste,brak tagu CCP,
+hogdiss,Odwołanie szefa rządu,Head of government removal,129,0.6862,35,0.7143,24,0.8889,częste,tak,art. 156; art. 158; art. 159; art. 160; art. 198
+provwork,Prawo do pracy,Right to work,129,0.6862,42,0.8571,20,0.7407,częste,tak,art. 65
+science,Odniesienie do nauki,Reference to science,127,0.6755,42,0.8571,19,0.7037,częste,tak,art. 39; art. 73
+finsup3,Wsparcie państwa dla osób z niepełnosprawnościami,State support for the disabled,126,0.6702,41,0.8367,18,0.6667,częste,tak,art. 67; art. 68; art. 69
+natcit,Naturalizacja,Requirements for naturalization,126,0.6702,33,0.6735,14,0.5185,częste,tak,art. 34
+resrce,Własność zasobów naturalnych,Ownership of natural resources,126,0.6702,41,0.8367,13,0.4815,częste,brak tagu CCP,
+treatcon,Status prawny umów międzynarodowych,Legal status of treaties,126,0.6702,40,0.8163,23,0.8519,częste,tak,art. 91; art. 133; art. 188
+partrght,Prawo do zakładania partii,Right to form political parties,122,0.6489,44,0.898,16,0.5926,częste,tak,art. 11; art. 21
+sub,Samorząd jednostek terytorialnych,Subsidiary unit government,122,0.6489,37,0.7551,15,0.5556,częste,tak,art. 152; art. 171
+war,Wypowiedzenie wojny,Power to declare/approve war,122,0.6489,36,0.7347,25,0.9259,częste,tak,art. 116
+appeal,Prawo do odwołania od orzeczenia,Right to appeal judicial decisions,121,0.6436,30,0.6122,16,0.5926,częste,tak,art. 78; art. 176
+artists,Odniesienie do sztuki,Reference to art,121,0.6436,40,0.8163,21,0.7778,częste,tak,art. 73
+fairtri,Prawo do sprawiedliwego procesu,Right to fair trial,121,0.6436,35,0.7143,16,0.5926,częste,tak,art. 45
+edcomp,Obowiązek nauki,Compulsory education,120,0.6383,40,0.8163,21,0.7778,częste,tak,art. 70
+hosimm,Immunitet głowy państwa,Head of state immunity,120,0.6383,33,0.6735,22,0.8148,częste,brak tagu CCP,
+hosterml,Limit kadencji głowy państwa,Head of state term limits,120,0.6383,37,0.7551,18,0.6667,częste,tak,art. 127
+override,Odrzucenie weta,Veto override procedure,119,0.633,38,0.7755,15,0.5556,częste,tak,art. 122
+god,Odniesienie do Boga lub bóstw,God or other deities,117,0.6223,32,0.6531,12,0.4444,częste,tak,Preamble; art. 104; art. 130; art. 151
+abide,Obowiązek przestrzegania konstytucji,Duty to obey the constitution,116,0.617,41,0.8367,14,0.5185,częste,tak,art. 83; art. 126
+electsch,Terminy wyborów,Scheduling of elections,116,0.617,30,0.6122,21,0.7778,częste,tak,art. 98; art. 128
+finsup1,Wsparcie państwa dla osób starszych,State support for the elderly,116,0.617,39,0.7959,15,0.5556,częste,tak,art. 67; art. 68
+legrep,Zastępowanie parlamentarzystów,Replacement of legislators,115,0.6117,36,0.7347,11,0.4074,częste,brak tagu CCP,
+anthem,Hymn państwowy,National anthem,114,0.6064,43,0.8776,12,0.4444,częste,tak,art. 28
+depexec,Zastępca szefa władzy wykonawczej,Deputy executive,114,0.6064,28,0.5714,11,0.4074,częste,brak tagu CCP,
+capital,Stolica,National capital,113,0.6011,35,0.7143,18,0.6667,częste,tak,art. 29
+hosstaff,Organy doradcze głowy państwa,Advisory bodies to the head of state,113,0.6011,35,0.7143,12,0.4444,częste,tak,art. 135; art. 141
+milserv,Obowiązek służby wojskowej,Duty to serve in the military,113,0.6011,32,0.6531,20,0.7407,częste,tak,art. 85
+finsup4,Wsparcie państwa dla dzieci,State support for children,112,0.5957,38,0.7755,15,0.5556,częste,tak,art. 68; art. 72
+hocres,Wymogi wobec sędziów sądu najwyższego,Eligibility for supreme court judges,111,0.5904,25,0.5102,11,0.4074,częste,tak,art. 178
+occupate,Wolność wyboru zawodu,Right to choose occupation,111,0.5904,27,0.551,20,0.7407,częste,tak,art. 65
+speedtri,Prawo do rozpatrzenia sprawy bez zwłoki,Right to speedy trial,111,0.5904,31,0.6327,16,0.5926,częste,tak,art. 45
+petition,Prawo petycji,Right of petition,110,0.5851,26,0.5306,21,0.7778,częste,tak,art. 63
+excrim,Ekstradycja,Extradition procedure,109,0.5798,30,0.6122,19,0.7037,częste,tak,art. 55
+illadmin,Działania administracji bez podstawy prawnej,Ultra-vires administrative actions,109,0.5798,33,0.6735,17,0.6296,częste,tak,art. 77
+milcom,Powoływanie dowódców wojskowych,Selection of active-duty commanders,109,0.5798,36,0.7347,16,0.5926,częste,tak,art. 134
+fndfam,Prawo do założenia rodziny,Right to found a family,106,0.5638,36,0.7347,15,0.5556,częste,tak,art. 18
+miranda,Ochrona przed samooskarżeniem,Protection from self-incrimination,106,0.5638,23,0.4694,9,0.3333,częste,brak tagu CCP,
+hosdec,Uprawnienia dekretowe głowy państwa,Head of state decree power,105,0.5585,33,0.6735,15,0.5556,częste,brak tagu CCP,
+session,Długość sesji parlamentu,Length of legislative sessions,105,0.5585,32,0.6531,18,0.6667,częste,brak tagu CCP,
+doubjep,Zakaz ponownego sądzenia za ten sam czyn,Prohibition of double jeopardy,104,0.5532,25,0.5102,11,0.4074,częste,brak tagu CCP,
+telecom,Telekomunikacja,Telecommunications,104,0.5532,35,0.7143,10,0.3704,częste,brak tagu CCP,
+inalrght,Prawa niezbywalne,Inalienable rights,103,0.5479,27,0.551,21,0.7778,częste,tak,art. 30
+pubmeet,Jawność posiedzeń,Public or private sessions,103,0.5479,32,0.6531,24,0.8889,częste,tak,art. 113; art. 124
+suppow,Kompetencje sądu najwyższego,Supreme court powers,103,0.5479,32,0.6531,7,0.2593,częste,tak,art. 101; art. 125; art. 129; art. 183
+hocterm,Kadencja sędziów sądu najwyższego,Supreme court term length,102,0.5426,25,0.5102,13,0.4815,częste,tak,art. 179; art. 183
+equalgr3,Równość bez względu na pochodzenie,Equality regardless of origin,99,0.5266,27,0.551,14,0.5185,częste,brak tagu CCP,
+partreg,Ograniczenia partii politycznych,Restrictions on political parties,98,0.5213,37,0.7551,12,0.4444,częste,brak tagu CCP,
+ecom,Komisja wyborcza,Electoral commission,96,0.5106,33,0.6735,3,0.1111,częste,brak tagu CCP,
+langprot,Ochrona używania języka,Protection of language use,95,0.5053,27,0.551,15,0.5556,częste,tak,art. 35
+equalgr11,Równość bez względu na wyznanie lub przekonania,Equality regardless of creed or belief,94,0.5,27,0.551,12,0.4444,częste,brak tagu CCP,
+infoacc,Prawo do informacji,Right to information,94,0.5,37,0.7551,16,0.5926,częste,tak,art. 51; art. 61
+strike,Prawo do strajku,Right to strike,94,0.5,30,0.6122,19,0.7037,częste,tak,art. 59
+remuner,Prawo do godziwego wynagrodzenia,Right to just remuneration,93,0.4947,32,0.6531,14,0.5185,częste,tak,art. 65
+bank,Bank centralny,Central bank,92,0.4894,32,0.6531,14,0.5185,częste,tak,art. 198; art. 227
+equalgr15,Równość bez względu na przynależność partyjną,Equality regardless of political party,92,0.4894,27,0.551,14,0.5185,częste,brak tagu CCP,
+solid,Odniesienie do solidarności i braterstwa,Reference to fraternity/solidarity,91,0.484,32,0.6531,11,0.4074,częste,tak,Preamble; art. 20
+judretir,Obowiązkowy wiek emerytalny sędziów,Mandatory retirement age for judges,90,0.4787,16,0.3265,18,0.6667,częste,tak,art. 180
+parents,Prawa i obowiązki rodziców,Rights or duties of parents,90,0.4787,30,0.6122,16,0.5926,częste,tak,art. 53
+transfer,Prawo do zbywania własności,Right to transfer property,90,0.4787,33,0.6735,15,0.5556,częste,tak,art. 21; art. 64
+intprop,Własność intelektualna,Provisions for intellectual property,89,0.4734,28,0.5714,13,0.4815,częste,brak tagu CCP,
+consel,Wybór sędziów sądu konstytucyjnego,Constitutional court selection,88,0.4681,31,0.6327,21,0.7778,częste,tak,art. 194
+standliv,Prawo do godziwego poziomu życia,Right to reasonable standard of living,88,0.4681,29,0.5918,13,0.4815,częste,tak,art. 65
+acfree,Wolność akademicka,Right to academic freedom,87,0.4628,27,0.551,19,0.7037,częste,tak,art. 70; art. 73
+conpow,Kompetencje sądu konstytucyjnego,Constitutional court powers,87,0.4628,31,0.6327,20,0.7407,częste,tak,art. 131; art. 188; art. 189
+equalgr12,Równość bez względu na pozycję społeczną,Equality regardless of social status,87,0.4628,30,0.6122,13,0.4815,częste,brak tagu CCP,
+judcrts2,Sąd konstytucyjny,Establishment of constitutional court,87,0.4628,32,0.6531,21,0.7778,częste,tak,art. 188
+tax,Ustawy podatkowe,Tax bills,87,0.4628,19,0.3878,8,0.2963,częste,brak tagu CCP,
+asylum,Ochrona bezpaństwowców i azyl,Protection of stateless persons,86,0.4574,31,0.6327,16,0.5926,częste,tak,art. 56
+income,Uposażenie parlamentarzystów,Compensation of legislators,86,0.4574,25,0.5102,16,0.5926,częste,brak tagu CCP,
+milrest,Ograniczenia sił zbrojnych,Restrictions on the armed forces,86,0.4574,23,0.4694,16,0.5926,częste,tak,art. 26; art. 103; art. 108
+district,Okręgi wyborcze,Electoral districts,85,0.4521,22,0.449,10,0.3704,częste,brak tagu CCP,
+falseimp,Ochrona przed bezprawnym pozbawieniem wolności,Protection from false imprisonment,85,0.4521,21,0.4286,14,0.5185,częste,tak,art. 41
+offrel,Religia państwowa,Official religion,85,0.4521,27,0.551,10,0.3704,częste,brak tagu CCP,
+safework,Prawo do bezpiecznych warunków pracy,Right to safe work environment,85,0.4521,30,0.6122,11,0.4074,częste,tak,art. 66
+uhselect,Wybór izby wyższej,Second chamber selection,85,0.4521,25,0.5102,13,0.4815,częste,tak,art. 97; art. 100
+attend,Obecność parlamentarzystów na posiedzeniach,Attendance by legislators,84,0.4468,23,0.4694,6,0.2222,częste,brak tagu CCP,
+hocsize,Liczba sędziów sądu najwyższego,Number of supreme court judges,84,0.4468,16,0.3265,5,0.1852,częste,brak tagu CCP,
+region,Grupy regionalne,Regional group(s),84,0.4468,30,0.6122,20,0.7407,częste,brak tagu CCP,
+trilang,Proces w języku oskarżonego,Trial in native language of accused,84,0.4468,20,0.4082,12,0.4444,częste,brak tagu CCP,
+busines,Prawo do prowadzenia działalności gospodarczej,Right to establish a business,83,0.4415,24,0.4898,16,0.5926,częste,tak,art. 20
+ombuds,Rzecznik praw obywatelskich,Ombudsman,83,0.4415,23,0.4694,16,0.5926,częste,tak,art. 80; art. 191; art. 207
+childwrk,Ograniczenie pracy dzieci,Limits on employment of children,82,0.4362,30,0.6122,9,0.3333,częste,tak,art. 65
+equalgr5,Równość bez względu na język,Equality regardless of language,81,0.4309,31,0.6327,15,0.5556,częste,brak tagu CCP,
+hogpow,Kompetencje szefa rządu,Head of government powers,81,0.4309,26,0.5306,15,0.5556,częste,tak,art. 148
+libel,Ochrona dobrego imienia,Right to protect one's reputation,81,0.4309,19,0.3878,16,0.5926,częste,tak,art. 47; art. 51
+taxes,Obowiązek płacenia podatków,Duty to pay taxes,81,0.4309,32,0.6531,10,0.3704,częste,tak,art. 84
+cappun,Zakaz kary śmierci,Prohibition of capital punishment,80,0.4255,21,0.4286,19,0.7037,częste,brak tagu CCP,
+judcrts4,Sądy wojskowe,Establishment of military courts,79,0.4202,22,0.449,12,0.4444,częste,tak,art. 175
+leisure,Prawo do wypoczynku,Right to rest and leisure,79,0.4202,21,0.4286,13,0.4815,częste,tak,art. 66
+radio,Radio,Radio,79,0.4202,20,0.4082,13,0.4815,częste,tak,art. 54; art. 212
+judsal,Ochrona wynagrodzeń sędziów,Protection of judges' salaries,78,0.4149,20,0.4082,7,0.2593,częste,brak tagu CCP,
+marriage,Regulacja małżeństwa,Regulation of marriage,78,0.4149,30,0.6122,15,0.5556,częste,tak,art. 18
+prevcond,Odniesienie do historii kraju,Reference to country's history,78,0.4149,30,0.6122,9,0.3333,częste,tak,Preamble
+tv,Telewizja,Television,78,0.4149,20,0.4082,11,0.4074,częste,tak,art. 54; art. 212
+uhlead,Przewodniczący izby wyższej,Leader of second chamber,78,0.4149,25,0.5102,11,0.4074,częste,tak,art. 110; art. 124
+divhouse,Podział zadań między izbami,Division of labor between chambers,77,0.4096,25,0.5102,12,0.4444,częste,tak,art. 121
+shelter,Prawo do mieszkania,Right to shelter,77,0.4096,29,0.5918,10,0.3704,częste,tak,art. 75
+conres,Wymogi wobec sędziów sądu konstytucyjnego,Eligibility for const court judges,76,0.4043,26,0.5306,17,0.6296,częste,tak,art. 194; art. 195
+uhrest,Wymogi wobec senatorów,Eligibility for second chamber,75,0.3989,23,0.4694,12,0.4444,rzadsze,tak,art. 99
+conterm,Kadencja sędziów sądu konstytucyjnego,Constitutional court term length,74,0.3936,26,0.5306,16,0.5926,rzadsze,tak,art. 194
+equalgr10,Równość bez względu na kolor skóry,Equality regardless of skin color,74,0.3936,24,0.4898,8,0.2963,rzadsze,brak tagu CCP,
+hoglegr,Rola szefa rządu w parlamencie,Head of government's role in the legislature,73,0.3883,19,0.3878,12,0.4444,rzadsze,brak tagu CCP,
+unamend,Przepisy niezmienialne (klauzula wieczysta),Unamendable provisions,73,0.3883,31,0.6327,10,0.3704,rzadsze,brak tagu CCP,
+freecomp,Prawo do konkurencyjnego rynku,Right to competitive marketplace,70,0.3723,24,0.4898,12,0.4444,rzadsze,brak tagu CCP,
+hogrest,Wymogi wobec szefa rządu,Eligibility for head of government,70,0.3723,19,0.3878,6,0.2222,rzadsze,brak tagu CCP,
+matequal,Równość małżonków,Provision for matrimonial equality,70,0.3723,21,0.4286,11,0.4074,rzadsze,tak,art. 33
+seprel,Rozdział kościoła i państwa,Separation of church and state,70,0.3723,26,0.5306,11,0.4074,rzadsze,tak,art. 25
+uhterm,Kadencja izby wyższej,Term length of second chamber,68,0.3617,22,0.449,10,0.3704,rzadsze,tak,art. 98
+ordres,Wymogi wobec sędziów sądów powszechnych,Eligibility for ordinary court judges,67,0.3564,15,0.3061,8,0.2963,rzadsze,tak,art. 178
+citren,Prawo do zrzeczenia się obywatelstwa,Right to renounce citizenship,66,0.3511,13,0.2653,6,0.2222,rzadsze,tak,art. 34
+custlaw,Zwyczajowe prawo międzynarodowe,Customary international law,66,0.3511,18,0.3673,16,0.5926,rzadsze,brak tagu CCP,
+examwit,Prawo do przesłuchania świadków i badania dowodów,Right to examine evidence/witnesses,66,0.3511,11,0.2245,6,0.2222,rzadsze,brak tagu CCP,
+fedsep,Prawo krajowe a prawo lokalne,National vs subnational laws,66,0.3511,18,0.3673,12,0.4444,rzadsze,brak tagu CCP,
+hogsucc,Zastępstwo szefa rządu,Head of government replacement,65,0.3457,17,0.3469,15,0.5556,rzadsze,tak,art. 158
+prerel,Zwolnienie przed procesem,Right to pre-trial release,65,0.3457,12,0.2449,10,0.3704,rzadsze,brak tagu CCP,
+finsup2,Wsparcie państwa dla bezrobotnych,State support for the unemployed,64,0.3404,16,0.3265,15,0.5556,rzadsze,tak,art. 67
+lhspleg,Wyłączne sprawy izby niższej,First chamber reserved policy areas,64,0.3404,15,0.3061,12,0.4444,rzadsze,brak tagu CCP,
+uhseats,Liczebność izby wyższej,Size of second chamber,63,0.3351,19,0.3878,9,0.3333,rzadsze,tak,art. 97
+achighed,Dostęp do szkolnictwa wyższego,Access to higher education,62,0.3298,16,0.3265,13,0.4815,rzadsze,tak,art. 70
+civil,Rekrutacja do służby cywilnej,Civil service recruitment,62,0.3298,29,0.5918,10,0.3704,rzadsze,brak tagu CCP,
+legjoint,Wspólne posiedzenia izb,Joint meetings of legislative chambers,62,0.3298,24,0.4898,10,0.3704,rzadsze,tak,art. 114
+spend,Ustawy o wydatkach,Spending bills,62,0.3298,13,0.2653,5,0.1852,rzadsze,brak tagu CCP,
+intrght,Międzynarodowe traktaty praw człowieka,International human rights treaties,60,0.3191,19,0.3878,7,0.2593,rzadsze,brak tagu CCP,
+uhage,Granica wieku senatorów,Age restrictions on second chamber,59,0.3138,18,0.3673,8,0.2963,rzadsze,tak,art. 99
+equalgr13,Równość bez względu na majątek,Equality regardless of financial status,58,0.3085,23,0.4694,11,0.4074,rzadsze,brak tagu CCP,
+nomil,Prawo do odmowy służby wojskowej,Right to conscientious objection,58,0.3085,10,0.2041,16,0.5926,rzadsze,tak,art. 85
+socclas,Odniesienia do klas społecznych,Mentions of social class,57,0.3032,13,0.2653,9,0.3333,rzadsze,brak tagu CCP,
+ethincl,Integracja mniejszości etnicznych,Integration of ethnic communities,56,0.2979,24,0.4898,9,0.3333,rzadsze,tak,art. 35
+juvenile,Szczególne prawa nieletnich w procesie karnym,Privileges for juveniles in criminal process,56,0.2979,16,0.3265,4,0.1481,rzadsze,brak tagu CCP,
+partprh,Partie zakazane,Prohibited political parties,56,0.2979,23,0.4694,7,0.2593,rzadsze,tak,art. 13
+resenex,Ograniczenia wjazdu i wyjazdu,Restrictions on entry or exit,56,0.2979,13,0.2653,9,0.3333,rzadsze,tak,art. 52
+stdcom,Stałe komisje parlamentarne,Standing committees,56,0.2979,18,0.3673,10,0.3704,rzadsze,brak tagu CCP,
+equalgr9,Równość osób z niepełnosprawnościami,Equality for persons with disabilities,55,0.2926,33,0.6735,7,0.2593,rzadsze,brak tagu CCP,
+fedrev,Kontrola prawa lokalnego przez państwo,Federal review of subnational legislation,55,0.2926,16,0.3265,13,0.4815,rzadsze,tak,art. 171; art. 184
+govmed,Media państwowe,State operation of the media,55,0.2926,16,0.3265,7,0.2593,rzadsze,brak tagu CCP,
+judcrts1,Sądy administracyjne,Establishment of administrative courts,55,0.2926,16,0.3265,18,0.6667,rzadsze,tak,art. 166; art. 175; art. 184
+econplan,Planowanie gospodarcze,Economic plans,54,0.2872,20,0.4082,3,0.1111,rzadsze,brak tagu CCP,
+work,Obowiązek pracy,Duty to work,54,0.2872,17,0.3469,5,0.1852,rzadsze,tak,art. 65
+census,Spis powszechny,Census,53,0.2819,13,0.2653,7,0.2593,rzadsze,brak tagu CCP,
+finance,Ustawy finansowe,Finance bills,53,0.2819,9,0.1837,9,0.3333,rzadsze,tak,art. 221
+illsub,"Narkotyki, alkohol i substancje zakazane","Drugs, alcohol, and illegal substances",52,0.2766,10,0.2041,4,0.1481,rzadsze,brak tagu CCP,
+legsupr,Kwalifikowana większość dla ustaw,Supermajority required for legislation,52,0.2766,16,0.3265,12,0.4444,rzadsze,brak tagu CCP,
+access,Przyłączenie terytorium,Accession of territory,51,0.2713,18,0.3673,11,0.4074,rzadsze,brak tagu CCP,
+initiat,Obywatelska inicjatywa ustawodawcza,Legislative initiatives by citizens,50,0.266,13,0.2653,10,0.3704,rzadsze,tak,art. 118
+ordterm,Kadencja sędziów sądów powszechnych,Ordinary court term length,50,0.266,12,0.2449,11,0.4074,rzadsze,tak,art. 179
+camppubf,Finansowanie kampanii wyborczych,Campaign financing,49,0.2606,19,0.3878,2,0.0741,rzadsze,brak tagu CCP,
+citdep,Wydalenie obywateli,Power to deport citizens,48,0.2553,7,0.1429,10,0.3704,rzadsze,brak tagu CCP,
+conright,Ochrona konsumentów,Protection of consumers,48,0.2553,19,0.3878,6,0.2222,rzadsze,tak,art. 76
+jury,Udział obywateli w sądzeniu,Jury trials required,48,0.2553,6,0.1224,14,0.5185,rzadsze,tak,art. 182
+lhquota,Parytety w izbie niższej,First chamber representation quotas,48,0.2553,19,0.3878,5,0.1852,rzadsze,brak tagu CCP,
+binding,Bezpośrednio wiążąca moc praw konstytucyjnych,Binding effect of const rights,47,0.25,17,0.3469,5,0.1852,rzadsze,brak tagu CCP,
+equalgr16,Równość bez względu na pochodzenie rodzinne,Equality regardless of parentage,47,0.25,20,0.4082,8,0.2963,rzadsze,brak tagu CCP,
+devlpers,Prawo do rozwoju osobowości,Right to development of personality,46,0.2447,16,0.3265,8,0.2963,rzadsze,brak tagu CCP,
+dueproc,Gwarancja rzetelnej procedury,Guarantee of due process,44,0.234,16,0.3265,3,0.1111,rzadsze,brak tagu CCP,
+hr,Komisja praw człowieka,Human rights commission,43,0.2287,24,0.4898,1,0.037,rzadsze,brak tagu CCP,
+pubmin,Publikacja obrad,Publication of deliberations,43,0.2287,17,0.3469,7,0.2593,rzadsze,brak tagu CCP,
+hogdec,Uprawnienia dekretowe szefa rządu,Head of government decree power,42,0.2234,13,0.2653,12,0.4444,rzadsze,brak tagu CCP,
+hogage,Granica wieku szefa rządu,Age restrictions on head of government,41,0.2181,12,0.2449,4,0.1481,rzadsze,brak tagu CCP,
+conlim,Zakaz ponownego wyboru sędziów sądu konstytucyjnego,Constitutional court term limits,40,0.2128,15,0.3061,9,0.3333,rzadsze,tak,art. 194
+conrem,Tryb odwołania sędziów sądu konstytucyjnego,Constitutional court removal,40,0.2128,16,0.3265,8,0.2963,rzadsze,brak tagu CCP,
+selfdet,Prawo do samostanowienia,Right to self determination,39,0.2074,13,0.2653,9,0.3333,rzadsze,brak tagu CCP,
+assets,Jawność majątku osób publicznych,Earnings disclosure requirement,37,0.1968,19,0.3878,0,0.0,rzadsze,brak tagu CCP,
+partunco,Kontrola konstytucyjności partii,Regulation of political parties,37,0.1968,6,0.1224,8,0.2963,rzadsze,tak,art. 188
+hocage,Granica wieku sędziów sądu najwyższego,Age restrictions on supreme court judges,36,0.1915,9,0.1837,3,0.1111,rzadsze,brak tagu CCP,
+orglaw,Ustawy organiczne,Organic laws,36,0.1915,17,0.3469,6,0.2222,rzadsze,brak tagu CCP,
+adsel,Wybór sędziów sądów administracyjnych,Administrative court selection,35,0.1862,8,0.1633,14,0.5185,rzadsze,tak,art. 144; art. 179; art. 185
+terror,Terroryzm,Terrorism,34,0.1809,16,0.3265,4,0.1481,rzadsze,brak tagu CCP,
+uhspleg,Wyłączne sprawy izby wyższej,Second chamber reserved policy areas,34,0.1809,12,0.2449,7,0.2593,rzadsze,brak tagu CCP,
+water,Prawo do wody,Right to water,34,0.1809,21,0.4286,2,0.0741,rzadsze,brak tagu CCP,
+equalgr2,Równość bez względu na narodowość,Equality regardless of nationality,33,0.1755,11,0.2245,7,0.2593,rzadsze,brak tagu CCP,
+motto,Dewiza państwowa,National motto,33,0.1755,14,0.2857,2,0.0741,rzadsze,brak tagu CCP,
+opgroup,Redystrybucja bogactwa,Provisions for wealth redistribution,33,0.1755,15,0.3061,3,0.1111,rzadsze,brak tagu CCP,
+debtors,Prawa dłużników,Rights of debtors,32,0.1702,9,0.1837,2,0.0741,rzadsze,brak tagu CCP,
+hocterml,Limit kadencji sędziów sądu najwyższego,Supreme court term limits,32,0.1702,11,0.2245,3,0.1111,rzadsze,brak tagu CCP,
+hogimm,Immunitet szefa rządu,Head of government immunity,32,0.1702,10,0.2041,8,0.2963,rzadsze,brak tagu CCP,
+judprec,Moc wiążąca precedensu,Judicial precedence,32,0.1702,11,0.2245,3,0.1111,rzadsze,brak tagu CCP,
+vicright,Prawa ofiar przestępstw,Protection of victim's rights,32,0.1702,13,0.2653,3,0.1111,rzadsze,brak tagu CCP,
+cc,Komisja antykorupcyjna,Counter corruption commission,31,0.1649,18,0.3673,0,0.0,rzadsze,brak tagu CCP,
+hogdlim,Ograniczenia odwołania szefa rządu,Limits on removing head of government,30,0.1596,9,0.1837,8,0.2963,rzadsze,tak,art. 158
+equalgr8,Równość bez względu na wiek,Equality regardless of age,29,0.1543,14,0.2857,3,0.1111,rzadsze,brak tagu CCP,
+medcom,Konstytucyjny organ ds. mediów,Media commission,29,0.1543,13,0.2653,5,0.1852,rzadsze,tak,art. 212
+rightres,Ograniczenia praw grup,Restrictions on rights of groups,29,0.1543,10,0.2041,5,0.1852,rzadsze,tak,art. 37
+figures,Odniesienia do myślicieli i postaci politycznych,Political theorists/figures,27,0.1436,9,0.1837,3,0.1111,rzadkie,brak tagu CCP,
+hocop,Zdania odrębne w sądzie najwyższym,Supreme court opinions,27,0.1436,9,0.1837,4,0.1481,rzadkie,brak tagu CCP,
+scifree,Prawo do korzystania z osiągnięć nauki,Right to enjoy the benefits of science,26,0.1383,9,0.1837,4,0.1481,rzadkie,tak,art. 73
+judcrts5,Sąd dla najwyższych urzędników (Trybunał Stanu),Courts for judging public officials,24,0.1277,10,0.2041,4,0.1481,rzadkie,tak,art. 197
+balbudgt,Zrównoważony budżet,Balanced budget,23,0.1223,7,0.1429,6,0.2222,rzadkie,brak tagu CCP,
+conage,Granica wieku sędziów sądu konstytucyjnego,Age restrictions on constitutional court judges,23,0.1223,9,0.1837,2,0.0741,rzadkie,brak tagu CCP,
+recvote,Tajność głosowań w parlamencie,Secrecy of legislative votes,23,0.1223,4,0.0816,6,0.2222,rzadkie,brak tagu CCP,
+uhquota,Parytety w izbie wyższej,Second chamber representation quotas,23,0.1223,12,0.2449,4,0.1481,rzadkie,brak tagu CCP,
+civmar,Małżeństwo cywilne,Provision for civil marriage,22,0.117,6,0.1224,5,0.1852,rzadkie,brak tagu CCP,
+execindp,Niezależność władzy wykonawczej,Claim of executive independence,22,0.117,5,0.102,3,0.1111,rzadkie,brak tagu CCP,
+hogterm,Kadencja szefa rządu,Head of government term length,21,0.1117,7,0.1429,6,0.2222,rzadkie,brak tagu CCP,
+rellaw,Status prawa religijnego,Status of religious law,21,0.1117,10,0.2041,1,0.037,rzadkie,brak tagu CCP,
+seccess,Secesja terytorium,Secession of territory,21,0.1117,4,0.0816,7,0.2593,rzadkie,brak tagu CCP,
+adres,Wymogi wobec sędziów sądów administracyjnych,Eligibility for administrative judges,20,0.1064,5,0.102,5,0.1852,rzadkie,tak,art. 178
+corppun,Zakaz kar cielesnych,Prohibition of corporal punishment,20,0.1064,6,0.1224,4,0.1481,rzadkie,tak,art. 40
+ordage,Granica wieku sędziów sądów powszechnych,Age restrictions on ordinary court judges,19,0.1011,5,0.102,2,0.0741,rzadkie,brak tagu CCP,
+prevlead,Zbrodnie poprzedniego reżimu,Crimes of the previous regime,19,0.1011,10,0.2041,2,0.0741,rzadkie,brak tagu CCP,
+equalgr14,Równość bez względu na plemię lub klan,Equality regardless of tribe or clan,18,0.0957,10,0.2041,0,0.0,rzadkie,brak tagu CCP,
+amparo,Amparo: szybki środek ochrony praw przed sądem,Right to amparo,17,0.0904,3,0.0612,1,0.037,rzadkie,brak tagu CCP,
+ecpow,Kompetencje sądu wyborczego,Electoral court powers,17,0.0904,4,0.0816,0,0.0,rzadkie,brak tagu CCP,
+overthrw,Prawo do obalenia rządu,Right to overthrow government,17,0.0904,5,0.102,6,0.2222,rzadkie,brak tagu CCP,
+adterm,Kadencja sędziów sądów administracyjnych,Administrative court term length,16,0.0851,2,0.0408,6,0.2222,rzadkie,tak,art. 179; art. 185
+indpolgr6,Samorząd ludów rdzennych,Indigenous right to self governance,16,0.0851,4,0.0816,4,0.1481,rzadkie,brak tagu CCP,
+judcrts7,Sądy pracy,Establishment of labor courts,16,0.0851,6,0.1224,4,0.1481,rzadkie,brak tagu CCP,
+colony,Kolonie,Colonies,15,0.0798,3,0.0612,2,0.0741,rzadkie,brak tagu CCP,
+compvote,Obowiązek głosowania,Compulsory voting,15,0.0798,4,0.0816,3,0.1111,rzadkie,brak tagu CCP,
+ecsel,Wybór sędziów sądu wyborczego,Electoral court selection,15,0.0798,3,0.0612,0,0.0,rzadkie,brak tagu CCP,
+indpolgr2,Reprezentacja ludów rdzennych,Indigenous right to representation,14,0.0745,3,0.0612,2,0.0741,rzadkie,brak tagu CCP,
+ecres,Wymogi wobec sędziów sądu wyborczego,Eligibility for electoral court judges,13,0.0691,2,0.0408,0,0.0,rzadkie,brak tagu CCP,
+concop,Zdania odrębne w sądzie konstytucyjnym,Constitutional court opinions,12,0.0638,7,0.1429,0,0.0,rzadkie,brak tagu CCP,
+ecterm,Kadencja sędziów sądu wyborczego,Electoral court term length,12,0.0638,4,0.0816,0,0.0,rzadkie,brak tagu CCP,
+judcrts8,Sądy religijne,Establishment of religious courts,12,0.0638,2,0.0408,0,0.0,rzadkie,brak tagu CCP,
+equalgr7,Równość bez względu na orientację seksualną,Equality regardless of sexual orientation,11,0.0585,5,0.102,3,0.1111,rzadkie,brak tagu CCP,
+hogterml,Limit kadencji szefa rządu,Head of government term limits,9,0.0479,3,0.0612,0,0.0,rzadkie,brak tagu CCP,
+lhtrmlim,Limit kadencji posłów,Term limits for first chamber,9,0.0479,3,0.0612,1,0.037,rzadkie,brak tagu CCP,
+ordterml,Limit kadencji sędziów sądów powszechnych,Ordinary court term limits,9,0.0479,5,0.102,1,0.037,rzadkie,brak tagu CCP,
+prisonrg,Rejestr więźniów,Prison registry,9,0.0479,1,0.0204,0,0.0,rzadkie,brak tagu CCP,
+ecrdet,Odwołanie sędziów sądu wyborczego,Electoral court removal,8,0.0426,2,0.0408,0,0.0,rzadkie,brak tagu CCP,
+reltax,Opodatkowanie związków wyznaniowych,Tax status of religious organizations,8,0.0426,0,0.0,1,0.037,rzadkie,brak tagu CCP,
+uhtrmlim,Limit kadencji senatorów,Term limits of second chamber,8,0.0426,4,0.0816,0,0.0,rzadkie,brak tagu CCP,
+adage,Granica wieku sędziów sądów administracyjnych,Age restrictions on administrative judges,7,0.0372,3,0.0612,0,0.0,rzadkie,brak tagu CCP,
+ecage,Granica wieku sędziów sądu wyborczego,Age restrictions on electoral court judges,7,0.0372,1,0.0204,0,0.0,rzadkie,brak tagu CCP,
+indcit,Obywatelstwo ludów rdzennych,Citizenship of indigenous groups,7,0.0372,2,0.0408,2,0.0741,rzadkie,brak tagu CCP,
+adtermn,Limit kadencji sędziów sądów administracyjnych,Administrative court term limits,6,0.0319,1,0.0204,2,0.0741,rzadkie,brak tagu CCP,
+arms,Prawo do posiadania broni,Right to bear arms,6,0.0319,0,0.0,0,0.0,rzadkie,brak tagu CCP,
+indpolgr1,Prawo wyborcze ludów rdzennych,Indigenous right to vote,6,0.0319,1,0.0204,1,0.037,rzadkie,brak tagu CCP,
+partprf,Partie uprzywilejowane,Preferred political parties,6,0.0319,2,0.0408,0,0.0,rzadkie,brak tagu CCP,
+truthcom,Komisja prawdy i pojednania,Truth and reconciliation commission,6,0.0319,5,0.102,0,0.0,rzadkie,brak tagu CCP,
+civilmil,Ograniczenia dla ministra obrony,Restrictions on minister of defense,5,0.0266,2,0.0408,0,0.0,rzadkie,brak tagu CCP,
+ecterml,Limit kadencji sędziów sądu wyborczego,Electoral court term limits,3,0.016,1,0.0204,0,0.0,rzadkie,brak tagu CCP,
+judcrts6,Sądy podatkowe,Establishment of tax courts,2,0.0106,2,0.0408,0,0.0,rzadkie,brak tagu CCP,
+indpolgr4,Zwolnienie ludów rdzennych z podatków,Indigenous right not to pay taxes,1,0.0053,1,0.0204,0,0.0,rzadkie,brak tagu CCP,
+indpolgr5,Wyjątki prawne dla ludów rdzennych,Indigenous right to illegal activities,0,0.0,0,0.0,0,0.0,rzadkie,brak tagu CCP,

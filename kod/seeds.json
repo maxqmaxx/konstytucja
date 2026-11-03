@@ -1,0 +1,456 @@
+[
+  {
+    "id": "uk-legislation:en:magna-carta-1297",
+    "provider": "uk-legislation",
+    "provider_id": "magna-carta-1297",
+    "country_code": "GB",
+    "country": "United Kingdom",
+    "title": "Magna Carta 1297",
+    "language": "en",
+    "document_type": "constitutional_instrument",
+    "status": "official_edition_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": null,
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://www.legislation.gov.uk/aep/Edw1cc1929/25/9/data.pdf",
+        "format": "pdf"
+      },
+      {
+        "url": "https://www.legislation.gov.uk/aep/Edw1cc1929/25/9/data.htm",
+        "format": "html"
+      }
+    ],
+    "source_url": "https://www.legislation.gov.uk/aep/Edw1cc1929/25/9"
+  },
+  {
+    "id": "uk-legislation:en:petition-of-right-1627",
+    "provider": "uk-legislation",
+    "provider_id": "petition-of-right-1627",
+    "country_code": "GB",
+    "country": "United Kingdom",
+    "title": "Petition of Right 1627",
+    "language": "en",
+    "document_type": "constitutional_instrument",
+    "status": "official_edition_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": null,
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://www.legislation.gov.uk/aep/Cha1/3/1/data.pdf",
+        "format": "pdf"
+      },
+      {
+        "url": "https://www.legislation.gov.uk/aep/Cha1/3/1/data.htm",
+        "format": "html"
+      }
+    ],
+    "source_url": "https://www.legislation.gov.uk/aep/Cha1/3/1"
+  },
+  {
+    "id": "uk-legislation:en:bill-of-rights-1688",
+    "provider": "uk-legislation",
+    "provider_id": "bill-of-rights-1688",
+    "country_code": "GB",
+    "country": "United Kingdom",
+    "title": "Bill of Rights 1688",
+    "language": "en",
+    "document_type": "constitutional_instrument",
+    "status": "official_edition_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": null,
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://www.legislation.gov.uk/aep/WillandMarSess2/1/2/data.pdf",
+        "format": "pdf"
+      },
+      {
+        "url": "https://www.legislation.gov.uk/aep/WillandMarSess2/1/2/data.htm",
+        "format": "html"
+      }
+    ],
+    "source_url": "https://www.legislation.gov.uk/aep/WillandMarSess2/1/2"
+  },
+  {
+    "id": "uk-legislation:en:act-of-settlement-1700",
+    "provider": "uk-legislation",
+    "provider_id": "act-of-settlement-1700",
+    "country_code": "GB",
+    "country": "United Kingdom",
+    "title": "Act of Settlement 1700",
+    "language": "en",
+    "document_type": "constitutional_instrument",
+    "status": "official_edition_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": null,
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://www.legislation.gov.uk/aep/Will3/12-13/2/data.pdf",
+        "format": "pdf"
+      },
+      {
+        "url": "https://www.legislation.gov.uk/aep/Will3/12-13/2/data.htm",
+        "format": "html"
+      }
+    ],
+    "source_url": "https://www.legislation.gov.uk/aep/Will3/12-13/2"
+  },
+  {
+    "id": "uk-legislation:en:union-with-scotland-1706",
+    "provider": "uk-legislation",
+    "provider_id": "union-with-scotland-1706",
+    "country_code": "GB",
+    "country": "United Kingdom",
+    "title": "Union with Scotland Act 1706",
+    "language": "en",
+    "document_type": "constitutional_instrument",
+    "status": "official_edition_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": null,
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://www.legislation.gov.uk/aep/Ann/6/11/data.pdf",
+        "format": "pdf"
+      },
+      {
+        "url": "https://www.legislation.gov.uk/aep/Ann/6/11/data.htm",
+        "format": "html"
+      }
+    ],
+    "source_url": "https://www.legislation.gov.uk/aep/Ann/6/11"
+  },
+  {
+    "id": "uk-legislation:en:parliament-act-1911",
+    "provider": "uk-legislation",
+    "provider_id": "parliament-act-1911",
+    "country_code": "GB",
+    "country": "United Kingdom",
+    "title": "Parliament Act 1911",
+    "language": "en",
+    "document_type": "constitutional_instrument",
+    "status": "official_edition_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": null,
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://www.legislation.gov.uk/ukpga/Geo5/1-2/13/data.pdf",
+        "format": "pdf"
+      },
+      {
+        "url": "https://www.legislation.gov.uk/ukpga/Geo5/1-2/13/data.htm",
+        "format": "html"
+      }
+    ],
+    "source_url": "https://www.legislation.gov.uk/ukpga/Geo5/1-2/13"
+  },
+  {
+    "id": "uk-legislation:en:parliament-act-1949",
+    "provider": "uk-legislation",
+    "provider_id": "parliament-act-1949",
+    "country_code": "GB",
+    "country": "United Kingdom",
+    "title": "Parliament Act 1949",
+    "language": "en",
+    "document_type": "constitutional_instrument",
+    "status": "official_edition_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": null,
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/103/data.pdf",
+        "format": "pdf"
+      },
+      {
+        "url": "https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/103/data.htm",
+        "format": "html"
+      }
+    ],
+    "source_url": "https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/103"
+  },
+  {
+    "id": "uk-legislation:en:human-rights-act-1998",
+    "provider": "uk-legislation",
+    "provider_id": "human-rights-act-1998",
+    "country_code": "GB",
+    "country": "United Kingdom",
+    "title": "Human Rights Act 1998",
+    "language": "en",
+    "document_type": "constitutional_instrument",
+    "status": "official_edition_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": null,
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://www.legislation.gov.uk/ukpga/1998/42/data.pdf",
+        "format": "pdf"
+      },
+      {
+        "url": "https://www.legislation.gov.uk/ukpga/1998/42/data.htm",
+        "format": "html"
+      }
+    ],
+    "source_url": "https://www.legislation.gov.uk/ukpga/1998/42"
+  },
+  {
+    "id": "uk-legislation:en:constitutional-reform-act-2005",
+    "provider": "uk-legislation",
+    "provider_id": "constitutional-reform-act-2005",
+    "country_code": "GB",
+    "country": "United Kingdom",
+    "title": "Constitutional Reform Act 2005",
+    "language": "en",
+    "document_type": "constitutional_instrument",
+    "status": "official_edition_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": null,
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://www.legislation.gov.uk/ukpga/2005/4/data.pdf",
+        "format": "pdf"
+      },
+      {
+        "url": "https://www.legislation.gov.uk/ukpga/2005/4/data.htm",
+        "format": "html"
+      }
+    ],
+    "source_url": "https://www.legislation.gov.uk/ukpga/2005/4"
+  },
+  {
+    "id": "canada-justice:en:constitutional-acts-1867-1982",
+    "provider": "canada-justice",
+    "provider_id": "constitutional-acts-1867-1982",
+    "country_code": "CA",
+    "country": "Canada",
+    "title": "Constitution Acts, 1867 to 1982",
+    "language": "en",
+    "document_type": "constitutional_instruments",
+    "status": "official_edition_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": null,
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://laws-lois.justice.gc.ca/eng/Const/FullText.html",
+        "format": "html"
+      }
+    ],
+    "source_url": "https://laws-lois.justice.gc.ca/eng/Const/FullText.html"
+  },
+  {
+    "id": "canada-justice:fr:constitutional-acts-1867-1982",
+    "provider": "canada-justice",
+    "provider_id": "constitutional-acts-1867-1982",
+    "country_code": "CA",
+    "country": "Canada",
+    "title": "Constitution Acts, 1867 to 1982",
+    "language": "fr",
+    "document_type": "constitutional_instruments",
+    "status": "official_edition_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": null,
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://laws-lois.justice.gc.ca/fra/Const/TexteComplet.html",
+        "format": "html"
+      }
+    ],
+    "source_url": "https://laws-lois.justice.gc.ca/fra/Const/TexteComplet.html"
+  },
+  {
+    "id": "nz-legislation:en:constitution-act-1986-2025",
+    "provider": "nz-legislation",
+    "provider_id": "constitution-act-1986-2025",
+    "country_code": "NZ",
+    "country": "New Zealand",
+    "title": "Constitution Act 1986, version as at 13 November 2025",
+    "language": "en",
+    "document_type": "constitutional_instrument",
+    "status": "official_edition_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": "1986",
+    "year_revised": "2025",
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://www.legislation.govt.nz/act/public/1986/114/en/2025-11-13.pdf",
+        "format": "pdf"
+      }
+    ],
+    "source_url": "https://www.legislation.govt.nz/act/public/1986/114/en/2025-11-13.pdf"
+  },
+  {
+    "id": "nz-legislation:en:bill-of-rights-act-1990",
+    "provider": "nz-legislation",
+    "provider_id": "bill-of-rights-act-1990",
+    "country_code": "NZ",
+    "country": "New Zealand",
+    "title": "New Zealand Bill of Rights Act 1990",
+    "language": "en",
+    "document_type": "constitutional_instrument",
+    "status": "official_edition_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": "1990",
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://www.legislation.govt.nz/act/public/1990/0109/latest/whole.html",
+        "format": "html"
+      }
+    ],
+    "source_url": "https://www.legislation.govt.nz/act/public/1990/0109/latest/whole.html"
+  },
+  {
+    "id": "eli-sejm:pl:DU-1992-426",
+    "provider": "eli-sejm",
+    "provider_id": "DU-1992-426",
+    "country_code": "PL",
+    "country": "Poland",
+    "title": "Ustawa Konstytucyjna z dnia 17 października 1992 r. o wzajemnych stosunkach między władzą ustawodawczą i wykonawczą Rzeczypospolitej Polskiej oraz o samorządzie terytorialnym",
+    "language": "pl",
+    "document_type": "constitution",
+    "status": "official_publication_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": "1992",
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/1992/426/text.pdf",
+        "format": "pdf"
+      }
+    ],
+    "source_url": "https://eli.gov.pl/eli/DU/1992/426/ogl"
+  },
+  {
+    "id": "eli-sejm:pl:DU-1997-483",
+    "provider": "eli-sejm",
+    "provider_id": "DU-1997-483",
+    "country_code": "PL",
+    "country": "Poland",
+    "title": "Konstytucja z dnia 2 kwietnia 1997 r.",
+    "language": "pl",
+    "document_type": "constitution",
+    "status": "official_publication_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": "1997",
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/1997/483/text.pdf",
+        "format": "pdf"
+      }
+    ],
+    "source_url": "https://eli.gov.pl/eli/DU/1997/483/ogl"
+  },
+  {
+    "id": "eli-sejm:pl:DU-1952-232",
+    "provider": "eli-sejm",
+    "provider_id": "DU-1952-232",
+    "country_code": "PL",
+    "country": "Poland",
+    "title": "Konstytucja Polskiej Rzeczypospolitej Ludowej z dnia 22 lipca 1952 r.",
+    "language": "pl",
+    "document_type": "constitution",
+    "status": "official_publication_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": "1952",
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/1952/232/text.pdf",
+        "format": "pdf"
+      }
+    ],
+    "source_url": "https://eli.gov.pl/eli/DU/1952/232/ogl"
+  },
+  {
+    "id": "eli-sejm:pl:DU-1921-267",
+    "provider": "eli-sejm",
+    "provider_id": "DU-1921-267",
+    "country_code": "PL",
+    "country": "Poland",
+    "title": "Konstytucja z dnia 17 marca 1921 r.",
+    "language": "pl",
+    "document_type": "constitution",
+    "status": "official_publication_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": "1921",
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/1921/267/text.pdf",
+        "format": "pdf"
+      }
+    ],
+    "source_url": "https://eli.gov.pl/eli/DU/1921/267/ogl"
+  },
+  {
+    "id": "eli-sejm:pl:DU-1935-227",
+    "provider": "eli-sejm",
+    "provider_id": "DU-1935-227",
+    "country_code": "PL",
+    "country": "Poland",
+    "title": "Konstytucja z dnia 23 kwietnia 1935 r.",
+    "language": "pl",
+    "document_type": "constitution",
+    "status": "official_publication_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": "1935",
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/1935/227/text.pdf",
+        "format": "pdf"
+      }
+    ],
+    "source_url": "https://eli.gov.pl/eli/DU/1935/227/ogl"
+  },
+  {
+    "id": "eli-sejm:pl:DU-1947-71",
+    "provider": "eli-sejm",
+    "provider_id": "DU-1947-71",
+    "country_code": "PL",
+    "country": "Poland",
+    "title": "Ustawa Konstytucyjna z dnia 19 lutego 1947 r. o ustroju i zakresie działania najwyższych organów Rzeczypospolitej Polskiej",
+    "language": "pl",
+    "document_type": "constitution",
+    "status": "official_publication_unverified",
+    "status_note": "Status describes the source edition, not a legal assessment of present validity.",
+    "year_enacted": "1947",
+    "year_revised": null,
+    "discovered_at": "2026-11-01T10:14:12Z",
+    "urls": [
+      {
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/1947/71/text.pdf",
+        "format": "pdf"
+      }
+    ],
+    "source_url": "https://eli.gov.pl/eli/DU/1947/71/ogl"
+  }
+]

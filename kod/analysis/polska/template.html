@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="24 propozycje dla Polski z zagranicznych konstytucji: porównanie z obecnym prawem, szkice zapisów, ryzyka i źródła.">
+  <title>Nowa konstytucja: inspiracje dla Polski</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#propozycje">Przejdź do propozycji</a>
+<header>
+  <nav aria-label="Widoki kolekcji"><a href="../ATLAS.html">← Atlas świata</a><a href="../rp/index.html">Konstytucja RP na tle świata</a><a href="../mapa/index.html">Mapa rozwiązań</a><a href="../panstwa/index.html">Państwa i wyszukiwarka</a><a href="../wizualizacje/index.html#polska">Pracownia wizualna ↗</a><a href="../../../../">Usługi Tytana</a><span>Opracowanie · 01.11.2026</span></nav>
+  <div class="hero">
+    <div><p class="eyebrow light">Polska / pracownia konstytucyjna</p><h1>Co warto przenieść<br>do polskiej konstytucji?</h1><p class="lead">24 propozycje na podstawie konstytucji świata. Z porównaniem do obecnego prawa, własnym szkicem przepisu i warunkami, bez których pomysł może zawieść.</p><a class="button cream" href="#propozycje">Przeglądaj propozycje ↓</a></div>
+    <aside class="hero-note"><span class="number">@@COUNT@@</span><p>propozycje dla Polski</p><div><b>6</b> punktów na początek</div><div><b>@@NEW@@</b> nowych wyraźnych gwarancji</div><div><b>@@STATUTE@@</b> pomysłów najpierw do ustaw</div><div><b>8</b> wzorców do odrzucenia</div></aside>
+  </div>
+</header>
+<main class="wrap">
+  <section class="intro" aria-label="Założenia opracowania"><p><strong>Założenie: sprawne państwo, chronione prawa i pokojowa zmiana władzy.</strong> To autorski wybór kierunków do debaty, nie kompletny projekt nowej konstytucji. „Rekomendowane” oznacza ocenę redakcyjną, a korzyści są hipotezami wymagającymi sprawdzenia.</p><p>Polska już ma wiele wartościowych gwarancji. Pokazuję, co zachować, co wzmocnić i gdzie pojawia się nowy pomysł. Projekty Islandii i Chile są wyraźnie oznaczone w źródłach.</p></section>
+
+  <section class="start" aria-labelledby="start-title"><div class="section-title"><p class="eyebrow">Od czego zacząć</p><h2 id="start-title">Sześć propozycji do pierwszej rundy prac</h2><p>Ochrona przed błędem władzy i zdolność do wykonywania dobrych decyzji.</p></div><div class="starter-grid">@@STARTER@@</div></section>
+  @@WORLD@@
+
+  <div class="downloads" aria-label="Pliki opracowania"><a href="POLSKA.md">Pełne opracowanie</a><a href="POLSKA.pdf" download>PDF</a><a href="propozycje.csv" download>CSV</a><a href="propozycje.json" download>Dane i źródła JSON</a><a href="sources/konstytucja-rp.html">Konstytucja RP: tekst porównania</a></div>
+
+  <section id="propozycje" aria-labelledby="list-title"><div class="section-title"><p class="eyebrow">Katalog rozwiązań</p><h2 id="list-title">Wybierz cel i porównaj warianty</h2></div>
+  <form class="filters" id="filters" role="search">
+    <label class="search">Szukaj w treści<input id="query" type="search" placeholder="np. dane, samorząd, kadencje" autocomplete="off"></label>
+    <label>Obszar<select id="domain"><option value="">Wszystkie obszary</option>@@DOMAIN@@</select></label>
+    <label>Ocena<select id="verdict"><option value="">Wszystkie oceny</option>@@VERDICT@@</select></label>
+    <label>Co zmienia<select id="change"><option value="">Wszystkie zmiany</option>@@CHANGE@@</select></label>
+    <label>Droga wdrożenia<select id="level"><option value="">Wszystkie drogi</option>@@LEVEL@@</select></label>
+    <label class="toggle"><input type="checkbox" id="starter"> Tylko sześć na początek</label><button type="reset" class="quiet" id="reset">Wyczyść filtry</button>
+  </form>
+  <div class="result-row"><span id="count" aria-live="polite">24 propozycje</span><div><button type="button" id="show-compare" class="quiet">Porównanie <span id="selection-count">0/3</span></button><button type="button" id="print" class="quiet">Drukuj / zapisz PDF</button></div></div>
+  <p class="legend"><b>Rekomendowane:</b> kierunek wart opracowania. <b>Do debaty:</b> istotny wybór wartości lub ustroju. <b>Zachować:</b> polska gwarancja już istnieje. Rekomendacja nie oznacza gotowości szkicu do uchwalenia.</p>
+  <p id="empty" hidden class="empty">Brak pasujących propozycji. Zmień filtry lub wyszukiwanie.</p>
+  <div class="proposal-grid">@@CARDS@@</div></section>
+
+  <section id="porownanie" class="comparison" aria-labelledby="compare-title"><div class="section-title"><p class="eyebrow">Obok siebie</p><h2 id="compare-title">Porównanie wybranych propozycji</h2><p id="compare-status" role="status">Zaznacz do trzech kart. Wybór pozostaje w tej przeglądarce.</p></div><div class="comparison-actions"><button type="button" id="clear-selection" class="quiet">Usuń wybór</button><button type="button" id="print-comparison" class="quiet">Drukuj porównanie</button></div><div id="compare-table" class="table-scroll" tabindex="0" aria-label="Tabela porównania"></div></section>
+
+  <section class="negative" aria-labelledby="avoid-title"><div class="section-title"><p class="eyebrow">Granice inspiracji</p><h2 id="avoid-title">Osiem wzorców, których nie rekomenduję</h2><p>Interesujący przepis może być ostrzeżeniem. Szybkość decyzji i siła przywódcy nie są miarą jakości konstytucji.</p></div><div class="avoid-grid">@@AVOID@@</div></section>
+
+  <section class="method" aria-labelledby="method-title"><div class="section-title"><p class="eyebrow">Źródła i droga do projektu</p><h2 id="method-title">Co trzeba zrobić przed legislacją</h2></div><div class="method-grid"><div><h3>Najpierw sprawdzić mechanizm</h3><ol><li>Rozdzielić problem obecnej gwarancji od problemu jej wykonania.</li><li>Uzgodnić model ustroju i opracować warianty sporne.</li><li>Policzyć koszty, przetestować blokadę nominacji i nadużycie wyjątku.</li><li>Napisać jednocześnie kontrolę, finansowanie i przepisy przejściowe.</li><li>Sprawdzić zgodność z prawem UE, EKPC i innymi zobowiązaniami.</li></ol></div><div><h3>Co porównano</h3><p>Inspiracje pochodzą z atlasu 130 zapisów. Każda karta odsyła do konkretnego wydania, przepisu i kopii w archiwum. Proponowane polskie brzmienia są autorskimi adaptacjami.</p><p>Polski punkt odniesienia: urzędowy tekst ujednolicony i metryka ELI pobrane 01.11.2026. PDF jest opracowany na 07.01.2015; metryka wskazuje nowelizacje z 2006 i 2009 r. Nie zbadano całego orzecznictwa ani wszystkich ustaw.</p><p><a href="https://eli.gov.pl/eli/DU/1997/483/ogl">Oficjalna metryka Konstytucji RP</a> · <a href="sources/konstytucja-rp-ujednolicony.pdf">Urzędowy PDF w archiwum</a> · <a href="https://eur-lex.europa.eu/eli/treaty/teu_2016/oj/eng">TUE</a></p></div></div><p class="route"><strong>Tryb zmiany:</strong> punktem odniesienia w obecnym porządku jest <a href="sources/konstytucja-rp.html#art-235">art. 235</a>. Zwykłe referendum z art. 125 samo nie zastępuje tego trybu. Całościowe zastąpienie konstytucji wymaga osobnej analizy trybu i legitymizacji.</p></section>
+  <footer><a href="../ATLAS.html">Atlas świata</a><span>24 propozycje · 8 ostrzeżeń · opracowanie porównawcze</span><a href="POLSKA.md">Pełne uzasadnienie i lista prac</a></footer>
+</main>
+<script type="application/json" id="proposal-data">@@DATA@@</script>
+<script src="app.js"></script>
+<script src="../teczka/teczka.js"></script>
+</body>
+</html>

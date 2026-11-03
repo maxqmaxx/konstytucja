@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Porównanie 2–3 obowiązujących konstytucji według 331 tematów Comparative Constitutions Project.">
+<title>Porównaj konstytucje</title><link rel="stylesheet" href="style.css"></head>
+<body><a class="skip" href="#tresc">Przejdź do porównania</a>
+<header>@@NAV@@</header>
+<main class="wrap" id="tresc">
+<p class="crumbs"><a href="index.html">Państwa</a> / Porównanie</p>
+<h1>Porównaj konstytucje</h1>
+<p class="sub">Wybierz 2 lub 3 państwa. Tabela pokazuje, które z 331 tematów CCP koderzy oznaczyli w ich obowiązujących konstytucjach i w którym artykule.</p>
+<section class="controls compare-controls" aria-label="Wybór państw">
+  <label>Państwo 1<select id="c0"></select></label>
+  <label>Państwo 2<select id="c1"></select></label>
+  <label>Państwo 3 (opcjonalnie)<select id="c2"><option value="">—</option></select></label>
+  <label>Szukaj tematu<input id="q" type="search" placeholder="np. kadencja, sąd, referendum" autocomplete="off"></label>
+  <label class="check"><input id="diff" type="checkbox" checked> Tylko różnice</label>
+</section>
+<p class="summary" id="summary" aria-live="polite"></p>
+<div class="table-scroll"><table class="compare" id="table"><thead></thead><tbody></tbody></table></div>
+<p class="note">„—” oznacza brak tagu CCP, a nie dowód braku przepisu. Kolumna „Świat” podaje udział wśród 188 obowiązujących konstytucji. Wydania Constitute mogą nie zawierać najnowszych zmian.</p>
+</main>
+<footer class="wrap"><span>Konstytucje świata · porównanie</span><span>Dane: Comparative Constitutions Project przez Constitute</span></footer>
+<script type="application/json" id="data">@@DATA@@</script>
+<script>
+(() => {
+  'use strict';
+  const D = JSON.parse(document.getElementById('data').textContent);
+  const $ = id => document.getElementById(id);
+  const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const codes = Object.keys(D.countries).sort((a,b)=>D.countries[a].name.localeCompare(D.countries[b].name,'pl'));
+  const opts = codes.map(c=>`<option value="${c}">${esc(D.countries[c].name)}</option>`).join('');
+  ['c0','c1','c2'].forEach(id=>$(id).insertAdjacentHTML('beforeend', opts));
+  let picked = ['PL','DE',''];
+  try { const h = new URLSearchParams(location.hash.slice(1)).get('c'); if (h) { const p = h.split(',').filter(c=>D.countries[c]).slice(0,3); if (p.length) picked = [p[0], p[1]||'', p[2]||'']; } } catch {}
+  const has = (c,i) => Object.prototype.hasOwnProperty.call(D.countries[c].topics, i);
+
+  function render() {
+    const cs = picked.filter(Boolean).filter((c,i,a)=>a.indexOf(c)===i);
+    ['c0','c1','c2'].forEach((id,i)=>{ $(id).value = picked[i] || ''; });
+    const q = $('q').value.trim().toLowerCase(), diff = $('diff').checked;
+    let shown = 0, same = 0, differ = 0;
+    const rows = D.topics.map((t,i)=>{
+      const flags = cs.map(c=>has(c,i));
+      const any = flags.some(Boolean), all = flags.every(Boolean);
+      if (any && all) same++; else if (any) differ++;
+      if (!any) return '';
+      if (diff && all && cs.length > 1) return '';
+      if (q && !(t[1].toLowerCase().includes(q) || t[2].toLowerCase().includes(q))) return '';
+      shown++;
+      const cells = cs.map(c=>{ const h = D.countries[c].topics[i];
+        return h ? `<td class="yes"><a href="${esc(D.countries[c].url)}#s${esc(h[1])}">${esc(h[0])}</a></td>` : '<td class="no">—</td>'; }).join('');
+      return `<tr><th scope="row"><a href="../tematy/${esc(t[0])}.html">${esc(t[1])}</a><span>${esc(t[2])}</span></th>${cells}<td class="share">${Math.round(100*t[3]/codes.length)}%</td></tr>`;
+    }).join('');
+    document.querySelector('#table thead').innerHTML = `<tr><th scope="col">Rozwiązanie</th>${cs.map(c=>`<th scope="col"><a href="${c.toLowerCase()}.html">${esc(D.countries[c].name)}</a><span>${esc(D.countries[c].title)}</span></th>`).join('')}<th scope="col">Świat</th></tr>`;
+    document.querySelector('#table tbody').innerHTML = rows || `<tr><td colspan="${cs.length+2}">Brak tematów dla tych ustawień.</td></tr>`;
+    const solo = cs.map(c=>`${esc(D.countries[c].name)}: ${D.topics.filter((t,i)=>has(c,i)&&cs.every(o=>o===c||!has(o,i))).length}`).join(', ');
+    $('summary').innerHTML = cs.length < 2 ? 'Wybierz co najmniej dwa różne państwa.' : `Wspólne tematy: <b>${same}</b>. Różniące się: <b>${differ}</b>. Tylko w jednym państwie: ${solo}. Wyświetlono ${shown} wierszy.`;
+    try { history.replaceState(null,'','#c='+cs.join(',')); } catch {}
+  }
+  ['c0','c1','c2'].forEach((id,i)=>$(id).addEventListener('change',e=>{picked[i]=e.target.value;render();}));
+  $('q').addEventListener('input',render); $('diff').addEventListener('change',render);
+  render();
+})();
+</script>
+</body></html>
