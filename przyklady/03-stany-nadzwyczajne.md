@@ -78,74 +78,74 @@ Najpierw państwa UE, potem konstytucje uchwalone od 2000 r. Streszczenia są ma
 
 ## Warianty: stany nadzwyczajne
 
-Odczytane automatycznie z pełnych artykułów 173 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
+Odczytane automatycznie z pełnych artykułów 179 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
 
 **Kto ogłasza** (Polska: Głowa państwa)
 
 | Wariant | Konstytucje |
 |---|---|
-| Głowa państwa | 97 |
-| Parlament | 19 |
-| Rząd lub premier | 17 |
-| Inny organ | 4 |
-| nie wynika z tekstu | 36 |
+| Głowa państwa | 96 |
+| Rząd lub premier | 23 |
+| Parlament | 20 |
+| Inny organ | 2 |
+| nie wynika z tekstu | 38 |
 
 **Rola parlamentu** (Polska: Dostaje akt i może go uchylić)
 
 | Wariant | Konstytucje |
 |---|---|
-| Musi zatwierdzić po, w terminie | 46 |
+| Musi zatwierdzić po, w terminie | 40 |
 | Musi zgodzić się przed | 29 |
-| Dostaje akt i może go uchylić | 19 |
-| Nie ma wpływu | 13 |
-| nie wynika z tekstu | 66 |
+| Dostaje akt i może go uchylić | 25 |
+| Nie ma wpływu | 15 |
+| nie wynika z tekstu | 70 |
 
 **Maksymalny czas pierwszego okresu (dni)** (Polska: 90)
 
 | Wariant | Konstytucje |
 |---|---|
-| 30 | 19 |
-| 90 | 17 |
-| 15 | 10 |
+| 30 | 18 |
+| 90 | 15 |
+| 15 | 11 |
 | 60 | 8 |
-| 180 | 6 |
+| 180 | 7 |
 | 21 | 4 |
 | 14 | 2 |
-| 12 | 2 |
-| nie wynika z tekstu | 100 |
+| 7 | 2 |
+| nie wynika z tekstu | 106 |
 
 **Przedłużenie** (Polska: Za zgodą parlamentu, tylko raz)
 
 | Wariant | Konstytucje |
 |---|---|
-| Za zgodą parlamentu (wielokrotnie) | 50 |
-| Bez zgody parlamentu | 9 |
-| Za zgodą parlamentu, tylko raz | 6 |
-| nie wynika z tekstu | 108 |
+| Za zgodą parlamentu (wielokrotnie) | 51 |
+| Bez zgody parlamentu | 7 |
+| Za zgodą parlamentu, tylko raz | 5 |
+| nie wynika z tekstu | 116 |
 
 **Sąd może kontrolować ogłoszenie lub środki** (Polska: nie_wynika)
 
 | Wariant | Konstytucje |
 |---|---|
-| tak | 26 |
-| nie | 5 |
-| nie wynika z tekstu | 142 |
+| tak | 29 |
+| nie | 4 |
+| nie wynika z tekstu | 146 |
 
 **Lista praw, których nie wolno ograniczyć** (Polska: tak)
 
 | Wariant | Konstytucje |
 |---|---|
-| tak | 49 |
-| nie | 12 |
-| nie wynika z tekstu | 112 |
+| tak | 46 |
+| nie | 15 |
+| nie wynika z tekstu | 118 |
 
 **Zakaz rozwiązania parlamentu, zmiany konstytucji lub wyborów w czasie stanu** (Polska: tak)
 
 | Wariant | Konstytucje |
 |---|---|
-| tak | 65 |
+| tak | 59 |
 | nie | 3 |
-| nie wynika z tekstu | 105 |
+| nie wynika z tekstu | 117 |
 
 
 ## Jak mocne są te przepisy

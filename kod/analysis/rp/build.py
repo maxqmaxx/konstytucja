@@ -24,7 +24,7 @@ sys.path.insert(0, str(ANALYSIS / "panstwa"))
 import ccp_data  # noqa: E402
 sys.path.insert(0, str(ANALYSIS / "tlumaczenia"))
 import store  # noqa: E402
-from build import page, name_pl  # noqa: E402
+from build import page, name_pl, issue_link  # noqa: E402
 
 EU27 = {"AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT",
         "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE"}
@@ -171,7 +171,7 @@ def main() -> int:
                     "cite": f"Konstytucja Rzeczypospolitej Polskiej z dnia 2 kwietnia 1997 r., {'preambuła' if n == 0 else f'art. {n}'} (Dz.U. 1997 nr 78 poz. 483 ze zm.)",
                     "url": "https://eli.gov.pl/eli/DU/1997/483/ogl"}
             items.append(f'<article class="art" id="{anchor_id}" data-ch="{code}" data-rare="{int(rare)}" data-props="{int(bool(props))}" data-tagged="{int(bool(topics))}" data-teczka="{escape(json.dumps(meta, ensure_ascii=False))}">'
-                         f'<h3><a href="#{anchor_id}">{label}</a></h3><div class="text" data-teczka-text>{escape(body)}</div>'
+                         f'<h3><a href="#{anchor_id}">{label}</a>{issue_link(f"Konstytucja RP na tle świata, {label} (rp/index.html#{anchor_id})", "tematy: " + ", ".join(topics))}</h3><div class="text" data-teczka-text>{escape(body)}</div>'
                          f'{f"<div class=chips>{chips}</div>" if chips else ""}{props_html}{expert}</article>')
         heading = "Preambuła" if code == "P" else f"Rozdział {code}. {title}"
         blocks.append(f'<section class="chapter" id="{anchor}"><h2>{escape(heading)}</h2>{gap_html}'
@@ -266,8 +266,22 @@ q.addEventListener('input',run);s.addEventListener('change',run);if(q.value||s.v
         if pl and pl.get("korekty"):
             blocks.append('<div class="facet"><h3>Korekty ręczne (Polska)</h3>' + "".join(
                 f'<p class="note"><b>{escape(FACETS[topic]["fields"][k["field"]]["label"])}</b>: {escape(facet_label(topic, k["field"], k["value"]))}. {escape(k["basis"])}.</p>' for k in pl["korekty"]) + '</div>')
-        return (f'<section class="facets"><h2>Jak to rozwiązano: warianty</h2><p class="note">Wartości odczytane automatycznie (Claude Opus 5.5) z pełnych artykułów oznaczonych tym tematem, z zamkniętej listy; każda ma dosłowny cytat sprawdzony w źródle. '
-                f'Konstytucja może przewidywać kilka rodzajów (np. stanów nadzwyczajnych); zapisano najczęściej opisywany. To nawigacja, nie ocena prawna.</p><div class="facet-grid">{"".join(blocks)}</div></section>')
+        kw = sorted((c for c, r in recs.items() if r.get("source") == "slowa" and c != "PL"), key=lambda c: name_pl(c, c))
+        kw_html = ""
+        if kw:
+            items = []
+            for c in kw:
+                r = recs[c]
+                vals = " · ".join(f'{escape(FACETS[topic]["fields"][fn]["label"])}: <b>{escape(facet_label(topic, fn, fv))}</b>' for fn, fv in r["values"].items() if fv not in (None, "nie_wynika", []))
+                arts_l = ", ".join(a.split(".")[0].replace("Article", "art.").replace("Section", "sekcja") for a in r.get("articles", []) if re.match(r"(Article|Section|Art)", a)) or "pełny tekst"
+                url = f'https://www.constituteproject.org/constitution/{r["doc_id"].split(":")[-1]}'
+                items.append(f'<li><a href="../panstwa/{c.lower()}.html">{escape(name_pl(c, c))}</a> (<a href="{url}">{escape(arts_l)}</a>): {vals or "tekst tego nie określa"}<span class="quote" title="Cytat ze źródła"> „{escape(r["cytat"][:200])}”</span>{issue_link(f"Wariant {topic}, {name_pl(c, c)}, {arts_l} (tematy/{topic}.html)", "warianty: " + ("; ".join(f"{fn}={fv}" for fn, fv in r["values"].items() if fv not in (None, "nie_wynika", [])) or "nie ustalono"))}</li>')
+            kw_html = (f'<details class="kw-found"><summary>Ustalono także w {len(kw)} konstytucjach bez oznaczenia CCP</summary><p class="note">Artykuły znalezione po słowach kluczowych; '
+                       f'odczytane tak samo i z tym samym sprawdzeniem cytatu. Nie ma ich na liście przepisów niżej.</p><ul class="facet-badges">{"".join(items)}</ul></details>')
+        n_kw = sum(1 for r in recs.values() if r.get("source") == "slowa")
+        return (f'<section class="facets"><h2>Jak to rozwiązano: warianty</h2><p class="note">Wartości odczytane automatycznie (Claude Opus 5.5) z zamkniętej listy, z pełnych artykułów oznaczonych tym tematem i artykułów, do których odsyłają'
+                f'{f", a w {n_kw} konstytucjach bez oznaczenia CCP z artykułów znalezionych po słowach kluczowych" if n_kw else ""}. Każda wartość ma dosłowny cytat sprawdzony w źródle. '
+                f'Konstytucja może przewidywać kilka rodzajów (np. stanów nadzwyczajnych); zapisano najczęściej opisywany. To nawigacja, nie ocena prawna.</p><div class="facet-grid">{"".join(blocks)}</div>{kw_html}</section>')
 
     def variant_html(url, a, sec, text, k):
         where = f'<p class="where"><a href="{url}#s{escape(sec)}">{escape(a.replace("Article", "art.").replace("Section", "sekcja"))}</a></p>'
@@ -341,8 +355,9 @@ q.addEventListener('input',run);s.addEventListener('change',run);if(q.value||s.v
                     f'{escape(FACETS[key]["fields"][fn]["label"])}: <b>{escape(facet_label(key, fn, fv))}</b>' for fn, fv in fr["values"].items()
                     if fv not in (None, "nie_wynika", [])) + f'<span class="quote" title="Cytat ze źródła">„{escape(fr["cytat"][:240])}”</span></p>'
             secs = facet_badges + secs
+            report_current = "warianty: " + "; ".join(f"{fn}={fv}" for fn, fv in fr["values"].items() if fv not in (None, "nie_wynika", [])) if fr else ""
             cards.append(f'<li class="variant" data-eu="{int(code in EU27)}" data-recent="{int(recent)}" data-pl="{int(code == "PL")}" data-sila="{silas}" data-prob="{probs}" data-w="{escape(main_val)}" data-teczka="{escape(json.dumps(meta, ensure_ascii=False))}">'
-                         f'<h3><a href="../panstwa/{code.lower()}.html">{escape(name_pl(code, code))}</a> <span>{escape(d["title"])}{" · UE" if code in EU27 else ""}</span></h3><div data-teczka-text>{secs}</div></li>')
+                         f'<h3><a href="../panstwa/{code.lower()}.html">{escape(name_pl(code, code))}</a> <span>{escape(d["title"])}{" · UE" if code in EU27 else ""}</span>{issue_link(f"Temat {key} ({ccp.labels[key]}), {name_pl(code, code)}, {arts_label} (tematy/{key}.html)", report_current)}</h3><div data-teczka-text>{secs}</div></li>')
         missing = sorted((name_pl(c, c) for c in ccp.by_code if c not in have), key=str.lower)
         body = f'''<p class="crumbs"><a href="index.html">Tematy</a> / {escape(ccp.labels[key])}</p><h1>{escape(ccp.labels[key])}</h1>
 <p class="sub"><span class="chip {cls}">{word}</span> {prev["count"]} ze 188 obowiązujących konstytucji. Nazwa w CCP: <i lang="en">{escape(ccp.topics[key])}</i> (<code>{key}</code>).</p>

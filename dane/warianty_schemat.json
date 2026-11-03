@@ -1,5 +1,5 @@
 {
- "_doc": "Per-topic variant schemas. Field types: enum (one value), multi (list of values), int (number or null), bool3 (tak/nie/nie_wynika). Every enum has 'nie_wynika' (not stated in the excerpt). Each answer carries a verbatim quote checked in code.",
+ "_doc": "Per-topic variant schemas. Field types: enum (one value), multi (list of values), int (number or null), bool3 (tak/nie/nie_wynika). Every enum has 'nie_wynika' (not stated in the excerpt). Each answer carries a verbatim quote checked in code. 'keywords': AND of OR-groups of regexes, used to find articles in constitutions where CCP did not tag the topic.",
  "hosterml": {
   "title": "Limit kadencji głowy państwa",
   "fields": {
@@ -20,7 +20,21 @@
     "type": "bool3",
     "label": "Zakaz zmiany limitu na korzyść urzędującej osoby"
    }
-  }
+  },
+  "keywords": [
+   [
+    "president",
+    "head of state"
+   ],
+   [
+    "re-?elect",
+    "consecutive",
+    "successive term",
+    "two terms",
+    "second term",
+    "more than (one|two) term"
+   ]
+  ]
  },
  "hosterm": {
   "title": "Kadencja głowy państwa",
@@ -29,7 +43,19 @@
     "type": "int",
     "label": "Długość kadencji (lata)"
    }
-  }
+  },
+  "keywords": [
+   [
+    "president",
+    "head of state"
+   ],
+   [
+    "term of office",
+    "term of (\\w+) years",
+    "-year term",
+    "for a (period|term) of"
+   ]
+  ]
  },
  "amend": {
   "title": "Procedura zmiany konstytucji",
@@ -65,7 +91,16 @@
     "type": "bool3",
     "label": "Obywatele mogą zainicjować zmianę"
    }
-  }
+  },
+  "keywords": [
+   [
+    "amend",
+    "revision"
+   ],
+   [
+    "constitution"
+   ]
+  ]
  },
  "unamend": {
   "title": "Przepisy niezmienialne",
@@ -86,7 +121,15 @@
      "inne": "Inne"
     }
    }
-  }
+  },
+  "keywords": [
+   [
+    "(may|shall|can)( ?not| never) be (the (subject|object) of )?(an? )?(amend|revis)",
+    "no amendment",
+    "not be subject to (amendment|revision)",
+    "unamendable"
+   ]
+  ]
  },
  "em": {
   "title": "Stany nadzwyczajne",
@@ -140,7 +183,14 @@
     "type": "bool3",
     "label": "Zakaz rozwiązania parlamentu, zmiany konstytucji lub wyborów w czasie stanu"
    }
-  }
+  },
+  "keywords": [
+   [
+    "state of (emergency|siege|war|exception|alarm|defen[cs]e)",
+    "martial law",
+    "emergency"
+   ]
+  ]
  },
  "consel": {
   "title": "Wybór sędziów sądu konstytucyjnego",
@@ -161,7 +211,18 @@
     "type": "bool3",
     "label": "Wybór w parlamencie większością kwalifikowaną"
    }
-  }
+  },
+  "keywords": [
+   [
+    "constitutional (court|council|tribunal)"
+   ],
+   [
+    "appoint",
+    "elect",
+    "nominat",
+    "select"
+   ]
+  ]
  },
  "conterm": {
   "title": "Kadencja sędziów sądu konstytucyjnego",
@@ -174,7 +235,17 @@
     "type": "bool3",
     "label": "Bez kadencji (dożywotnio lub do wieku emerytalnego)"
    }
-  }
+  },
+  "keywords": [
+   [
+    "constitutional (court|council|tribunal)"
+   ],
+   [
+    "term",
+    "years",
+    "age of"
+   ]
+  ]
  },
  "conlim": {
   "title": "Ponowny wybór sędziów sądu konstytucyjnego",
@@ -189,7 +260,19 @@
      "nie_wynika": "Nie wynika z tekstu"
     }
    }
-  }
+  },
+  "keywords": [
+   [
+    "constitutional (court|council|tribunal)"
+   ],
+   [
+    "re-?elect",
+    "re-?appoint",
+    "renew",
+    "second term",
+    "not be eligible"
+   ]
+  ]
  },
  "jc": {
   "title": "Rada sądownictwa",
@@ -221,7 +304,14 @@
      "nie_wynika": "Nie wynika z tekstu"
     }
    }
-  }
+  },
+  "keywords": [
+   [
+    "judicial (council|service commission)",
+    "council of (the )?(magistracy|judiciary|justice|judges)",
+    "(high|supreme|superior) council of (the )?(magistracy|judiciary|justice)"
+   ]
+  ]
  },
  "referen": {
   "title": "Referendum",
@@ -256,7 +346,14 @@
     "type": "bool3",
     "label": "Sprawy wyłączone z referendum"
    }
-  }
+  },
+  "keywords": [
+   [
+    "referend",
+    "plebiscit",
+    "popular (vote|consultation)"
+   ]
+  ]
  },
  "initiat": {
   "title": "Obywatelska inicjatywa ustawodawcza",
@@ -279,7 +376,15 @@
     "type": "int",
     "label": "Wymagany odsetek wyborców (%)"
    }
-  }
+  },
+  "keywords": [
+   [
+    "popular initiative",
+    "citizens'? initiative",
+    "(citizens|voters|electors)\\W[^.]{0,80}(initiative|propos|submit)",
+    "signatures"
+   ]
+  ]
  },
  "hogdlim": {
   "title": "Ograniczenia odwołania szefa rządu",
@@ -292,7 +397,21 @@
     "type": "bool3",
     "label": "Ograniczenie, jak często można składać wniosek"
    }
-  }
+  },
+  "keywords": [
+   [
+    "no[- ]?confidence",
+    "censure",
+    "confidence"
+   ],
+   [
+    "successor",
+    "elect(s|ing)? a (new )?(prime minister|chancellor|head of government)",
+    "not be (submitted|tabled|moved|presented) again",
+    "signed by",
+    "within (\\w+) (months|days)"
+   ]
+  ]
  },
  "legdiss": {
   "title": "Rozwiązanie parlamentu",
@@ -312,7 +431,20 @@
     "type": "bool3",
     "label": "Tylko w określonych sytuacjach (np. brak budżetu, brak rządu)"
    }
-  }
+  },
+  "keywords": [
+   [
+    "dissol"
+   ],
+   [
+    "parliament",
+    "assembly",
+    "house",
+    "chamber",
+    "legislat",
+    "congress"
+   ]
+  ]
  },
  "balbudgt": {
   "title": "Reguły fiskalne",
@@ -331,7 +463,17 @@
     "type": "bool3",
     "label": "Limit wyrażony liczbą (np. % PKB)"
    }
-  }
+  },
+  "keywords": [
+   [
+    "balanced budget",
+    "budget(ary)? balance",
+    "public debt",
+    "borrowing",
+    "deficit",
+    "debt (ceiling|limit)"
+   ]
+  ]
  },
  "ombuds": {
   "title": "Rzecznik praw (ombudsman)",
@@ -351,6 +493,353 @@
     "type": "int",
     "label": "Kadencja (lata)"
    }
-  }
+  },
+  "keywords": [
+   [
+    "ombudsm",
+    "public defender",
+    "people'?s (advocate|defender)",
+    "defender of (the )?(people|rights)",
+    "commissioner for (human|citizens'?) rights",
+    "protector of citizens",
+    "mediator of the republic"
+   ]
+  ]
+ },
+ "override": {
+  "title": "Weto i jego odrzucenie",
+  "fields": {
+   "prog_odrzucenia": {
+    "type": "enum",
+    "label": "Większość potrzebna do odrzucenia weta",
+    "values": {
+     "zwykla_lub_bezwzgledna": "Zwykła lub bezwzględna",
+     "trzy_piate": "3/5",
+     "dwie_trzecie": "2/3",
+     "inny": "Inny",
+     "weto_ostateczne": "Weta nie można odrzucić",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "kto_ma_weto": {
+    "type": "enum",
+    "label": "Kto ma weto",
+    "values": {
+     "glowa_panstwa": "Głowa państwa",
+     "druga_izba": "Druga izba",
+     "inne": "Inny organ",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "termin_dni": {
+    "type": "int",
+    "label": "Czas na podpis lub weto (dni)"
+   },
+   "odeslanie_do_sadu": {
+    "type": "bool3",
+    "label": "Głowa państwa może skierować ustawę do sądu konstytucyjnego"
+   }
+  },
+  "keywords": [
+   [
+    "veto",
+    "return(s|ed)? the (bill|law)",
+    "reconsider",
+    "refuse[sd]? to (sign|promulgate|assent)",
+    "withh[eo]ld(s)? (his |her )?assent"
+   ],
+   [
+    "majority",
+    "again",
+    "re-?pass"
+   ]
+  ]
+ },
+ "immunity": {
+  "title": "Immunitet parlamentarny",
+  "fields": {
+   "zakres": {
+    "type": "enum",
+    "label": "Zakres immunitetu",
+    "values": {
+     "formalny": "Także zakaz ścigania lub aresztu bez zgody",
+     "tylko_materialny": "Tylko za wypowiedzi i głosowania",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "kto_uchyla": {
+    "type": "enum",
+    "label": "Kto uchyla immunitet",
+    "values": {
+     "izba": "Izba parlamentu",
+     "sad": "Sąd",
+     "inne": "Inny organ",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "wyjatek_na_goracym_uczynku": {
+    "type": "bool3",
+    "label": "Wyjątek przy zatrzymaniu na gorącym uczynku"
+   }
+  },
+  "keywords": [
+   [
+    "immunit",
+    "immune",
+    "(may|shall) not be (arrested|detained|prosecuted)",
+    "without the (consent|permission|authori[sz]ation) of the"
+   ],
+   [
+    "member",
+    "deput",
+    "senator",
+    "representative",
+    "parliament"
+   ]
+  ]
+ },
+ "atgen": {
+  "title": "Prokurator generalny",
+  "fields": {
+   "kto_powoluje": {
+    "type": "multi",
+    "label": "Kto powołuje",
+    "values": {
+     "glowa_panstwa": "Głowa państwa",
+     "rzad": "Rząd",
+     "parlament": "Parlament",
+     "sadownictwo": "Sądownictwo lub rada sądownictwa",
+     "rada_prokuratorska": "Rada prokuratorska",
+     "inne": "Inne"
+    }
+   },
+   "kadencja_lat": {
+    "type": "int",
+    "label": "Kadencja (lata)"
+   },
+   "niezaleznosc": {
+    "type": "bool3",
+    "label": "Konstytucja zapewnia niezależność prokuratury"
+   }
+  },
+  "keywords": [
+   [
+    "attorney[- ]general",
+    "prosecutor[- ]general",
+    "procurator[- ]general",
+    "public prosecut",
+    "director of public prosecutions",
+    "chief prosecutor",
+    "public ministry"
+   ]
+  ]
+ },
+ "bank": {
+  "title": "Bank centralny",
+  "fields": {
+   "niezaleznosc": {
+    "type": "bool3",
+    "label": "Niezależność banku centralnego zapisana w konstytucji"
+   },
+   "kto_powoluje_prezesa": {
+    "type": "multi",
+    "label": "Kto powołuje prezesa",
+    "values": {
+     "parlament": "Parlament",
+     "glowa_panstwa": "Głowa państwa",
+     "rzad": "Rząd",
+     "inne": "Inne"
+    }
+   },
+   "kadencja_lat": {
+    "type": "int",
+    "label": "Kadencja prezesa (lata)"
+   },
+   "zakaz_finansowania_deficytu": {
+    "type": "bool3",
+    "label": "Zakaz finansowania deficytu przez bank centralny"
+   },
+   "cel_stabilnosc_cen": {
+    "type": "bool3",
+    "label": "Cel: stabilność cen lub wartość pieniądza"
+   }
+  },
+  "keywords": [
+   [
+    "central bank",
+    "national bank",
+    "reserve bank",
+    "monetary authority",
+    "bank of the republic",
+    "issuing bank"
+   ]
+  ]
+ },
+ "lhselect": {
+  "title": "Ordynacja do izby niższej",
+  "fields": {
+   "system": {
+    "type": "enum",
+    "label": "System wyborczy w konstytucji",
+    "values": {
+     "proporcjonalny": "Proporcjonalny",
+     "wiekszosciowy": "Większościowy",
+     "mieszany": "Mieszany",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "prog_wyborczy": {
+    "type": "bool3",
+    "label": "Konstytucja przewiduje próg wyborczy"
+   }
+  },
+  "keywords": [
+   [
+    "proportional",
+    "majoritarian",
+    "single[- ]member",
+    "electoral system",
+    "plurality"
+   ],
+   [
+    "elect"
+   ]
+  ]
+ },
+ "hosdec": {
+  "title": "Dekrety głowy państwa",
+  "fields": {
+   "moc": {
+    "type": "enum",
+    "label": "Moc dekretów",
+    "values": {
+     "moc_ustawy": "Mogą mieć moc ustawy",
+     "wykonawcze": "Tylko wykonawcze (na podstawie ustawy)",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "tylko_w_nadzwyczajnych": {
+    "type": "bool3",
+    "label": "Moc ustawy tylko w stanie nadzwyczajnym lub z upoważnienia"
+   },
+   "zatwierdzenie_parlamentu": {
+    "type": "bool3",
+    "label": "Parlament musi je zatwierdzić"
+   },
+   "wylaczone_sprawy": {
+    "type": "bool3",
+    "label": "Sprawy wyłączone (np. prawa, podatki, budżet)"
+   }
+  },
+  "keywords": [
+   [
+    "decree",
+    "ordinance",
+    "force of (a )?(law|statute)",
+    "regulations? having"
+   ],
+   [
+    "president",
+    "head of state",
+    "king",
+    "monarch"
+   ]
+  ]
+ },
+ "jrem": {
+  "title": "Odwołanie sędziów",
+  "fields": {
+   "kto_decyduje": {
+    "type": "multi",
+    "label": "Kto decyduje o odwołaniu",
+    "values": {
+     "sadownictwo": "Sąd lub sąd dyscyplinarny",
+     "rada_sadownictwa": "Rada sądownictwa",
+     "parlament": "Parlament",
+     "glowa_panstwa": "Głowa państwa",
+     "rzad": "Rząd",
+     "inne": "Inne"
+    }
+   },
+   "nieusuwalnosc": {
+    "type": "bool3",
+    "label": "Sędziowie są nieusuwalni"
+   },
+   "tylko_z_przyczyn_w_ustawie": {
+    "type": "bool3",
+    "label": "Odwołanie tylko z przyczyn określonych w prawie"
+   },
+   "zakaz_przeniesienia": {
+    "type": "bool3",
+    "label": "Zakaz przeniesienia bez zgody sędziego"
+   }
+  },
+  "keywords": [
+   [
+    "judge"
+   ],
+   [
+    "remov",
+    "dismiss",
+    "irremovab",
+    "transferred",
+    "suspended",
+    "impeach"
+   ]
+  ]
+ },
+ "hosdiss": {
+  "title": "Usunięcie głowy państwa (impeachment)",
+  "fields": {
+   "kto_orzeka": {
+    "type": "enum",
+    "label": "Kto ostatecznie orzeka",
+    "values": {
+     "parlament": "Parlament",
+     "sad_konstytucyjny": "Sąd konstytucyjny",
+     "sad_specjalny": "Sąd specjalny (np. Trybunał Stanu)",
+     "sad_najwyzszy": "Sąd najwyższy",
+     "referendum": "Obywatele w referendum",
+     "inne": "Inne",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "prog_oskarzenia": {
+    "type": "enum",
+    "label": "Próg postawienia w stan oskarżenia",
+    "values": {
+     "zwykla_lub_bezwzgledna": "Zwykła lub bezwzględna",
+     "trzy_piate": "3/5",
+     "dwie_trzecie": "2/3",
+     "trzy_czwarte": "3/4 lub więcej",
+     "inny": "Inny",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "podstawy": {
+    "type": "multi",
+    "label": "Podstawy",
+    "values": {
+     "zdrada": "Zdrada stanu",
+     "naruszenie_konstytucji": "Naruszenie konstytucji",
+     "przestepstwo": "Przestępstwo",
+     "niezdolnosc": "Niezdolność do pełnienia urzędu",
+     "inne": "Inne"
+    }
+   }
+  },
+  "keywords": [
+   [
+    "president",
+    "head of state"
+   ],
+   [
+    "impeach",
+    "removed? from office",
+    "high treason",
+    "state tribunal",
+    "indict"
+   ]
+  ]
  }
 }

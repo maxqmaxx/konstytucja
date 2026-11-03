@@ -11,6 +11,9 @@ import os
 from pathlib import Path
 import re
 
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "panstwa"))
+from report import issue_link  # noqa: E402
 from editorial import AVOID, PROPOSALS
 import world
 
@@ -152,7 +155,7 @@ def html_view():
         meta = escape(json.dumps({"id": f"propozycja-{p['id']}", "type": "propozycja", "title": f"{p['id']}: {p['title']}", "anchor": p['id'].lower(),
                                   "cite": f"Konstytucje świata, Dla Polski, propozycja {p['id']} (opracowanie redakcyjne do debaty, 2026-11-01)"}, ensure_ascii=False))
         cards.append(f'''<article class="proposal" id="{p['id'].lower()}" data-id="{p['id']}" data-teczka="{meta}">
-<div class="card-top"><span class="eyebrow">{p['id']} / {escape(LABELS['domain'][p['domain']])}</span><label class="choose"><input type="checkbox" data-compare="{p['id']}"> Porównaj</label></div>
+<div class="card-top"><span class="eyebrow">{p['id']} / {escape(LABELS['domain'][p['domain']])}</span><span class="card-actions">{issue_link(f"Propozycja {p['id']}: {p['title']} (polska/index.html#{p['id'].lower()})")}<label class="choose"><input type="checkbox" data-compare="{p['id']}"> Porównaj</label></span></div>
 <h2><a href="#{p['id'].lower()}">{escape(p['title'])}</a></h2><div class="badges">{badges}</div>
 <h3>W Polsce dziś</h3><p>{escape(p['poland'])}</p><p class="references">Konstytucja RP: {pl_links(p['polish_articles'])}.</p>
 <div class="draft"><h3>Szkic autorski <span>do dalszego opracowania</span></h3><p data-teczka-text>{escape(p['draft'])}</p></div>

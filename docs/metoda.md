@@ -35,18 +35,31 @@ Pilot porównał Claude Opus 5.5, DeepSeek V4 Pro i DeepSeek V4.1 Flash na tych 
 
 ## Warianty kluczowych rozwiązań
 
-Dla 15 tematów (m.in. limit i długość kadencji głowy państwa, procedura zmiany konstytucji, klauzula wieczysta, stany nadzwyczajne, sąd konstytucyjny, rada sądownictwa, referendum, inicjatywa obywatelska, konstruktywne wotum, rozwiązanie parlamentu, reguły fiskalne, rzecznik praw) model odczytał dokładne warianty z zamkniętych list ([`dane/warianty_schemat.json`](../dane/warianty_schemat.json)). Przykładowe pola: rodzaj limitu kadencji, próg w parlamencie, maksymalny czas stanu nadzwyczajnego, kto wybiera sędziów.
+Dla 23 tematów model odczytał dokładne warianty z zamkniętych list ([`dane/warianty_schemat.json`](../dane/warianty_schemat.json)):
+- **głowa państwa:** limit i długość kadencji, weto i jego odrzucenie, dekrety, usunięcie z urzędu;
+- **parlament i rząd:** ordynacja, rozwiązanie parlamentu, konstruktywne wotum, immunitet;
+- **sądy:** wybór, kadencja i ponowny wybór sędziów sądu konstytucyjnego, rada sądownictwa, odwołanie sędziów, prokurator generalny;
+- **zmiana konstytucji:** procedura i klauzula wieczysta;
+- **obywatele:** referendum, inicjatywa obywatelska, rzecznik praw;
+- **kryzys i finanse:** stany nadzwyczajne, reguły fiskalne, bank centralny.
 
 Jak to działa:
-- **Wejście:** pełne artykuły zawierające przepisy oznaczone przez CCP, w tym nieoznaczone punkty wyliczeń.
+- **Wejście:** pełne artykuły zawierające przepisy oznaczone przez CCP (także nieoznaczone punkty wyliczeń) oraz artykuły, do których tekst odsyła („zasady z art. 1 i 20”). Gdy CCP nie oznaczył tematu w danej konstytucji, model dostaje do trzech artykułów znalezionych po słowach kluczowych (kolumna `zrodlo_fragmentu` = „słowa kluczowe”).
 - **Tylko tekst:** model nie korzysta z wiedzy spoza tekstu, a gdy tekst czegoś nie określa, wpisuje „nie_wynika”.
-- **Cytat:** każda odpowiedź ma dosłowny cytat, a kod sprawdza, że cytat występuje w źródle. Odpowiedzi bez zgodnego cytatu pomijamy (4 z 1518).
-- **Kontrola:** wyniki dla Polski sprawdzono ręcznie. Jedną korektę z podstawą prawną zapisano jawnie w [`dane/warianty_korekty.json`](../dane/warianty_korekty.json).
+- **Cytat:** każda odpowiedź ma dosłowny cytat, a kod sprawdza, że cytat występuje w źródle. Odpowiedzi bez zgodnego cytatu pomijamy. Z 3168 odczytów zostało 2972; odpadły głównie artykuły znalezione po słowach kluczowych, które okazały się nie na temat.
+- **Kontrola:** wyniki dla Polski sprawdzono ręcznie. Korekty z podstawą prawną zapisano jawnie w [`dane/warianty_korekty.json`](../dane/warianty_korekty.json). Przykład: zakaz finansowania deficytu przez NBP (art. 220 ust. 2) leży w innym temacie CCP, więc model go nie widział.
 
 Ograniczenia:
-- Warianty dotyczą tylko konstytucji, w których CCP oznaczył dany temat. Przykład: niemieckie konstruktywne wotum (art. 67 Ustawy Zasadniczej) nie jest oznaczone jako „hogdlim”, więc nie ma go w zestawieniu.
-- Odesłania do innych artykułów nie są rozwijane. Niemiecka klauzula wieczysta chroni „zasady z art. 1 i 20”, co zapisano jako „inne”.
+- Słowa kluczowe są angielskie i proste, więc mogą pominąć przepis sformułowany inaczej. W tematach takich jak „ograniczenia odwołania szefa rządu” uwzględniają też zwykłe wotum nieufności (wtedy wartość „nie” dla wotum konstruktywnego).
+- Odesłania są rozwijane do czterech artykułów i tylko w obrębie tej samej konstytucji. Odesłań do ustaw nie da się rozwinąć.
 - Konstytucja może przewidywać kilka rodzajów stanów nadzwyczajnych; zapisano najczęściej opisywany.
+- „Brak danych” w konstruktorze znaczy, że tekst tego nie określa (często odsyła do ustawy) albo nie został odczytany.
+
+## Konstruktor i statystyki
+
+- **Konstruktor** porównuje wybrany zestaw wariantów z konstytucjami, dla których dane pole ustalono. Kolejność: najpierw różnica między zgodnymi a niezgodnymi polami, potem liczba zgodnych. Napięcia „do przemyślenia” to krótka, ręcznie spisana lista typowych problemów z literatury porównawczej. Nie są oceną ani pełną analizą.
+- **Długość konstytucji** to liczba słów angielskiego wydania w Constitute, co pozwala porównywać państwa niezależnie od języka. Przekład może być nieco dłuższy lub krótszy od oryginału. Wielka Brytania nie ma jednej konstytucji; Constitute zestawia jej ustawy ustrojowe.
+- **Trend od 2000 r.** porównuje odsetek konstytucji z danym rozwiązaniem wśród uchwalonych od 2000 r. (49) i starszych (139). Uwzględnia tylko rozwiązania obecne w co najmniej 10 konstytucjach.
 
 ## Atlas i propozycje
 

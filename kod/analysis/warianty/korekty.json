@@ -1,0 +1,18 @@
+[
+ {
+  "topic": "amend",
+  "country_code": "PL",
+  "field": "dwa_glosowania",
+  "value": "tak",
+  "basis": "art. 235 ust. 3 i 5: pierwsze czytanie najwcześniej 30. dnia od przedłożenia; dla rozdz. I, II, XII uchwalenie najwcześniej 60. dnia po pierwszym czytaniu",
+  "reviewed": "2026-11-03"
+ },
+ {
+  "topic": "bank",
+  "country_code": "PL",
+  "field": "zakaz_finansowania_deficytu",
+  "value": "tak",
+  "basis": "art. 220 ust. 2: ustawa budżetowa nie może przewidywać pokrywania deficytu budżetowego przez zaciąganie zobowiązania w centralnym banku państwa (przepis w innym temacie CCP, więc model go nie widział)",
+  "reviewed": "2026-11-03"
+ }
+]

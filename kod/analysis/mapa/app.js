@@ -3,9 +3,9 @@
   const $ = s => document.querySelector(s);
   const D = JSON.parse($('#map-data').textContent);
   const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const COLORS = {has:'#0f6e5c', lacks:'#e2d8c4', none:'#f1efe9'};
-  const BINS = [[0,1949,'przed 1950','#e3eee8'],[1950,1974,'1950–1974','#b9d6c9'],[1975,1989,'1975–1989','#86bba6'],
-                [1990,1999,'1990–1999','#539c84'],[2000,2009,'2000–2009','#2a7a65'],[2010,9999,'od 2010','#0e5244']];
+  const COLORS = {has:'var(--c-0f6e5c,#0f6e5c)', lacks:'var(--c-e2d8c4,#e2d8c4)', none:'var(--c-f1efe9,#f1efe9)'};
+  const BINS = [[0,1949,'przed 1950','var(--c-e3eee8,#e3eee8)'],[1950,1974,'1950–1974','var(--c-b9d6c9,#b9d6c9)'],[1975,1989,'1975–1989','var(--c-86bba6,#86bba6)'],
+                [1990,1999,'1990–1999','var(--c-539c84,#539c84)'],[2000,2009,'2000–2009','var(--c-2a7a65,#2a7a65)'],[2010,9999,'od 2010','var(--c-0e5244,#0e5244)']];
   const shapes = [...document.querySelectorAll('#map [data-code]')];
   const codes = Object.keys(D.countries).sort((a,b)=>D.countries[a].name.localeCompare(D.countries[b].name,'pl'));
   const state = {topic: D.featured[0], mode: 'topic', country: ''};

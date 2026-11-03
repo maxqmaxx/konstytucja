@@ -39,7 +39,12 @@ class MapTests(unittest.TestCase):
 
     def test_nav_links(self):
         hrefs = [a["href"] for a in self.soup.select(".site-nav a")]
-        self.assertEqual(hrefs, ["../ATLAS.html", "index.html", "../rp/index.html", "../problemy/index.html", "../tematy/index.html", "../panstwa/index.html", "../ATLAS.html", "../polska/index.html", "../wizualizacje/index.html"])
+        # shared menu (theme/apply.py, from panstwa/build.py NAV_ITEMS); every target exists after a full build
+        self.assertEqual(hrefs[:3], ["../ATLAS.html", "../mapa/index.html", "../rp/index.html"])
+        self.assertIn("../konstruktor/index.html", hrefs)
+        self.assertEqual(self.soup.select_one('.site-nav a[aria-current="page"]')["href"], "../mapa/index.html")
+        for h in hrefs:
+            self.assertTrue((Path(__file__).resolve().parent / h).exists(), h)
 
 
 if __name__ == "__main__":

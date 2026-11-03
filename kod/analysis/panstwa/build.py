@@ -37,9 +37,13 @@ STATUS = {"source_in_force": "obowiązująca według źródła", "source_edition
 LANG_EXTRA = {"mul": "wielojęzyczny", "cjk": "chiński/japoński/koreański", "cnr": "czarnogórski", "rom": "romski",
               "jiv": "shuar", "kj": "kuanyama", "kmb": "kimbundu", "brx": "bodo", "doi": "dogri", "mni": "manipuri"}
 NAV_ITEMS = [("mapa/index.html", "Mapa", "mapa"), ("rp/index.html", "Konstytucja RP", "rp"), ("problemy/index.html", "Problemy", "problemy"), ("tematy/index.html", "Tematy", "tematy"),
+             ("konstruktor/index.html", "Konstruktor", "konstruktor"), ("statystyki/index.html", "Statystyki", "statystyki"),
              ("panstwa/index.html", "Państwa", "panstwa"), ("ATLAS.html", "Atlas", "atlas"), ("polska/index.html", "Dla Polski", "polska"),
              ("wizualizacje/index.html", "Pracownia", "wizualizacje")]
 
+
+
+from report import REPO, issue_link  # noqa: E402,F401
 
 def nav(up="../", current="panstwa"):
     links = "".join(f'<a href="{up}{href}"{" aria-current=\"page\"" if key == current else ""}>{label}</a>' for href, label, key in NAV_ITEMS)

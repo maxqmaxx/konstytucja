@@ -64,23 +64,23 @@ Najpierw państwa UE, potem konstytucje uchwalone od 2000 r. Streszczenia są ma
 
 ## Warianty: przepisy niezmienialne
 
-Odczytane automatycznie z pełnych artykułów 73 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
+Odczytane automatycznie z pełnych artykułów 84 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
 
 **Co jest niezmienialne**
 
 | Wariant | Konstytucje |
 |---|---|
-| Forma republikańska / monarchia | 46 |
+| Forma republikańska / monarchia | 48 |
 | Inne | 36 |
-| Demokracja, wolne wybory, pluralizm | 28 |
-| Terytorium i integralność | 26 |
-| Prawa podstawowe | 26 |
-| Religia lub świeckość państwa | 18 |
-| Limit kadencji | 11 |
-| Federalizm, autonomia | 10 |
-| Podział władz, niezależność sądów | 10 |
-| Język, symbole, ustrój narodowy | 7 |
-| nie wynika z tekstu | 1 |
+| Demokracja, wolne wybory, pluralizm | 33 |
+| Prawa podstawowe | 29 |
+| Terytorium i integralność | 25 |
+| Religia lub świeckość państwa | 22 |
+| Podział władz, niezależność sądów | 13 |
+| Federalizm, autonomia | 12 |
+| Limit kadencji | 12 |
+| Język, symbole, ustrój narodowy | 11 |
+| nie wynika z tekstu | 8 |
 
 
 ## Jak mocne są te przepisy

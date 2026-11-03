@@ -81,53 +81,53 @@ Najpierw państwa UE, potem konstytucje uchwalone od 2000 r. Streszczenia są ma
 
 ## Warianty: rada sądownictwa
 
-Odczytane automatycznie z pełnych artykułów 135 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
+Odczytane automatycznie z pełnych artykułów 133 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
 
 **Sędziowie stanowią większość składu** (Polska: tak)
 
 | Wariant | Konstytucje |
 |---|---|
-| nie | 37 |
-| tak | 30 |
-| nie wynika z tekstu | 68 |
+| nie | 35 |
+| tak | 22 |
+| nie wynika z tekstu | 76 |
 
 **Kto wybiera sędziów-członków** (Polska: Nie wynika z tekstu)
 
 | Wariant | Konstytucje |
 |---|---|
-| Sami sędziowie | 33 |
-| Inne | 27 |
-| Mieszany tryb | 6 |
+| Sami sędziowie | 32 |
+| Inne | 22 |
+| Mieszany tryb | 5 |
 | Parlament | 3 |
-| nie wynika z tekstu | 66 |
+| nie wynika z tekstu | 71 |
 
 **Przewodniczy** (Polska: Wybrany przez radę)
 
 | Wariant | Konstytucje |
 |---|---|
-| Sędzia (np. prezes sądu najwyższego) | 37 |
+| Sędzia (np. prezes sądu najwyższego) | 30 |
 | Głowa państwa | 14 |
-| Wybrany przez radę | 11 |
+| Wybrany przez radę | 9 |
 | Inne | 7 |
 | Minister sprawiedliwości | 3 |
-| nie wynika z tekstu | 63 |
+| nie wynika z tekstu | 70 |
 
 
 ## Warianty: wybór sędziów sądu konstytucyjnego
 
-Odczytane automatycznie z pełnych artykułów 88 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
+Odczytane automatycznie z pełnych artykułów 89 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
 
 **Kto wybiera lub powołuje** (Polska: Parlament)
 
 | Wariant | Konstytucje |
 |---|---|
-| Parlament | 70 |
-| Głowa państwa | 62 |
-| Rada sądownictwa | 19 |
-| Sądy lub sędziowie | 18 |
-| Inne | 12 |
-| Rząd | 4 |
-| nie wynika z tekstu | 1 |
+| Parlament | 69 |
+| Głowa państwa | 63 |
+| Rada sądownictwa | 18 |
+| Sądy lub sędziowie | 15 |
+| Inne | 10 |
+| Rząd | 6 |
+| nie wynika z tekstu | 3 |
 
 **Wybór w parlamencie większością kwalifikowaną** (Polska: nie_wynika)
 
@@ -135,20 +135,20 @@ Odczytane automatycznie z pełnych artykułów 88 konstytucji (z cytatem sprawdz
 |---|---|
 | tak | 15 |
 | nie | 8 |
-| nie wynika z tekstu | 65 |
+| nie wynika z tekstu | 66 |
 
 
 ## Warianty: ponowny wybór sędziów sądu konstytucyjnego
 
-Odczytane automatycznie z pełnych artykułów 40 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
+Odczytane automatycznie z pełnych artykułów 50 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
 
 **Ponowny wybór** (Polska: Zakazany)
 
 | Wariant | Konstytucje |
 |---|---|
-| Zakazany | 33 |
+| Zakazany | 41 |
+| Dozwolony bez ograniczeń | 5 |
 | Dozwolony raz | 3 |
-| Dozwolony bez ograniczeń | 3 |
 | nie wynika z tekstu | 1 |
 
 

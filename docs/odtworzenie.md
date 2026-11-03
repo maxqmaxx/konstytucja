@@ -19,7 +19,7 @@ python3 -m unittest discover -s analysis/features -p test_features.py
 
 # 3. Serwis statyczny (atlas, Polska, mapa, państwa, Konstytucja RP, tematy, problemy, teczka)
 python3 analysis/atlas.py normalize && python3 analysis/atlas.py screen && python3 analysis/atlas.py build
-python3 analysis/polska/build.py && python3 analysis/mapa/build.py && python3 analysis/panstwa/build.py && python3 analysis/rp/build.py
+sh tools/build_site.sh   # wszystkie strony, potem wspólne menu i motyw (theme/apply.py)
 
 # 4. (opcjonalnie) wyszukiwarka pełnotekstowa i przekłady (wymaga klucza API Anthropic, płatne)
 python3 analysis/szukaj/index.py
@@ -27,3 +27,5 @@ python3 analysis/tlumaczenia/rich.py          # pilot; pełny przebieg: rich.py 
 ```
 
 Pobieraj z umiarem: skrypty mają limity równoległości i odstępy między żądaniami. Szanuj warunki wydawców.
+
+Warianty (`analysis/warianty/extract.py`) wymagają klucza API i przebiegu wsadowego (ok. 15 USD). Surowe odczyty z cytatami (`warianty.jsonl`) nie są publikowane, bo zawierają fragmenty tekstów; gotowe wartości są w `dane/warianty.csv`.

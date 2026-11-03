@@ -73,58 +73,58 @@ Najpierw państwa UE, potem konstytucje uchwalone od 2000 r. Streszczenia są ma
 
 ## Warianty: referendum
 
-Odczytane automatycznie z pełnych artykułów 143 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
+Odczytane automatycznie z pełnych artykułów 151 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
 
 **Kto może zainicjować** (Polska: Parlament, Głowa państwa)
 
 | Wariant | Konstytucje |
 |---|---|
-| Parlament | 83 |
-| Głowa państwa | 61 |
-| Obywatele | 37 |
-| Rząd | 25 |
+| Parlament | 88 |
+| Głowa państwa | 60 |
+| Obywatele | 38 |
+| Rząd | 24 |
 | Samorządy lub regiony | 12 |
-| Inne | 4 |
-| nie wynika z tekstu | 23 |
+| Inne | 3 |
+| nie wynika z tekstu | 25 |
 
 **Czy wynik wiąże** (Polska: Zależy od frekwencji lub rodzaju)
 
 | Wariant | Konstytucje |
 |---|---|
-| Tak | 58 |
+| Tak | 63 |
 | Zależy od frekwencji lub rodzaju | 17 |
-| Nie (konsultacyjne) | 2 |
-| nie wynika z tekstu | 66 |
+| Nie (konsultacyjne) | 3 |
+| nie wynika z tekstu | 68 |
 
 **Próg frekwencji lub poparcia** (Polska: tak)
 
 | Wariant | Konstytucje |
 |---|---|
-| tak | 60 |
-| nie | 3 |
-| nie wynika z tekstu | 80 |
+| tak | 55 |
+| nie | 5 |
+| nie wynika z tekstu | 91 |
 
 **Sprawy wyłączone z referendum** (Polska: nie_wynika)
 
 | Wariant | Konstytucje |
 |---|---|
-| tak | 31 |
-| nie wynika z tekstu | 112 |
+| tak | 35 |
+| nie wynika z tekstu | 116 |
 
 
 ## Warianty: obywatelska inicjatywa ustawodawcza
 
-Odczytane automatycznie z pełnych artykułów 50 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
+Odczytane automatycznie z pełnych artykułów 66 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
 
 **Czego dotyczy** (Polska: Ustawa)
 
 | Wariant | Konstytucje |
 |---|---|
-| Ustawa | 42 |
-| Referendum | 14 |
-| Zmiana konstytucji | 9 |
-| Inne | 5 |
-| nie wynika z tekstu | 0 |
+| Ustawa | 44 |
+| Referendum | 18 |
+| Zmiana konstytucji | 12 |
+| Inne | 6 |
+| nie wynika z tekstu | 8 |
 
 **Wymagana liczba podpisów** (Polska: 100000)
 
@@ -133,24 +133,23 @@ Odczytane automatycznie z pełnych artykułów 50 konstytucji (z cytatem sprawdz
 | 100000 | 5 |
 | 10000 | 5 |
 | 50000 | 4 |
+| 500000 | 2 |
+| 200000 | 2 |
 | 30000 | 2 |
 | 5000 | 2 |
-| 20000 | 1 |
-| 40000 | 1 |
-| 500000 | 1 |
-| nie wynika z tekstu | 24 |
+| 25000 | 1 |
+| nie wynika z tekstu | 37 |
 
 **Wymagany odsetek wyborców (%)** (Polska: None)
 
 | Wariant | Konstytucje |
 |---|---|
-| 5 | 2 |
+| 10 | 3 |
+| 2 | 2 |
 | 25 | 2 |
-| 10 | 2 |
-| 3 | 1 |
+| 5 | 2 |
 | 1 | 1 |
-| 2 | 1 |
-| nie wynika z tekstu | 41 |
+| nie wynika z tekstu | 56 |
 
 
 ## Jak mocne są te przepisy
