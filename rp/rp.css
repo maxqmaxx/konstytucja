@@ -36,3 +36,7 @@
 .tags{display:flex;flex-wrap:wrap;gap:4px;margin:6px 0 2px}.tag{font-size:11px;padding:1px 7px;border-radius:2px;border:1px solid #c8d1c6;background:#f4f6f0;color:#40514a;text-decoration:none}
 .tag.sila{background:#eef1f7;border-color:#c5cfdf;color:#33475e}a.tag.prob:hover{text-decoration:underline}
 .variant-controls{grid-template-columns:2fr 1fr 1fr 1fr}
+.facets{margin:22px 0}.facet-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:12px}
+.facet{background:#fff;border:1px solid var(--line);padding:10px 14px}.facet h3{font-size:14px;margin:4px 0 8px}.facet .bar-row{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) 34px 90px}
+.facet .bar-row span:first-child{font-size:12px}.facet .note{font-size:11px;margin:6px 0 2px}.pl-val{display:block;font-weight:400;font-size:12px;color:var(--green)}.pl-mark{color:var(--green);font-weight:700;margin-left:4px}
+.facet-badges{font-size:12.5px;background:#f6f8f3;border-left:3px solid #9fb7ac;padding:6px 10px;margin:4px 0 8px}.facet-badges .quote{display:block;font:italic 12.5px/1.5 Georgia,serif;color:#5a666d;margin-top:3px}
