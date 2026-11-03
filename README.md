@@ -12,10 +12,30 @@ Repozytorium dla osób, które chcą rozmawiać o przyszłej polskiej konstytucj
 
 > To materiał do debaty, nie projekt ustawy ani opinia prawna. Liczby mówią, co zapisano w konstytucjach, a nie czy to działa.
 
+## Serwis: wszystko do wyklikania w przeglądarce
+
+**[maxqmaxx.github.io/konstytucja](https://maxqmaxx.github.io/konstytucja/)**: bez instalacji i logowania, działa też na telefonie. Ten sam materiał co w `dane/`, tylko do przeglądania.
+
+| Widok | Co tam zrobisz |
+|---|---|
+| [**Konstytucja RP na tle świata**](https://maxqmaxx.github.io/konstytucja/rp/index.html) | Czytasz Konstytucję RP rozdział po rozdziale. Przy każdym artykule widzisz, jakie rozwiązania zawiera i w ilu konstytucjach świata i UE występują. Szukasz po słowie (np. „kadencja”, „sumienie”), pokazujesz tylko artykuły z rzadkimi rozwiązaniami albo z propozycjami zmian i przechodzisz do tematu. |
+| [**Problemy polskiej debaty**](https://maxqmaxx.github.io/konstytucja/problemy/index.html) | Zaczynasz od pytania, a nie od przepisu. 23 problemy, np. niezależność sądów, stany nadzwyczajne, demokracja bezpośrednia, samorząd, dane i technologie. Każdy prowadzi do tematów i przepisów innych państw, które go dotyczą. |
+| [**Tematy**](https://maxqmaxx.github.io/konstytucja/tematy/index.html) (331) | Jedno rozwiązanie, np. [stany nadzwyczajne](https://maxqmaxx.github.io/konstytucja/tematy/em.html): co mówi Konstytucja RP, jak często to rozwiązanie występuje na świecie, a potem przepisy innych państw z polskim streszczeniem i siłą normy. Filtry: tylko UE albo konstytucje uchwalone od 2000 r., siła normy (prawo, obowiązek, cel programowy…), problem debaty i wariant. |
+| **Warianty** (w 15 tematach) | Sekcja „Jak to rozwiązano” w tematach takich jak limit kadencji, zmiana konstytucji, stany nadzwyczajne, sąd konstytucyjny, rada sądownictwa, referendum czy inicjatywa obywatelska. Pokazuje rozkład odpowiedzi, np. ile państw daje parlamentowi prawo uchylenia stanu nadzwyczajnego, z zaznaczoną Polską. W filtrze „wariant” wybierasz odpowiedź i widzisz tylko państwa, które ją mają. |
+| [**Mapa świata**](https://maxqmaxx.github.io/konstytucja/mapa/index.html) | Wybierasz temat i widzisz, które państwa go mają, albo przełączasz mapę na rok uchwalenia konstytucji. Kliknięcie państwa pokazuje szczegóły i prowadzi do jego strony. |
+| [**Porównaj konstytucje**](https://maxqmaxx.github.io/konstytucja/panstwa/porownaj.html) | Dwie lub trzy konstytucje obok siebie, temat po temacie, np. Polska, Niemcy i Estonia. Opcja „tylko różnice” zostawia tematy, w których się różnią. |
+| [**Propozycje dla Polski**](https://maxqmaxx.github.io/konstytucja/polska/index.html) | 24 autorskie propozycje: uzasadnienie, ryzyko nadużycia, zabezpieczenia, droga zmiany (art. 235) i przykłady z innych państw. Filtry według obszaru, oceny (rekomendowane albo do debaty), rodzaju zmiany i drogi wdrożenia. Możesz porównać do 3 propozycji obok siebie i wydrukować zestaw. Na górze strony jest „Polska na tle świata”: czego brakuje, a co mamy rzadkiego. |
+| [**Atlas**](https://maxqmaxx.github.io/konstytucja/ATLAS.html) | 130 nietypowych zapisów z całego świata, np. przyroda jako podmiot praw, lasy na 60% terytorium czy dwóch współksiążąt. Filtry według kategorii (najciekawsze, najoryginalniejsze, największe ryzyka ustrojowe, koncentracja władzy…), państwa i okresu. |
+| [**Państwa**](https://maxqmaxx.github.io/konstytucja/panstwa/index.html) | Strona każdego z 222 państw i terytoriów: obowiązujące wydanie, wszystkie wersje i języki ze źródłami, zapisy z atlasu i propozycje, które z niego czerpią. |
+| [**Teczka robocza**](https://maxqmaxx.github.io/konstytucja/teczka/index.html) | Przyciskiem „+ Do teczki” zbierasz przepisy, warianty i propozycje z dowolnej strony i dopisujesz własne notatki. Teczkę pobierasz jako dokument dla Worda (.doc) lub Markdown albo drukujesz do PDF. Przypisy ze źródłami kopiujesz jednym kliknięciem. Teczka zostaje w Twojej przeglądarce i nic nie jest wysyłane. |
+
+Serwis nie publikuje pełnych tekstów konstytucji innych państw ani ich przekładów (prawa wydawców). Przy każdym przepisie jest link do pełnego tekstu w Constitute.
+
 ## Zacznij tutaj
 
 | Masz | Zrób to |
 |---|---|
+| 2 minuty | Otwórz [serwis](https://maxqmaxx.github.io/konstytucja/), wybierz [problem](https://maxqmaxx.github.io/konstytucja/problemy/index.html), który Cię obchodzi, albo artykuł [Konstytucji RP](https://maxqmaxx.github.io/konstytucja/rp/index.html). |
 | 5 minut | Otwórz jeden z [przykładów](przyklady/README.md), np. [Czy część konstytucji powinna być niezmienialna?](przyklady/01-klauzula-wieczysta.md) |
 | 30 minut | Pobierz [`dane/rozwiazania_swiat.csv`](dane/rozwiazania_swiat.csv) i otwórz w Excelu albo Google Sheets. Posortuj po `udzial_ue27`, odfiltruj `konstytucja_rp` = „brak tagu CCP”. Opis kolumn: [`dane/README.md`](dane/README.md). |
 | Własne pytanie | W [`dane/przepisy_tematy.csv`](dane/przepisy_tematy.csv) filtruj po `problemy` (np. `sady`, `stany_nadzwyczajne`) lub `kod_ccp` i czytaj streszczenia; link w `adres_przepisu` prowadzi do pełnego tekstu. |
