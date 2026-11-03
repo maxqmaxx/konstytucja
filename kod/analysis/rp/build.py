@@ -11,7 +11,7 @@ import csv
 import json
 import re
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from html import escape
 from pathlib import Path
 
@@ -217,6 +217,58 @@ q.addEventListener('input',run);s.addEventListener('change',run);if(q.value||s.v
                         topic_problems[key_][pr] += 1
                         problem_sections[pr].add(k)
 
+    FACETS = {k: v for k, v in json.loads((ANALYSIS / "warianty/facets.json").read_text()).items() if not k.startswith("_")}
+    sys.path.insert(0, str(ANALYSIS / "warianty"))
+    import load as warianty_load  # noqa: E402
+    facet_recs = warianty_load.load()
+
+    def facet_label(topic, field, value):
+        f = FACETS[topic]["fields"][field]
+        if f["type"] == "int":
+            return "—" if value is None else str(value)
+        if f["type"] == "bool3":
+            return {"tak": "tak", "nie": "nie", "nie_wynika": "nie wynika z tekstu"}.get(value, str(value))
+        if f["type"] == "multi":
+            return ", ".join(f["values"].get(v, v) for v in value) if value else "—"
+        return f["values"].get(value, str(value))
+
+    def facets_section(topic):
+        recs = {c: r for (tp, c), r in facet_recs.items() if tp == topic}
+        if topic not in FACETS or not recs:
+            return ""
+        pl = recs.get("PL")
+        blocks = []
+        for field, f in FACETS[topic]["fields"].items():
+            counts, unknown = Counter(), 0
+            for c, r in recs.items():
+                v = r["values"].get(field)
+                if v in (None, "nie_wynika", []):
+                    unknown += 1
+                    continue
+                for x in (v if isinstance(v, list) else [v]):
+                    counts[x] += 1
+            known = len(recs) - unknown
+            if not counts:
+                continue
+            if f["type"] == "int":
+                nums = sorted(int(k) for k, n in counts.items() for _ in range(n))
+                med = nums[len(nums) // 2]
+                top = ", ".join(f"{k} ({n})" for k, n in counts.most_common(5))
+                body = f'<p>Mediana: <b>{med}</b> · najczęściej: {top} · zakres {nums[0]}–{nums[-1]}</p>'
+            else:
+                rows = []
+                for k, n in counts.most_common():
+                    mark = ' <span class="pl-mark">● Polska</span>' if pl and (pl["values"].get(field) == k or (isinstance(pl["values"].get(field), list) and k in pl["values"][field])) else ""
+                    rows.append(f'<div class="bar-row"><span>{escape(facet_label(topic, field, [k] if f["type"] == "multi" else k))}</span><span class="bar"><i style="width:{n / max(1, known) * 100:.1f}%"></i></span><b>{n}</b><small>{n / max(1, known):.0%}{mark}</small></div>')
+                body = "".join(rows)
+            plv = f' <span class="pl-val">Polska: {escape(facet_label(topic, field, pl["values"].get(field)))}</span>' if pl else ""
+            blocks.append(f'<div class="facet"><h3>{escape(f["label"])}{plv}</h3>{body}<p class="note">Ustalono w {known} z {len(recs)} konstytucji; w pozostałych tekst tego nie określa (często odsyła do ustawy).</p></div>')
+        if pl and pl.get("korekty"):
+            blocks.append('<div class="facet"><h3>Korekty ręczne (Polska)</h3>' + "".join(
+                f'<p class="note"><b>{escape(FACETS[topic]["fields"][k["field"]]["label"])}</b>: {escape(facet_label(topic, k["field"], k["value"]))}. {escape(k["basis"])}.</p>' for k in pl["korekty"]) + '</div>')
+        return (f'<section class="facets"><h2>Jak to rozwiązano: warianty</h2><p class="note">Wartości odczytane automatycznie (Claude Opus 5.5) z pełnych artykułów oznaczonych tym tematem, z zamkniętej listy; każda ma dosłowny cytat sprawdzony w źródle. '
+                f'Konstytucja może przewidywać kilka rodzajów (np. stanów nadzwyczajnych); zapisano najczęściej opisywany. To nawigacja, nie ocena prawna.</p><div class="facet-grid">{"".join(blocks)}</div></section>')
+
     def variant_html(url, a, sec, text, k):
         where = f'<p class="where"><a href="{url}#s{escape(sec)}">{escape(a.replace("Article", "art.").replace("Section", "sekcja"))}</a></p>'
         if not text:
@@ -278,24 +330,36 @@ q.addEventListener('input',run);s.addEventListener('change',run);if(q.value||s.v
             meta = {"id": f"wariant-{key}-{code}", "type": "wariant", "title": f"{name_pl(code, code)}: {ccp.labels[key]}",
                     "cite": f"Konstytucja: {d['title']} ({name_pl(code, code)}), {arts_label}, tekst angielski w Constitute Project, temat CCP „{ccp.topics[key]}”{"; przekład maszynowy (Claude Opus 5.5), nieurzędowy" if mt else ""}",
                     "url": f"{url}#s{have[code][0][1]}"}
-            cards.append(f'<li class="variant" data-eu="{int(code in EU27)}" data-recent="{int(recent)}" data-pl="{int(code == "PL")}" data-sila="{silas}" data-prob="{probs}" data-teczka="{escape(json.dumps(meta, ensure_ascii=False))}">'
+            fr = facet_recs.get((key, code))
+            main_field = next(iter(FACETS[key]["fields"])) if key in FACETS else None
+            main_val = ""
+            facet_badges = ""
+            if fr:
+                mv = fr["values"].get(main_field)
+                main_val = " ".join(mv) if isinstance(mv, list) else str(mv)
+                facet_badges = '<p class="facet-badges">' + " · ".join(
+                    f'{escape(FACETS[key]["fields"][fn]["label"])}: <b>{escape(facet_label(key, fn, fv))}</b>' for fn, fv in fr["values"].items()
+                    if fv not in (None, "nie_wynika", [])) + f'<span class="quote" title="Cytat ze źródła">„{escape(fr["cytat"][:240])}”</span></p>'
+            secs = facet_badges + secs
+            cards.append(f'<li class="variant" data-eu="{int(code in EU27)}" data-recent="{int(recent)}" data-pl="{int(code == "PL")}" data-sila="{silas}" data-prob="{probs}" data-w="{escape(main_val)}" data-teczka="{escape(json.dumps(meta, ensure_ascii=False))}">'
                          f'<h3><a href="../panstwa/{code.lower()}.html">{escape(name_pl(code, code))}</a> <span>{escape(d["title"])}{" · UE" if code in EU27 else ""}</span></h3><div data-teczka-text>{secs}</div></li>')
         missing = sorted((name_pl(c, c) for c in ccp.by_code if c not in have), key=str.lower)
         body = f'''<p class="crumbs"><a href="index.html">Tematy</a> / {escape(ccp.labels[key])}</p><h1>{escape(ccp.labels[key])}</h1>
 <p class="sub"><span class="chip {cls}">{word}</span> {prev["count"]} ze 188 obowiązujących konstytucji. Nazwa w CCP: <i lang="en">{escape(ccp.topics[key])}</i> (<code>{key}</code>).</p>
-<div class="topic-head"><div class="bars">{bars(prev)}</div>{pl_html}</div>{props_html}
+<div class="topic-head"><div class="bars">{bars(prev)}</div>{pl_html}</div>{props_html}{facets_section(key)}
 <h2>Jak to zapisano w innych konstytucjach</h2>
 <p class="note">Fragmenty oznaczone przez CCP w angielskich wydaniach Constitute (do trzech na państwo, do 1500 znaków). <b>Polskie przekłady i streszczenia są maszynowe (Claude Opus 5.5) i nieurzędowe</b>; oryginał jest pod każdym przekładem, a link prowadzi do pełnego przepisu. Siła normy i problemy to automatyczne oznaczenia do nawigacji, nie ocena prawna.</p>
 <section class="controls variant-controls" aria-label="Filtry"><label class="wide">Szukaj w przepisach<input id="q" type="search" placeholder="np. referendum, two-thirds" autocomplete="off"></label>
 <label>Państwa<select id="grp"><option value="">wszystkie</option><option value="eu">tylko UE</option><option value="recent">uchwalone od 2000 r.</option></select></label>
 <label>Siła normy<select id="sila"><option value="">każda</option>{"".join(f'<option value="{k}">{escape(v)}</option>' for k, v in sila_labels.items())}</select></label>
+{f'<label>{escape(FACETS[key]["fields"][next(iter(FACETS[key]["fields"]))]["label"])}<select id="wvar"><option value="">każdy</option>' + "".join(f'<option value="{vk}">{escape(vl)}</option>' for vk, vl in FACETS[key]["fields"][next(iter(FACETS[key]["fields"]))].get("values", {}).items() if vk != "nie_wynika") + '</select></label>' if key in FACETS and FACETS[key]["fields"][next(iter(FACETS[key]["fields"]))].get("values") else ''}
 <label>Problem<select id="prob"><option value="">każdy</option>{"".join(f'<option value="{k}">{escape(v)}</option>' for k, v in prob_labels.items())}</select></label></section>
 <p class="summary" id="summary" aria-live="polite"></p><p class="note">Konstytucja RP jest wyżej i nie jest liczona w tej liście.</p><ol class="variants">{"".join(cards)}</ol>
 <details class="table-box"><summary>Konstytucje bez tego tematu w kodowaniu CCP ({len(missing)})</summary><p class="note">{escape(", ".join(missing))}</p></details>
 <script>(()=>{{const $=id=>document.getElementById(id),q=$('q'),g=$('grp'),si=$('sila'),pr=$('prob'),s=$('summary');const items=[...document.querySelectorAll('.variant')];const t=items.map(i=>i.textContent.toLowerCase());
 try{{const h=new URLSearchParams(location.hash.slice(1));if(h.get('problem'))pr.value=h.get('problem');if(h.get('sila'))si.value=h.get('sila');}}catch{{}}
-const inList=(v,l)=>!v||(' '+l+' ').includes(' '+v+' ');
-function run(){{const v=q.value.trim().toLowerCase();let n=0;items.forEach((i,k)=>{{const ok=(!v||t[k].includes(v))&&(!g.value||i.dataset[g.value]==='1')&&inList(si.value,i.dataset.sila)&&inList(pr.value,i.dataset.prob);i.hidden=!ok;n+=ok;}});s.textContent=`Pokazano ${{n}} z ${{items.length}} konstytucji.`;}}
+const inList=(v,l)=>!v||(' '+l+' ').includes(' '+v+' ');const wv=$('wvar');if(wv)wv.addEventListener('change',()=>run());
+function run(){{const v=q.value.trim().toLowerCase();let n=0;items.forEach((i,k)=>{{const ok=(!v||t[k].includes(v))&&(!g.value||i.dataset[g.value]==='1')&&inList(si.value,i.dataset.sila)&&inList(pr.value,i.dataset.prob)&&(!wv||inList(wv.value,i.dataset.w||''));i.hidden=!ok;n+=ok;}});s.textContent=`Pokazano ${{n}} z ${{items.length}} konstytucji.`;}}
 q.addEventListener('input',run);[g,si,pr].forEach(e=>e.addEventListener('change',run));run();}})();</script>'''
         (TOPICS_DIR / f"{key}.html").write_text(page(f"{ccp.labels[key]}: warianty przepisów", body, description=f"{ccp.labels[key]} w konstytucjach świata.",
                                                      css="../panstwa/style.css", current="tematy").replace("</head>", '<link rel="stylesheet" href="../rp/rp.css"></head>').replace("</body>", TECZKA))

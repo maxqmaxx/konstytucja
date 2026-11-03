@@ -5,6 +5,7 @@ Repozytorium dla osób, które chcą rozmawiać o przyszłej polskiej konstytucj
 - **jak częste jest dane rozwiązanie** w 188 obowiązujących konstytucjach świata, w 331 tematach, z podziałem na świat, konstytucje uchwalone od 2000 r. i Unię Europejską;
 - **jak wypada Konstytucja RP**, artykuł po artykule, z ręcznie sprawdzonymi lukami;
 - **53 745 przepisów innych państw** z polskim streszczeniem, siłą normy (prawo, obowiązek, cel programowy…) i przypisaniem do problemów polskiej debaty, każdy z linkiem do pełnego tekstu;
+- **dokładne warianty 15 kluczowych rozwiązań**, np. ile kadencji, jaki próg zmiany konstytucji, ile dni stanu nadzwyczajnego, kto wybiera sędziów, każdy z wartością dla Polski;
 - **przykłady analiz** prowadzące od pytania do wniosków i pytań do dyskusji;
 - **24 autorskie propozycje dla Polski** z ryzykami i zabezpieczeniami;
 - **kod**, którym każdy może odtworzyć i rozwinąć całość.

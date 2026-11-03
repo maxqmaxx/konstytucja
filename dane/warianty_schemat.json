@@ -1,0 +1,356 @@
+{
+ "_doc": "Per-topic variant schemas. Field types: enum (one value), multi (list of values), int (number or null), bool3 (tak/nie/nie_wynika). Every enum has 'nie_wynika' (not stated in the excerpt). Each answer carries a verbatim quote checked in code.",
+ "hosterml": {
+  "title": "Limit kadencji głowy państwa",
+  "fields": {
+   "limit": {
+    "type": "enum",
+    "label": "Rodzaj limitu",
+    "values": {
+     "jedna_kadencja": "Jedna kadencja",
+     "dwie_lacznie": "Dwie kadencje łącznie",
+     "dwie_z_rzedu": "Dwie z rzędu (potem przerwa)",
+     "przerwa_po_kazdej": "Bez kolejnej kadencji z rzędu",
+     "trzy_lub_wiecej": "Trzy lub więcej",
+     "inny": "Inny",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "ochrona_przed_zmiana": {
+    "type": "bool3",
+    "label": "Zakaz zmiany limitu na korzyść urzędującej osoby"
+   }
+  }
+ },
+ "hosterm": {
+  "title": "Kadencja głowy państwa",
+  "fields": {
+   "lata": {
+    "type": "int",
+    "label": "Długość kadencji (lata)"
+   }
+  }
+ },
+ "amend": {
+  "title": "Procedura zmiany konstytucji",
+  "fields": {
+   "prog_parlament": {
+    "type": "enum",
+    "label": "Próg w parlamencie",
+    "values": {
+     "zwykla_lub_bezwzgledna": "Zwykła lub bezwzględna większość",
+     "trzy_piate": "3/5",
+     "dwie_trzecie": "2/3",
+     "trzy_czwarte": "3/4 lub więcej",
+     "inny": "Inny",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "referendum": {
+    "type": "enum",
+    "label": "Referendum",
+    "values": {
+     "zawsze": "Zawsze obowiązkowe",
+     "dla_czesci": "Obowiązkowe dla części przepisów",
+     "fakultatywne": "Na żądanie (fakultatywne)",
+     "brak": "Nie przewidziane",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "dwa_glosowania": {
+    "type": "bool3",
+    "label": "Dwa głosowania, odstęp czasu lub wybory pośrednie"
+   },
+   "inicjatywa_obywateli": {
+    "type": "bool3",
+    "label": "Obywatele mogą zainicjować zmianę"
+   }
+  }
+ },
+ "unamend": {
+  "title": "Przepisy niezmienialne",
+  "fields": {
+   "chronione": {
+    "type": "multi",
+    "label": "Co jest niezmienialne",
+    "values": {
+     "forma_republikanska": "Forma republikańska / monarchia",
+     "prawa_podstawowe": "Prawa podstawowe",
+     "demokracja_wybory": "Demokracja, wolne wybory, pluralizm",
+     "terytorium": "Terytorium i integralność",
+     "trojpodzial": "Podział władz, niezależność sądów",
+     "religia_swieckosc": "Religia lub świeckość państwa",
+     "federalizm": "Federalizm, autonomia",
+     "limit_kadencji": "Limit kadencji",
+     "jezyk_symbole": "Język, symbole, ustrój narodowy",
+     "inne": "Inne"
+    }
+   }
+  }
+ },
+ "em": {
+  "title": "Stany nadzwyczajne",
+  "fields": {
+   "kto_oglasza": {
+    "type": "enum",
+    "label": "Kto ogłasza",
+    "values": {
+     "glowa_panstwa": "Głowa państwa",
+     "rzad": "Rząd lub premier",
+     "parlament": "Parlament",
+     "inne": "Inny organ",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "zatwierdzenie_parlamentu": {
+    "type": "enum",
+    "label": "Rola parlamentu",
+    "values": {
+     "przed": "Musi zgodzić się przed",
+     "po_w_terminie": "Musi zatwierdzić po, w terminie",
+     "moze_uchylic": "Dostaje akt i może go uchylić",
+     "brak": "Nie ma wpływu",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "maks_dni": {
+    "type": "int",
+    "label": "Maksymalny czas pierwszego okresu (dni)"
+   },
+   "przedluzenie": {
+    "type": "enum",
+    "label": "Przedłużenie",
+    "values": {
+     "za_zgoda_parlamentu_raz": "Za zgodą parlamentu, tylko raz",
+     "za_zgoda_parlamentu": "Za zgodą parlamentu (wielokrotnie)",
+     "bez_zgody": "Bez zgody parlamentu",
+     "zakazane": "Zakazane",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "kontrola_sadowa": {
+    "type": "bool3",
+    "label": "Sąd może kontrolować ogłoszenie lub środki"
+   },
+   "prawa_nienaruszalne": {
+    "type": "bool3",
+    "label": "Lista praw, których nie wolno ograniczyć"
+   },
+   "ochrona_instytucji": {
+    "type": "bool3",
+    "label": "Zakaz rozwiązania parlamentu, zmiany konstytucji lub wyborów w czasie stanu"
+   }
+  }
+ },
+ "consel": {
+  "title": "Wybór sędziów sądu konstytucyjnego",
+  "fields": {
+   "kto_wybiera": {
+    "type": "multi",
+    "label": "Kto wybiera lub powołuje",
+    "values": {
+     "parlament": "Parlament",
+     "glowa_panstwa": "Głowa państwa",
+     "rzad": "Rząd",
+     "sadownictwo": "Sądy lub sędziowie",
+     "rada_sadownictwa": "Rada sądownictwa",
+     "inne": "Inne"
+    }
+   },
+   "wiekszosc_kwalifikowana": {
+    "type": "bool3",
+    "label": "Wybór w parlamencie większością kwalifikowaną"
+   }
+  }
+ },
+ "conterm": {
+  "title": "Kadencja sędziów sądu konstytucyjnego",
+  "fields": {
+   "lata": {
+    "type": "int",
+    "label": "Długość kadencji (lata)"
+   },
+   "dozywotnio_lub_do_wieku": {
+    "type": "bool3",
+    "label": "Bez kadencji (dożywotnio lub do wieku emerytalnego)"
+   }
+  }
+ },
+ "conlim": {
+  "title": "Ponowny wybór sędziów sądu konstytucyjnego",
+  "fields": {
+   "ponowny_wybor": {
+    "type": "enum",
+    "label": "Ponowny wybór",
+    "values": {
+     "zakazany": "Zakazany",
+     "dozwolony_raz": "Dozwolony raz",
+     "dozwolony": "Dozwolony bez ograniczeń",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   }
+  }
+ },
+ "jc": {
+  "title": "Rada sądownictwa",
+  "fields": {
+   "sedziowie_wiekszoscia": {
+    "type": "bool3",
+    "label": "Sędziowie stanowią większość składu"
+   },
+   "kto_wybiera_sedziow_czlonkow": {
+    "type": "enum",
+    "label": "Kto wybiera sędziów-członków",
+    "values": {
+     "sedziowie": "Sami sędziowie",
+     "parlament": "Parlament",
+     "mieszany": "Mieszany tryb",
+     "inne": "Inne",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "przewodniczy": {
+    "type": "enum",
+    "label": "Przewodniczy",
+    "values": {
+     "glowa_panstwa": "Głowa państwa",
+     "minister": "Minister sprawiedliwości",
+     "sedzia": "Sędzia (np. prezes sądu najwyższego)",
+     "wybrany_przez_rade": "Wybrany przez radę",
+     "inne": "Inne",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   }
+  }
+ },
+ "referen": {
+  "title": "Referendum",
+  "fields": {
+   "kto_inicjuje": {
+    "type": "multi",
+    "label": "Kto może zainicjować",
+    "values": {
+     "obywatele": "Obywatele",
+     "parlament": "Parlament",
+     "glowa_panstwa": "Głowa państwa",
+     "rzad": "Rząd",
+     "samorzady": "Samorządy lub regiony",
+     "inne": "Inne"
+    }
+   },
+   "wiazace": {
+    "type": "enum",
+    "label": "Czy wynik wiąże",
+    "values": {
+     "tak": "Tak",
+     "nie": "Nie (konsultacyjne)",
+     "zalezy": "Zależy od frekwencji lub rodzaju",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "prog_frekwencji": {
+    "type": "bool3",
+    "label": "Próg frekwencji lub poparcia"
+   },
+   "wylaczone_sprawy": {
+    "type": "bool3",
+    "label": "Sprawy wyłączone z referendum"
+   }
+  }
+ },
+ "initiat": {
+  "title": "Obywatelska inicjatywa ustawodawcza",
+  "fields": {
+   "zakres": {
+    "type": "multi",
+    "label": "Czego dotyczy",
+    "values": {
+     "ustawa": "Ustawa",
+     "zmiana_konstytucji": "Zmiana konstytucji",
+     "referendum": "Referendum",
+     "inne": "Inne"
+    }
+   },
+   "liczba_podpisow": {
+    "type": "int",
+    "label": "Wymagana liczba podpisów"
+   },
+   "procent_wyborcow": {
+    "type": "int",
+    "label": "Wymagany odsetek wyborców (%)"
+   }
+  }
+ },
+ "hogdlim": {
+  "title": "Ograniczenia odwołania szefa rządu",
+  "fields": {
+   "konstruktywne_wotum": {
+    "type": "bool3",
+    "label": "Konstruktywne wotum nieufności (jednoczesny wybór następcy)"
+   },
+   "ograniczenie_czasowe": {
+    "type": "bool3",
+    "label": "Ograniczenie, jak często można składać wniosek"
+   }
+  }
+ },
+ "legdiss": {
+  "title": "Rozwiązanie parlamentu",
+  "fields": {
+   "kto_moze": {
+    "type": "multi",
+    "label": "Kto może rozwiązać",
+    "values": {
+     "glowa_panstwa": "Głowa państwa",
+     "rzad": "Rząd lub premier",
+     "parlament_sam": "Sam parlament",
+     "referendum": "Obywatele w referendum",
+     "inne": "Inne"
+    }
+   },
+   "tylko_w_okreslonych_sytuacjach": {
+    "type": "bool3",
+    "label": "Tylko w określonych sytuacjach (np. brak budżetu, brak rządu)"
+   }
+  }
+ },
+ "balbudgt": {
+  "title": "Reguły fiskalne",
+  "fields": {
+   "rodzaj": {
+    "type": "multi",
+    "label": "Rodzaj reguły",
+    "values": {
+     "zrownowazony_budzet": "Zrównoważony budżet",
+     "limit_dlugu": "Limit długu",
+     "limit_deficytu": "Limit deficytu",
+     "inne": "Inne"
+    }
+   },
+   "limit_liczbowy": {
+    "type": "bool3",
+    "label": "Limit wyrażony liczbą (np. % PKB)"
+   }
+  }
+ },
+ "ombuds": {
+  "title": "Rzecznik praw (ombudsman)",
+  "fields": {
+   "kto_wybiera": {
+    "type": "enum",
+    "label": "Kto wybiera",
+    "values": {
+     "parlament": "Parlament",
+     "glowa_panstwa": "Głowa państwa",
+     "rzad": "Rząd",
+     "mieszany": "Mieszany tryb",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "kadencja_lat": {
+    "type": "int",
+    "label": "Kadencja (lata)"
+   }
+  }
+ }
+}

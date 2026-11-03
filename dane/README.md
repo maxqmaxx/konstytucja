@@ -9,6 +9,7 @@ Pliki CSV są w UTF-8 z BOM, więc otwierają się poprawnie w Excelu. Licznośc
 | `konstytucja_rp_1997.txt` | — | tekst Konstytucji RP (odczyt roboczy tekstu ujednoliconego z ELI) |
 | `luki_konstytucji_rp.csv` | temat bez tagu CCP w Konstytucji RP | `verdict` (`luka`, `luka_celowa`, `inna_technika`, `czesciowo`, `artefakt`, `nie_dotyczy`), `polish_basis`, `note` |
 | `przepisy_tematy.csv` | przepis innego państwa × temat | `panstwo`, `artykul`, `rozwiazanie`, `sila_normy`, `problemy` (kody rozdzielone spacją), `streszczenie_pl`, `adres_przepisu` |
+| `warianty.csv` | państwo × temat × pole | dokładne warianty dla 15 kluczowych tematów (np. rodzaj limitu kadencji, próg zmiany konstytucji, maks. czas stanu nadzwyczajnego, kto wybiera sędziów): `temat`, `opis_pola`, `wartosc_opis`; schemat pól: `warianty_schemat.json`. „nie_wynika” = tekst tego nie określa |
 | `problemy_tematy.csv` | problem × temat | `problem`, `rozwiazanie`, `udzial_przepisow_tematu` (jaka część przepisów tematu dotyczy problemu), `liczba_przepisow` |
 | `konstytucje_obowiazujace.csv` | państwo | `panstwo`, `wydanie_constitute`, `rok_uchwalenia`, `ue27`, `liczba_tematow_ccp`, `adres_constitute` |
 | `propozycje_dla_polski.csv` / `.json` | propozycja P01–P24 | `title`, `verdict`, `poland` (stan dziś), `draft` (szkic), `benefit`, `risk`, `safeguards`, `inspirations` (id atlasu), `polish_articles` |

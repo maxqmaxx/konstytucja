@@ -79,6 +79,79 @@ Najpierw państwa UE, potem konstytucje uchwalone od 2000 r. Streszczenia są ma
 
 …oraz 134 kolejnych. Pełna lista: `dane/przepisy_tematy.csv` (filtr `kod_ccp` = jc, consel, conlim).
 
+## Warianty: rada sądownictwa
+
+Odczytane automatycznie z pełnych artykułów 135 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
+
+**Sędziowie stanowią większość składu** (Polska: tak)
+
+| Wariant | Konstytucje |
+|---|---|
+| nie | 37 |
+| tak | 30 |
+| nie wynika z tekstu | 68 |
+
+**Kto wybiera sędziów-członków** (Polska: Nie wynika z tekstu)
+
+| Wariant | Konstytucje |
+|---|---|
+| Sami sędziowie | 33 |
+| Inne | 27 |
+| Mieszany tryb | 6 |
+| Parlament | 3 |
+| nie wynika z tekstu | 66 |
+
+**Przewodniczy** (Polska: Wybrany przez radę)
+
+| Wariant | Konstytucje |
+|---|---|
+| Sędzia (np. prezes sądu najwyższego) | 37 |
+| Głowa państwa | 14 |
+| Wybrany przez radę | 11 |
+| Inne | 7 |
+| Minister sprawiedliwości | 3 |
+| nie wynika z tekstu | 63 |
+
+
+## Warianty: wybór sędziów sądu konstytucyjnego
+
+Odczytane automatycznie z pełnych artykułów 88 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
+
+**Kto wybiera lub powołuje** (Polska: Parlament)
+
+| Wariant | Konstytucje |
+|---|---|
+| Parlament | 70 |
+| Głowa państwa | 62 |
+| Rada sądownictwa | 19 |
+| Sądy lub sędziowie | 18 |
+| Inne | 12 |
+| Rząd | 4 |
+| nie wynika z tekstu | 1 |
+
+**Wybór w parlamencie większością kwalifikowaną** (Polska: nie_wynika)
+
+| Wariant | Konstytucje |
+|---|---|
+| tak | 15 |
+| nie | 8 |
+| nie wynika z tekstu | 65 |
+
+
+## Warianty: ponowny wybór sędziów sądu konstytucyjnego
+
+Odczytane automatycznie z pełnych artykułów 40 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
+
+**Ponowny wybór** (Polska: Zakazany)
+
+| Wariant | Konstytucje |
+|---|---|
+| Zakazany | 33 |
+| Dozwolony raz | 3 |
+| Dozwolony bez ograniczeń | 3 |
+| nie wynika z tekstu | 1 |
+
+
 ## Jak mocne są te przepisy
 
 | Siła normy | Przepisy | Udział |

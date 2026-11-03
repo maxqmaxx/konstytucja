@@ -42,7 +42,8 @@ def clean(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-def parse(path: Path):
+def parse(path: Path, limit: int | None = 1500, include_untagged: bool = False):
+    """Tagged sections (one row per topic). With include_untagged, also untagged sections (topic None), for full-article context."""
     soup = BeautifulSoup(path.read_text(encoding="utf-8", errors="replace"), "lxml")
     article = "preamble"
     rows = []
@@ -56,10 +57,8 @@ def parse(path: Path):
         if not node.get("data-id", "").startswith("section/"):
             continue
         topic_box = node.find("div", class_="section-topic", recursive=False)
-        if topic_box is None:
-            continue
-        spans = topic_box.find_all("span", class_="topic")
-        if not spans:
+        spans = topic_box.find_all("span", class_="topic") if topic_box is not None else []
+        if not spans and not include_untagged:
             continue
         # Section text without the topic box and without nested tagged sections.
         copy = BeautifulSoup(str(node), "lxml").find(node.name)
@@ -76,13 +75,18 @@ def parse(path: Path):
             nested.decompose()
         # Tags on an article or chapter title carry no own text: fall back to the nested content.
         text = clean(copy.get_text(" ")) or full
-        for span in spans:
+        for span in spans or [None]:
+            if span is None:
+                own = clean(copy.get_text(" "))
+                if own:
+                    rows.append({"section_id": node["data-id"], "article": article, "topic": None, "topic_label": "", "text": own})
+                continue
             rows.append({
                 "section_id": node["data-id"],
                 "article": article,
                 "topic": span["data-topic"],
                 "topic_label": clean(span.get_text(" ")),
-                "text": text[:1500],
+                "text": text[:limit] if limit else text,
             })
     return rows
 

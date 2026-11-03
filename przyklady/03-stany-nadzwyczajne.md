@@ -76,6 +76,78 @@ Najpierw państwa UE, potem konstytucje uchwalone od 2000 r. Streszczenia są ma
 
 …oraz 143 kolejnych. Pełna lista: `dane/przepisy_tematy.csv` (filtr `kod_ccp` = em).
 
+## Warianty: stany nadzwyczajne
+
+Odczytane automatycznie z pełnych artykułów 173 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
+
+**Kto ogłasza** (Polska: Głowa państwa)
+
+| Wariant | Konstytucje |
+|---|---|
+| Głowa państwa | 97 |
+| Parlament | 19 |
+| Rząd lub premier | 17 |
+| Inny organ | 4 |
+| nie wynika z tekstu | 36 |
+
+**Rola parlamentu** (Polska: Dostaje akt i może go uchylić)
+
+| Wariant | Konstytucje |
+|---|---|
+| Musi zatwierdzić po, w terminie | 46 |
+| Musi zgodzić się przed | 29 |
+| Dostaje akt i może go uchylić | 19 |
+| Nie ma wpływu | 13 |
+| nie wynika z tekstu | 66 |
+
+**Maksymalny czas pierwszego okresu (dni)** (Polska: 90)
+
+| Wariant | Konstytucje |
+|---|---|
+| 30 | 19 |
+| 90 | 17 |
+| 15 | 10 |
+| 60 | 8 |
+| 180 | 6 |
+| 21 | 4 |
+| 14 | 2 |
+| 12 | 2 |
+| nie wynika z tekstu | 100 |
+
+**Przedłużenie** (Polska: Za zgodą parlamentu, tylko raz)
+
+| Wariant | Konstytucje |
+|---|---|
+| Za zgodą parlamentu (wielokrotnie) | 50 |
+| Bez zgody parlamentu | 9 |
+| Za zgodą parlamentu, tylko raz | 6 |
+| nie wynika z tekstu | 108 |
+
+**Sąd może kontrolować ogłoszenie lub środki** (Polska: nie_wynika)
+
+| Wariant | Konstytucje |
+|---|---|
+| tak | 26 |
+| nie | 5 |
+| nie wynika z tekstu | 142 |
+
+**Lista praw, których nie wolno ograniczyć** (Polska: tak)
+
+| Wariant | Konstytucje |
+|---|---|
+| tak | 49 |
+| nie | 12 |
+| nie wynika z tekstu | 112 |
+
+**Zakaz rozwiązania parlamentu, zmiany konstytucji lub wyborów w czasie stanu** (Polska: tak)
+
+| Wariant | Konstytucje |
+|---|---|
+| tak | 65 |
+| nie | 3 |
+| nie wynika z tekstu | 105 |
+
+
 ## Jak mocne są te przepisy
 
 | Siła normy | Przepisy | Udział |

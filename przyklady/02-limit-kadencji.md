@@ -62,6 +62,31 @@ Najpierw państwa UE, potem konstytucje uchwalone od 2000 r. Streszczenia są ma
 
 …oraz 89 kolejnych. Pełna lista: `dane/przepisy_tematy.csv` (filtr `kod_ccp` = hosterml).
 
+## Warianty: limit kadencji głowy państwa
+
+Odczytane automatycznie z pełnych artykułów 120 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
+
+**Rodzaj limitu** (Polska: Dwie kadencje łącznie)
+
+| Wariant | Konstytucje |
+|---|---|
+| Dwie kadencje łącznie | 62 |
+| Dwie z rzędu (potem przerwa) | 34 |
+| Jedna kadencja | 10 |
+| Inny | 6 |
+| Bez kolejnej kadencji z rzędu | 5 |
+| Trzy lub więcej | 2 |
+| nie wynika z tekstu | 1 |
+
+**Zakaz zmiany limitu na korzyść urzędującej osoby** (Polska: nie_wynika)
+
+| Wariant | Konstytucje |
+|---|---|
+| tak | 4 |
+| nie | 2 |
+| nie wynika z tekstu | 114 |
+
+
 ## Jak mocne są te przepisy
 
 | Siła normy | Przepisy | Udział |
