@@ -8,7 +8,7 @@ Rozdział XI Konstytucji RP przewiduje stan wojenny, wyjątkowy i klęski żywio
 
 | Rozwiązanie | Świat (188) | Od 2000 r. (49) | UE-27 | Konstytucja RP |
 |---|---|---|---|---|
-| Przepisy o stanach nadzwyczajnych | 175 (93%) | 48 (98%) | 25/27 | tak (Chapter XI. EXTRAORDINARY MEASURES) |
+| Przepisy o stanach nadzwyczajnych | 175 (93%) | 48 (98%) | 25/27 | tak (rozdz. XI) |
 
 ## Konstytucja RP
 
