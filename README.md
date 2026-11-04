@@ -74,6 +74,6 @@ Zgłaszaj błędy w danych, proponuj nowe przykłady i lepsze sformułowania, do
 - Kodowanie tematów: Comparative Constitutions Project (Elkins, Ginsburg, Melton), za pośrednictwem [Constitute](https://www.constituteproject.org/). Teksty konstytucji innych państw nie są tu publikowane; linkujemy do źródeł ([dlaczego](docs/czego-nie-ma.md)).
 - Tekst Konstytucji RP nie jest przedmiotem prawa autorskiego (art. 4 pkt 1 ustawy o prawie autorskim i prawach pokrewnych).
 
-Jak cytować: [CITATION.cff](CITATION.cff). Stan danych: 2026-11-03.
+Jak cytować: [CITATION.cff](CITATION.cff). Stan danych: 2026-11-04.
 
 *English summary: [README.en.md](README.en.md).*

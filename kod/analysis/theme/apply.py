@@ -121,6 +121,8 @@ def files(root: Path):
     for dirpath, dirnames, filenames in os.walk(root):
         dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS and not d.startswith(".")]
         for f in filenames:
+            if "template" in f:
+                continue  # build inputs: placeholders like @@NAV@@ must survive; outputs get themed instead
             if (f.endswith((".html", ".css")) and f != "theme.css") or (Path(dirpath) / f).relative_to(root).as_posix() in JS_FILES:
                 yield Path(dirpath) / f
 
