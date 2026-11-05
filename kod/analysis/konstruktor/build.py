@@ -24,12 +24,16 @@ from build import page, name_pl  # noqa: E402
 
 EU27 = {"AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT",
         "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE"}
+DATA_DATE = "2026-11-05"
 GROUPS = [("Głowa państwa", ["hosterml", "hosterm", "override", "hosdec", "hosdiss"]),
           ("Parlament i rząd", ["lhselect", "legdiss", "hogdlim", "immunity"]),
-          ("Sądy i prokuratura", ["consel", "conterm", "conlim", "jc", "jrem", "atgen"]),
+          ("Sądy i prokuratura", ["consel", "conterm", "conlim", "conpow", "jc", "jrem", "atgen"]),
           ("Zmiana konstytucji", ["amend", "unamend"]),
-          ("Obywatele", ["referen", "initiat", "ombuds"]),
-          ("Kryzys i finanse", ["em", "balbudgt", "bank"])]
+          ("Obywatele", ["referen", "initiat", "ombuds", "infoacc", "citrev"]),
+          ("Wybory, partie, przejrzystość", ["ecom", "partprh", "camppubf", "assets"]),
+          ("Prawa i wartości", ["health", "water", "env", "privacy", "offrel"]),
+          ("Państwo w świecie i obronność", ["intorgs", "treatcon", "treat", "war", "milrest", "milserv"]),
+          ("Kryzys, finanse, majątek", ["em", "balbudgt", "bank", "transfer", "resrce"])]
 
 CSS = """
 .k-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:start}
@@ -156,7 +160,7 @@ function toTeczka(btn) {
   const sims = [...document.querySelectorAll('.k-sim a')].slice(0, 5).map(a => a.textContent);
   const items = Teczka.load();
   items.push({ id: 'konstruktor-' + Date.now(), type: 'konstruktor', title: `Własny zestaw rozwiązań (${ids.length})`,
-    cite: 'Konstytucje świata, Konstruktor; dane: warianty 23 tematów odczytane z 188 konstytucji (Claude Opus 5.5, cytaty sprawdzone), stan 2026-11-03',
+    cite: 'Konstytucje świata, Konstruktor; dane: warianty __NTOPICS__ tematów odczytane z 188 konstytucji (Claude Opus 5.5, cytaty sprawdzone), stan __DATE__',
     text: lines.join('\n') + (sims.length ? '\n\nNajbliższe konstytucje: ' + sims.join(', ') : '') + (ts.length ? '\n\n' + ts.join('\n') : ''),
     note: '', added: new Date().toISOString().slice(0, 10), page: location.href, url: location.href });
   if (Teczka.save(items)) { btn.textContent = '✓ Zapisano w teczce'; Teczka.attach(); setTimeout(() => btn.textContent = '+ Do teczki', 2500); }
@@ -293,7 +297,7 @@ def main() -> int:
     data = {"topics": [{"key": t["key"], "title": t["title"], "fields": [{k: f[k] for k in ("key", "label", "type", "values")} for f in t["fields"]]} for t in topics],
             "countries": countries, "tensions": TENSIONS}
     body = f'''<p class="crumbs">Konstruktor</p><h1>Złóż własny zestaw rozwiązań</h1>
-<p class="sub">Wybierz, jak Twoim zdaniem powinny działać kluczowe instytucje: kadencje, weto, stany nadzwyczajne, sądy, referendum. Zobaczysz, które konstytucje mają podobny zestaw, czym różni się on od obecnej Konstytucji RP i jakie połączenia warto przemyśleć. Zostaw „dowolnie” tam, gdzie nie masz zdania.</p>
+<p class="sub">Wybierz, jak Twoim zdaniem powinny działać kluczowe instytucje: kadencje, weto, stany nadzwyczajne, sądy, referendum, wybory i partie, prawa, obronność, umowy międzynarodowe, dług i majątek państwa. Zobaczysz, które konstytucje mają podobny zestaw, czym różni się on od obecnej Konstytucji RP i jakie połączenia warto przemyśleć. Zostaw „dowolnie” tam, gdzie nie masz zdania.</p>
 <div class="k-actions"><button type="button" id="k-pl" class="primary">Zacznij od obecnej Konstytucji RP</button><button type="button" id="k-clear">Wyczyść</button><button type="button" id="k-link">Kopiuj link do zestawu</button><button type="button" id="k-teczka">+ Do teczki</button></div>
 <p class="note" id="k-count" aria-live="polite"></p>
 <div class="k-layout"><form class="k-form" onsubmit="return false">{"".join(blocks)}
@@ -301,7 +305,7 @@ def main() -> int:
 <aside class="k-out" id="wynik" aria-live="polite"><div class="k-filters" hidden><label><input type="checkbox" id="k-eu"> tylko UE</label><label><input type="checkbox" id="k-recent"> od 2000 r.</label></div><div id="k-result"></div></aside></div>
 <a class="k-jump" id="k-jump" href="#wynik">Wynik ↓</a>
 <script type="application/json" id="k-data">{json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")}</script>
-<script>{JS}</script>'''
+<script>{JS.replace('__NTOPICS__', str(len(topics))).replace('__DATE__', DATA_DATE)}</script>'''
     html = page("Konstruktor: złóż własny zestaw rozwiązań", body, description="Wybierz rozwiązania dla 23 kluczowych tematów i porównaj z konstytucjami świata i Konstytucją RP.",
                 css="../panstwa/style.css", current="konstruktor")
     html = html.replace("</head>", f"<style>{CSS}</style></head>").replace("</body>", '<script src="../teczka/teczka.js"></script></body>')

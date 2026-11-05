@@ -279,8 +279,11 @@ q.addEventListener('input',run);s.addEventListener('change',run);if(q.value||s.v
             kw_html = (f'<details class="kw-found"><summary>Ustalono także w {len(kw)} konstytucjach bez oznaczenia CCP</summary><p class="note">Artykuły znalezione po słowach kluczowych; '
                        f'odczytane tak samo i z tym samym sprawdzeniem cytatu. Nie ma ich na liście przepisów niżej.</p><ul class="facet-badges">{"".join(items)}</ul></details>')
         n_kw = sum(1 for r in recs.values() if r.get("source") == "slowa")
-        return (f'<section class="facets"><h2>Jak to rozwiązano: warianty</h2><p class="note">Wartości odczytane automatycznie (Claude Opus 5.5) z zamkniętej listy, z pełnych artykułów oznaczonych tym tematem i artykułów, do których odsyłają'
-                f'{f", a w {n_kw} konstytucjach bez oznaczenia CCP z artykułów znalezionych po słowach kluczowych" if n_kw else ""}. Każda wartość ma dosłowny cytat sprawdzony w źródle. '
+        wide = FACETS[topic].get("ccp_tags")
+        source_note = (f'z artykułów oznaczonych tematami CCP: {escape(", ".join(ccp.labels[t].lower() for t in wide))}, z maksymalnie pięciu artykułów znalezionych w każdej konstytucji po słowach kluczowych '
+                       f'(z długich artykułów tylko pasujące akapity) i z artykułów, do których odsyłają' if wide else
+                       f'z pełnych artykułów oznaczonych tym tematem i artykułów, do których odsyłają{f", a w {n_kw} konstytucjach bez oznaczenia CCP z artykułów znalezionych po słowach kluczowych" if n_kw else ""}')
+        return (f'<section class="facets"><h2>Jak to rozwiązano: warianty</h2><p class="note">Wartości odczytane automatycznie (Claude Opus 5.5) z zamkniętej listy, {source_note}. Każda wartość ma dosłowny cytat sprawdzony w źródle. '
                 f'Konstytucja może przewidywać kilka rodzajów (np. stanów nadzwyczajnych); zapisano najczęściej opisywany. To nawigacja, nie ocena prawna.</p><div class="facet-grid">{"".join(blocks)}</div>{kw_html}</section>')
 
     def variant_html(url, a, sec, text, k):

@@ -35,16 +35,20 @@ Pilot porównał Claude Opus 5.5, DeepSeek V4 Pro i DeepSeek V4.1 Flash na tych 
 
 ## Warianty kluczowych rozwiązań
 
-Dla 23 tematów model odczytał dokładne warianty z zamkniętych list ([`dane/warianty_schemat.json`](../dane/warianty_schemat.json)):
+Dla 43 tematów model odczytał dokładne warianty z zamkniętych list ([`dane/warianty_schemat.json`](../dane/warianty_schemat.json)):
 - **głowa państwa:** limit i długość kadencji, weto i jego odrzucenie, dekrety, usunięcie z urzędu;
 - **parlament i rząd:** ordynacja, rozwiązanie parlamentu, konstruktywne wotum, immunitet;
-- **sądy:** wybór, kadencja i ponowny wybór sędziów sądu konstytucyjnego, rada sądownictwa, odwołanie sędziów, prokurator generalny;
+- **sądy:** wybór, kadencja i ponowny wybór sędziów sądu konstytucyjnego, dostęp do sądu konstytucyjnego i skutki wyroków, rada sądownictwa, odwołanie sędziów, prokurator generalny;
 - **zmiana konstytucji:** procedura i klauzula wieczysta;
-- **obywatele:** referendum, inicjatywa obywatelska, rzecznik praw;
-- **kryzys i finanse:** stany nadzwyczajne, reguły fiskalne, bank centralny.
+- **obywatele:** referendum, inicjatywa obywatelska, rzecznik praw, dostęp do informacji publicznej, utrata obywatelstwa;
+- **wybory, partie, przejrzystość:** organ wyborczy, zakazane partie, finansowanie partii i kampanii, jawność majątku osób publicznych;
+- **prawa i wartości:** ochrona zdrowia, prawo do wody, ochrona środowiska, prywatność i ochrona danych, religia państwowa i świeckość;
+- **państwo w świecie i obronność:** przekazanie kompetencji organizacjom międzynarodowym, status umów i prawa międzynarodowego, ratyfikacja, wypowiedzenie wojny i użycie wojska, ograniczenia sił zbrojnych, pobór;
+- **kryzys, finanse, majątek:** stany nadzwyczajne, reguły fiskalne i limity zadłużenia, bank centralny, ograniczenia sprzedaży i własności ziemi, zakaz zbywania zasobów naturalnych i kluczowych aktywów.
 
 Jak to działa:
 - **Wejście:** pełne artykuły zawierające przepisy oznaczone przez CCP (także nieoznaczone punkty wyliczeń) oraz artykuły, do których tekst odsyła („zasady z art. 1 i 20”). Gdy CCP nie oznaczył tematu w danej konstytucji, model dostaje do trzech artykułów znalezionych po słowach kluczowych (kolumna `zrodlo_fragmentu` = „słowa kluczowe”).
+- **Wejście w 21 nowszych tematach** (pole `ccp_tags` w schemacie, np. ziemia, dług, ratyfikacja, prawa): artykuły oznaczone kilkoma pokrewnymi tematami CCP, a w każdej konstytucji także do pięciu artykułów znalezionych po słowach kluczowych. Z artykułów dłuższych niż 2500 znaków zostaje pierwszy akapit i akapity najlepiej pasujące do słów kluczowych. Dzięki temu przepisy w innym miejscu konstytucji (np. art. 216 ust. 5 Konstytucji RP o długu) nie są pomijane.
 - **Tylko tekst:** model nie korzysta z wiedzy spoza tekstu, a gdy tekst czegoś nie określa, wpisuje „nie_wynika”.
 - **Cytat:** każda odpowiedź ma dosłowny cytat, a kod sprawdza, że cytat występuje w źródle. Odpowiedzi bez zgodnego cytatu pomijamy. Z 3168 odczytów zostało 2972; odpadły głównie artykuły znalezione po słowach kluczowych, które okazały się nie na temat.
 - **Kontrola:** wyniki dla Polski sprawdzono ręcznie. Korekty z podstawą prawną zapisano jawnie w [`dane/warianty_korekty.json`](../dane/warianty_korekty.json). Przykład: zakaz finansowania deficytu przez NBP (art. 220 ust. 2) leży w innym temacie CCP, więc model go nie widział.

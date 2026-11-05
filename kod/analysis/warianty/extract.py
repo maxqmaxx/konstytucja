@@ -4,6 +4,7 @@
   .venv/bin/python analysis/warianty/extract.py pilot hosterml em     # synchronous, selected topics
   .venv/bin/python analysis/warianty/extract.py submit                # Batches API, all remaining topics
   .venv/bin/python analysis/warianty/extract.py status | collect | summary
+  ONLY=PL,DE .venv/bin/python analysis/warianty/extract.py pilot dlug   # restrict to selected countries
 
 Output: warianty.jsonl (one record per country x topic). Values come only from the excerpt;
 'nie_wynika'/null when not stated. A record is shown only if its quote is found verbatim in the source.
@@ -12,6 +13,7 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 import re
 import sys
 import time
@@ -29,6 +31,7 @@ import translate as t  # noqa: E402  (client, MODEL)
 SPEC = {k: v for k, v in json.loads((HERE / "facets.json").read_text()).items() if not k.startswith("_")}
 OUT = HERE / "warianty.jsonl"
 MANIFEST = HERE / "batch_manifest.json"
+UNITS_CACHE = HERE / "units_cache.json"
 GROUP = 8
 MAX_CHARS = 12000
 BUDGET_USD = 40
@@ -64,7 +67,7 @@ def schema_for(topic):
 def field_guide(topic):
     lines = [f"Topic: {SPEC[topic]['title']}"]
     for name, f in SPEC[topic]["fields"].items():
-        vals = "; ".join(f"{k} = {v}" for k, v in f.get("values", {}).items()) if f.get("values") else {"int": "integer or null", "bool3": "tak / nie / nie_wynika"}[f["type"]]
+        vals = "; ".join(f"{k} = {f.get('hints', {}).get(k, v)}" for k, v in f.get("values", {}).items()) if f.get("values") else {"int": "integer or null", "bool3": "tak / nie / nie_wynika"}[f["type"]]
         lines.append(f"- {name} ({f['label']}): {vals}")
     return "\n".join(lines)
 
@@ -119,10 +122,75 @@ def expand_refs(text, by_num, have):
     return extra
 
 
+LONG, PER_ARTICLE, WIDE_KW_ARTICLES = 2500, 3500, 5
+
+
+def compress(label, text, groups):
+    """Whole article if short; otherwise its first paragraph plus the paragraphs that match most keyword groups."""
+    if len(text) <= LONG:
+        return f"{label}: {text}"
+    paras = []
+    for p in text.split("\n"):
+        # very long paragraphs (some articles are one block of text) are split into sentences
+        paras += [x for x in (re.split(r"(?<=[.;:])\s+(?=[A-Z0-9(])", p) if len(p) > 1500 else [p]) if x.strip()]
+
+    def score(p):
+        hits = [sum(len(re.findall(rx, p, re.I)) for rx in g) for g in groups]
+        return (sum(1 for h in hits if h), sum(hits))
+    ranked = sorted(range(1, len(paras)), key=lambda i: score(paras[i]), reverse=True)
+    keep, n = {0}, len(paras[0])
+    for i in ranked:
+        if score(paras[i])[1] == 0 or n + len(paras[i]) > PER_ARTICLE:
+            continue
+        keep.add(i)
+        n += len(paras[i])
+    return f"{label} (excerpt): " + "\n[...]\n".join(paras[i] for i in sorted(keep))
+
+
+def wide_unit(topic, spec, doc_id, d, arts, by_num):
+    """Topics with 'ccp_tags': passages tagged with any of those CCP topics plus up to WIDE_KW_ARTICLES keyword-matched
+    articles in every constitution; long articles reduced to their keyword-matching paragraphs."""
+    order = {a: i for i, (a, _) in enumerate(d["articles"])}
+    scored = {a: kw_match(spec.get("keywords", []), f"{a} {t}") for a, t in d["articles"] if t.strip()}
+    tagged = []
+    for tag in spec["ccp_tags"]:
+        for a, _ in d["tagged"].get(tag, []):
+            if a in arts and a not in tagged:
+                tagged.append(a)
+    kw = [a for a, sc in sorted(scored.items(), key=lambda x: -x[1]) if sc > 0 and a not in tagged][:WIDE_KW_ARTICLES]
+    # fill the budget with the best keyword matches first (tagged before untagged on ties), then other tagged
+    # articles; the excerpt itself keeps document order
+    prio = sorted([a for a in tagged if scored.get(a, 0) > 0] + kw, key=lambda a: (-scored[a], a not in tagged, order[a]))
+    rest = sorted([a for a in tagged if scored.get(a, 0) == 0], key=order.get)
+    chosen, n = {}, 0
+    for a in prio + rest:
+        chunk = compress(a, arts[a], spec.get("keywords", []))
+        if n + len(chunk) > MAX_CHARS - 2000:
+            continue
+        chosen[a] = chunk
+        n += len(chunk) + 2
+    if not chosen:
+        return None
+    labels = sorted(chosen, key=order.get)
+    parts = [chosen[a] for a in labels]
+    body = "\n\n".join(parts)
+    refs = expand_refs(body, by_num, set(labels))
+    return {"topic": topic, "country_code": d["country_code"], "doc_id": doc_id,
+            "source": "+".join(sorted({"tag" if a in tagged else "slowa" for a in labels})), "articles": labels,
+            "text": "\n\n".join([body] + refs)[:MAX_CHARS]}
+
+
 def units():
+    only = {c.strip().upper() for c in os.environ.get("ONLY", "").split(",") if c.strip()}
+    us = all_units()
+    return [u for u in us if u["country_code"] in only] if only else us
+
+
+def all_units():
     """Per topic x in-force constitution: tagged passages plus their full articles (CCP often tags only the heading of an
-    enumeration), plus articles the text refers to. Where CCP did not tag the topic, up to three articles found by keywords."""
-    cache = HERE / "units_cache.json"
+    enumeration), plus articles the text refers to. Where CCP did not tag the topic, up to three articles found by keywords.
+    Topics with 'ccp_tags' use wide_unit()."""
+    cache = UNITS_CACHE
     if cache.exists():
         return json.loads(cache.read_text())
     out = []
@@ -135,6 +203,11 @@ def units():
                 by_num[m.group(1).lower()] = a
                 by_num[m.group(1).lower() + "#text"] = t
         for topic, spec in SPEC.items():
+            if "ccp_tags" in spec:
+                u = wide_unit(topic, spec, doc_id, d, arts, by_num)
+                if u:
+                    out.append(u)
+                continue
             parts, labels = [], []
             if topic in d["tagged"]:
                 source = "tag"

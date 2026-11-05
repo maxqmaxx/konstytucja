@@ -1,5 +1,5 @@
 {
- "_doc": "Per-topic variant schemas. Field types: enum (one value), multi (list of values), int (number or null), bool3 (tak/nie/nie_wynika). Every enum has 'nie_wynika' (not stated in the excerpt). Each answer carries a verbatim quote checked in code. 'keywords': AND of OR-groups of regexes, used to find articles in constitutions where CCP did not tag the topic.",
+ "_doc": "Per-topic variant schemas. Field types: enum (one value), multi (list of values), int (number or null), bool3 (tak/nie/nie_wynika). Every enum has 'nie_wynika' (not stated in the excerpt). Each answer carries a verbatim quote checked in code. 'keywords': AND of OR-groups of regexes, used to find articles in constitutions where CCP did not tag the topic. Optional 'hints' per field: longer value descriptions used in the model prompt instead of the short UI labels in 'values'.",
  "hosterml": {
   "title": "Limit kadencji głowy państwa",
   "fields": {
@@ -447,31 +447,67 @@
   ]
  },
  "balbudgt": {
-  "title": "Reguły fiskalne",
+  "title": "Reguły fiskalne i limity zadłużenia",
+  "ccp_tags": [
+   "balbudgt",
+   "budget",
+   "bank"
+  ],
   "fields": {
    "rodzaj": {
     "type": "multi",
-    "label": "Rodzaj reguły",
+    "label": "Rodzaj ograniczenia",
     "values": {
-     "zrownowazony_budzet": "Zrównoważony budżet",
-     "limit_dlugu": "Limit długu",
-     "limit_deficytu": "Limit deficytu",
+     "limit_liczbowy_dlugu": "Liczbowy limit długu",
+     "limit_deficytu_lub_zrownowazony_budzet": "Zrównoważony budżet lub limit deficytu",
+     "zgoda_parlamentu_na_pozyczki": "Pożyczki wymagają ustawy lub zgody parlamentu",
+     "zlota_regula": "Pożyczki tylko na inwestycje (złota reguła)",
+     "zakaz_finansowania_przez_bank_centralny": "Zakaz finansowania przez bank centralny",
      "inne": "Inne"
+    },
+    "hints": {
+     "limit_liczbowy_dlugu": "Liczbowy limit długu publicznego (np. % PKB)",
+     "limit_deficytu_lub_zrownowazony_budzet": "Zrównoważony budżet albo limit deficytu (np. hamulec zadłużenia)",
+     "zgoda_parlamentu_na_pozyczki": "Zaciąganie pożyczek lub udzielanie gwarancji wymaga ustawy lub zgody parlamentu",
+     "zlota_regula": "Pożyczki dopuszczalne tylko na inwestycje lub określone cele (złota reguła)",
+     "zakaz_finansowania_przez_bank_centralny": "Zakaz finansowania deficytu lub udzielania kredytu państwu przez bank centralny",
+     "inne": "Inne ograniczenie zadłużenia (np. obowiązek obsługi długu, limit dla samorządów)"
     }
    },
-   "limit_liczbowy": {
+   "wartosc_limitu": {
+    "type": "enum",
+    "label": "Liczbowy próg limitu",
+    "values": {
+     "do_3_proc_pkb": "Do 3% PKB",
+     "od_3_do_60_proc_pkb": "Powyżej 3% do 60% PKB",
+     "powyzej_60_proc_pkb": "Powyżej 60% PKB",
+     "inna_miara": "Inna miara (np. % dochodów)",
+     "nie_wynika": "Brak liczbowego progu w tekście"
+    },
+    "hints": {
+     "do_3_proc_pkb": "Próg do 3% PKB (zwykle limit deficytu)",
+     "od_3_do_60_proc_pkb": "Próg powyżej 3% do 60% PKB",
+     "powyzej_60_proc_pkb": "Próg powyżej 60% PKB",
+     "inna_miara": "Próg wyrażony inną miarą (np. % dochodów, kwota)"
+    }
+   },
+   "klauzula_wyjatku": {
     "type": "bool3",
-    "label": "Limit wyrażony liczbą (np. % PKB)"
+    "label": "Wyjątek (wojna, klęska, kryzys, recesja)"
    }
   },
   "keywords": [
    [
-    "balanced budget",
-    "budget(ary)? balance",
+    "borrow",
+    "\\bloans?\\b",
     "public debt",
-    "borrowing",
+    "national debt",
+    "state debt",
     "deficit",
-    "debt (ceiling|limit)"
+    "central bank",
+    "indebtedness",
+    "guarantee",
+    "credit"
    ]
   ]
  },
@@ -839,6 +875,883 @@
     "high treason",
     "state tribunal",
     "indict"
+   ]
+  ]
+ },
+ "transfer": {
+  "title": "Ograniczenia sprzedaży i własności ziemi",
+  "ccp_tags": [
+   "resrce",
+   "transfer",
+   "proprght",
+   "exprop"
+  ],
+  "fields": {
+   "rodzaj": {
+    "type": "multi",
+    "label": "Rodzaj ograniczenia",
+    "values": {
+     "calkowity_zakaz_sprzedazy": "Ziemia w ogóle nie podlega sprzedaży",
+     "zakaz_dla_cudzoziemcow": "Cudzoziemcy nie mogą nabywać ziemi",
+     "ograniczenia_dla_cudzoziemcow": "Nabycie przez cudzoziemców ograniczone",
+     "ziemia_rolna_ograniczenia": "Ograniczenia obrotu ziemią rolną lub lasami",
+     "grunty_panstwowe_niezbywalne": "Grunty państwowe lub wspólnotowe niezbywalne",
+     "inne": "Inne"
+    },
+    "hints": {
+     "calkowity_zakaz_sprzedazy": "Ziemia w ogóle nie podlega sprzedaży (np. jest własnością państwa lub ludu, przysługuje tylko prawo użytkowania)",
+     "zakaz_dla_cudzoziemcow": "Cudzoziemcy (osoby lub firmy zagraniczne) nie mogą nabywać lub posiadać ziemi",
+     "ograniczenia_dla_cudzoziemcow": "Nabycie ziemi przez cudzoziemców tylko w ograniczonym zakresie: strefy przygraniczne/przybrzeżne, zezwolenie, limit, wzajemność",
+     "ziemia_rolna_ograniczenia": "Szczególne ograniczenia obrotu ziemią rolną lub lasami (np. tylko dla rolników lub obywateli, odesłanie do ustawy szczególnej)",
+     "grunty_panstwowe_niezbywalne": "Grunty państwowe lub publiczne (domena publiczna, ziemie plemienne/zwyczajowe) są niezbywalne lub zbywalne tylko w szczególnym trybie",
+     "inne": "Inne ograniczenie SPRZEDAŻY lub NABYCIA ziemi (np. limit powierzchni, limit drugich domów). Nie: wywłaszczenie, uspołecznienie, reforma rolna bez ograniczenia obrotu"
+    }
+   },
+   "dzierzawa_dozwolona": {
+    "type": "bool3",
+    "label": "Dzierżawa lub prawo użytkowania przewidziane jako alternatywa"
+   },
+   "wyjatki_ustawowe": {
+    "type": "bool3",
+    "label": "Ustawa może przewidzieć wyjątki lub zasady szczegółowe"
+   }
+  },
+  "keywords": [
+   [
+    "\\bland\\b",
+    "\\blands\\b",
+    "\\bsoil\\b",
+    "real (estate|property)",
+    "agricultural",
+    "territory"
+   ],
+   [
+    "\\bsold\\b",
+    "\\bsale\\b",
+    "\\bsell",
+    "alienat",
+    "acquir",
+    "\\bown",
+    "transfer",
+    "inalienable",
+    "foreign",
+    "alien",
+    "non-citizen",
+    "lease"
+   ]
+  ]
+ },
+ "resrce": {
+  "title": "Zakaz zbywania zasobów naturalnych i kluczowych aktywów",
+  "ccp_tags": [
+   "resrce"
+  ],
+  "fields": {
+   "rodzaj": {
+    "type": "multi",
+    "label": "Chronione aktywa",
+    "values": {
+     "zasoby_naturalne_niezbywalne": "Zasoby naturalne wprost niezbywalne",
+     "zasoby_naturalne_wlasnosc_panstwa": "Zasoby własnością państwa, bez zakazu zbycia",
+     "przedsiebiorstwa_strategiczne": "Przedsiębiorstwa strategiczne chronione",
+     "infrastruktura_uslugi_publiczne": "Infrastruktura lub usługi zastrzeżone dla państwa",
+     "domena_publiczna_niezbywalna": "Domena publiczna niezbywalna",
+     "inne": "Inne"
+    },
+    "hints": {
+     "zasoby_naturalne_niezbywalne": "Zasoby naturalne (złoża, ropa, gaz, woda, minerały) WPROST określone jako niezbywalne, nieprzenoszalne lub niepodlegające sprzedaży/prywatyzacji",
+     "zasoby_naturalne_wlasnosc_panstwa": "Zasoby naturalne są własnością państwa lub narodu, ale tekst NIE zakazuje wprost ich zbycia",
+     "przedsiebiorstwa_strategiczne": "Przedsiębiorstwa lub sektory strategiczne (np. udziały państwowej spółki naftowej) nie mogą być sprzedane lub sprywatyzowane",
+     "infrastruktura_uslugi_publiczne": "Infrastruktura lub usługi publiczne (woda, energia, łączność, porty) zastrzeżone dla państwa",
+     "domena_publiczna_niezbywalna": "Domena publiczna lub majątek państwa ogólnie niezbywalny",
+     "inne": "Inne aktywo chronione przed zbyciem (nie ziemia jako taka; ochrona przed zniszczeniem lub kradzieżą to nie zakaz zbycia)"
+    }
+   },
+   "charakter": {
+    "type": "enum",
+    "label": "Siła ochrony",
+    "values": {
+     "bezwzgledny_zakaz": "Bezwzględny zakaz",
+     "wymaga_ustawy_lub_kwalifikowanej_wiekszosci": "Zbycie na podstawie ustawy lub większością kwalifikowaną",
+     "wymaga_referendum": "Zbycie wymaga referendum",
+     "nie_wynika": "Nie wynika z fragmentu",
+     "brak_zakazu": "Tylko własność państwa"
+    },
+    "hints": {
+     "bezwzgledny_zakaz": "Bezwzględny zakaz zbycia lub prywatyzacji wynikający wprost z tekstu",
+     "wymaga_ustawy_lub_kwalifikowanej_wiekszosci": "Zbycie możliwe na podstawie ustawy, zgody parlamentu lub kwalifikowanej większości",
+     "brak_zakazu": "Tylko własność państwa, bez zakazu zbycia"
+    }
+   }
+  },
+  "keywords": [
+   [
+    "inalienable",
+    "imprescriptible",
+    "privati[sz]",
+    "may not be (sold|alienated|transferred|privatized)",
+    "shall not be (sold|alienated|transferred|privatized)",
+    "cannot be (sold|alienated|transferred)",
+    "strategic",
+    "exclusive(ly)? (to|of) the state",
+    "property of the (state|nation|people)",
+    "public domain",
+    "shall retain",
+    "shares of",
+    "reserved? (to|for) the state",
+    "exclusive (right|competence|ownership) of the state",
+    "state monopoly",
+    "national patrimony"
+   ]
+  ]
+ },
+ "intorgs": {
+  "title": "Przekazanie kompetencji organizacjom międzynarodowym",
+  "ccp_tags": [
+   "intorgs"
+  ],
+  "fields": {
+   "dopuszczalne": {
+    "type": "enum",
+    "label": "Czy można przekazać kompetencje",
+    "values": {
+     "tak": "Tak, wprost przewidziane",
+     "tylko_wspolpraca": "Tylko członkostwo lub współpraca, bez przekazania kompetencji",
+     "zakaz": "Zakaz przekazania suwerenności",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "tryb": {
+    "type": "multi",
+    "label": "Tryb zgody",
+    "values": {
+     "ustawa_zwykla": "Ustawa lub zgoda parlamentu zwykłą większością",
+     "wiekszosc_kwalifikowana": "Większość kwalifikowana",
+     "referendum": "Referendum (obowiązkowe lub możliwe)",
+     "kontrola_sadu": "Kontrola sądu konstytucyjnego",
+     "inne": "Inne"
+    }
+   },
+   "granice": {
+    "type": "bool3",
+    "label": "Granice przekazania (suwerenność, prawa podstawowe, zasady ustroju)"
+   },
+   "ue_wprost": {
+    "type": "bool3",
+    "label": "Wprost wymienia Unię Europejską"
+   }
+  },
+  "keywords": [
+   [
+    "international organi[sz]ation",
+    "supranational",
+    "european union",
+    "transfer\\w* (of )?(certain )?(powers|competen|sovereign)",
+    "delegat\\w* (of )?(powers|competen)",
+    "community law"
+   ]
+  ]
+ },
+ "treatcon": {
+  "title": "Status umów i prawa międzynarodowego",
+  "ccp_tags": [
+   "treatcon",
+   "intlaw",
+   "custlaw",
+   "intrght"
+  ],
+  "fields": {
+   "pozycja": {
+    "type": "enum",
+    "label": "Miejsce ratyfikowanych umów w hierarchii",
+    "values": {
+     "ponad_konstytucja": "Ponad konstytucją",
+     "rowna_konstytucji": "Na równi z konstytucją",
+     "ponad_ustawami": "Poniżej konstytucji, ponad ustawami",
+     "rowna_ustawom": "Na równi z ustawami",
+     "wymaga_wdrozenia": "Obowiązują dopiero po wdrożeniu ustawą",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "stosowanie_bezposrednie": {
+    "type": "bool3",
+    "label": "Umowy stosuje się bezpośrednio"
+   },
+   "prawo_zwyczajowe": {
+    "type": "bool3",
+    "label": "Uznaje powszechne lub zwyczajowe prawo międzynarodowe"
+   },
+   "prawa_czlowieka_szczegolne": {
+    "type": "bool3",
+    "label": "Szczególna ranga lub wykładnia zgodna z traktatami praw człowieka"
+   }
+  },
+  "keywords": [
+   [
+    "treat(y|ies)",
+    "international (agreement|law|convention|instrument)",
+    "law of nations"
+   ],
+   [
+    "supersede|precedence|prevail|rank|hierarch|part of (the )?(domestic|national|internal|municipal) law|directly applicable|incorporat|superior|higher|binding|interpret"
+   ]
+  ]
+ },
+ "treat": {
+  "title": "Ratyfikacja umów międzynarodowych",
+  "ccp_tags": [
+   "treat"
+  ],
+  "fields": {
+   "kto_ratyfikuje": {
+    "type": "enum",
+    "label": "Kto ratyfikuje",
+    "values": {
+     "glowa_panstwa": "Głowa państwa",
+     "rzad": "Rząd",
+     "parlament": "Parlament",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "zgoda_parlamentu": {
+    "type": "enum",
+    "label": "Zgoda parlamentu",
+    "values": {
+     "zawsze": "Dla wszystkich umów",
+     "dla_kategorii": "Dla określonych kategorii (np. pokój, terytorium, finanse)",
+     "nie": "Niewymagana",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "referendum": {
+    "type": "bool3",
+    "label": "Referendum dla niektórych umów"
+   },
+   "kontrola_uprzednia": {
+    "type": "bool3",
+    "label": "Sąd konstytucyjny może zbadać umowę przed ratyfikacją"
+   },
+   "wiekszosc_kwalifikowana": {
+    "type": "bool3",
+    "label": "Większość kwalifikowana dla niektórych umów"
+   }
+  },
+  "keywords": [
+   [
+    "ratif"
+   ],
+   [
+    "treat|agreement|convention"
+   ]
+  ]
+ },
+ "conpow": {
+  "title": "Dostęp do sądu konstytucyjnego i skutki wyroków",
+  "ccp_tags": [
+   "conpow",
+   "uncon"
+  ],
+  "fields": {
+   "kto_moze_wniesc": {
+    "type": "multi",
+    "label": "Kto może wnieść sprawę",
+    "values": {
+     "obywatel_skarga": "Obywatel (skarga konstytucyjna, amparo)",
+     "kazdy_actio_popularis": "Każdy, bez własnego interesu (actio popularis)",
+     "sady_pytanie": "Sądy (pytanie prawne)",
+     "mniejszosc_parlamentarna": "Grupa parlamentarzystów lub mniejszość",
+     "glowa_panstwa": "Głowa państwa",
+     "rzad": "Rząd lub premier",
+     "ombudsman": "Rzecznik praw",
+     "prokurator": "Prokurator generalny",
+     "samorzady": "Samorządy lub regiony",
+     "inne": "Inne"
+    }
+   },
+   "rodzaj_kontroli": {
+    "type": "multi",
+    "label": "Rodzaj kontroli",
+    "values": {
+     "abstrakcyjna": "Abstrakcyjna, po uchwaleniu",
+     "konkretna": "Konkretna, przy sprawie",
+     "uprzednia": "Uprzednia, przed wejściem w życie",
+     "inne": "Inne"
+    }
+   },
+   "skutek_wyroku": {
+    "type": "enum",
+    "label": "Skutek uznania przepisu za niezgodny",
+    "values": {
+     "utrata_mocy": "Przepis traci moc wobec wszystkich",
+     "tylko_w_sprawie": "Tylko w danej sprawie",
+     "decyzja_parlamentu": "Parlament decyduje lub może uchylić wyrok",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "odroczenie": {
+    "type": "bool3",
+    "label": "Sąd może odroczyć utratę mocy przepisu"
+   }
+  },
+  "keywords": [
+   [
+    "constitutional (court|council|tribunal|chamber)"
+   ],
+   [
+    "petition|complain|refer|request|application|standing|null|void|unconstitutional|lose|binding|deputies|senators|ombudsman|any (person|citizen)"
+   ]
+  ]
+ },
+ "war": {
+  "title": "Wypowiedzenie wojny i użycie wojska",
+  "ccp_tags": [
+   "war"
+  ],
+  "fields": {
+   "kto_decyduje": {
+    "type": "multi",
+    "label": "Kto wypowiada wojnę",
+    "values": {
+     "glowa_panstwa": "Głowa państwa",
+     "parlament": "Parlament",
+     "rzad": "Rząd",
+     "rada_bezpieczenstwa": "Rada bezpieczeństwa lub obrony",
+     "inne": "Inne"
+    }
+   },
+   "zgoda_parlamentu": {
+    "type": "enum",
+    "label": "Udział parlamentu",
+    "values": {
+     "uprzednia": "Uprzednia zgoda lub decyzja parlamentu",
+     "nastepcza": "Zatwierdzenie po fakcie",
+     "brak": "Bez udziału parlamentu",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "wojsko_za_granica": {
+    "type": "enum",
+    "label": "Wysłanie wojska za granicę",
+    "values": {
+     "zgoda_parlamentu": "Wymaga zgody parlamentu",
+     "decyzja_wykonawczej": "Decyzja władzy wykonawczej",
+     "zakaz": "Zakaz lub tylko obrona",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "wiekszosc_kwalifikowana": {
+    "type": "bool3",
+    "label": "Większość kwalifikowana"
+   },
+   "wyrzeczenie_wojny": {
+    "type": "bool3",
+    "label": "Wyrzeczenie się wojny napastniczej lub wojny jako narzędzia polityki"
+   }
+  },
+  "keywords": [
+   [
+    "declar\\w* (of )?war",
+    "state of war",
+    "state of defen[cs]e",
+    "defen[cs]e case",
+    "armed forces (abroad|outside)",
+    "troops",
+    "deploy",
+    "renounce\\w* war",
+    "war of aggression",
+    "dispatch"
+   ]
+  ]
+ },
+ "milrest": {
+  "title": "Ograniczenia sił zbrojnych",
+  "ccp_tags": [
+   "milrest"
+  ],
+  "fields": {
+   "rodzaj": {
+    "type": "multi",
+    "label": "Ograniczenia",
+    "values": {
+     "apolitycznosc": "Apolityczność, zakaz działalności politycznej",
+     "cywilny_zwierzchnik": "Cywilne zwierzchnictwo",
+     "zakaz_armii_stalej": "Zakaz stałej armii",
+     "zakaz_obcych_baz": "Zakaz obcych baz lub wojsk",
+     "zakaz_broni": "Zakaz broni jądrowej lub masowego rażenia",
+     "uzycie_wewnatrz": "Ograniczenie użycia wojska w kraju",
+     "zakaz_formacji_prywatnych": "Zakaz formacji zbrojnych poza państwem",
+     "inne": "Inne"
+    }
+   }
+  },
+  "keywords": [
+   [
+    "armed forces|army|military|troops|defen[cs]e forces"
+   ],
+   [
+    "shall not|prohibit|neutral|non-partisan|politic|civilian|foreign (military )?(bases|troops)|nuclear|private|subordinat"
+   ]
+  ]
+ },
+ "milserv": {
+  "title": "Obowiązek służby wojskowej",
+  "ccp_tags": [
+   "milserv"
+  ],
+  "fields": {
+   "obowiazek": {
+    "type": "enum",
+    "label": "Obowiązek",
+    "values": {
+     "powszechny": "Obowiązek obrony lub służby wojskowej",
+     "ustawa": "Ustawa może wprowadzić pobór",
+     "dobrowolna": "Służba wyłącznie dobrowolna",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "sluzba_zastepcza": {
+    "type": "bool3",
+    "label": "Służba zastępcza lub sprzeciw sumienia"
+   },
+   "kobiety": {
+    "type": "enum",
+    "label": "Kobiety",
+    "values": {
+     "rowny": "Obowiązek taki sam",
+     "zwolnione": "Zwolnione lub inne zasady",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   }
+  },
+  "keywords": [
+   [
+    "military service|conscript|compulsory service|national service|defen[cs]e of the (country|nation|homeland|fatherland)|bear arms|conscientious"
+   ]
+  ]
+ },
+ "health": {
+  "title": "Prawo do ochrony zdrowia",
+  "ccp_tags": [
+   "health"
+  ],
+  "fields": {
+   "charakter": {
+    "type": "enum",
+    "label": "Charakter",
+    "values": {
+     "prawo": "Prawo jednostki (każdy ma prawo)",
+     "zadanie_panstwa": "Tylko zadanie lub cel państwa",
+     "oba": "Prawo i zadanie państwa",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "bezplatnosc": {
+    "type": "enum",
+    "label": "Bezpłatność",
+    "values": {
+     "dla_wszystkich": "Bezpłatna dla wszystkich",
+     "dla_niektorych": "Bezpłatna dla niektórych grup",
+     "nie": "Odpłatna lub współpłacenie",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "grupy": {
+    "type": "multi",
+    "label": "Grupy szczególnie chronione",
+    "values": {
+     "dzieci": "Dzieci",
+     "matki": "Kobiety w ciąży i matki",
+     "starsi": "Osoby starsze",
+     "niepelnosprawni": "Osoby z niepełnosprawnością",
+     "ubodzy": "Ubodzy",
+     "inne": "Inne"
+    }
+   },
+   "pomoc_nagla": {
+    "type": "bool3",
+    "label": "Nikt nie może zostać pozbawiony pomocy w nagłym przypadku"
+   }
+  },
+  "keywords": [
+   [
+    "health|medical"
+   ]
+  ]
+ },
+ "water": {
+  "title": "Prawo do wody",
+  "ccp_tags": [
+   "water"
+  ],
+  "fields": {
+   "prawo_do_wody": {
+    "type": "bool3",
+    "label": "Prawo do wody jako prawo jednostki"
+   },
+   "wlasnosc_publiczna": {
+    "type": "bool3",
+    "label": "Woda jest dobrem publicznym lub własnością państwa"
+   },
+   "zakaz_prywatyzacji": {
+    "type": "bool3",
+    "label": "Zakaz prywatyzacji wody lub usług wodnych"
+   }
+  },
+  "keywords": [
+   [
+    "\\bwater"
+   ]
+  ]
+ },
+ "env": {
+  "title": "Ochrona środowiska",
+  "ccp_tags": [
+   "env"
+  ],
+  "fields": {
+   "rodzaj": {
+    "type": "multi",
+    "label": "Rozwiązania",
+    "values": {
+     "prawo_jednostki": "Prawo do zdrowego środowiska",
+     "obowiazek_panstwa": "Obowiązek państwa",
+     "obowiazek_obywateli": "Obowiązek obywateli",
+     "prawa_przyrody": "Prawa przyrody",
+     "przyszle_pokolenia": "Przyszłe pokolenia",
+     "klimat": "Klimat",
+     "odpowiedzialnosc": "Odpowiedzialność za szkody",
+     "inne": "Inne"
+    }
+   },
+   "droga_sadowa": {
+    "type": "bool3",
+    "label": "Każdy może dochodzić ochrony środowiska przed sądem"
+   }
+  },
+  "keywords": [
+   [
+    "environment|ecolog|\\bnature\\b|climate|biodivers|pollut|future generations"
+   ]
+  ]
+ },
+ "privacy": {
+  "title": "Prywatność i ochrona danych",
+  "ccp_tags": [
+   "privacy"
+  ],
+  "fields": {
+   "rodzaj": {
+    "type": "multi",
+    "label": "Chronione",
+    "values": {
+     "korespondencja": "Tajemnica korespondencji i komunikacji",
+     "mieszkanie": "Nienaruszalność mieszkania",
+     "dane_osobowe": "Ochrona danych osobowych",
+     "habeas_data": "Dostęp do własnych danych i ich sprostowanie (habeas data)",
+     "organ_ochrony": "Niezależny organ ochrony danych",
+     "inwigilacja": "Ograniczenia inwigilacji",
+     "inne": "Inne"
+    }
+   },
+   "nakaz_sadowy": {
+    "type": "bool3",
+    "label": "Przeszukanie lub podsłuch wymaga nakazu sądu"
+   }
+  },
+  "keywords": [
+   [
+    "privacy|private life|personal data|correspondence|communications|data protection|habeas data|surveillance|search"
+   ]
+  ]
+ },
+ "partprh": {
+  "title": "Zakazane partie polityczne",
+  "ccp_tags": [
+   "partprh",
+   "partreg",
+   "partunco"
+  ],
+  "fields": {
+   "przeslanki": {
+    "type": "multi",
+    "label": "Podstawy zakazu",
+    "values": {
+     "antydemokratyczne": "Cele antydemokratyczne lub przeciw ustrojowi",
+     "etniczne_religijne": "Partie etniczne, religijne, regionalne lub płciowe",
+     "separatyzm": "Separatyzm, integralność terytorialna",
+     "przemoc": "Przemoc lub formacje zbrojne",
+     "ideologie": "Wskazane ideologie (np. faszyzm, komunizm)",
+     "zagraniczne": "Finansowanie lub kontrola z zagranicy",
+     "jedna_partia": "Monopol jednej partii",
+     "inne": "Inne"
+    }
+   },
+   "kto_delegalizuje": {
+    "type": "enum",
+    "label": "Kto orzeka zakaz",
+    "values": {
+     "sad_konstytucyjny": "Sąd konstytucyjny",
+     "sad": "Sąd powszechny lub najwyższy",
+     "organ_wykonawczy": "Organ wykonawczy lub wyborczy",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   }
+  },
+  "keywords": [
+   [
+    "(political )?part(y|ies)"
+   ],
+   [
+    "prohibit|banned|dissol|unconstitutional|shall not|forbidden|may not|outlaw"
+   ]
+  ]
+ },
+ "ecom": {
+  "title": "Organ wyborczy",
+  "ccp_tags": [
+   "ecom"
+  ],
+  "fields": {
+   "niezaleznosc": {
+    "type": "bool3",
+    "label": "Wprost niezależny"
+   },
+   "kto_powoluje": {
+    "type": "multi",
+    "label": "Kto powołuje członków",
+    "values": {
+     "glowa_panstwa": "Głowa państwa",
+     "parlament": "Parlament",
+     "rzad": "Rząd",
+     "sady": "Sądy lub rada sądownictwa",
+     "partie": "Partie polityczne",
+     "inne": "Inne"
+    }
+   },
+   "kadencja_lat": {
+    "type": "int",
+    "label": "Kadencja (lata)"
+   },
+   "kompetencje": {
+    "type": "multi",
+    "label": "Kompetencje",
+    "values": {
+     "organizacja": "Organizacja wyborów",
+     "rejestr": "Rejestr wyborców",
+     "okregi": "Wyznaczanie okręgów",
+     "partie": "Rejestracja lub finanse partii",
+     "spory": "Rozstrzyganie sporów wyborczych",
+     "inne": "Inne"
+    }
+   }
+  },
+  "keywords": [
+   [
+    "electoral (commission|council|body|authority|management|board|tribunal)",
+    "elections? (commission|board)"
+   ]
+  ]
+ },
+ "camppubf": {
+  "title": "Finansowanie partii i kampanii",
+  "ccp_tags": [
+   "camppubf"
+  ],
+  "fields": {
+   "rodzaj": {
+    "type": "multi",
+    "label": "Rozwiązania",
+    "values": {
+     "publiczne": "Finansowanie publiczne",
+     "limity": "Limity wydatków lub wpłat",
+     "jawnosc": "Jawność finansów",
+     "zakaz_zagranicznych": "Zakaz finansowania z zagranicy",
+     "zakaz_firm_lub_panstwa": "Zakaz wpłat od firm, związków lub instytucji publicznych",
+     "media": "Równy dostęp do mediów",
+     "inne": "Inne"
+    }
+   }
+  },
+  "keywords": [
+   [
+    "campaign|part(y|ies)|electoral|candidate"
+   ],
+   [
+    "financ|fund|donat|contribut|expenditure|spending"
+   ]
+  ]
+ },
+ "assets": {
+  "title": "Jawność majątku osób publicznych",
+  "ccp_tags": [
+   "assets",
+   "cc"
+  ],
+  "fields": {
+   "kto": {
+    "type": "multi",
+    "label": "Kto składa oświadczenie",
+    "values": {
+     "glowa_panstwa": "Głowa państwa",
+     "ministrowie": "Ministrowie",
+     "parlamentarzysci": "Parlamentarzyści",
+     "sedziowie": "Sędziowie",
+     "urzednicy": "Urzędnicy",
+     "inne": "Inne"
+    }
+   },
+   "jawne": {
+    "type": "bool3",
+    "label": "Oświadczenia są jawne"
+   },
+   "kiedy": {
+    "type": "enum",
+    "label": "Kiedy",
+    "values": {
+     "objecie_i_odejscie": "Przy objęciu i odejściu z urzędu",
+     "okresowo": "Okresowo (np. co roku)",
+     "objecie": "Tylko przy objęciu urzędu",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "organ_antykorupcyjny": {
+    "type": "bool3",
+    "label": "Konstytucja tworzy organ antykorupcyjny"
+   }
+  },
+  "keywords": [
+   [
+    "declar\\w* (of )?(their )?(assets|property|income|wealth|interests)",
+    "\\bassets\\b",
+    "anti-?corruption",
+    "corruption"
+   ]
+  ]
+ },
+ "offrel": {
+  "title": "Religia państwowa i świeckość",
+  "ccp_tags": [
+   "offrel",
+   "rellaw"
+  ],
+  "fields": {
+   "model": {
+    "type": "enum",
+    "label": "Model",
+    "values": {
+     "religia_panstwowa": "Religia państwowa lub urzędowa",
+     "szczegolne_uznanie": "Szczególne uznanie jednego wyznania",
+     "swieckie": "Państwo wprost świeckie lub rozdział",
+     "neutralne": "Neutralność bez wyraźnego rozdziału",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "prawo_religijne": {
+    "type": "bool3",
+    "label": "Prawo religijne jest źródłem prawa"
+   },
+   "wymog_wyznania": {
+    "type": "bool3",
+    "label": "Wymóg wyznania dla urzędów"
+   }
+  },
+  "keywords": [
+   [
+    "religio|church|islam|secular|laic|buddhis|christian|catholic|orthodox|shari"
+   ]
+  ]
+ },
+ "citrev": {
+  "title": "Utrata i pozbawienie obywatelstwa",
+  "ccp_tags": [
+   "citrev",
+   "citren"
+  ],
+  "fields": {
+   "pozbawienie": {
+    "type": "enum",
+    "label": "Pozbawienie obywatelstwa",
+    "values": {
+     "zakaz": "Zakazane",
+     "zakaz_z_urodzenia": "Zakazane wobec obywateli z urodzenia",
+     "dopuszczalne": "Dopuszczalne",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "przeslanki": {
+    "type": "multi",
+    "label": "Przesłanki utraty",
+    "values": {
+     "obce_obywatelstwo": "Nabycie obcego obywatelstwa",
+     "sluzba_obca": "Służba obcemu państwu",
+     "zdrada": "Zdrada, terroryzm lub inne przestępstwa",
+     "oszustwo": "Oszustwo przy nadaniu",
+     "inne": "Inne"
+    }
+   },
+   "zakaz_bezpanstwowosci": {
+    "type": "bool3",
+    "label": "Nie można pozostawić osoby bez obywatelstwa"
+   },
+   "podwojne": {
+    "type": "enum",
+    "label": "Podwójne obywatelstwo",
+    "values": {
+     "dozwolone": "Dozwolone",
+     "zakazane": "Zakazane",
+     "ograniczone": "Ograniczone",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   }
+  },
+  "keywords": [
+   [
+    "citizenship|nationality"
+   ],
+   [
+    "depriv|revok|\\blose|loss|forfeit|withdraw|renounc|dual|another (state|country)|stateless"
+   ]
+  ]
+ },
+ "infoacc": {
+  "title": "Dostęp do informacji publicznej",
+  "ccp_tags": [
+   "infoacc"
+  ],
+  "fields": {
+   "kto": {
+    "type": "enum",
+    "label": "Kto ma prawo",
+    "values": {
+     "kazdy": "Każdy",
+     "obywatele": "Obywatele",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "zakres": {
+    "type": "multi",
+    "label": "Zakres",
+    "values": {
+     "organy_panstwa": "Organy państwa",
+     "podmioty_publiczne": "Podmioty wykonujące zadania lub dysponujące środkami publicznymi",
+     "wszyscy": "Także podmioty prywatne",
+     "inne": "Inne"
+    }
+   },
+   "wyjatki": {
+    "type": "bool3",
+    "label": "Wyjątki określone w konstytucji lub ustawie"
+   },
+   "organ_nadzoru": {
+    "type": "bool3",
+    "label": "Organ nadzoru lub odwołania"
+   }
+  },
+  "keywords": [
+   [
+    "(access to|right to)\\s+(\\w+\\s+){0,3}information",
+    "freedom of information",
+    "public (documents|records)"
    ]
   ]
  }

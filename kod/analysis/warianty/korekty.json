@@ -14,5 +14,71 @@
   "value": "tak",
   "basis": "art. 220 ust. 2: ustawa budżetowa nie może przewidywać pokrywania deficytu budżetowego przez zaciąganie zobowiązania w centralnym banku państwa (przepis w innym temacie CCP, więc model go nie widział)",
   "reviewed": "2026-11-03"
+ },
+ {
+  "topic": "balbudgt",
+  "country_code": "PL",
+  "field": "rodzaj",
+  "value": [
+   "limit_liczbowy_dlugu",
+   "zakaz_finansowania_przez_bank_centralny",
+   "zgoda_parlamentu_na_pozyczki"
+  ],
+  "basis": "art. 216 ust. 5 (dług publiczny do 3/5 PKB), art. 216 ust. 2 i art. 219 (pożyczki i gwarancje na podstawie ustawy), art. 220 ust. 2 (zakaz pokrywania deficytu kredytem w NBP); konstytucja nie ustala limitu deficytu ani zrównoważonego budżetu, więc usunięto tę kategorię",
+  "reviewed": "2026-11-05"
+ },
+ {
+  "topic": "conpow",
+  "country_code": "PL",
+  "field": "kto_moze_wniesc",
+  "value": [
+   "glowa_panstwa",
+   "rzad",
+   "mniejszosc_parlamentarna",
+   "prokurator",
+   "ombudsman",
+   "samorzady",
+   "obywatel_skarga",
+   "sady_pytanie",
+   "inne"
+  ],
+  "basis": "art. 193: każdy sąd może przedstawić Trybunałowi pytanie prawne (artykułu nie było w wycinku); pozostałe podmioty jak w art. 191 i 79",
+  "reviewed": "2026-11-05"
+ },
+ {
+  "topic": "war",
+  "country_code": "PL",
+  "field": "kto_decyduje",
+  "value": [
+   "parlament",
+   "glowa_panstwa"
+  ],
+  "basis": "art. 116 ust. 2: jeżeli Sejm nie może zebrać się na posiedzenie, o stanie wojny postanawia Prezydent RP",
+  "reviewed": "2026-11-05"
+ },
+ {
+  "topic": "milrest",
+  "country_code": "PL",
+  "field": "rodzaj",
+  "value": [
+   "apolitycznosc",
+   "cywilny_zwierzchnik"
+  ],
+  "basis": "art. 117 nie zakazuje pobytu obcych wojsk, tylko wymaga, by zasady określała ratyfikowana umowa lub ustawa; art. 26 ust. 2 (neutralność polityczna, cywilna i demokratyczna kontrola)",
+  "reviewed": "2026-11-05"
+ },
+ {
+  "topic": "privacy",
+  "country_code": "PL",
+  "field": "rodzaj",
+  "value": [
+   "korespondencja",
+   "mieszkanie",
+   "dane_osobowe",
+   "habeas_data",
+   "inne"
+  ],
+  "basis": "art. 51: ochrona danych osobowych, prawo dostępu do urzędowych dokumentów i zbiorów danych o sobie oraz żądania sprostowania i usunięcia (artykułu nie było w wycinku)",
+  "reviewed": "2026-11-05"
  }
 ]

@@ -73,6 +73,62 @@ Najpierw państwa UE, potem konstytucje uchwalone od 2000 r. Streszczenia są ma
 
 …oraz 136 kolejnych. Pełna lista: `dane/przepisy_tematy.csv` (filtr `kod_ccp` = env, water).
 
+## Warianty: ochrona środowiska
+
+Odczytane automatycznie z pełnych artykułów 146 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
+
+**Rozwiązania** (Polska: Obowiązek państwa, Obowiązek obywateli, Przyszłe pokolenia, Odpowiedzialność za szkody, Inne)
+
+| Wariant | Konstytucje |
+|---|---|
+| Obowiązek państwa | 135 |
+| Prawo do zdrowego środowiska | 88 |
+| Obowiązek obywateli | 84 |
+| Przyszłe pokolenia | 71 |
+| Odpowiedzialność za szkody | 38 |
+| Inne | 15 |
+| Klimat | 11 |
+| Prawa przyrody | 2 |
+| nie wynika z tekstu | 0 |
+
+**Każdy może dochodzić ochrony środowiska przed sądem** (Polska: nie_wynika)
+
+| Wariant | Konstytucje |
+|---|---|
+| tak | 9 |
+| nie | 6 |
+| nie wynika z tekstu | 131 |
+
+
+## Warianty: prawo do wody
+
+Odczytane automatycznie z pełnych artykułów 134 konstytucji (z cytatem sprawdzonym w źródle). „Nie wynika” oznacza, że konstytucja tego nie określa, często odsyłając do ustawy.
+
+**Prawo do wody jako prawo jednostki**
+
+| Wariant | Konstytucje |
+|---|---|
+| tak | 25 |
+| nie | 2 |
+| nie wynika z tekstu | 107 |
+
+**Woda jest dobrem publicznym lub własnością państwa**
+
+| Wariant | Konstytucje |
+|---|---|
+| tak | 47 |
+| nie | 1 |
+| nie wynika z tekstu | 86 |
+
+**Zakaz prywatyzacji wody lub usług wodnych**
+
+| Wariant | Konstytucje |
+|---|---|
+| tak | 11 |
+| nie | 5 |
+| nie wynika z tekstu | 118 |
+
+
 ## Jak mocne są te przepisy
 
 | Siła normy | Przepisy | Udział |
