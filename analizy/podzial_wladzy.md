@@ -6,18 +6,18 @@ Raport opisuje, jak teksty obowiązujących konstytucji dzielą 11 kluczowych de
 
 ## Najważniejsze wnioski
 
-- **Prezydent RP ma 16,3% siły** (średnio w 11 decyzjach). To 128. miejsce z 178 od najsilniejszej głowy państwa (przy innych założeniach modelu 120.–144.) i 11. z 26 w UE. Mediana świata: 29,2%, średnia UE: 15,1%.
+- **Prezydent RP ma 16,3% siły** (średnio w 11 decyzjach). To 129. miejsce z 178 od najsilniejszej głowy państwa (przy innych założeniach modelu 118.–144.) i 11. z 26 w UE. Mediana świata: 27,5%, średnia UE: 14,7%.
 - **Sejm i Senat razem: 66,8%**, rząd 13,9%. Senat ma 4,5%: jego sprzeciw wobec ustaw Sejm odrzuca bezwzględną większością (art. 121 ust. 3), więc w modelu nie przesądza o wyniku zwykłej ustawy. Siłę Senatu daje zmiana konstytucji (art. 235).
 - **Weto prezydenta RP** (art. 122 ust. 5) daje mu 10% siły przy ustawie: Sejm odrzuca je większością 3/5, więc zablokować może ponad 40% posłów popierających prezydenta. Na świecie częstszy jest próg 2/3 (53 państw, blokuje ponad 1/3) albo zwykła większość, przy której weto niczego nie przesądza (64). Próg 3/5: 3 państwa; weto nie do odrzucenia: 3.
 - **Budżet**: wyłączna inicjatywa Rady Ministrów (art. 221) czyni rząd drugim, obok Sejmu, organem bez którego budżetu nie ma (po 50%). Prezydent nie może budżetu zawetować (art. 224), a gdy budżetu nie ma, rząd działa na podstawie projektu (art. 219 ust. 4).
-- **Systemy prezydenckie** dają głowie państwa średnio 41,5% siły, parlamentarne 12,3%. Najsilniejsze głowy państwa: Brunei 64,3%, Gwinea Równikowa 63,6%, Arabia Saudyjska 62,5%, Katar 57,6%, Zambia 57,6%, Tunezja 57,4%, Malawi 55,6%, Zjednoczone Emiraty Arabskie 55,0%.
-- **Najbardziej rozproszona władza** (najniższa koncentracja HHI): Włochy, Mali, Jordania, Demokratyczna Republika Konga, Madagaskar, Rwanda, Dominikana, Kongo. Polska: HHI 0,44, 100. miejsce z 178 od najbardziej skoncentrowanej.
+- **Systemy prezydenckie** dają głowie państwa średnio 41,6% siły, parlamentarne 13,8%. Najsilniejsze głowy państwa: Brunei 64,3%, Arabia Saudyjska 62,5%, Zambia 60,6%, Gwinea Równikowa 59,1%, Katar 57,6%, Tunezja 57,4%, Malawi 55,6%, Zjednoczone Emiraty Arabskie 55,0%.
+- **Najbardziej rozproszona władza** (najniższa koncentracja HHI): Włochy, Mali, Jordania, Demokratyczna Republika Konga, Madagaskar, Rwanda, Dominikana, Kongo. Polska: HHI 0,44, 103. miejsce z 178 od najbardziej skoncentrowanej.
 
 ## Polska: kto ile ma siły
 
 - **Polska**: Izba pierwsza 62,2%, Druga izba 4,5%, Rząd 13,9%, Głowa państwa 16,3%, Sądy 3,0%
-- **Unia Europejska (26)**: Izba pierwsza 61,1%, Druga izba 4,0%, Rząd 16,3%, Głowa państwa 15,1%, Naród 1,2%, Sąd konst. 1,0%, Sądy 1,2%
-- **Świat (178)**: Izba pierwsza 56,9%, Druga izba 4,7%, Rząd 9,0%, Głowa państwa 26,9%, Naród 1,0%, Sąd konst. 0,3%, Sądy 1,2%
+- **Unia Europejska (26)**: Izba pierwsza 61,5%, Druga izba 4,0%, Rząd 16,3%, Głowa państwa 14,7%, Naród 1,2%, Sąd konst. 1,0%, Sądy 1,2%
+- **Świat (178)**: Izba pierwsza 57,1%, Druga izba 4,7%, Rząd 9,0%, Głowa państwa 26,8%, Naród 1,0%, Sąd konst. 0,3%, Sądy 1,2%
 
 Udział w decyzjach (Shapley-Shubik), weto i mniejszość blokująca w Sejmie. „Gdy Prezydent przeciw”: ile posłów wystarczy, by utrzymać jego sprzeciw.
 
@@ -53,12 +53,12 @@ Ograniczenia hamujące: konstruktywne wotum nieufności (art. 158); 50 posłów 
 
 | Typ (z tekstu) | Państw | Głowa państwa | Rząd | Parlament | Naród i sądy |
 |---|---|---|---|---|---|
-| Prezydencki: głowa państwa kieruje rządem | 52 | 41,5% | 0,0% | 56,2% | 2,3% |
-| Parlamentarny (głowa państwa wybierana pośrednio) | 34 | 12,3% | 13,3% | 72,5% | 1,9% |
-| Półprezydencki: prezydent z wyborów, rząd odpowiada przed parlamentem | 23 | 17,0% | 9,3% | 70,0% | 3,8% |
-| Półprezydencki: rząd odpowiada przed parlamentem i prezydentem | 19 | 30,2% | 14,1% | 52,0% | 3,7% |
-| Monarchia parlamentarna | 18 | 17,8% | 19,0% | 61,3% | 1,9% |
-| Rząd odpowiada przed parlamentem i głową państwa (głowa wybierana pośrednio) | 15 | 28,1% | 10,8% | 60,5% | 0,7% |
+| Prezydencki: głowa państwa kieruje rządem | 52 | 41,6% | 0,0% | 56,1% | 2,3% |
+| Parlamentarny (głowa państwa wybierana pośrednio) | 37 | 13,8% | 12,6% | 71,8% | 1,7% |
+| Półprezydencki: prezydent z wyborów, rząd odpowiada przed parlamentem | 26 | 18,2% | 9,8% | 68,2% | 3,7% |
+| Monarchia parlamentarna | 18 | 17,5% | 19,0% | 61,7% | 1,9% |
+| Półprezydencki: rząd odpowiada przed parlamentem i prezydentem | 16 | 30,5% | 14,0% | 51,8% | 3,8% |
+| Rząd odpowiada przed parlamentem i głową państwa (głowa wybierana pośrednio) | 12 | 25,5% | 12,5% | 61,2% | 0,8% |
 | Rząd zależny tylko od głowy państwa | 10 | 36,6% | 5,6% | 55,7% | 2,0% |
 | Nie wynika z tekstu | 5 | 15,6% | 22,2% | 57,1% | 5,1% |
 | Prezydent kieruje rządem, ale wybiera go parlament | 2 | 31,2% | 0,0% | 66,7% | 2,1% |
@@ -68,15 +68,16 @@ Ograniczenia hamujące: konstruktywne wotum nieufności (art. 158); 50 posłów 
 | Państwo | Typ | Głowa państwa | Rząd | Parlament | HHI |
 |---|---|---|---|---|---|
 | Brunei | Prezydencki: głowa państwa kieruje rządem | 64,3% | 0,0% | 35,7% | 0,54 |
-| Gwinea Równikowa | Prezydencki: głowa państwa kieruje rządem | 63,6% | 0,0% | 36,4% | 0,50 |
 | Arabia Saudyjska | Rząd zależny tylko od głowy państwa | 62,5% | 0,0% | 37,5% | 0,53 |
+| Zambia | Prezydencki: głowa państwa kieruje rządem | 60,6% | 0,0% | 39,4% | 0,52 |
+| Gwinea Równikowa | Prezydencki: głowa państwa kieruje rządem | 59,1% | 0,0% | 40,9% | 0,47 |
 | Katar | Rząd zależny tylko od głowy państwa | 57,6% | 4,3% | 38,1% | 0,48 |
-| Zambia | Prezydencki: głowa państwa kieruje rządem | 57,6% | 0,0% | 42,4% | 0,51 |
 | Tunezja | Rząd odpowiada przed parlamentem i głową państwa (głowa wybierana pośrednio) | 57,4% | 0,0% | 42,6% | 0,45 |
 | Malawi | Prezydencki: głowa państwa kieruje rządem | 55,6% | 0,0% | 44,4% | 0,43 |
 | Zjednoczone Emiraty Arabskie | Rząd zależny tylko od głowy państwa | 55,0% | 5,0% | 40,0% | 0,47 |
 | Cypr | Prezydencki: głowa państwa kieruje rządem | 54,5% | 0,0% | 45,5% | 0,50 |
 | Nigeria | Prezydencki: głowa państwa kieruje rządem | 53,7% | 0,0% | 46,3% | 0,40 |
+| Ekwador | Prezydencki: głowa państwa kieruje rządem | 53,3% | 0,0% | 46,7% | 0,50 |
 | Kuwejt | Monarchia parlamentarna | 52,9% | 4,8% | 42,3% | 0,46 |
 | Mozambik | Prezydencki: głowa państwa kieruje rządem | 50,4% | 0,0% | 43,2% | 0,44 |
 | Surinam | Prezydencki: głowa państwa kieruje rządem | 50,0% | 0,0% | 50,0% | 0,50 |
@@ -84,20 +85,19 @@ Ograniczenia hamujące: konstruktywne wotum nieufności (art. 158); 50 posłów 
 | Indonezja | Prezydencki: głowa państwa kieruje rządem | 48,8% | 0,0% | 47,5% | 0,42 |
 | Zimbabwe | Prezydencki: głowa państwa kieruje rządem | 48,5% | 0,0% | 51,5% | 0,39 |
 | Algieria | Półprezydencki: rząd odpowiada przed parlamentem i prezydentem | 48,2% | 3,9% | 36,9% | 0,35 |
-| Ekwador | Prezydencki: głowa państwa kieruje rządem | 48,1% | 0,0% | 51,8% | 0,50 |
-| Afganistan | Prezydencki: głowa państwa kieruje rządem | 46,3% | 0,0% | 50,0% | 0,42 |
 | Meksyk | Prezydencki: głowa państwa kieruje rządem | 46,3% | 0,0% | 53,7% | 0,36 |
+| Gujana | Prezydencki: głowa państwa kieruje rządem | 45,8% | 0,0% | 54,2% | 0,50 |
 
-Najsłabsza głowa państwa (udział bliski zera: działa na wniosek rządu albo nie uczestniczy w kluczowych decyzjach): Antigua i Barbuda, Armenia, Barbados, Bahamy, Dania, Etiopia, Finlandia, Izrael, Japonia, Saint Kitts i Nevis, Saint Lucia, Holandia, Norwegia, Nepal, Wyspy Salomona, Szwecja, Saint Vincent i Grenadyny.
+Najsłabsza głowa państwa (udział bliski zera: działa na wniosek rządu albo nie uczestniczy w kluczowych decyzjach): Antigua i Barbuda, Barbados, Bahamy, Dania, Etiopia, Finlandia, Grenada, Izrael, Japonia, Lesotho, Holandia, Norwegia, Nepal, Wyspy Salomona, Szwecja, Saint Vincent i Grenadyny.
 
 ## Unia Europejska
 
 | Państwo | Typ | Głowa państwa | Rząd | Parlament | Inne | HHI |
 |---|---|---|---|---|---|---|
 | Cypr | Prezydencki: głowa państwa kieruje rządem | 54,5% | 0,0% | 45,5% | 0,0% | 0,50 |
-| Malta | Rząd odpowiada przed parlamentem i głową państwa (głowa wybierana pośrednio) | 31,2% | 12,5% | 56,2% | 0,0% | 0,43 |
-| Słowacja | Półprezydencki: rząd odpowiada przed parlamentem i prezydentem | 28,8% | 13,6% | 53,9% | 3,6% | 0,39 |
 | Francja | Półprezydencki: prezydent z wyborów, rząd odpowiada przed parlamentem | 25,2% | 16,2% | 58,6% | 0,0% | 0,34 |
+| Malta | Parlamentarny (głowa państwa wybierana pośrednio) | 25,0% | 12,5% | 62,5% | 0,0% | 0,47 |
+| Słowacja | Półprezydencki: prezydent z wyborów, rząd odpowiada przed parlamentem | 24,2% | 13,6% | 58,5% | 3,6% | 0,42 |
 | Czechy | Rząd odpowiada przed parlamentem i głową państwa (głowa wybierana pośrednio) | 23,1% | 12,5% | 60,8% | 3,6% | 0,39 |
 | Portugalia | Półprezydencki: rząd odpowiada przed parlamentem i prezydentem | 23,0% | 18,4% | 51,0% | 7,6% | 0,35 |
 | Grecja | Parlamentarny (głowa państwa wybierana pośrednio) | 20,0% | 10,0% | 66,7% | 3,3% | 0,50 |
@@ -183,7 +183,7 @@ Indeks: odsetek z 10 gwarancji obecnych w tekście (spośród tych, które dotyc
 
 | Gwarancja | Polska | Odsetek konstytucji |
 |---|---|---|
-| Sędziów TK wybiera więcej niż jeden organ albo większość kwalifikowana | nie | 42,2% |
+| Sędziów TK wybiera więcej niż jeden organ albo większość kwalifikowana | nie | 46,8% |
 | Kadencja sędziów TK co najmniej 9 lat albo do wieku emerytalnego | tak | 26,6% |
 | Sędzia TK nie może być wybrany ponownie | tak | 26,6% |
 | Rada sądownictwa z większością sędziów | tak | 16,9% |
@@ -234,11 +234,11 @@ Wynik symulatora (strona Władza → Symulator) dla gotowych zestawów. „Insty
 
 ## Na ile ufać tym liczbom
 
-- **Odczyty a eksperci.** W 1644 porównaniach z ręcznym kodowaniem Comparative Constitutions Project (wersja 5) zgodność wynosi 86,9%. Pola strukturalne: liczba izb 97%, próg odrzucenia weta 99%, rozwiązanie parlamentu 97%. Najsłabiej: kto odwołuje rząd (ok. 70%), bo CCP liczy też formalne odwołanie ministrów przez głowę państwa.
-- **Typ ustroju.** Zgodność z klasyfikacją Cheibuba, Elkinsa i Ginsburga (2014): 83,0% (106 konstytucji, kappa 0,746). Udział głowy państwa w naszym modelu rośnie zgodnie z ich typem: parlamentarne 16,0%, półprezydenckie 21,4%, prezydenckie 39,2%.
-- **Niezależność sądów.** Korelacja rang z indeksem Meltona i Ginsburga (2014): ρ = 0,317 (95%: 0,159–0,459). Umiarkowana: ich indeks dotyczy sądu najwyższego, nasz głównie TK i rady sądownictwa.
-- **Indeks władzy wykonawczej CCP** (7 uprawnień) koreluje z naszym udziałem głowy państwa i rządu słabo (ρ = 0,183). Ten indeks liczy uprawnienia całej władzy wykonawczej, także premiera, i prawie nie różnicuje typów ustroju, więc mierzy co innego.
-- **Założenia.** Przy innych założeniach (wagi decyzji, bez reguły dla monarchii, łatwe lub nieosiągalne większości kwalifikowane, tylko decyzje bez założeń) korelacja rang z modelem bazowym wynosi 0,857–0,993, ale pojedyncze miejsce przesuwa się typowo o 27 pozycji. Dlatego podajemy przedziały.
+- **Odczyty a eksperci.** W 1641 porównaniach z ręcznym kodowaniem Comparative Constitutions Project (wersja 5) zgodność wynosiła 88,1%. Każdą z 188 rozbieżności rozstrzygnęliśmy na tekście (pytanie w naszej definicji, bez wskazania, czyja odpowiedź jest czyja, z dosłownym cytatem); 42 odczytów poprawiliśmy, po czym zgodność wynosi 90,5%. Pola strukturalne: liczba izb 97%, próg odrzucenia weta 99%, rozwiązanie parlamentu 97%. Najsłabiej: kto odwołuje rząd (ok. 70%), bo CCP liczy też formalne odwołanie ministrów przez głowę państwa.
+- **Typ ustroju.** Zgodność z klasyfikacją Cheibuba, Elkinsa i Ginsburga (2014): 84,0% (106 konstytucji, kappa 0,76). Udział głowy państwa w naszym modelu rośnie zgodnie z ich typem: parlamentarne 15,8%, półprezydenckie 21,4%, prezydenckie 39,2%.
+- **Niezależność sądów.** Korelacja rang z indeksem Meltona i Ginsburga (2014): ρ = 0,323 (95%: 0,166–0,465). Umiarkowana: ich indeks dotyczy sądu najwyższego, nasz głównie TK i rady sądownictwa.
+- **Indeks władzy wykonawczej CCP** (7 uprawnień) koreluje z naszym udziałem głowy państwa i rządu słabo (ρ = 0,186). Ten indeks liczy uprawnienia całej władzy wykonawczej, także premiera, i prawie nie różnicuje typów ustroju, więc mierzy co innego.
+- **Założenia.** Przy innych założeniach (wagi decyzji, bez reguły dla monarchii, łatwe lub nieosiągalne większości kwalifikowane, tylko decyzje bez założeń) korelacja rang z modelem bazowym wynosi 0,87–0,994, ale pojedyncze miejsce przesuwa się typowo o 26 pozycji. Dlatego podajemy przedziały.
 
 ## Metoda i ograniczenia
 

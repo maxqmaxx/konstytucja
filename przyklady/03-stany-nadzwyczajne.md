@@ -84,8 +84,8 @@ Odczytane automatycznie z pełnych artykułów 179 konstytucji (z cytatem sprawd
 
 | Wariant | Konstytucje |
 |---|---|
-| Głowa państwa | 96 |
-| Rząd lub premier | 23 |
+| Głowa państwa | 97 |
+| Rząd lub premier | 22 |
 | Parlament | 20 |
 | Inny organ | 2 |
 | nie wynika z tekstu | 38 |

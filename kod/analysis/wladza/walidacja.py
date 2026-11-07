@@ -70,13 +70,14 @@ FIELDS = [
     ("Głowa państwa kieruje rządem", lambda R, c: {"glowa_panstwa": True, "odrebny_premier": False}.get(ours(R, "hogelect", c, "szef_rzadu")),
      lambda x: {"2": True, "3": False}.get(x.get("execnum"))),
     ("Parlament może odwołać rząd", lambda R, c: ("parlament" in ours(R, "cabdiss", c, "kto_odwoluje")) if ours(R, "cabdiss", c, "kto_odwoluje") is not None and (R.get(("cabdiss", c))) else None,
-     lambda x: yes(x, "cabdiss_3", "cabdiss_5", "cabdiss_6")),
+     lambda x: yes(x, "cabdiss_3", "cabdiss_5", "cabdiss_6", "hogadiss_2", "hogadiss_3", "hogadiss_4")),  # no-confidence is coded as HoG dismissal
     ("Głowa państwa może odwołać rząd", lambda R, c: ("glowa_panstwa" in ours(R, "cabdiss", c, "kto_odwoluje")) if R.get(("cabdiss", c)) else None,
-     lambda x: yes(x, "cabdiss_1")),
+     lambda x: yes(x, "hogpdiss_1") if x.get("execnum") == "3" else yes(x, "cabdiss_1")),  # dual executive: HoS starts the PM's dismissal
     ("Zmiana konstytucji wymaga większości kwalifikowanej", lambda R, c: {"zwykla_lub_bezwzgledna": False, "trzy_piate": True, "dwie_trzecie": True, "trzy_czwarte": True}.get(ours(R, "amend", c, "prog_parlament")),
      lambda x: {"1": True, "2": False}.get(x.get("amndamaj"))),
-    ("Rząd ma inicjatywę ustawodawczą", lambda R, c: ("rzad" in ours(R, "legini", c, "kto_ma")) if R.get(("legini", c)) else None,
-     lambda x: yes(x, "leg_in_2", "leg_in_3")),
+    ("Rząd ma inicjatywę ustawodawczą", lambda R, c: ("rzad" in ours(R, "legini", c, "kto_ma") or ("glowa_panstwa" in ours(R, "legini", c, "kto_ma") and ours(R, "hogelect", c, "szef_rzadu") == "glowa_panstwa"))
+     if R.get(("legini", c)) else None,
+     lambda x: yes(x, "leg_in_2", "leg_in_3") if x.get("execnum") != "2" else yes(x, "leg_in_1", "leg_in_2", "leg_in_3")),  # single executive: coded as HoS
 ]
 
 
@@ -148,6 +149,13 @@ def main():
                          "kappa": kappa(pairs), "n_ta_sama_wersja": len(same),
                          "zgodnosc_ta_sama_wersja": round(sum(a == b for a, b in same) / len(same), 3) if same else None})
         out["pola"] = rows
+        R0 = variants.load(skip_methods=("rozstrzygniecie",))  # readings before adjudicating disagreements with CCP
+        p0 = [(f_ours(R0, c), f_ccp(x)) for _, f_ours, f_ccp in FIELDS for c, x in ccp.items()]
+        p0 = [(a, b) for a, b in p0 if a is not None and b is not None]
+        out["pola_przed_rozstrzygnieciem"] = {"n": len(p0), "zgodnosc": round(sum(a == b for a, b in p0) / len(p0), 3)}
+        adj = [json.loads(line) for line in open(HERE / "rozstrzygniecia.jsonl", encoding="utf-8")] if (HERE / "rozstrzygniecia.jsonl").exists() else []
+        K = json.loads((HERE.parent / "warianty" / "korekty.json").read_text())
+        out["rozstrzygniecia"] = {"rozbieznosci": len(adj), "poprawki": sum(k.get("metoda") == "rozstrzygniecie" for k in K)}
         tot_n, tot_a = sum(r["n"] for r in rows), sum(r["zgodne"] for r in rows)
         out["pola_razem"] = {"n": tot_n, "zgodne": tot_a, "zgodnosc": round(tot_a / tot_n, 3)}
         out["roznice_pl"] = [d for d in diffs if d["kod"] == "PL"]

@@ -22,7 +22,7 @@ AF,Afganistan,ustawa,0.8333,0.0000,0.1667,0.0000,0.0000,0.0000,0.0000,L1,0.5000,
 AF,Afganistan,budzet,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 AF,Afganistan,konstytucja,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.3333,,
 AF,Afganistan,powolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,głowa państwa kieruje rządem i dobiera ministrów; zatwierdzanie ministrów przez izbę nie jest modelowane
-AF,Afganistan,odwolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
+AF,Afganistan,odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,"próg wotum nieufności nie podany, przyjęto większość"
 AF,Afganistan,stan_nadzwyczajny,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,udział parlamentu nie wynika z tekstu
 AF,Afganistan,wojna,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 AF,Afganistan,ratyfikacja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
@@ -50,7 +50,7 @@ AM,Armenia,budzet,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,,
 AM,Armenia,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,referendum tylko dla części zmian: nie wliczono
 AM,Armenia,powolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,głowa państwa działa na wniosek rządu: decyduje rząd
 AM,Armenia,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,konstruktywne wotum: ta sama większość musi wskazać następcę
-AM,Armenia,sedziowie_tk,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,
+AM,Armenia,sedziowie_tk,0.6667,0.0000,0.3333,0.0000,0.0000,0.0000,0.0000,HS L1,0.3333,nie_do_odrzucenia,"kilka organów: wspólny wybór albo podział puli, w obu przypadkach udział po równo"
 AM,Armenia,stan_nadzwyczajny,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,,parlament może tylko uchylić stan (słabsza kontrola niż zatwierdzenie)
 AM,Armenia,wojna,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 AM,Armenia,ratyfikacja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,"większość kwalifikowana (często tylko dla części umów, np. przekazania kompetencji); zgoda parlamentu tylko dla części umów: model pokazuje umowy wymagające zgody"
@@ -235,7 +235,7 @@ BZ,Belize,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.50
 BZ,Belize,budzet,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,0.5000,"próg odrzucenia weta nie podany, przyjęto większość"
 BZ,Belize,konstytucja,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.3333,,
 BZ,Belize,powolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,"czy parlament głosuje nad rządem, nie wynika z tekstu"
-BZ,Belize,odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,"próg wotum nieufności nie podany, przyjęto większość; po wotum nieufności można rozwiązać parlament zamiast dymisji rządu"
+BZ,Belize,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,"próg wotum nieufności nie podany, przyjęto większość; po wotum nieufności można rozwiązać parlament zamiast dymisji rządu"
 BZ,Belize,rozwiazanie,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
 BZ,Belize,stan_nadzwyczajny,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,parlament może tylko uchylić stan (słabsza kontrola niż zatwierdzenie)
 BZ,Belize,ratyfikacja,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,,
@@ -316,7 +316,7 @@ CO,Kolumbia,budzet,0.2500,0.2500,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1 L2,0.5
 CO,Kolumbia,konstytucja,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.5000,,referendum tylko dla części zmian: nie wliczono
 CO,Kolumbia,powolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,głowa państwa kieruje rządem i dobiera ministrów; zatwierdzanie ministrów przez izbę nie jest modelowane
 CO,Kolumbia,odwolanie_rzadu,0.2500,0.2500,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.0000,
-CO,Kolumbia,sedziowie_tk,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
+CO,Kolumbia,sedziowie_tk,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,"kilka organów: wspólny wybór albo podział puli, w obu przypadkach udział po równo"
 CO,Kolumbia,stan_nadzwyczajny,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,parlament może tylko uchylić stan (słabsza kontrola niż zatwierdzenie)
 CO,Kolumbia,wojna,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 CO,Kolumbia,ratyfikacja,0.2500,0.2500,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1 L2,0.5000,nie_do_odrzucenia,
@@ -343,7 +343,7 @@ CV,Republika Zielonego Przylądka,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.00
 CV,Republika Zielonego Przylądka,budzet,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,0.5000,
 CV,Republika Zielonego Przylądka,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,
 CV,Republika Zielonego Przylądka,powolanie_rzadu,0.2500,0.0000,0.3750,0.3750,0.0000,0.0000,0.0000,G HS L1,0.5000,nie_do_odrzucenia,
-CV,Republika Zielonego Przylądka,odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,"próg wotum nieufności nie podany, przyjęto większość"
+CV,Republika Zielonego Przylądka,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,"próg wotum nieufności nie podany, przyjęto większość"
 CV,Republika Zielonego Przylądka,rozwiazanie,0.0000,0.0000,0.5000,0.5000,0.0000,0.0000,0.0000,G HS,,,"tylko w określonych sytuacjach (np. nieuchwalenie budżetu, brak rządu)"
 CV,Republika Zielonego Przylądka,stan_nadzwyczajny,0.2500,0.0000,0.3750,0.3750,0.0000,0.0000,0.0000,G HS L1,0.5000,nie_do_odrzucenia,
 CV,Republika Zielonego Przylądka,wojna,0.2500,0.0000,0.3750,0.3750,0.0000,0.0000,0.0000,G HS L1,0.5000,nie_do_odrzucenia,
@@ -433,6 +433,7 @@ EC,Ekwador,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.333
 EC,Ekwador,powolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,głowa państwa kieruje rządem i dobiera ministrów; zatwierdzanie ministrów przez izbę nie jest modelowane
 EC,Ekwador,odwolanie_rzadu,0.3333,0.0000,0.6667,0.0000,0.0000,0.0000,0.0000,,0.0000,0.3333,
 EC,Ekwador,rozwiazanie,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,"tylko w określonych sytuacjach (np. nieuchwalenie budżetu, brak rządu)"
+EC,Ekwador,sedziowie_tk,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
 EC,Ekwador,stan_nadzwyczajny,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,parlament może tylko uchylić stan (słabsza kontrola niż zatwierdzenie)
 EC,Ekwador,ratyfikacja,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,zgoda parlamentu tylko dla części umów: model pokazuje umowy wymagające zgody
 EC,Ekwador,usuniecie_glowy,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,
@@ -531,7 +532,7 @@ GD,Grenada,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,"p
 GD,Grenada,budzet,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,"próg odrzucenia weta nie podany, przyjęto większość"
 GD,Grenada,konstytucja,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.3333,,referendum tylko dla części zmian: nie wliczono
 GD,Grenada,powolanie_rzadu,0.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,G,,,głowa państwa działa na wniosek rządu: decyduje rząd
-GD,Grenada,odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,po wotum nieufności można rozwiązać parlament zamiast dymisji rządu
+GD,Grenada,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,po wotum nieufności można rozwiązać parlament zamiast dymisji rządu
 GD,Grenada,rozwiazanie,0.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,G,,,głowa państwa działa na wniosek rządu: decyduje rząd
 GE,Gruzja,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,
 GE,Gruzja,budzet,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,0.5000,
@@ -565,7 +566,7 @@ GQ,Gwinea Równikowa,konstytucja,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.000
 GQ,Gwinea Równikowa,powolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,głowa państwa kieruje rządem i dobiera ministrów; zatwierdzanie ministrów przez izbę nie jest modelowane
 GQ,Gwinea Równikowa,odwolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
 GQ,Gwinea Równikowa,rozwiazanie,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
-GQ,Gwinea Równikowa,sedziowie_tk,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
+GQ,Gwinea Równikowa,sedziowie_tk,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,"kilka organów: wspólny wybór albo podział puli, w obu przypadkach udział po równo"
 GQ,Gwinea Równikowa,stan_nadzwyczajny,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,udział parlamentu nie wynika z tekstu
 GQ,Gwinea Równikowa,wojna,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
 GQ,Gwinea Równikowa,ratyfikacja,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,zgoda parlamentu tylko dla części umów: model pokazuje umowy wymagające zgody
@@ -633,7 +634,7 @@ HT,Haiti,budzet,0.2500,0.2500,0.0000,0.5000,0.0000,0.0000,0.0000,G L1 L2,0.5000,
 HT,Haiti,konstytucja,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.3333,,
 HT,Haiti,powolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 HT,Haiti,odwolanie_rzadu,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,,0.0000,,
-HT,Haiti,sedziowie_tk,0.4444,0.0000,0.0000,0.2778,0.0000,0.0000,0.2778,G J L1,0.3333,,"kilka organów: wspólny wybór albo podział puli, w obu przypadkach udział po równo"
+HT,Haiti,sedziowie_tk,0.2963,0.0000,0.2346,0.2346,0.0000,0.0000,0.2346,G HS J L1,0.3333,nie_do_odrzucenia,"kilka organów: wspólny wybór albo podział puli, w obu przypadkach udział po równo"
 HT,Haiti,stan_nadzwyczajny,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 HT,Haiti,wojna,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 HT,Haiti,ratyfikacja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
@@ -790,7 +791,7 @@ KN,Saint Kitts i Nevis,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L
 KN,Saint Kitts i Nevis,budzet,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,,"próg odrzucenia weta nie podany, przyjęto większość"
 KN,Saint Kitts i Nevis,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,referendum tylko dla części zmian: nie wliczono
 KN,Saint Kitts i Nevis,powolanie_rzadu,0.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,G,,,głowa państwa działa na wniosek rządu: decyduje rząd
-KN,Saint Kitts i Nevis,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,"próg wotum nieufności nie podany, przyjęto większość; po wotum nieufności można rozwiązać parlament zamiast dymisji rządu"
+KN,Saint Kitts i Nevis,odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,"próg wotum nieufności nie podany, przyjęto większość; po wotum nieufności można rozwiązać parlament zamiast dymisji rządu"
 KN,Saint Kitts i Nevis,rozwiazanie,0.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,G,,,głowa państwa działa na wniosek rządu: decyduje rząd
 KN,Saint Kitts i Nevis,usuniecie_glowy,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,"próg oskarżenia nie podany, przyjęto 2/3; kto orzeka, nie wynika z tekstu"
 KP,Korea Północna,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,rola głowy państwa przy ustawach nie wynika z tekstu
@@ -835,7 +836,7 @@ LA,Laos,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000
 LA,Laos,budzet,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,0.5000,
 LA,Laos,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,
 LA,Laos,powolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
-LA,Laos,odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,"próg wotum nieufności nie podany, przyjęto większość"
+LA,Laos,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,"próg wotum nieufności nie podany, przyjęto większość"
 LA,Laos,stan_nadzwyczajny,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,udział parlamentu nie wynika z tekstu
 LA,Laos,wojna,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 LA,Laos,ratyfikacja,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,zgoda parlamentu tylko dla części umów: model pokazuje umowy wymagające zgody
@@ -854,7 +855,7 @@ LC,Saint Lucia,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000
 LC,Saint Lucia,budzet,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 LC,Saint Lucia,konstytucja,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.3333,,referendum tylko dla części zmian: nie wliczono
 LC,Saint Lucia,powolanie_rzadu,0.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,G,,,głowa państwa działa na wniosek rządu: decyduje rząd
-LC,Saint Lucia,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,"próg wotum nieufności nie podany, przyjęto większość; po wotum nieufności można rozwiązać parlament zamiast dymisji rządu"
+LC,Saint Lucia,odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,"próg wotum nieufności nie podany, przyjęto większość; po wotum nieufności można rozwiązać parlament zamiast dymisji rządu"
 LC,Saint Lucia,rozwiazanie,0.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,G,,,głowa państwa działa na wniosek rządu: decyduje rząd
 LC,Saint Lucia,usuniecie_glowy,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,"próg oskarżenia nie podany, przyjęto 2/3; kto orzeka, nie wynika z tekstu"
 LI,Liechtenstein,ustawa,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
@@ -888,7 +889,7 @@ LS,Lesotho,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,"p
 LS,Lesotho,budzet,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,"próg odrzucenia weta nie podany, przyjęto większość"
 LS,Lesotho,konstytucja,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.5000,,referendum tylko dla części zmian: nie wliczono
 LS,Lesotho,powolanie_rzadu,0.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,G,,,"głowa państwa działa na wniosek rządu: decyduje rząd; czy parlament głosuje nad rządem, nie wynika z tekstu"
-LS,Lesotho,odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,"próg wotum nieufności nie podany, przyjęto większość; konstruktywne wotum: ta sama większość musi wskazać następcę"
+LS,Lesotho,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,"próg wotum nieufności nie podany, przyjęto większość; konstruktywne wotum: ta sama większość musi wskazać następcę"
 LS,Lesotho,rozwiazanie,0.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,G,,,głowa państwa działa na wniosek rządu: decyduje rząd
 LS,Lesotho,ratyfikacja,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,,
 LS,Lesotho,usuniecie_glowy,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.3333,,"próg oskarżenia nie podany, przyjęto 2/3"
@@ -934,7 +935,7 @@ MA,Maroko,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,"pr
 MA,Maroko,budzet,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,,"próg odrzucenia weta nie podany, przyjęto większość; gdy parlament nie uchwali budżetu, władza wykonawcza działa na podstawie swojego projektu"
 MA,Maroko,konstytucja,0.3333,0.3333,0.0000,0.0000,0.3333,0.0000,0.0000,L1 L2 P,0.3333,,
 MA,Maroko,powolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
-MA,Maroko,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,formalne odwołanie przez monarchę (odpowiadają ministrowie) pominięto
+MA,Maroko,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 MA,Maroko,rozwiazanie,0.0000,0.0000,0.5000,0.5000,0.0000,0.0000,0.0000,G HS,,,
 MA,Maroko,sedziowie_tk,0.6667,0.0000,0.3333,0.0000,0.0000,0.0000,0.0000,HS L1,0.3333,nie_do_odrzucenia,"kilka organów: wspólny wybór albo podział puli, w obu przypadkach udział po równo"
 MA,Maroko,stan_nadzwyczajny,0.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,G,,,"monarcha nie odpowiada, odpowiadają ministrowie (kontrasygnata): decyduje rząd; udział parlamentu nie wynika z tekstu"
@@ -963,7 +964,7 @@ ME,Czarnogóra,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0
 ME,Czarnogóra,powolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,
 ME,Czarnogóra,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 ME,Czarnogóra,rozwiazanie,0.0000,0.0000,0.5000,0.5000,0.0000,0.0000,0.0000,G HS,,,"tylko w określonych sytuacjach (np. nieuchwalenie budżetu, brak rządu)"
-ME,Czarnogóra,sedziowie_tk,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,
+ME,Czarnogóra,sedziowie_tk,0.6667,0.0000,0.3333,0.0000,0.0000,0.0000,0.0000,HS L1,0.3333,nie_do_odrzucenia,"kilka organów: wspólny wybór albo podział puli, w obu przypadkach udział po równo"
 ME,Czarnogóra,stan_nadzwyczajny,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 ME,Czarnogóra,wojna,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,
 ME,Czarnogóra,ratyfikacja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
@@ -993,7 +994,7 @@ MK,Macedonia Północna,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.
 MK,Macedonia Północna,powolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 MK,Macedonia Północna,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 MK,Macedonia Północna,rozwiazanie,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,"samorozwiązanie: przyjęto próg 2/3, jeśli tekst nie podaje innego"
-MK,Macedonia Północna,sedziowie_tk,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
+MK,Macedonia Północna,sedziowie_tk,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,"kilka organów: wspólny wybór albo podział puli, w obu przypadkach udział po równo"
 MK,Macedonia Północna,stan_nadzwyczajny,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 MK,Macedonia Północna,wojna,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,
 MK,Macedonia Północna,ratyfikacja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,"większość kwalifikowana (często tylko dla części umów, np. przekazania kompetencji)"
@@ -1012,7 +1013,7 @@ MM,Mjanma (Birma),ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5
 MM,Mjanma (Birma),budzet,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,0.5000,"próg odrzucenia weta nie podany, przyjęto większość"
 MM,Mjanma (Birma),konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.2500,,referendum tylko dla części zmian: nie wliczono
 MM,Mjanma (Birma),odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,"próg wotum nieufności nie podany, przyjęto większość"
-MM,Mjanma (Birma),sedziowie_tk,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
+MM,Mjanma (Birma),sedziowie_tk,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,"kilka organów: wspólny wybór albo podział puli, w obu przypadkach udział po równo"
 MM,Mjanma (Birma),wojna,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 MM,Mjanma (Birma),ratyfikacja,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,zgoda parlamentu tylko dla części umów: model pokazuje umowy wymagające zgody
 MM,Mjanma (Birma),usuniecie_glowy,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.3333,,
@@ -1022,7 +1023,7 @@ MN,Mongolia,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.25
 MN,Mongolia,powolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,
 MN,Mongolia,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,"próg wotum nieufności nie podany, przyjęto większość"
 MN,Mongolia,rozwiazanie,0.3333,0.0000,0.6667,0.0000,0.0000,0.0000,0.0000,,0.0000,0.3333,"samorozwiązanie: przyjęto próg 2/3, jeśli tekst nie podaje innego; tylko w określonych sytuacjach (np. nieuchwalenie budżetu, brak rządu)"
-MN,Mongolia,sedziowie_tk,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
+MN,Mongolia,sedziowie_tk,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,"kilka organów: wspólny wybór albo podział puli, w obu przypadkach udział po równo"
 MN,Mongolia,stan_nadzwyczajny,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 MN,Mongolia,wojna,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 MN,Mongolia,ratyfikacja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
@@ -1042,7 +1043,7 @@ MT,Malta,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 MT,Malta,budzet,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 MT,Malta,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,referendum tylko dla części zmian: nie wliczono
 MT,Malta,powolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
-MT,Malta,odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,
+MT,Malta,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 MT,Malta,rozwiazanie,0.0000,0.0000,0.5000,0.5000,0.0000,0.0000,0.0000,G HS,,,
 MT,Malta,sedziowie_tk,0.0000,0.0000,0.5000,0.5000,0.0000,0.0000,0.0000,G HS,,,"kilka organów: wspólny wybór albo podział puli, w obu przypadkach udział po równo"
 MT,Malta,usuniecie_glowy,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,"próg oskarżenia nie podany, przyjęto 2/3"
@@ -1113,7 +1114,7 @@ NE,Niger,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.2500,
 NE,Niger,powolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,"czy parlament głosuje nad rządem, nie wynika z tekstu"
 NE,Niger,odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,
 NE,Niger,rozwiazanie,0.0000,0.0000,0.5000,0.5000,0.0000,0.0000,0.0000,G HS,,,
-NE,Niger,sedziowie_tk,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
+NE,Niger,sedziowie_tk,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,"kilka organów: wspólny wybór albo podział puli, w obu przypadkach udział po równo"
 NE,Niger,stan_nadzwyczajny,0.0000,0.0000,0.5000,0.5000,0.0000,0.0000,0.0000,G HS,,,udział parlamentu nie wynika z tekstu
 NE,Niger,wojna,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 NE,Niger,ratyfikacja,0.2500,0.0000,0.3750,0.3750,0.0000,0.0000,0.0000,G HS L1,0.5000,nie_do_odrzucenia,zgoda parlamentu tylko dla części umów: model pokazuje umowy wymagające zgody
@@ -1215,7 +1216,7 @@ PK,Pakistan,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.
 PK,Pakistan,budzet,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,0.5000,
 PK,Pakistan,konstytucja,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.3333,,
 PK,Pakistan,powolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
-PK,Pakistan,odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,
+PK,Pakistan,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 PK,Pakistan,rozwiazanie,0.0000,0.0000,0.5000,0.5000,0.0000,0.0000,0.0000,G HS,,,
 PK,Pakistan,stan_nadzwyczajny,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 PK,Pakistan,usuniecie_glowy,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.3333,,"próg oskarżenia nie podany, przyjęto 2/3"
@@ -1382,7 +1383,7 @@ SK,Słowacja,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0
 SK,Słowacja,budzet,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,0.5000,
 SK,Słowacja,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.4000,,
 SK,Słowacja,powolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
-SK,Słowacja,odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,
+SK,Słowacja,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 SK,Słowacja,rozwiazanie,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,"tylko w określonych sytuacjach (np. nieuchwalenie budżetu, brak rządu)"
 SK,Słowacja,sedziowie_tk,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,"kilka organów: wspólny wybór albo podział puli, w obu przypadkach udział po równo"
 SK,Słowacja,stan_nadzwyczajny,0.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,G,,,udział parlamentu nie wynika z tekstu
@@ -1497,7 +1498,7 @@ TL,Timor Wschodni,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5
 TL,Timor Wschodni,budzet,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,0.5000,nieuchwalenie budżetu pozwala rozwiązać parlament
 TL,Timor Wschodni,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,
 TL,Timor Wschodni,powolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
-TL,Timor Wschodni,odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,
+TL,Timor Wschodni,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 TL,Timor Wschodni,rozwiazanie,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,"tylko w określonych sytuacjach (np. nieuchwalenie budżetu, brak rządu)"
 TL,Timor Wschodni,stan_nadzwyczajny,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 TL,Timor Wschodni,wojna,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
@@ -1695,7 +1696,7 @@ ZM,Zambia,ustawa,0.8333,0.0000,0.1667,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.33
 ZM,Zambia,budzet,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 ZM,Zambia,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,referendum tylko dla części zmian: nie wliczono
 ZM,Zambia,powolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,głowa państwa kieruje rządem i dobiera ministrów; zatwierdzanie ministrów przez izbę nie jest modelowane
-ZM,Zambia,odwolanie_rzadu,0.3333,0.0000,0.6667,0.0000,0.0000,0.0000,0.0000,,0.0000,0.3333,
+ZM,Zambia,odwolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
 ZM,Zambia,rozwiazanie,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,"tylko w określonych sytuacjach (np. nieuchwalenie budżetu, brak rządu)"
 ZM,Zambia,sedziowie_tk,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
 ZM,Zambia,stan_nadzwyczajny,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,

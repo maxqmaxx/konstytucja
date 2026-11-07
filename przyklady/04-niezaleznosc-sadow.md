@@ -121,8 +121,8 @@ Odczytane automatycznie z pełnych artykułów 89 konstytucji (z cytatem sprawdz
 
 | Wariant | Konstytucje |
 |---|---|
-| Parlament | 69 |
-| Głowa państwa | 63 |
+| Parlament | 72 |
+| Głowa państwa | 70 |
 | Rada sądownictwa | 18 |
 | Sądy lub sędziowie | 15 |
 | Inne | 10 |

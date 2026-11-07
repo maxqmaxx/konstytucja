@@ -183,7 +183,8 @@ def build(data, public=False):
         ty, sd, wy, wr = W["typologia"], W["sady"]["indeks_vs_melton_ginsburg"], W["wykonawcza"]["udzial_wykonawczej_vs_indeks"], W["wrazliwosc"]
         f3 = lambda v: str(v).replace(".", ",")  # noqa: E731
         B += [("h", 2, "Na ile ufać tym liczbom"), ("ul", [
-            f"**Odczyty a eksperci.** W {W['pola_razem']['n']} porównaniach z ręcznym kodowaniem Comparative Constitutions Project (wersja 5) zgodność wynosi {pct(W['pola_razem']['zgodnosc'])}. "
+            f"**Odczyty a eksperci.** W {W['pola_razem']['n']} porównaniach z ręcznym kodowaniem Comparative Constitutions Project (wersja 5) zgodność wynosiła {pct(W['pola_przed_rozstrzygnieciem']['zgodnosc'])}. "
+            f"Każdą z {W['rozstrzygniecia']['rozbieznosci']} rozbieżności rozstrzygnęliśmy na tekście (pytanie w naszej definicji, bez wskazania, czyja odpowiedź jest czyja, z dosłownym cytatem); {W['rozstrzygniecia']['poprawki']} odczytów poprawiliśmy, po czym zgodność wynosi {pct(W['pola_razem']['zgodnosc'])}. "
             "Pola strukturalne: liczba izb 97%, próg odrzucenia weta 99%, rozwiązanie parlamentu 97%. Najsłabiej: kto odwołuje rząd (ok. 70%), bo CCP liczy też formalne odwołanie ministrów przez głowę państwa.",
             f"**Typ ustroju.** Zgodność z klasyfikacją Cheibuba, Elkinsa i Ginsburga (2014): {pct(ty['zgodnosc'])} ({ty['n']} konstytucji, kappa {f3(ty['kappa'])}). "
             f"Udział głowy państwa w naszym modelu rośnie zgodnie z ich typem: parlamentarne {pct(ty['hs_wg_typu_cheibub']['parlamentarny'])}, półprezydenckie {pct(ty['hs_wg_typu_cheibub']['polprezydencki'])}, prezydenckie {pct(ty['hs_wg_typu_cheibub']['prezydencki'])}.",

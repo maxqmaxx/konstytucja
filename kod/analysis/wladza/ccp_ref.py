@@ -32,7 +32,7 @@ COLS = (["execnum", "hoshog", "hoselect", "hogelect", "housenum", "legapp", "ove
          "hosdec", "hogdec", "amndamaj", "judind", "judsal", "jrem", "conterm", "conlim", "jc"]
         + [f"leg_in_{i}" for i in (1, 2, 3)] + [f"amndprop_{i}" for i in (1, 2, 3)] + [f"challeg_{i}" for i in (1, 2, 3, 4, 5, 6, 8, 9)]
         + [f"cabdiss_{i}" for i in range(1, 7)] + [f"connom_{i}" for i in range(1, 8)] + [f"conap_{i}" for i in range(1, 8)]
-        + [f"jremap_{i}" for i in range(1, 8)])
+        + [f"jremap_{i}" for i in range(1, 8)] + ["hogdiss"] + [f"hogpdiss_{i}" for i in range(1, 10)] + [f"hogadiss_{i}" for i in range(1, 9)])
 
 
 def iso_by_name():

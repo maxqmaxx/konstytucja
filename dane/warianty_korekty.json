@@ -169,5 +169,505 @@
   "value": "trzy_piate",
   "basis": "art. 89: zmianę przyjętą przez obie izby zatwierdza referendum, chyba że Prezydent przedłoży ją Kongresowi, który przyjmuje ją większością 3/5",
   "reviewed": "2026-11-07"
+ },
+ {
+  "topic": "legini",
+  "country_code": "MU",
+  "field": "kto_ma",
+  "value": [
+   "rzad"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (rząd ma inicjatywę ustawodawczą): „Except upon the recommendation of a Minister, the Assembly shall not proceed upon any Bill (including any amendment to a Bill) that, in the opinion of the person presiding, makes provision for any of the following purposes for the impositio” (Section 54)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "consel",
+  "country_code": "EC",
+  "field": "kto_wybiera",
+  "value": [
+   "inne",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (parlament wybiera sędziów tk): „Members shall be elected from among the candidates submitted by the above-mentioned branches of government, through a public examination process, with citizen oversight and option for challenging the process.” (Article 434)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "consel",
+  "country_code": "MM",
+  "field": "kto_wybiera",
+  "value": [
+   "glowa_panstwa",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (parlament wybiera sędziów tk): „The President shall appoint the Chairperson and members of the Constitutional Tribunal of the Union approved by the Pyidaungsu Hluttaw.” (Chapter VI, Part 2 (Functions and Duties of the Constitutional Tribunal of the Union))",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "consel",
+  "country_code": "CO",
+  "field": "kto_wybiera",
+  "value": [
+   "glowa_panstwa",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa wybiera sędziów tk): „The judges of the Constitutional Court shall be elected by the Senate of the Republic for single terms of eight years from lists presented to it by the President of the Republic, the Supreme Court of Justice, and the Council of State.” (Article 239)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "BW",
+  "field": "kto_odwoluje",
+  "value": [
+   "glowa_panstwa",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „if the holder of the office is removed from office by the President;” (43)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "PK",
+  "field": "kto_odwoluje",
+  "value": [
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „the President shall not exercise his powers under this clause unless he is satisfied that the Prime Minister does not command the confidence of the majority of the members of the National Assembly, in which case he shall summon the National” (Article 91)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "GM",
+  "field": "kto_odwoluje",
+  "value": [
+   "glowa_panstwa",
+   "inne",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „The office of a Minister shall become vacant- on the assumption by a person of the office of President; on his or her appointment being revoked by the President; on his or her death or resignation. Without prejudice to the right to revoke a” (PART II. The Vice-President, Ministers and the Cabinet)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "legini",
+  "country_code": "NZ",
+  "field": "kto_ma",
+  "value": [
+   "rzad"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (rząd ma inicjatywę ustawodawczą): „Where any Bill is introduced into the House of Representatives, the Attorney-General shall,— in the case of a Government Bill, on the introduction of that Bill; or in any other case, as soon as practicable after the introduction of the Bill” (Part 1. General provisions (section 7))",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "consel",
+  "country_code": "NE",
+  "field": "kto_wybiera",
+  "value": [
+   "glowa_panstwa",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (parlament wybiera sędziów tk): „two (2) notable persons [personnalités] with a great professional experience in juridical or administrative matters[,] of which one (1) is proposed by the President of the Republic and one (1) is proposed by the Bureau of the National Assem” (Article 121)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "AF",
+  "field": "kto_odwoluje",
+  "value": [
+   "glowa_panstwa",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (parlament może odwołać rząd): „If the explanations given are not satisfactory, the House of People shall consider the issue of a no-confidence vote. The no-confidence vote on a Minister shall be explicit, direct, as well as based on convincing reasons. The vote shall be ” (Article 92)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "GY",
+  "field": "kto_odwoluje",
+  "value": [
+   "glowa_panstwa",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „The office of any Minister shall become vacant- if he or she resigns it by writing under his or her hand addressed to the President; if the President so directs;” (TITLE 5. THE EXECUTIVE)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "MT",
+  "field": "kto_odwoluje",
+  "value": [
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „If the House of Representatives passes a resolution, supported by the votes of a majority of all the members thereof, that it has no confidence in the Government, the President may remove the Prime Minister from office:” (81)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "legini",
+  "country_code": "LU",
+  "field": "kto_ma",
+  "value": [
+   "glowa_panstwa",
+   "poslowie",
+   "rzad"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (rząd ma inicjatywę ustawodawczą): „The Grand Duke addresses to the Chamber the proposals or bills of law he wishes to submit to adoption.” (Article 47)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "legini",
+  "country_code": "CL",
+  "field": "kto_ma",
+  "value": [
+   "druga_izba",
+   "glowa_panstwa",
+   "poslowie",
+   "rzad"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (rząd ma inicjatywę ustawodawczą): „Laws may originate in the House of Representatives or in the Senate, by message from the President of the Republic or by motion of any of its members.” (ARTICLE 65)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "legini",
+  "country_code": "SV",
+  "field": "kto_ma",
+  "value": [
+   "glowa_panstwa",
+   "inne_organy",
+   "poslowie",
+   "rzad"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (rząd ma inicjatywę ustawodawczą): „[The following] have exclusive power to propose laws: The Deputies; The President of the Republic through his Ministers;” (Article 133)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "ZA",
+  "field": "kto_odwoluje",
+  "value": [
+   "glowa_panstwa",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „The President appoints the Deputy President and Ministers, assigns their powers and functions, and may dismiss them.” (Section 91)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "legini",
+  "country_code": "CI",
+  "field": "kto_ma",
+  "value": [
+   "glowa_panstwa",
+   "poslowie",
+   "rzad"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (rząd ma inicjatywę ustawodawczą): „The President of the Republic has the power to initiate legislation, concurrently with the members of Parliament.” (Article 74)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "LC",
+  "field": "kto_odwoluje",
+  "value": [
+   "glowa_panstwa",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „the Governor-General considers that in consequence of changes in the membership of the House resulting from that election the Prime Minister will not be able to command the support of the majority of the members of the House the Governor-Ge” (Section 60(7))",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "TL",
+  "field": "kto_odwoluje",
+  "value": [
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „The President of the Republic can only dismiss the Prime Minister in accordance with the cases provided for in the previous number and when it is deemed necessary to ensure the regular functioning of the democratic institutions, after consu” (Article 112)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "BZ",
+  "field": "kto_odwoluje",
+  "value": [
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „The Governor-General shall remove the Prime Minister from office if a resolution of no confidence in the Government is passed by the House of Representatives and the Prime Minister does not within seven days either resign from his office or” (Section 37(4))",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "ZM",
+  "field": "kto_odwoluje",
+  "value": [
+   "glowa_panstwa"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (parlament może odwołać rząd): „The National Assembly may pass a vote of censure on a Minister or Provincial Minister by resolution supported by two-thirds of the votes of the Members of Parliament.” (Article 87)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "KI",
+  "field": "kto_odwoluje",
+  "value": [
+   "glowa_panstwa",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „he is removed from office by the Beretitenti;” (Part III. The Cabinet)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "legini",
+  "country_code": "BJ",
+  "field": "kto_ma",
+  "value": [
+   "glowa_panstwa",
+   "poslowie",
+   "rzad"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (rząd ma inicjatywę ustawodawczą): „The initiation of bills shall belong concurrently to the President of the Republic and to the members of the National Assembly.” (ARTICLE 105)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "legini",
+  "country_code": "KM",
+  "field": "kto_ma",
+  "value": [
+   "glowa_panstwa",
+   "poslowie",
+   "rzad"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (rząd ma inicjatywę ustawodawczą): „The initiative of law belongs concurrently to President of the Union and to the Deputies.” (Article 83)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "consel",
+  "country_code": "GQ",
+  "field": "kto_wybiera",
+  "value": [
+   "glowa_panstwa",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (parlament wybiera sędziów tk): „The Constitutional Tribunal is composed of a President and four members appointed by the President of the Republic; two of them upon proposal of the Chamber of Deputies and the Senate respectively.” (Article 101)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "legini",
+  "country_code": "DJ",
+  "field": "kto_ma",
+  "value": [
+   "glowa_panstwa",
+   "poslowie",
+   "rzad"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (rząd ma inicjatywę ustawodawczą): „The initiative of law belongs concurrently to the President of the Republic and to the members of the National Assembly.” (Article 58)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "consel",
+  "country_code": "AM",
+  "field": "kto_wybiera",
+  "value": [
+   "glowa_panstwa",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa wybiera sędziów tk): „The Constitutional Court shall consist of nine judges, three of whom shall be elected upon nomination by the President of the Republic” (Article 166)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "SK",
+  "field": "kto_odwoluje",
+  "value": [
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „Recalls the prime minister and other members of the Government in the cases listed in Articles 115 and 116” (Article 102)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "em",
+  "country_code": "NI",
+  "field": "kto_oglasza",
+  "value": "glowa_panstwa",
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (kto ogłasza stan nadzwyczajny): „The President of the Republic, in the Council of Ministers, can decree, for the totality or part of the national territory and for a given time subject to extension, the suspension of rights and guarantees” (Article 185)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "consel",
+  "country_code": "HT",
+  "field": "kto_wybiera",
+  "value": [
+   "glowa_panstwa",
+   "parlament",
+   "rada_sadownictwa",
+   "rzad"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa wybiera sędziów tk): „The Constitutional Council is composed of nine (9) members, of which three (3) are designated by the Executive Power” (Article 190bis-1)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "consel",
+  "country_code": "MK",
+  "field": "kto_wybiera",
+  "value": [
+   "glowa_panstwa",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa wybiera sędziów tk): „proposes two judges to sit on the Constitutional Court of the Republic of Macedonia” (Article 84)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "consel",
+  "country_code": "MN",
+  "field": "kto_wybiera",
+  "value": [
+   "glowa_panstwa",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa wybiera sędziów tk): „upon the nomination proposals of three of them by the State Great Hural (Parliament), other three by the President, and another three by the Supreme Court.” (Article 65)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "legini",
+  "country_code": "TR",
+  "field": "kto_ma",
+  "value": [
+   "poslowie",
+   "rzad"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (rząd ma inicjatywę ustawodawczą): „The President shall submit central government budget bill to the Grand National Assembly of Turkey at least seventy-five days prior to the beginning of the fiscal year.” (ARTICLE 161)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "MH",
+  "field": "kto_odwoluje",
+  "value": [
+   "glowa_panstwa",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „A Minister shall vacate his office as a member of the Cabinet if\nhis appointment as a Minister is revoked by the President, by instrument signed by him” (Section 8. Vacation of Office by Ministers)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "consel",
+  "country_code": "ME",
+  "field": "kto_wybiera",
+  "value": [
+   "glowa_panstwa",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa wybiera sędziów tk): „The judges of the Constitutional Court shall be elected and released from duty by the Parliament, as follows: two judges at proposal of the President of Montenegro” (Article 153)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "MA",
+  "field": "kto_odwoluje",
+  "value": [
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „Following the resignation of the Head of Government, the King terminates the functions of the whole of the government.” (Article 47)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "LA",
+  "field": "kto_odwoluje",
+  "value": [
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „Elect or remove the Prime Minister;” (Article 54)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "KN",
+  "field": "kto_odwoluje",
+  "value": [
+   "glowa_panstwa",
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „the Governor-General considers that in consequence of changes in the membership of the Assembly resulting from that election the Prime Minister will not be able to command the support of the majority of the representatives, the Governor-Gen” (Section 52(7))",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "GD",
+  "field": "kto_odwoluje",
+  "value": [
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „if a resolution of no confidence in the Government of Grenada is passed by the majority of all the members of the House of Representatives and the Prime Minister does not within three days either resign from his office or advise a dissoluti” (Section 58(6))",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "CV",
+  "field": "kto_odwoluje",
+  "value": [
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „The President of the Republic may dismiss the Government in the event of approval of a motion of censure, after consulting the parties represented in the National Assembly and the Council of the Republic.” (Article 214)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "consel",
+  "country_code": "EC",
+  "field": "kto_wybiera",
+  "value": [
+   "glowa_panstwa",
+   "inne"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa wybiera sędziów tk): „Members shall be elected from among the candidates submitted by the above-mentioned branches of government, through a public examination process” (Article 434)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
+ },
+ {
+  "topic": "cabdiss",
+  "country_code": "LS",
+  "field": "kto_odwoluje",
+  "value": [
+   "parlament"
+  ],
+  "basis": "rozstrzygnięcie rozbieżności z kodowaniem CCP (głowa państwa może odwołać rząd): „The King may, acting in accordance with the advice of the Council of State, remove the Prime Minister from office--\nif a resolution of no confidence is passed by the National Assembly in the Government of Lesotho and the Prime Minister does” (CHAPTER VIII. THE EXECUTIVE)",
+  "reviewed": "2026-11-07",
+  "metoda": "rozstrzygniecie"
  }
 ]

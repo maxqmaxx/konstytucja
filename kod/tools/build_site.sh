@@ -12,4 +12,5 @@ python3 analysis/statystyki/build.py
 python3 analysis/wladza/model.py
 python3 analysis/wladza/walidacja.py
 python3 analysis/wladza/build.py
+python3 analysis/wladza/build_en.py
 python3 analysis/theme/apply.py
