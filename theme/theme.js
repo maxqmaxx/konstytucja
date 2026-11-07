@@ -46,7 +46,52 @@
     nav.insertBefore(b, links);
     nav.classList.add('js-menu');
   }
-  const ready = () => { addButton(); addMenu(); };
+  // Long pages: "Spis treści" panel built from the h2 headings (skipped where the page has its own .toc) and "do góry".
+  function addToc() {
+    const main = document.querySelector('main') || document.body;
+    const heads = [...main.querySelectorAll('h2')].filter(h => h.offsetParent !== null && h.textContent.trim());
+    const own = document.querySelector('.toc, nav.toc, #toc');
+    const long = document.documentElement.scrollHeight > innerHeight * 3;
+    if (!long) return;
+    const bar = document.createElement('div');
+    bar.className = 'page-tools';
+    const up = document.createElement('button');
+    up.type = 'button'; up.className = 'pt-btn pt-up'; up.textContent = '↑'; up.title = 'Do góry'; up.setAttribute('aria-label', 'Przewiń do góry');
+    up.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
+    if (!own && heads.length >= 4) {
+      const used = new Set();
+      heads.forEach(h => {
+        if (!h.id) {
+          let id = h.textContent.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ł/g, 'l').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40) || 'sekcja';
+          while (used.has(id) || document.getElementById(id)) id += '-2';
+          h.id = id;
+        }
+        used.add(h.id);
+      });
+      const panel = document.createElement('nav');
+      panel.className = 'pt-panel'; panel.id = 'spis-tresci'; panel.hidden = true; panel.setAttribute('aria-label', 'Spis treści');
+      panel.innerHTML = '<b>Spis treści</b><ol>' + heads.map(h => `<li><a href="#${h.id}">${h.textContent.trim().replace(/[<>&]/g, '')}</a></li>`).join('') + '</ol>';
+      const b = document.createElement('button');
+      b.type = 'button'; b.className = 'pt-btn pt-toc'; b.textContent = '≡ Spis treści';
+      b.setAttribute('aria-controls', panel.id); b.setAttribute('aria-expanded', 'false');
+      const set = open => { panel.hidden = !open; b.setAttribute('aria-expanded', String(open)); };
+      b.addEventListener('click', () => set(panel.hidden));
+      panel.addEventListener('click', e => { if (e.target.closest('a')) set(false); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && !panel.hidden) { set(false); b.focus(); } });
+      document.addEventListener('click', e => { if (!panel.hidden && !e.target.closest('.page-tools')) set(false); });
+      const links = [...panel.querySelectorAll('a')];
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) links.forEach(a => a.classList.toggle('on', a.hash === '#' + en.target.id)); }), { rootMargin: '0px 0px -70% 0px' });
+        heads.forEach(h => io.observe(h));
+      }
+      bar.append(panel, b);
+    }
+    bar.append(up);
+    document.body.append(bar);
+    const vis = () => bar.classList.toggle('scrolled', scrollY > innerHeight);
+    addEventListener('scroll', vis, { passive: true }); vis();
+  }
+  const ready = () => { addButton(); addMenu(); addToc(); };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ready); else ready();
   // 'Zgłoś błąd': prefilled GitHub issue built from data-where / data-current at click time
   document.addEventListener('click', e => {

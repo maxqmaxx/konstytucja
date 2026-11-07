@@ -107,7 +107,10 @@ const form=document.getElementById('knobs'),out=document.getElementById('sim-out
 form.innerHTML='<div class="presets">'+PRESETS.map(([id,l])=>'<button type="button" class="button preset" data-p="'+id+'">'+esc(l)+'</button>').join('')+'</div>'+
  KNOBS.map(([k,l,opts])=>'<label class="knob"><span>'+esc(l)+'</span><select name="'+k+'">'+opts.map(([v,t],i)=>'<option value="'+v+'">'+esc(t)+'</option>').join('')+'</select></label>').join('');
 const read=()=>{const k={};KNOBS.forEach(([n])=>k[n]=form.elements[n].value);return k;};
-function render(){const k=read(),a=analyse(k);const changed=KNOBS.filter(([n,,o])=>k[n]!==o[0][0]).length;
+// only the switches that differ from the current Constitution go into the address, e.g. #tk=2/3&krs=sedziowie
+try{const h=new URLSearchParams(location.hash.slice(1));KNOBS.forEach(([n,,o])=>{const v=h.get(n);if(v&&o.some(x=>x[0]===v))form.elements[n].value=v;});}catch(e){}
+const save=()=>{try{const p=new URLSearchParams();KNOBS.forEach(([n,,o])=>{if(form.elements[n].value!==o[0][0])p.set(n,form.elements[n].value);});history.replaceState(null,'',p.toString()?'#'+p:location.pathname);}catch(e){}};
+function render(){save();const k=read(),a=analyse(k);const changed=KNOBS.filter(([n,,o])=>k[n]!==o[0][0]).length;
  let h='<div class="two"><div><h3>Podział siły: obecnie</h3>'+stack(base.prof)+'<p class="legend">'+ORDER.filter(o=>base.prof[o]>0.0005).map(o=>'<span><i style="background:'+COL[o]+'"></i>'+esc(NAMES[o])+' '+pct(base.prof[o])+'</span>').join('')+'</p></div>'+
   '<div><h3>Po zmianie'+(changed?' ('+changed+')':'')+'</h3>'+stack(a.prof)+'<p class="legend">'+ORDER.filter(o=>a.prof[o]>0.0005).map(o=>'<span><i style="background:'+COL[o]+'"></i>'+esc(NAMES[o])+' '+pct(a.prof[o])+(Math.abs(a.prof[o]-base.prof[o])>0.0005?' <b>('+pp(a.prof[o]-base.prof[o])+')</b>':'')+'</span>').join('')+'</p></div></div>';
  h+='<div class="tablewrap"><table class="w"><thead><tr><th>Decyzja</th><th>Podział siły po zmianie</th><th>Weto</th><th>Mniejszość blokująca w Sejmie</th></tr></thead><tbody>';

@@ -27,7 +27,23 @@
     });
     count.textContent = `Widoczne: ${visible} z ${items.length} propozycji`;
     document.querySelector('#empty').hidden = visible !== 0;
+    // filters in the address (#q=…&area=…&starter=1) so a filtered list can be linked; anchors like #p04 are left alone
+    try {
+      const p = new URLSearchParams();
+      if (query) p.set('q', document.querySelector('#query').value.trim());
+      fields.forEach(field => { if (values[field]) p.set(field, values[field]); });
+      if (starter) p.set('starter', '1');
+      if (p.toString() || location.hash.includes('=')) history.replaceState(null, '', p.toString() ? '#' + p : location.pathname);
+    } catch (e) { /* history unavailable */ }
   }
+  try {
+    const h = new URLSearchParams(location.hash.slice(1));
+    if (location.hash.includes('=')) {
+      if (h.get('q')) document.querySelector('#query').value = h.get('q');
+      fields.forEach(field => { const el = document.getElementById(field); if (h.get(field) && [...el.options].some(o => o.value === h.get(field))) el.value = h.get(field); });
+      if (h.get('starter') === '1') document.querySelector('#starter').checked = true;
+    }
+  } catch (e) { /* bad hash */ }
 
   function cell(tag, text) {
     const node = document.createElement(tag);

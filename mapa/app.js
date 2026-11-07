@@ -2,6 +2,7 @@
   'use strict';
   const $ = s => document.querySelector(s);
   const D = JSON.parse($('#map-data').textContent);
+  for (const c of Object.values(D.countries)) if (c.arts) for (const k in c.topics) c.topics[k] = [c.arts[c.topics[k][0]], c.topics[k][1]];
   const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const COLORS = {has:'var(--c-0f6e5c,#0f6e5c)', lacks:'var(--c-e2d8c4,#e2d8c4)', none:'var(--c-f1efe9,#f1efe9)'};
   const BINS = [[0,1949,'przed 1950','var(--c-e3eee8,#e3eee8)'],[1950,1974,'1950–1974','var(--c-b9d6c9,#b9d6c9)'],[1975,1989,'1975–1989','var(--c-86bba6,#86bba6)'],

@@ -123,12 +123,16 @@ function country(code){const c=C[code];if(!c)return '';
  const j=c.jud;h+='<div><h3>Niezależność sądów w tekście: '+(j.score==null?'za mało danych':pct(j.score/100).replace(',0%','%'))+'</h3><ul class="flags">'+Object.entries(j.components).filter(([k,v])=>v!==null).map(([k,v])=>'<li>'+(v?'✓ ':'✗ ')+esc(M.judicial[k])+'</li>').join('')+'</ul></div></div>';
  return h;}
 const sel=document.getElementById('kraj'),out=document.getElementById('kraj-out');
-const show=()=>{out.innerHTML=country(sel.value);try{localStorage.setItem('wladza-kraj',sel.value)}catch(e){}};
-try{const v=localStorage.getItem('wladza-kraj');if(v&&C[v])sel.value=v;}catch(e){}
-const h=location.hash.slice(1).toUpperCase();if(C[h])sel.value=h;
-sel.addEventListener('change',show);show();
-// decision view
+// view state in the address: #kraj=PL&decyzja=ustawa&grupa=eu (a bare #PL also works), so a view can be linked
 const ds=document.getElementById('decyzja'),dout=document.getElementById('decyzja-out'),grp=document.getElementById('grupa');
+const readHash=()=>{const raw=location.hash.slice(1);const h=new URLSearchParams(raw.includes('=')?raw:'kraj='+raw);
+ const k=(h.get('kraj')||'').toUpperCase();if(C[k])sel.value=k;if(h.get('decyzja')&&M.decisions[h.get('decyzja')])ds.value=h.get('decyzja');
+ if(h.get('grupa')&&[...grp.options].some(o=>o.value===h.get('grupa')))grp.value=h.get('grupa');return !!raw;};
+const writeHash=()=>{try{const p=new URLSearchParams({kraj:sel.value});if(ds.value!==ds.options[0].value)p.set('decyzja',ds.value);if(grp.value!=='all')p.set('grupa',grp.value);history.replaceState(null,'','#'+p);}catch(e){}};
+const show=()=>{out.innerHTML=country(sel.value);try{localStorage.setItem('wladza-kraj',sel.value)}catch(e){}};
+if(!readHash()){try{const v=localStorage.getItem('wladza-kraj');if(v&&C[v])sel.value=v;}catch(e){}}
+sel.addEventListener('change',()=>{show();writeHash();});show();
+// decision view
 function decision(){const d=ds.value,g=grp.value;const rows=Object.entries(C).filter(([k,c])=>c.decisions[d]&&(g==='all'||(g==='eu'?c.eu:c.type===g)));
  if(!rows.length){dout.innerHTML='<p class="note">Brak państw w tej grupie.</p>';return;}
  const avg={};ORDER.forEach(o=>avg[o]=rows.reduce((s,[k,c])=>s+(c.decisions[d].shares[o]||0),0)/rows.length);
@@ -140,9 +144,11 @@ function decision(){const d=ds.value,g=grp.value;const rows=Object.entries(C).fi
  h+='<div class="two"><div><p class="note">Kto ma weto (w ilu państwach)</p><table class="w"><tbody>'+Object.entries(vc).sort((a,b)=>b[1]-a[1]).map(([o,n])=>'<tr><td>'+esc(M.short[o])+'</td><td class="n">'+n+'</td><td class="n">'+pct(n/rows.length)+'</td></tr>').join('')+'</tbody></table></div>';
  h+='<div>'+btab(bc,'Ile mandatów pierwszej izby wystarczy do zablokowania (gdy pozostałe organy są za)')+(Object.keys(bh).length?btab(bh,'Gdy głowa państwa jest przeciw: ile mandatów wystarczy, by utrzymać jej sprzeciw'):'')+'</div></div>';
  dout.innerHTML=h;}
-ds.addEventListener('change',decision);grp.addEventListener('change',decision);decision();
-dout.addEventListener('click',e=>{const a=e.target.closest('a[data-k]');if(a){e.preventDefault();sel.value=a.dataset.k;show();document.getElementById('panstwo').scrollIntoView({behavior:'smooth'});}});
-document.addEventListener('click',e=>{const a=e.target.closest('a.cty');if(a){e.preventDefault();sel.value=a.dataset.k;show();document.getElementById('panstwo').scrollIntoView({behavior:'smooth'});}});
+ds.addEventListener('change',()=>{decision();writeHash();});grp.addEventListener('change',()=>{decision();writeHash();});decision();
+window.addEventListener('hashchange',()=>{readHash();show();decision();});
+const pick=k=>{sel.value=k;show();writeHash();document.getElementById('panstwo').scrollIntoView({behavior:'smooth'});};
+dout.addEventListener('click',e=>{const a=e.target.closest('a[data-k]');if(a){e.preventDefault();pick(a.dataset.k);}});
+document.addEventListener('click',e=>{const a=e.target.closest('a.cty');if(a){e.preventDefault();pick(a.dataset.k);}});
 // sortable ranking
 const tb=document.getElementById('rank');if(tb){tb.querySelectorAll('th[data-s]').forEach(th=>th.addEventListener('click',()=>{const i=+th.dataset.s,rows=[...tb.tBodies[0].rows];const dir=th.dataset.d=th.dataset.d==='1'?'-1':'1';
  rows.sort((a,b)=>{const x=a.cells[i].dataset.v,y=b.cells[i].dataset.v;return (isNaN(x)?x.localeCompare(y,'pl'):(x-y))*dir;});rows.forEach(r=>tb.tBodies[0].appendChild(r));}));}
