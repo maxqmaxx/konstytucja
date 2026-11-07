@@ -27,7 +27,27 @@
     if (nav) nav.appendChild(b);
     else { b.classList.add('floating'); document.body.appendChild(b); }
   }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', addButton); else addButton();
+  // Phone menu: one button instead of a sideways-scrolling strip; shows the current section.
+  function addMenu() {
+    const nav = document.querySelector('.site-nav'), links = nav && nav.querySelector('.nav-links');
+    if (!links || nav.querySelector('.nav-menu-btn')) return;
+    links.id = links.id || 'nav-links';
+    const cur = links.querySelector('[aria-current=page]');
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'nav-menu-btn';
+    b.setAttribute('aria-controls', links.id);
+    b.setAttribute('aria-expanded', 'false');
+    b.textContent = '☰ ' + (cur ? cur.textContent : 'Menu');
+    b.setAttribute('aria-label', 'Menu serwisu' + (cur ? ', teraz: ' + cur.textContent : ''));
+    const set = open => { nav.classList.toggle('open', open); b.setAttribute('aria-expanded', String(open)); };
+    b.addEventListener('click', () => set(!nav.classList.contains('open')));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && nav.classList.contains('open')) { set(false); b.focus(); } });
+    nav.insertBefore(b, links);
+    nav.classList.add('js-menu');
+  }
+  const ready = () => { addButton(); addMenu(); };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ready); else ready();
   // 'Zgłoś błąd': prefilled GitHub issue built from data-where / data-current at click time
   document.addEventListener('click', e => {
     const a = e.target.closest && e.target.closest('a.report[data-where]');

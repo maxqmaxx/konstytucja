@@ -30,6 +30,14 @@ sys.path.insert(0, str(HERE.parent / "panstwa"))
 NAV_ITEMS = None  # loaded lazily from panstwa/build.py (single source of the menu)
 CURRENT = {"mapa": "mapa", "rp": "rp", "problemy": "problemy", "tematy": "tematy", "konstruktor": "konstruktor", "statystyki": "statystyki", "wladza": "wladza",
            "panstwa": "panstwa", "polska": "polska", "wizualizacje": "wizualizacje", "ATLAS.html": "atlas"}
+SITE = "https://maxqmaxx.github.io/konstytucja/"
+SITE_NAME = "Konstytucje świata"
+DEFAULT_DESC = "Dane i narzędzia do myślenia o lepszej polskiej konstytucji: 188 konstytucji świata, 331 rozwiązań, Konstytucja RP na tle świata."
+ATLAS_DESC = "130 nietypowych zapisów konstytucyjnych z całego świata: oryginalne, ważne i niebezpieczne rozwiązania, z parafrazą, znaczeniem i źródłem."
+# section (first path component or file) -> share image in theme/og/
+OG = {"mapa": "mapa", "rp": "rp", "problemy": "problemy", "tematy": "tematy", "konstruktor": "konstruktor", "statystyki": "statystyki",
+      "wladza": "wladza", "panstwa": "panstwa", "polska": "polska", "ATLAS.html": "atlas", "teczka": "teczka"}
+META_RE = re.compile(r"<!--meta-->.*?<!--/meta-->", re.S)
 NAV_RE = re.compile(r'<nav class="site-nav"[^>]*>.*?</nav>|<nav aria-label="Widoki kolekcji">.*?</nav>(?=\s*<div class="hero">)', re.S)
 
 
@@ -51,6 +59,29 @@ def site_nav(rel: str, up: str) -> str:
     links = "".join(f'<a href="{up}{href}"{' aria-current="page"' if key == current else ""}>{label}</a>' for href, label, key in nav_items())
     return f'<nav class="site-nav" aria-label="Serwis"><a class="brand" href="{up}ATLAS.html">Konstytucje świata</a><div class="nav-links">{links}</div></nav>'
 
+
+
+def head_meta(html: str, rel: str, up: str) -> str:
+    """Favicon, Open Graph and Twitter card tags (idempotent: replaced between <!--meta--> markers)."""
+    html = META_RE.sub("", html)
+    title = re.search(r"<title>(.*?)</title>", html, re.S)
+    title = re.sub(r"\s+", " ", title.group(1)).strip().replace('"', "&quot;") if title else SITE_NAME
+    desc = re.search(r'<meta name="description" content="([^"]*)"', html)
+    extra = ""
+    fallback = ATLAS_DESC if rel.endswith("ATLAS.html") else DEFAULT_DESC
+    if not desc:
+        extra = f'<meta name="description" content="{fallback}">'
+    desc = desc.group(1) if desc else fallback
+    first = rel.split("/")[0]
+    img = "symulator" if rel == "wladza/symulator.html" else OG.get(first, "default")
+    url = SITE + ("" if rel == "index.html" else rel)
+    tags = (f'<link rel="icon" href="{up}/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="{up}/apple-touch-icon.png">'
+            f'<meta name="theme-color" content="#142d3b">{extra}'
+            f'<meta property="og:type" content="website"><meta property="og:site_name" content="{SITE_NAME}"><meta property="og:locale" content="pl_PL">'
+            f'<meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:url" content="{url}">'
+            f'<meta property="og:image" content="{SITE}theme/og/{img}.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
+            f'<meta name="twitter:card" content="summary_large_image">')
+    return html.replace("</head>", f"<!--meta-->{tags}<!--/meta--></head>", 1)
 
 
 def full(h):
@@ -166,7 +197,23 @@ def theme_css(colours):
             ".site-nav .theme-toggle{width:auto;flex:0 0 auto}.theme-toggle.floating{position:fixed;top:10px;right:10px;z-index:55;background:#142d3b;margin:0}"
             ".teczka-add{background:var(--c-ffffff,#fff)!important;color:var(--c-006858,#006858)!important;border-color:var(--c-9fb7ac,#9fb7ac)!important}\n"
             ".report{font:500 12px system-ui,sans-serif;color:var(--muted,#5a666d);margin-left:10px;white-space:nowrap;text-decoration:underline dotted}"
-            ".report:hover{color:var(--c-984926,#984926)}\n")
+            ".report:hover{color:var(--c-984926,#984926)}\n"
+            # readability: no text below 12px; form fields at 16px on phones (iOS zooms into smaller ones)
+            "small{font-size:max(12px,.8em)}code{font-size:max(12px,.9em)}.tag,a.tag,span.tag,.chip span,.eyebrow,.bar-row small,.bar-row span,.bar-row b,"
+            ".references a,.provenance code,label,select,option{font-size:max(12px,1em)}.tag,a.tag,span.tag{font-size:12px}select,option{font-size:13px}\n"
+            "@media (max-width:760px){select,input[type=text],input[type=search],input[type=number],textarea{font-size:16px}}\n"
+            # touch: comfortable targets on touch screens only (desktop stays compact)
+            "@media (pointer:coarse){a.tag,.tags a{min-height:32px;display:inline-flex;align-items:center}button.link{min-height:40px}"
+            "input[type=checkbox],input[type=radio]{width:20px;height:20px}summary{min-height:40px;padding-top:8px;padding-bottom:8px}"
+            ".toc a{min-height:40px;display:flex;align-items:center}}\n"
+            # mobile menu (theme.js adds the button and .js-menu; without JS the links scroll sideways)
+            ".nav-menu-btn{display:none}"
+            "@media (max-width:760px){.site-nav.js-menu .nav-menu-btn{display:inline-flex;align-items:center;gap:6px;order:1;min-height:40px;padding:4px 12px;"
+            "border:1px solid #41525e;border-radius:18px;background:transparent;color:#e4eddf;font:13px system-ui,sans-serif;cursor:pointer}"
+            ".site-nav.js-menu .theme-toggle{order:1}.site-nav.js-menu .nav-links{display:none}"
+            ".site-nav.js-menu.open .nav-links{display:grid;grid-template-columns:1fr 1fr;gap:0 16px;overflow:visible;-webkit-mask-image:none;mask-image:none;padding:6px 0 12px}"
+            ".site-nav.js-menu.open .nav-links a{min-height:44px;border-bottom:1px solid #24404f}"
+            ".nav-menu-btn:focus-visible{outline:3px solid #bc642e;outline-offset:3px}}\n")
 
 
 def main(root: Path) -> int:
@@ -196,6 +243,7 @@ def main(root: Path) -> int:
         html = NAV_RE.sub(lambda m: site_nav(p.relative_to(root).as_posix(), top), html, count=1)
         if 'class="site-nav"' not in html and "masthead" not in html:
             html = re.sub(r"(<header[^>]*>)", lambda m: m.group(1) + site_nav(p.relative_to(root).as_posix(), top), html, count=1)
+        html = head_meta(html, p.relative_to(root).as_posix(), up)
         if "theme/theme.css" not in html:
             html = html.replace("</head>", f'<link rel="stylesheet" href="{up}/theme.css"><script src="{up}/theme.js"></script></head>', 1)
         p.write_text(html, encoding="utf-8")
