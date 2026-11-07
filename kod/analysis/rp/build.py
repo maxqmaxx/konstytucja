@@ -375,9 +375,11 @@ q.addEventListener('input',run);s.addEventListener('change',run);if(q.value||s.v
 <p class="summary" id="summary" aria-live="polite"></p><p class="note">Konstytucja RP jest wyżej i nie jest liczona w tej liście.</p><ol class="variants">{"".join(cards)}</ol>
 <details class="table-box"><summary>Konstytucje bez tego tematu w kodowaniu CCP ({len(missing)})</summary><p class="note">{escape(", ".join(missing))}</p></details>
 <script>(()=>{{const $=id=>document.getElementById(id),q=$('q'),g=$('grp'),si=$('sila'),pr=$('prob'),s=$('summary');const items=[...document.querySelectorAll('.variant')];const t=items.map(i=>i.textContent.toLowerCase());
-try{{const h=new URLSearchParams(location.hash.slice(1));if(h.get('problem'))pr.value=h.get('problem');if(h.get('sila'))si.value=h.get('sila');}}catch{{}}
-const inList=(v,l)=>!v||(' '+l+' ').includes(' '+v+' ');const wv=$('wvar');if(wv)wv.addEventListener('change',()=>run());
-function run(){{const v=q.value.trim().toLowerCase();let n=0;items.forEach((i,k)=>{{const ok=(!v||t[k].includes(v))&&(!g.value||i.dataset[g.value]==='1')&&inList(si.value,i.dataset.sila)&&inList(pr.value,i.dataset.prob)&&(!wv||inList(wv.value,i.dataset.w||''));i.hidden=!ok;n+=ok;}});s.textContent=`Pokazano ${{n}} z ${{items.length}} konstytucji.`;}}
+const wv=$('wvar');const F={{q:q,grupa:g,sila:si,problem:pr,wariant:wv}};
+try{{const h=new URLSearchParams(location.hash.slice(1));for(const[k,el]of Object.entries(F))if(el&&h.get(k))el.value=h.get(k);}}catch{{}}
+const inList=(v,l)=>!v||(' '+l+' ').includes(' '+v+' ');if(wv)wv.addEventListener('change',()=>run());
+const save=()=>{{try{{const p=new URLSearchParams();for(const[k,el]of Object.entries(F))if(el&&el.value.trim())p.set(k,el.value.trim());history.replaceState(null,'',p.toString()?'#'+p:location.pathname+location.search);}}catch{{}}}};
+function run(){{save();const v=q.value.trim().toLowerCase();let n=0;items.forEach((i,k)=>{{const ok=(!v||t[k].includes(v))&&(!g.value||i.dataset[g.value]==='1')&&inList(si.value,i.dataset.sila)&&inList(pr.value,i.dataset.prob)&&(!wv||inList(wv.value,i.dataset.w||''));i.hidden=!ok;n+=ok;}});s.textContent=`Pokazano ${{n}} z ${{items.length}} konstytucji.`;}}
 q.addEventListener('input',run);[g,si,pr].forEach(e=>e.addEventListener('change',run));run();}})();</script>'''
         (TOPICS_DIR / f"{key}.html").write_text(page(f"{ccp.labels[key]}: warianty przepisów", body, description=f"{ccp.labels[key]} w konstytucjach świata.",
                                                      css="../panstwa/style.css", current="tematy").replace("</head>", '<link rel="stylesheet" href="../rp/rp.css"></head>').replace("</body>", TECZKA))

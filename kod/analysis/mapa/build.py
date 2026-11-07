@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import math
 from collections import defaultdict
 from html import escape
@@ -124,6 +125,26 @@ def geometry_path(geom, arcs):
     return "".join(parts), total, best[1]
 
 
+def relative_path(d: str) -> str:
+    """Absolute "M x yL x y…Z" -> "M x yl dx dy dx dy…z": same shape, about 40% shorter."""
+    out = []
+    for sub in re.findall(r"M[^M]*", d):
+        closed = sub.rstrip().endswith("Z")
+        pts = [tuple(map(float, p.split())) for p in re.split(r"[ML]", sub.replace("Z", "")) if p.strip()]
+        if not pts:
+            continue
+        x0, y0 = pts[0]
+        steps, px, py = [], round(x0, 1), round(y0, 1)
+        for x, y in pts[1:]:
+            x, y = round(x, 1), round(y, 1)
+            dx, dy = round(x - px, 1), round(y - py, 1)
+            if dx or dy:
+                steps.append(f"{dx:g} {dy:g}")
+            px, py = x, y
+        out.append(f"M{round(x0, 1):g} {round(y0, 1):g}" + ("l" + " ".join(steps) if steps else "") + ("z" if closed else ""))
+    return "".join(out).replace(" -", "-")
+
+
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -171,8 +192,16 @@ def main() -> int:
             "year": doc["year_enacted"], "revised": doc["year_revised"],
             "stale": bool(rec.get("update_needed")) if "update_needed" in rec else None,
             "url": html_url.split("?")[0], "local": doc["html"],
-            "eu": code in EU27, "topics": sections.get(code, {}), "atlas": atlas.get(code, []),
+            "eu": code in EU27, "atlas": atlas.get(code, []),
         }
+        # article labels repeat across topics: store each once (app.js expands them on load)
+        arts, idx, topics = [], {}, {}
+        for t, (label, sec) in sections.get(code, {}).items():
+            if label not in idx:
+                idx[label] = len(arts)
+                arts.append(label)
+            topics[t] = [idx[label], sec]
+        countries[code]["arts"], countries[code]["topics"] = arts, topics
     missing = sorted(set(by_code) - seen - set(EXTRA_POINTS))
     if missing:
         raise SystemExit(f"sample countries without geometry: {missing}")
@@ -186,7 +215,7 @@ def main() -> int:
     for s in sorted(shapes, key=lambda s: s["small"]):
         label = escape(s["name"])
         if s["d"]:
-            paths.append(f'<path class="land{" in" if s["code"] in countries else ""}" data-code="{s["code"]}" d="{s["d"]}"><title>{label}</title></path>')
+            paths.append(f'<path class="land{" in" if s["code"] in countries else ""}" data-code="{s["code"]}" d="{relative_path(s["d"])}"><title>{label}</title></path>')
     dots = "".join(
         f'<circle class="dot in" data-code="{s["code"]}" cx="{s["c"][0]}" cy="{s["c"][1]}" r="3.2"><title>{escape(s["name"])}</title></circle>'
         for s in shapes if s["small"] and s["code"] in countries and s["c"])

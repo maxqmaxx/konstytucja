@@ -34,7 +34,7 @@ class MapTests(unittest.TestCase):
         pl = self.data["countries"]["PL"]
         idx = {t[0]: i for i, t in enumerate(self.data["topics"])}
         self.assertNotIn(str(idx["unamend"]), pl["topics"])
-        self.assertEqual(pl["topics"][str(idx["hosterml"])][0], "art. 127")
+        self.assertEqual(pl["arts"][pl["topics"][str(idx["hosterml"])][0]], "art. 127")  # labels stored once per country
         self.assertTrue(pl["eu"])
 
     def test_nav_links(self):

@@ -213,7 +213,25 @@ def theme_css(colours):
             ".site-nav.js-menu .theme-toggle{order:1}.site-nav.js-menu .nav-links{display:none}"
             ".site-nav.js-menu.open .nav-links{display:grid;grid-template-columns:1fr 1fr;gap:0 16px;overflow:visible;-webkit-mask-image:none;mask-image:none;padding:6px 0 12px}"
             ".site-nav.js-menu.open .nav-links a{min-height:44px;border-bottom:1px solid #24404f}"
-            ".nav-menu-btn:focus-visible{outline:3px solid #bc642e;outline-offset:3px}}\n")
+            ".nav-menu-btn:focus-visible{outline:3px solid #bc642e;outline-offset:3px}}\n"
+            # page tools: table of contents and back-to-top (theme.js)
+            ".page-tools{position:fixed;right:16px;bottom:16px;z-index:50;display:flex;gap:8px;align-items:flex-end;opacity:0;pointer-events:none;transition:opacity .2s}"
+            ".page-tools.scrolled{opacity:1;pointer-events:auto}"
+            ".pt-btn{min-height:44px;min-width:44px;padding:8px 14px;border-radius:22px;border:1px solid var(--c-41525e,#41525e);background:var(--c-142d3b,#142d3b);"
+            "color:#fff;font:600 14px system-ui,sans-serif;cursor:pointer;box-shadow:0 4px 14px #0003}.pt-btn:focus-visible{outline:3px solid #bc642e;outline-offset:3px}"
+            ".pt-panel{position:absolute;right:0;bottom:56px;width:min(320px,calc(100vw - 32px));max-height:min(70vh,520px);overflow:auto;background:var(--c-ffffff,#fff);"
+            "color:var(--c-1d2a35,#1d2a35);border:1px solid var(--c-d9ddd6,#d9ddd6);border-radius:8px;padding:12px 14px;box-shadow:0 8px 28px #0003;font:14px/1.4 system-ui,sans-serif}"
+            ".pt-panel ol{margin:6px 0 0;padding-left:20px}.pt-panel li{margin:2px 0}.pt-panel a{display:block;padding:6px 0;color:inherit;text-decoration:none}"
+            ".pt-panel a:hover,.pt-panel a.on{color:var(--c-006858,#006858);text-decoration:underline}"
+            "h2[id]{scroll-margin-top:16px}\n"
+            # print: content only, light, links spelled out
+            "@media print{.site-nav,header .site-nav,.theme-toggle,.nav-menu-btn,.page-tools,.report,.teczka-add,.skip,.controls,form[role=search],button,.k-out .actions{display:none!important}"
+            ":root,:root[data-theme=dark]{color-scheme:light}body{background:#fff!important;color:#000!important;font-size:11pt}"
+            "header,.hero,.hero-dark{background:#fff!important;color:#000!important}header *{color:#000!important}"
+            "main,.wrap{max-width:none!important;padding:0!important}a{color:#000!important}"
+            "main a[href^='http']::after{content:' (' attr(href) ')';font-size:8pt;color:#444;word-break:break-all}"
+            ".box,.chart,.card,.tile,tr,figure,details{break-inside:avoid}h1,h2,h3{break-after:avoid}details{display:block}details>*{display:block}"
+            "table{border-collapse:collapse}th,td{border:1px solid #999!important}.tablewrap{max-height:none!important;overflow:visible!important}}\n")
 
 
 def main(root: Path) -> int:

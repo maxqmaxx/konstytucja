@@ -25,6 +25,7 @@
 (() => {
   'use strict';
   const D = JSON.parse(document.getElementById('data').textContent);
+  for (const c of Object.values(D.countries)) if (c.arts) for (const k in c.topics) c.topics[k] = [c.arts[c.topics[k][0]], c.topics[k][1]];
   const $ = id => document.getElementById(id);
   const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const codes = Object.keys(D.countries).sort((a,b)=>D.countries[a].name.localeCompare(D.countries[b].name,'pl'));

@@ -100,6 +100,17 @@ def page(title, body, up="../", description="", css="style.css", current="panstw
 </body></html>'''
 
 
+def packed(sections):
+    """Article labels repeat across topics: {"arts": [label…], "topics": {topic: [label index, section]}} (expanded in the page)."""
+    arts, idx, topics = [], {}, {}
+    for t, (label, sec) in sections.items():
+        if label not in idx:
+            idx[label] = len(arts)
+            arts.append(label)
+        topics[t] = [idx[label], sec]
+    return {"arts": arts, "topics": topics}
+
+
 def edition_key(rec):
     for item in [rec.get("text") or {}] + list(rec.get("assets") or []):
         path = item.get("path") if isinstance(item, dict) else None
@@ -227,7 +238,7 @@ def main() -> int:
 
     compare_data = {"topics": ccp.topic_rows(), "countries": {
         c: {"name": name_pl(c, d["country"]), "title": d["title"], "year": d["year_enacted"],
-            "url": f'https://www.constituteproject.org/constitution/{d["id"].split(":")[-1]}', "topics": ccp.sections.get(c, {})}
+            "url": f'https://www.constituteproject.org/constitution/{d["id"].split(":")[-1]}', **packed(ccp.sections.get(c, {}))}
         for c, d in ccp.by_code.items()}}
     template = (HERE / "porownaj.template.html").read_text()
     payload = json.dumps(compare_data, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
