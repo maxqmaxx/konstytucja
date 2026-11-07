@@ -24,16 +24,16 @@ from build import page, name_pl  # noqa: E402
 
 EU27 = {"AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT",
         "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE"}
-DATA_DATE = "2026-11-05"
+DATA_DATE = "2026-11-07"
 GROUPS = [("Głowa państwa", ["hosterml", "hosterm", "override", "hosdec", "hosdiss"]),
-          ("Parlament i rząd", ["lhselect", "legdiss", "hogdlim", "immunity"]),
+          ("Parlament i rząd", ["lhselect", "legapp", "legini", "hogelect", "cabdiss", "legdiss", "hogdlim", "hospow", "immunity"]),
           ("Sądy i prokuratura", ["consel", "conterm", "conlim", "conpow", "jc", "jrem", "atgen"]),
           ("Zmiana konstytucji", ["amend", "unamend"]),
           ("Obywatele", ["referen", "initiat", "ombuds", "infoacc", "citrev"]),
           ("Wybory, partie, przejrzystość", ["ecom", "partprh", "camppubf", "assets"]),
           ("Prawa i wartości", ["health", "water", "env", "privacy", "offrel"]),
           ("Państwo w świecie i obronność", ["intorgs", "treatcon", "treat", "war", "milrest", "milserv"]),
-          ("Kryzys, finanse, majątek", ["em", "balbudgt", "bank", "transfer", "resrce"])]
+          ("Kryzys, finanse, majątek", ["em", "budget", "balbudgt", "bank", "transfer", "resrce"])]
 
 CSS = """
 .k-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:start}

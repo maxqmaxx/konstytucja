@@ -28,7 +28,7 @@ CSS_FILES = ["panstwa/style.css", "rp/rp.css", "polska/style.css", "mapa/style.c
 SKIP_DIRS = {"vendor", "node_modules", "sources", "__pycache__"}
 sys.path.insert(0, str(HERE.parent / "panstwa"))
 NAV_ITEMS = None  # loaded lazily from panstwa/build.py (single source of the menu)
-CURRENT = {"mapa": "mapa", "rp": "rp", "problemy": "problemy", "tematy": "tematy", "konstruktor": "konstruktor", "statystyki": "statystyki",
+CURRENT = {"mapa": "mapa", "rp": "rp", "problemy": "problemy", "tematy": "tematy", "konstruktor": "konstruktor", "statystyki": "statystyki", "wladza": "wladza",
            "panstwa": "panstwa", "polska": "polska", "wizualizacje": "wizualizacje", "ATLAS.html": "atlas"}
 NAV_RE = re.compile(r'<nav class="site-nav"[^>]*>.*?</nav>|<nav aria-label="Widoki kolekcji">.*?</nav>(?=\s*<div class="hero">)', re.S)
 
@@ -123,6 +123,8 @@ def files(root: Path):
         for f in filenames:
             if "template" in f:
                 continue  # build inputs: placeholders like @@NAV@@ must survive; outputs get themed instead
+            if f.startswith("raport."):
+                continue  # standalone reports (copied to the share) carry their own light/dark styles
             if (f.endswith((".html", ".css")) and f != "theme.css") or (Path(dirpath) / f).relative_to(root).as_posix() in JS_FILES:
                 yield Path(dirpath) / f
 

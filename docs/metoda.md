@@ -35,22 +35,22 @@ Pilot porównał Claude Opus 5.5, DeepSeek V4 Pro i DeepSeek V4.1 Flash na tych 
 
 ## Warianty kluczowych rozwiązań
 
-Dla 43 tematów model odczytał dokładne warianty z zamkniętych list ([`dane/warianty_schemat.json`](../dane/warianty_schemat.json)):
+Dla 49 tematów model odczytał dokładne warianty z zamkniętych list ([`dane/warianty_schemat.json`](../dane/warianty_schemat.json)):
 - **głowa państwa:** limit i długość kadencji, weto i jego odrzucenie, dekrety, usunięcie z urzędu;
-- **parlament i rząd:** ordynacja, rozwiązanie parlamentu, konstruktywne wotum, immunitet;
+- **parlament i rząd:** ordynacja, uchwalanie ustaw (izby, weto drugiej izby, rola głowy państwa), inicjatywa ustawodawcza, powołanie i odwołanie rządu, kontrasygnata, rozwiązanie parlamentu, konstruktywne wotum, immunitet;
 - **sądy:** wybór, kadencja i ponowny wybór sędziów sądu konstytucyjnego, dostęp do sądu konstytucyjnego i skutki wyroków, rada sądownictwa, odwołanie sędziów, prokurator generalny;
 - **zmiana konstytucji:** procedura i klauzula wieczysta;
 - **obywatele:** referendum, inicjatywa obywatelska, rzecznik praw, dostęp do informacji publicznej, utrata obywatelstwa;
 - **wybory, partie, przejrzystość:** organ wyborczy, zakazane partie, finansowanie partii i kampanii, jawność majątku osób publicznych;
 - **prawa i wartości:** ochrona zdrowia, prawo do wody, ochrona środowiska, prywatność i ochrona danych, religia państwowa i świeckość;
 - **państwo w świecie i obronność:** przekazanie kompetencji organizacjom międzynarodowym, status umów i prawa międzynarodowego, ratyfikacja, wypowiedzenie wojny i użycie wojska, ograniczenia sił zbrojnych, pobór;
-- **kryzys, finanse, majątek:** stany nadzwyczajne, reguły fiskalne i limity zadłużenia, bank centralny, ograniczenia sprzedaży i własności ziemi, zakaz zbywania zasobów naturalnych i kluczowych aktywów.
+- **kryzys, finanse, majątek:** stany nadzwyczajne, budżet (kto przygotowuje, co gdy nie zostanie uchwalony), reguły fiskalne i limity zadłużenia, bank centralny, ograniczenia sprzedaży i własności ziemi, zakaz zbywania zasobów naturalnych i kluczowych aktywów.
 
 Jak to działa:
 - **Wejście:** pełne artykuły zawierające przepisy oznaczone przez CCP (także nieoznaczone punkty wyliczeń) oraz artykuły, do których tekst odsyła („zasady z art. 1 i 20”). Gdy CCP nie oznaczył tematu w danej konstytucji, model dostaje do trzech artykułów znalezionych po słowach kluczowych (kolumna `zrodlo_fragmentu` = „słowa kluczowe”).
-- **Wejście w 21 nowszych tematach** (pole `ccp_tags` w schemacie, np. ziemia, dług, ratyfikacja, prawa): artykuły oznaczone kilkoma pokrewnymi tematami CCP, a w każdej konstytucji także do pięciu artykułów znalezionych po słowach kluczowych. Z artykułów dłuższych niż 2500 znaków zostaje pierwszy akapit i akapity najlepiej pasujące do słów kluczowych. Dzięki temu przepisy w innym miejscu konstytucji (np. art. 216 ust. 5 Konstytucji RP o długu) nie są pomijane.
+- **Wejście w 27 nowszych tematach** (pole `ccp_tags` w schemacie, np. ziemia, dług, ratyfikacja, prawa): artykuły oznaczone kilkoma pokrewnymi tematami CCP, a w każdej konstytucji także do pięciu artykułów znalezionych po słowach kluczowych. Z artykułów dłuższych niż 2500 znaków zostaje pierwszy akapit i akapity najlepiej pasujące do słów kluczowych. Dzięki temu przepisy w innym miejscu konstytucji (np. art. 216 ust. 5 Konstytucji RP o długu) nie są pomijane.
 - **Tylko tekst:** model nie korzysta z wiedzy spoza tekstu, a gdy tekst czegoś nie określa, wpisuje „nie_wynika”.
-- **Cytat:** każda odpowiedź ma dosłowny cytat, a kod sprawdza, że cytat występuje w źródle. Odpowiedzi bez zgodnego cytatu pomijamy. Z 3168 odczytów zostało 2972; odpadły głównie artykuły znalezione po słowach kluczowych, które okazały się nie na temat.
+- **Cytat:** każda odpowiedź ma dosłowny cytat, a kod sprawdza, że cytat występuje w źródle. Odpowiedzi bez zgodnego cytatu pomijamy. Z 7610 odczytów zostało 7028; odpadły głównie artykuły znalezione po słowach kluczowych, które okazały się nie na temat.
 - **Kontrola:** wyniki dla Polski sprawdzono ręcznie. Korekty z podstawą prawną zapisano jawnie w [`dane/warianty_korekty.json`](../dane/warianty_korekty.json). Przykład: zakaz finansowania deficytu przez NBP (art. 220 ust. 2) leży w innym temacie CCP, więc model go nie widział.
 
 Ograniczenia:
@@ -64,6 +64,16 @@ Ograniczenia:
 - **Konstruktor** porównuje wybrany zestaw wariantów z konstytucjami, dla których dane pole ustalono. Kolejność: najpierw różnica między zgodnymi a niezgodnymi polami, potem liczba zgodnych. Napięcia „do przemyślenia” to krótka, ręcznie spisana lista typowych problemów z literatury porównawczej. Nie są oceną ani pełną analizą.
 - **Długość konstytucji** to liczba słów angielskiego wydania w Constitute, co pozwala porównywać państwa niezależnie od języka. Przekład może być nieco dłuższy lub krótszy od oryginału. Wielka Brytania nie ma jednej konstytucji; Constitute zestawia jej ustawy ustrojowe.
 - **Trend od 2000 r.** porównuje odsetek konstytucji z danym rozwiązaniem wśród uchwalonych od 2000 r. (49) i starszych (139). Uwzględnia tylko rozwiązania obecne w co najmniej 10 konstytucjach.
+
+## Kto rządzi, kto blokuje (podział władzy)
+
+Strona [Władza](https://maxqmaxx.github.io/konstytucja/wladza/index.html) i pliki `dane/wladza_kraje.csv`, `dane/wladza_decyzje.csv` liczą, jak konstytucja dzieli 11 kluczowych decyzji: ustawę, budżet, zmianę konstytucji, powołanie i odwołanie rządu, rozwiązanie parlamentu, wybór sędziów sądu konstytucyjnego, stan nadzwyczajny, wojnę, ratyfikację umów i usunięcie głowy państwa. Kod: `kod/analysis/wladza/model.py`.
+
+- **Gra decyzyjna.** Z wariantów (np. próg odrzucenia weta, siła drugiej izby, wyłączna inicjatywa budżetowa rządu, kontrasygnata, kto rozwiązuje parlament) powstaje lista „zwycięskich koalicji”: które organy muszą się zgodzić i jaki odsetek mandatów każdej izby jest potrzebny.
+- **Udział siły** to indeks Shapleya-Shubika: jak często organ przesądza o wyniku, gdy organy dołączają w losowej kolejności. Organy jednoosobowe (głowa państwa, rząd, naród w referendum, sądy) są graczami, a izba to duża grupa równych posłów. Weto, które izba odrzuca większością 3/5, daje głowie państwa „okno” między 50% a 60% mandatów, czyli 10% siły w tej decyzji; przy 2/3 to 16,7%, przy wecie absolutnym 50%. Liczone dokładnie (całki wielomianów), bez losowania. Profil państwa to średnia z decyzji, a HHI to suma kwadratów udziałów (koncentracja).
+- **Weto i mniejszość blokująca.** Weto ma organ niezbędny w każdej zwycięskiej koalicji. Mniejszość blokująca to najmniejszy odsetek mandatów pierwszej izby, który zatrzyma decyzję, gdy pozostałe organy są za, oraz ile mandatów wystarczy, by utrzymać sprzeciw głowy państwa.
+- **Typ ustroju** wynika z tekstu: przed kim odpowiada rząd (parlament, głowa państwa, oba organy) i czy głowa państwa kieruje rządem. Gdy tekst nie mówi, kto kieruje rządem, a w całej konstytucji nie pada nazwa urzędu premiera ani monarchy, przyjmujemy, że rządem kieruje głowa państwa.
+- **Ograniczenia.** Organy są jednolite: model nie zna partii, koalicji ani kohabitacji. Obie izby głosują tą samą większością. Kolejność (kto proponuje pierwszy) nie daje siły; liczy się tylko, czyja zgoda jest potrzebna. Gdy sędziów wybiera kilka organów, każdy dostaje równy udział. „Nie wynika z tekstu” prowadzi do założenia wypisanego przy decyzji. Do rankingów trafiają państwa z co najmniej 6 decyzjami bez niewiadomych w strukturze (178 ze 188).
 
 ## Atlas i propozycje
 

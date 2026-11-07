@@ -162,6 +162,8 @@ def wide_unit(topic, spec, doc_id, d, arts, by_num):
     # articles; the excerpt itself keeps document order
     prio = sorted([a for a in tagged if scored.get(a, 0) > 0] + kw, key=lambda a: (-scored[a], a not in tagged, order[a]))
     rest = sorted([a for a in tagged if scored.get(a, 0) == 0], key=order.get)
+    if spec.get("tag_first"):  # every tagged article before any keyword-only one (long keyword-rich chapters crowd them out)
+        prio, rest = sorted(tagged, key=lambda a: (-scored.get(a, 0), order[a])) + [a for a in prio if a not in tagged], []
     chosen, n = {}, 0
     for a in prio + rest:
         chunk = compress(a, arts[a], spec.get("keywords", []))

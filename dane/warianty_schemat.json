@@ -1,5 +1,5 @@
 {
- "_doc": "Per-topic variant schemas. Field types: enum (one value), multi (list of values), int (number or null), bool3 (tak/nie/nie_wynika). Every enum has 'nie_wynika' (not stated in the excerpt). Each answer carries a verbatim quote checked in code. 'keywords': AND of OR-groups of regexes, used to find articles in constitutions where CCP did not tag the topic. Optional 'hints' per field: longer value descriptions used in the model prompt instead of the short UI labels in 'values'.",
+ "_doc": "Per-topic variant schemas. Field types: enum (one value), multi (list of values), int (number or null), bool3 (tak/nie/nie_wynika). Every enum has 'nie_wynika' (not stated in the excerpt). Each answer carries a verbatim quote checked in code. 'keywords': AND of OR-groups of regexes, used to find articles in constitutions where CCP did not tag the topic. Optional 'hints' per field: longer value descriptions used in the model prompt instead of the short UI labels in 'values'. Optional 'tag_first': in wide excerpts, CCP-tagged articles take the size budget before keyword-only articles.",
  "hosterml": {
   "title": "Limit kadencji głowy państwa",
   "fields": {
@@ -1754,5 +1754,454 @@
     "public (documents|records)"
    ]
   ]
+ },
+ "hogelect": {
+  "title": "Powołanie szefa rządu",
+  "ccp_tags": [
+   "hogelect",
+   "cabsel"
+  ],
+  "fields": {
+   "szef_rzadu": {
+    "type": "enum",
+    "label": "Kto kieruje rządem",
+    "values": {
+     "odrebny_premier": "Odrębny premier lub kanclerz",
+     "glowa_panstwa": "Głowa państwa kieruje rządem",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "kto_wskazuje": {
+    "type": "multi",
+    "label": "Kto wskazuje lub powołuje premiera",
+    "values": {
+     "glowa_panstwa": "Głowa państwa",
+     "parlament": "Parlament",
+     "inne": "Inne"
+    }
+   },
+   "inwestytura": {
+    "type": "enum",
+    "label": "Wotum zaufania przy powołaniu",
+    "values": {
+     "uprzednia": "Wybór lub zgoda parlamentu przed powołaniem",
+     "nastepcza": "Wotum zaufania po powołaniu",
+     "brak": "Bez głosowania parlamentu",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "prog_inwestytury": {
+    "type": "enum",
+    "label": "Próg inwestytury",
+    "values": {
+     "zwykla": "Zwykła większość",
+     "bezwzgledna": "Bezwzględna większość członków",
+     "inny": "Inny",
+     "nie_dotyczy": "Nie dotyczy (brak inwestytury)",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "skutek_porazki": {
+    "type": "multi",
+    "label": "Gdy parlament nie poprze kandydata",
+    "values": {
+     "wybor_przez_parlament": "Parlament sam wybiera premiera",
+     "glowa_panstwa_ponownie": "Głowa państwa wskazuje ponownie",
+     "rozwiazanie_parlamentu": "Rozwiązanie parlamentu",
+     "inne": "Inne"
+    }
+   }
+  },
+  "hints": {
+   "szef_rzadu": {
+    "odrebny_premier": "There is a separate head of government (prime minister, chancellor, premier, president of the council of ministers) distinct from the head of state",
+    "glowa_panstwa": "The head of state (president/monarch) is also head of the government or directs the cabinet; no separate prime minister, or the PM is only a coordinator subordinate to the president"
+   },
+   "kto_wskazuje": {
+    "glowa_panstwa": "Head of state nominates, designates or appoints the head of government (including after consultations or from the largest party)",
+    "parlament": "Parliament or one of its chambers elects or proposes the head of government",
+    "inne": "Other actor (e.g. directly elected, party leader by law, royal council)"
+   },
+   "inwestytura": {
+    "uprzednia": "Parliament elects or must approve the candidate BEFORE appointment",
+    "nastepcza": "After appointment the government/PM must obtain a vote of confidence (programme approval) within a deadline",
+    "brak": "Text indicates appointment without any parliamentary vote"
+   },
+   "prog_inwestytury": {
+    "zwykla": "Simple majority of votes cast",
+    "bezwzgledna": "Absolute majority of members (majority of the statutory number)",
+    "inny": "Other threshold",
+    "nie_dotyczy": "No investiture vote exists"
+   },
+   "skutek_porazki": {
+    "wybor_przez_parlament": "If the nominee fails, parliament elects its own candidate",
+    "glowa_panstwa_ponownie": "Head of state nominates again or appoints another candidate",
+    "rozwiazanie_parlamentu": "Repeated failure leads (may or must) to dissolution of parliament",
+    "inne": "Other consequence"
+   }
+  },
+  "keywords": [
+   [
+    "prime minister",
+    "chancellor",
+    "head of government",
+    "premier",
+    "president of the (council|government)",
+    "council of ministers"
+   ],
+   [
+    "appoint",
+    "nominat",
+    "elect",
+    "designat",
+    "confidence",
+    "investiture",
+    "programme"
+   ]
+  ],
+  "tag_first": true
+ },
+ "cabdiss": {
+  "title": "Odwołanie rządu (wotum nieufności)",
+  "ccp_tags": [
+   "cabdiss",
+   "hogdiss"
+  ],
+  "fields": {
+   "kto_odwoluje": {
+    "type": "multi",
+    "label": "Kto może odwołać rząd lub premiera",
+    "values": {
+     "parlament": "Parlament (wotum nieufności)",
+     "druga_izba": "Także druga izba",
+     "glowa_panstwa": "Głowa państwa",
+     "inne": "Inne"
+    }
+   },
+   "prog_wotum": {
+    "type": "enum",
+    "label": "Próg wotum nieufności",
+    "values": {
+     "zwykla": "Zwykła większość",
+     "bezwzgledna": "Bezwzględna większość członków",
+     "trzy_piate": "3/5",
+     "dwie_trzecie": "2/3",
+     "inny": "Inny",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "wotum_zaufania_rzadu": {
+    "type": "bool3",
+    "label": "Rząd może sam postawić kwestię zaufania"
+   },
+   "rozwiazanie_zamiast_dymisji": {
+    "type": "bool3",
+    "label": "Po wotum nieufności można rozwiązać parlament zamiast dymisji"
+   }
+  },
+  "hints": {
+   "kto_odwoluje": {
+    "parlament": "The (first/lower or only) chamber can remove the government/head of government by a no-confidence or censure vote",
+    "druga_izba": "The second chamber (senate) can ALSO remove the government by its own vote",
+    "glowa_panstwa": "The head of state can dismiss the head of government or the government on his/her own decision (not just formally after a parliamentary vote or resignation)",
+    "inne": "Other (e.g. joint session, court, referendum)"
+   },
+   "prog_wotum": {
+    "zwykla": "Simple majority of votes cast",
+    "bezwzgledna": "Absolute majority of members",
+    "inny": "Other threshold"
+   }
+  },
+  "keywords": [
+   [
+    "no.confidence",
+    "censure",
+    "confidence",
+    "dismiss",
+    "remov",
+    "resign"
+   ],
+   [
+    "government",
+    "cabinet",
+    "prime minister",
+    "council of ministers",
+    "chancellor",
+    "premier"
+   ]
+  ],
+  "tag_first": true
+ },
+ "legapp": {
+  "title": "Uchwalanie ustaw: izby i podpis głowy państwa",
+  "ccp_tags": [
+   "legapp",
+   "divhouse",
+   "housenum",
+   "override"
+  ],
+  "fields": {
+   "izby": {
+    "type": "enum",
+    "label": "Liczba izb",
+    "values": {
+     "jedna": "Jednoizbowy",
+     "dwie": "Dwuizbowy",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "druga_izba_weto": {
+    "type": "enum",
+    "label": "Siła drugiej izby wobec ustaw zwykłych",
+    "values": {
+     "bezwzgledne": "Weto bezwzględne (obie izby muszą się zgodzić)",
+     "zawieszajace": "Weto zawieszające (izba pierwsza może je odrzucić)",
+     "tylko_niektore": "Bezwzględne tylko dla części ustaw",
+     "brak": "Bez prawa sprzeciwu",
+     "nie_dotyczy": "Nie dotyczy (jedna izba)",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "prog_przelamania": {
+    "type": "enum",
+    "label": "Próg odrzucenia sprzeciwu drugiej izby",
+    "values": {
+     "zwykla": "Zwykła większość",
+     "bezwzgledna": "Bezwzględna większość członków",
+     "trzy_piate": "3/5",
+     "dwie_trzecie": "2/3",
+     "inny": "Inny",
+     "nie_dotyczy": "Nie dotyczy",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "glowa_panstwa_ustawy": {
+    "type": "enum",
+    "label": "Rola głowy państwa wobec ustaw",
+    "values": {
+     "weto": "Może odmówić podpisu lub zwrócić ustawę",
+     "tylko_sad": "Może tylko skierować do sądu",
+     "formalny_podpis": "Tylko formalny podpis",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   }
+  },
+  "hints": {
+   "druga_izba_weto": {
+    "bezwzgledne": "A bill cannot become law without the agreement of both chambers (disagreement goes to a joint committee whose result both must accept, or the bill fails)",
+    "zawieszajace": "The second chamber can object or amend, but the first chamber can override it (by any majority) or the bill passes after a delay",
+    "tylko_niektore": "Second chamber has absolute veto only for specified categories (e.g. consent laws, federal/regional matters) and suspensive for others",
+    "brak": "Second chamber has no power to block or delay ordinary bills",
+    "nie_dotyczy": "Unicameral legislature"
+   },
+   "prog_przelamania": {
+    "nie_dotyczy": "Unicameral, or second chamber veto is absolute / absent"
+   },
+   "glowa_panstwa_ustawy": {
+    "weto": "Head of state may refuse assent, veto, or return the bill for reconsideration",
+    "tylko_sad": "Head of state cannot veto but may refer the bill to the constitutional court",
+    "formalny_podpis": "Head of state must sign/promulgate; no veto or referral mentioned"
+   }
+  },
+  "keywords": [
+   [
+    "\\bbills?\\b",
+    "\\blaws?\\b",
+    "legislation"
+   ],
+   [
+    "second chamber",
+    "senate",
+    "house of",
+    "both houses",
+    "national council",
+    "upper house",
+    "joint committee",
+    "mediation",
+    "veto",
+    "assent",
+    "promulgat",
+    "return"
+   ]
+  ],
+  "tag_first": true
+ },
+ "legini": {
+  "title": "Inicjatywa ustawodawcza",
+  "ccp_tags": [
+   "legini",
+   "budget"
+  ],
+  "fields": {
+   "kto_ma": {
+    "type": "multi",
+    "label": "Kto ma inicjatywę ustawodawczą",
+    "values": {
+     "rzad": "Rząd",
+     "poslowie": "Posłowie lub grupy posłów",
+     "druga_izba": "Druga izba",
+     "glowa_panstwa": "Głowa państwa",
+     "obywatele": "Obywatele",
+     "inne_organy": "Inne organy (sądy, regiony)"
+    }
+   },
+   "wylaczna_inicjatywa_rzadu": {
+    "type": "multi",
+    "label": "Wyłączna inicjatywa rządu",
+    "values": {
+     "budzet": "Budżet",
+     "finanse_podatki": "Podatki lub inne ustawy finansowe",
+     "inne": "Inne"
+    }
+   },
+   "ograniczenie_poprawek_finansowych": {
+    "type": "bool3",
+    "label": "Parlament nie może zwiększać wydatków lub zmniejszać dochodów bez zgody rządu"
+   }
+  },
+  "hints": {
+   "kto_ma": {
+    "inne_organy": "Courts, regional bodies, prosecutor, other state organs",
+    "glowa_panstwa": "Head of state can introduce bills (in systems where the HoS is also HoG mark both if text says so)"
+   },
+   "wylaczna_inicjatywa_rzadu": {
+    "budzet": "Only the government/executive may introduce the budget bill",
+    "finanse_podatki": "Only the executive may introduce tax, spending or other money bills",
+    "inne": "Other matters reserved to executive initiative"
+   }
+  },
+  "keywords": [
+   [
+    "initiative",
+    "introduc",
+    "submit",
+    "propos",
+    "originat"
+   ],
+   [
+    "\\bbills?\\b",
+    "\\blaws?\\b",
+    "legislat"
+   ]
+  ],
+  "tag_first": true
+ },
+ "budget": {
+  "title": "Budżet: kto przygotowuje i co, gdy nie zostanie uchwalony",
+  "ccp_tags": [
+   "budget"
+  ],
+  "fields": {
+   "kto_przygotowuje": {
+    "type": "enum",
+    "label": "Kto przygotowuje projekt budżetu",
+    "values": {
+     "rzad": "Rząd",
+     "glowa_panstwa": "Głowa państwa",
+     "parlament": "Parlament",
+     "inne": "Inne",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "skutek_nieuchwalenia": {
+    "type": "multi",
+    "label": "Gdy budżet nie zostanie uchwalony w terminie",
+    "values": {
+     "prowizorium": "Prowizorium lub poprzedni budżet",
+     "projekt_wchodzi": "Wchodzi projekt rządu",
+     "rozwiazanie_parlamentu": "Można lub trzeba rozwiązać parlament",
+     "inne": "Inne"
+    }
+   },
+   "druga_izba_budzet": {
+    "type": "enum",
+    "label": "Rola drugiej izby w budżecie",
+    "values": {
+     "rowna": "Równa pierwszej",
+     "ograniczona": "Ograniczona (opóźnia, proponuje)",
+     "brak": "Brak",
+     "nie_dotyczy": "Nie dotyczy (jedna izba)",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "weto_budzetu": {
+    "type": "bool3",
+    "label": "Głowa państwa może zawetować budżet"
+   }
+  },
+  "hints": {
+   "skutek_nieuchwalenia": {
+    "prowizorium": "Expenditure continues on the basis of the previous budget, monthly twelfths, or a provisional budget",
+    "projekt_wchodzi": "The executive's draft enters into force or is enacted by decree/ordinance",
+    "rozwiazanie_parlamentu": "Failure to pass the budget allows or requires dissolution of parliament",
+    "inne": "Other consequence (e.g. government must resign)"
+   },
+   "weto_budzetu": {}
+  },
+  "keywords": [
+   [
+    "budget",
+    "appropriation",
+    "finance (bill|law)",
+    "money bill",
+    "estimates of (revenue|expenditure)"
+   ]
+  ],
+  "tag_first": true
+ },
+ "hospow": {
+  "title": "Kontrasygnata i samodzielne uprawnienia głowy państwa",
+  "ccp_tags": [
+   "hospow"
+  ],
+  "fields": {
+   "kontrasygnata": {
+    "type": "enum",
+    "label": "Kontrasygnata aktów głowy państwa",
+    "values": {
+     "z_wyjatkami": "Wymagana, z listą wyjątków",
+     "ogolna": "Wymagana dla wszystkich aktów",
+     "dziala_na_wniosek": "Działa na wniosek lub radę rządu",
+     "brak": "Brak, głowa państwa działa sama",
+     "nie_wynika": "Nie wynika z tekstu"
+    }
+   },
+   "prerogatywy": {
+    "type": "multi",
+    "label": "Uprawnienia wykonywane samodzielnie (bez kontrasygnaty lub wniosku rządu)",
+    "values": {
+     "rozwiazanie_parlamentu": "Rozwiązanie parlamentu",
+     "powolanie_premiera": "Powołanie premiera",
+     "weto_ustaw": "Weto ustaw",
+     "sad_konstytucyjny": "Wniosek do sądu konstytucyjnego",
+     "sedziowie": "Powoływanie sędziów",
+     "wojsko": "Zwierzchnictwo nad wojskiem",
+     "referendum": "Zarządzenie referendum",
+     "laska": "Prawo łaski",
+     "inne": "Inne"
+    }
+   }
+  },
+  "hints": {
+   "kontrasygnata": {
+    "z_wyjatkami": "Acts of the head of state require countersignature by the PM/minister, except listed prerogatives",
+    "ogolna": "All acts require countersignature, no exceptions listed",
+    "dziala_na_wniosek": "Head of state acts on the advice or proposal of the government/PM (Westminster-type 'acts on advice')",
+    "brak": "Head of state is the chief executive and acts on own authority; no countersignature rule"
+   },
+   "prerogatywy": {}
+  },
+  "keywords": [
+   [
+    "countersign",
+    "counter-sign",
+    "own discretion",
+    "without (the )?advice",
+    "acting in (his|her) discretion",
+    "prerogative",
+    "personally"
+   ]
+  ],
+  "tag_first": true
  }
 }

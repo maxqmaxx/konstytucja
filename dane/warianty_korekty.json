@@ -80,5 +80,67 @@
   ],
   "basis": "art. 51: ochrona danych osobowych, prawo dostępu do urzędowych dokumentów i zbiorów danych o sobie oraz żądania sprostowania i usunięcia (artykułu nie było w wycinku)",
   "reviewed": "2026-11-05"
+ },
+ {
+  "topic": "legapp",
+  "country_code": "IT",
+  "field": "druga_izba_weto",
+  "value": "bezwzgledne",
+  "basis": "art. 70: funkcję ustawodawczą wykonują wspólnie obie izby; art. 72: projekt musi przyjąć każda izba (pełna dwuizbowość)",
+  "reviewed": "2026-11-07"
+ },
+ {
+  "topic": "budget",
+  "country_code": "PL",
+  "field": "skutek_nieuchwalenia",
+  "value": [
+   "projekt_wchodzi",
+   "rozwiazanie_parlamentu"
+  ],
+  "basis": "art. 219 ust. 4: Rada Ministrów prowadzi gospodarkę na podstawie projektu; art. 225: Prezydent może zarządzić skrócenie kadencji Sejmu, jeśli ustawa budżetowa nie zostanie przedstawiona do podpisu w ciągu 4 miesięcy (artykułu nie było w fragmencie)",
+  "reviewed": "2026-11-07"
+ },
+ {
+  "topic": "legini",
+  "country_code": "PL",
+  "field": "ograniczenie_poprawek_finansowych",
+  "value": "tak",
+  "basis": "art. 220 ust. 1: zwiększenie wydatków lub ograniczenie dochodów planowanych przez Radę Ministrów nie może powodować ustalenia przez Sejm większego deficytu budżetowego niż przewidziany w projekcie",
+  "reviewed": "2026-11-07"
+ },
+ {
+  "topic": "hospow",
+  "country_code": "FR",
+  "field": "prerogatywy",
+  "value": [
+   "powolanie_premiera",
+   "rozwiazanie_parlamentu",
+   "referendum",
+   "sad_konstytucyjny",
+   "inne"
+  ],
+  "basis": "art. 19: kontrasygnaty nie wymagają akty z art. 8 ust. 1 (premier), 11 (referendum), 12 (rozwiązanie Zgromadzenia), 16 (uprawnienia nadzwyczajne), 18, 54 i 61 (sąd konstytucyjny), 56",
+  "reviewed": "2026-11-07"
+ },
+ {
+  "topic": "hospow",
+  "country_code": "MA",
+  "field": "prerogatywy",
+  "value": [
+   "powolanie_premiera",
+   "rozwiazanie_parlamentu",
+   "sedziowie",
+   "inne"
+  ],
+  "basis": "art. 42: bez kontrasygnaty szefa rządu dahiry z art. 41 (sprawy religijne), 44, 47 ust. 1 i 6 (powołanie szefa rządu), 51 (rozwiązanie izb), 57 (sędziowie), 59 (stan wyjątkowy), 130 ust. 1 i 4 (członkowie Trybunału Konstytucyjnego) i 174",
+  "reviewed": "2026-11-07"
+ },
+ {
+  "topic": "hospow",
+  "country_code": "NL",
+  "field": "kontrasygnata",
+  "value": "ogolna",
+  "basis": "art. 47: wszystkie ustawy i dekrety królewskie podpisuje król oraz minister lub sekretarz stanu; art. 42 ust. 2: odpowiadają ministrowie, nie król (artykułów nie było we fragmencie)",
+  "reviewed": "2026-11-07"
  }
 ]
