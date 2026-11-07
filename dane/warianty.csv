@@ -223,8 +223,8 @@ FM,Mikronezja,amend,Procedura zmiany konstytucji,prog_parlament,Próg w parlamen
 FM,Mikronezja,amend,Procedura zmiany konstytucji,referendum,Referendum,zawsze,Zawsze obowiązkowe,oznaczenie CCP,ARTICLE XIV,https://www.constituteproject.org/constitution/Micronesia_1990
 FM,Mikronezja,amend,Procedura zmiany konstytucji,dwa_glosowania,"Dwa głosowania, odstęp czasu lub wybory pośrednie",nie_wynika,nie_wynika,oznaczenie CCP,ARTICLE XIV,https://www.constituteproject.org/constitution/Micronesia_1990
 FM,Mikronezja,amend,Procedura zmiany konstytucji,inicjatywa_obywateli,Obywatele mogą zainicjować zmianę,tak,tak,oznaczenie CCP,ARTICLE XIV,https://www.constituteproject.org/constitution/Micronesia_1990
-FR,Francja,amend,Procedura zmiany konstytucji,prog_parlament,Próg w parlamencie,zwykla_lub_bezwzgledna,Zwykła lub bezwzględna większość,oznaczenie CCP,ARTICLE 89,https://www.constituteproject.org/constitution/France_2024
-FR,Francja,amend,Procedura zmiany konstytucji,referendum,Referendum,zawsze,Zawsze obowiązkowe,oznaczenie CCP,ARTICLE 89,https://www.constituteproject.org/constitution/France_2024
+FR,Francja,amend,Procedura zmiany konstytucji,prog_parlament,Próg w parlamencie,trzy_piate,3/5,oznaczenie CCP,ARTICLE 89,https://www.constituteproject.org/constitution/France_2024
+FR,Francja,amend,Procedura zmiany konstytucji,referendum,Referendum,fakultatywne,Na żądanie (fakultatywne),oznaczenie CCP,ARTICLE 89,https://www.constituteproject.org/constitution/France_2024
 FR,Francja,amend,Procedura zmiany konstytucji,dwa_glosowania,"Dwa głosowania, odstęp czasu lub wybory pośrednie",nie,nie,oznaczenie CCP,ARTICLE 89,https://www.constituteproject.org/constitution/France_2024
 FR,Francja,amend,Procedura zmiany konstytucji,inicjatywa_obywateli,Obywatele mogą zainicjować zmianę,nie,nie,oznaczenie CCP,ARTICLE 89,https://www.constituteproject.org/constitution/France_2024
 GB,Wielka Brytania,amend,Procedura zmiany konstytucji,prog_parlament,Próg w parlamencie,nie_wynika,Nie wynika z tekstu,oznaczenie CCP,,https://www.constituteproject.org/constitution/United_Kingdom_2013
@@ -2451,7 +2451,7 @@ PK,Pakistan,bank,Bank centralny,kadencja_lat,Kadencja prezesa (lata),,None,oznac
 PK,Pakistan,bank,Bank centralny,zakaz_finansowania_deficytu,Zakaz finansowania deficytu przez bank centralny,nie_wynika,nie_wynika,oznaczenie CCP,Section 4,https://www.constituteproject.org/constitution/Pakistan_2018
 PK,Pakistan,bank,Bank centralny,cel_stabilnosc_cen,Cel: stabilność cen lub wartość pieniądza,nie_wynika,nie_wynika,oznaczenie CCP,Section 4,https://www.constituteproject.org/constitution/Pakistan_2018
 PL,Polska,bank,Bank centralny,niezaleznosc,Niezależność banku centralnego zapisana w konstytucji,nie_wynika,nie_wynika,oznaczenie CCP,Article 198; Article 227,https://www.constituteproject.org/constitution/Poland_2009
-PL,Polska,bank,Bank centralny,kto_powoluje_prezesa,Kto powołuje prezesa,parlament,Parlament,oznaczenie CCP,Article 198; Article 227,https://www.constituteproject.org/constitution/Poland_2009
+PL,Polska,bank,Bank centralny,kto_powoluje_prezesa,Kto powołuje prezesa,parlament; glowa_panstwa,Parlament; Głowa państwa,oznaczenie CCP,Article 198; Article 227,https://www.constituteproject.org/constitution/Poland_2009
 PL,Polska,bank,Bank centralny,kadencja_lat,Kadencja prezesa (lata),6,6,oznaczenie CCP,Article 198; Article 227,https://www.constituteproject.org/constitution/Poland_2009
 PL,Polska,bank,Bank centralny,zakaz_finansowania_deficytu,Zakaz finansowania deficytu przez bank centralny,tak,tak,oznaczenie CCP,Article 198; Article 227,https://www.constituteproject.org/constitution/Poland_2009
 PL,Polska,bank,Bank centralny,cel_stabilnosc_cen,Cel: stabilność cen lub wartość pieniądza,tak,tak,oznaczenie CCP,Article 198; Article 227,https://www.constituteproject.org/constitution/Poland_2009

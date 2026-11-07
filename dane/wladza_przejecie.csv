@@ -1,0 +1,871 @@
+﻿kod,panstwo,instytucja,kto_wybiera,prog_izby,poziom_przejecia,czesciowo,uwagi
+AD,Andora,tk,HS L1,0.5000,S2,0,
+AD,Andora,krs,J,0.5000,poza_polityka,0,
+AD,Andora,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+AD,Andora,prokurator,G J,0.5000,poza_polityka,1,
+AD,Andora,konstytucja,L1 P,0.6667,poza_polityka,1,
+AE,Zjednoczone Emiraty Arabskie,prokurator,G HS,0.5000,S2,0,
+AE,Zjednoczone Emiraty Arabskie,konstytucja,L1,0.6667,S4,0,
+AF,Afganistan,bank,HS L1,0.5000,S2,0,
+AF,Afganistan,prokurator,HS L1,0.5000,S2,0,
+AF,Afganistan,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+AF,Afganistan,konstytucja,L1,0.6667,S4,0,
+AG,Antigua i Barbuda,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+AG,Antigua i Barbuda,rpo,L1,0.5000,S1,0,
+AG,Antigua i Barbuda,prokurator,HS,0.5000,S1,0,
+AG,Antigua i Barbuda,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+AG,Antigua i Barbuda,konstytucja,L1,0.6667,S4,0,
+AL,Albania,tk,HS J L1,0.6667,poza_polityka,1,
+AL,Albania,krs,J,0.5000,poza_polityka,0,
+AL,Albania,rpo,L1,0.5000,S1,0,
+AL,Albania,bank,L1,0.5000,S1,0,
+AL,Albania,prokurator,J L1,0.5000,poza_polityka,1,
+AL,Albania,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+AL,Albania,konstytucja,L1,0.6667,S4,0,
+AM,Armenia,tk,L1,0.6667,S4,0,
+AM,Armenia,krs,J,0.5000,poza_polityka,0,
+AM,Armenia,rpo,L1,0.5000,S1,0,
+AM,Armenia,bank,L1,0.5000,S1,0,
+AM,Armenia,prokurator,L1,0.5000,S1,0,
+AM,Armenia,wybory,L1,0.5000,S1,0,
+AM,Armenia,konstytucja,L1,0.6667,S4,0,
+AO,Angola,tk,HS J L1,0.6667,poza_polityka,1,
+AO,Angola,krs,J,0.5000,poza_polityka,0,
+AO,Angola,rpo,L1,0.5000,S1,0,
+AO,Angola,bank,HS,0.5000,S2,0,
+AO,Angola,prokurator,HS J,0.5000,poza_polityka,1,
+AO,Angola,wybory,L1,0.5000,S1,0,
+AO,Angola,konstytucja,L1,0.6667,S4,0,
+AR,Argentyna,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+AR,Argentyna,rpo,L1,0.5000,S1,0,
+AR,Argentyna,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+AR,Argentyna,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+AR,Argentyna,konstytucja,L1,0.6667,S4,0,
+AT,Austria,tk,G HS L1,0.5000,S2,0,
+AT,Austria,rpo,L1,0.5000,S1,0,
+AT,Austria,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+AT,Austria,wybory,O,0.5000,poza_polityka,0,
+AT,Austria,konstytucja,L1,0.6667,S4,0,
+AU,Australia,konstytucja,L1 P,0.5000,poza_polityka,1,
+AZ,Azerbejdżan,tk,HS L1,0.5000,S2,0,
+AZ,Azerbejdżan,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+AZ,Azerbejdżan,bank,HS L1,0.5000,S2,0,
+AZ,Azerbejdżan,prokurator,HS L1,0.5000,S2,0,
+AZ,Azerbejdżan,konstytucja,L1,0.6667,S4,0,
+BA,Bośnia i Hercegowina,tk,L1,0.5000,S1,0,
+BA,Bośnia i Hercegowina,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BA,Bośnia i Hercegowina,konstytucja,L1,0.6667,S4,0,
+BB,Barbados,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BB,Barbados,prokurator,HS,0.5000,S1,0,
+BB,Barbados,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BB,Barbados,konstytucja,L1,0.6667,S4,0,
+BD,Bangladesz,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BD,Bangladesz,prokurator,HS,0.5000,S2,0,
+BD,Bangladesz,wybory,HS,0.5000,S2,0,
+BD,Bangladesz,konstytucja,L1,0.6667,S4,0,
+BE,Belgia,tk,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BE,Belgia,krs,J,0.5000,poza_polityka,0,
+BE,Belgia,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BE,Belgia,konstytucja,L1,0.6667,S4,0,
+BG,Bułgaria,tk,HS J L1,0.5000,poza_polityka,1,
+BG,Bułgaria,krs,J L1,0.5000,poza_polityka,1,
+BG,Bułgaria,rpo,L1,0.5000,S1,0,
+BG,Bułgaria,bank,L1,0.5000,S1,0,
+BG,Bułgaria,prokurator,HS J,0.5000,poza_polityka,1,
+BG,Bułgaria,konstytucja,L1,0.7500,poza_polityka,1,
+BH,Bahrajn,tk,HS,0.5000,S2,0,
+BH,Bahrajn,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BH,Bahrajn,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BH,Bahrajn,konstytucja,L1,0.6667,S4,0,
+BI,Burundi,tk,HS L1,0.5000,S2,0,
+BI,Burundi,krs,J,0.5000,poza_polityka,0,
+BI,Burundi,rpo,L1,0.5000,S1,0,
+BI,Burundi,prokurator,L1,0.5000,S1,0,
+BI,Burundi,wybory,HS L1,0.5000,S2,0,
+BI,Burundi,konstytucja,L1,0.7500,poza_polityka,1,
+BJ,Benin,tk,HS L1,0.5000,S2,0,
+BJ,Benin,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BJ,Benin,konstytucja,L1,0.7500,poza_polityka,1,
+BN,Brunei,prokurator,HS,0.5000,S2,0,
+BN,Brunei,konstytucja,L1,0.6667,S4,0,
+BO,Boliwia,tk,L1,0.6667,S4,0,
+BO,Boliwia,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BO,Boliwia,rpo,L1,0.5000,S1,0,
+BO,Boliwia,bank,HS,0.5000,S2,0,
+BO,Boliwia,prokurator,L1,0.5000,S1,0,
+BO,Boliwia,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BO,Boliwia,konstytucja,L1 P,0.6667,poza_polityka,1,
+BR,Brazylia,krs,J,0.5000,poza_polityka,0,
+BR,Brazylia,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BR,Brazylia,bank,HS L1,0.5000,S2,0,
+BR,Brazylia,prokurator,HS L1,0.5000,S2,0,
+BR,Brazylia,wybory,HS J,0.5000,poza_polityka,1,
+BR,Brazylia,konstytucja,L1,0.6000,S3,0,
+BS,Bahamy,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BS,Bahamy,konstytucja,L1,0.6667,S4,0,
+BT,Bhutan,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BT,Bhutan,bank,HS,0.5000,S2,0,
+BT,Bhutan,prokurator,HS,0.5000,S2,0,
+BT,Bhutan,wybory,HS,0.5000,S2,0,
+BT,Bhutan,konstytucja,L1,0.6667,S4,0,
+BW,Botswana,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BW,Botswana,prokurator,HS,0.5000,S2,0,
+BW,Botswana,wybory,J,0.5000,poza_polityka,0,
+BW,Botswana,konstytucja,L1,0.6667,S4,0,
+BY,Białoruś,tk,HS L1,0.5000,S2,0,
+BY,Białoruś,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BY,Białoruś,prokurator,HS L1,0.5000,S2,0,
+BY,Białoruś,wybory,HS L1,0.5000,S2,0,
+BY,Białoruś,konstytucja,L1,0.6667,S4,0,
+BZ,Belize,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BZ,Belize,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BZ,Belize,prokurator,HS,0.5000,S2,0,
+BZ,Belize,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+BZ,Belize,konstytucja,L1,0.6667,S4,0,
+CA,Kanada,konstytucja,L1,0.5000,S1,0,
+CD,Demokratyczna Republika Konga,tk,HS J L1,0.5000,poza_polityka,1,
+CD,Demokratyczna Republika Konga,krs,J,0.5000,poza_polityka,0,
+CD,Demokratyczna Republika Konga,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CD,Demokratyczna Republika Konga,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CD,Demokratyczna Republika Konga,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CD,Demokratyczna Republika Konga,konstytucja,L1 P,0.5000,poza_polityka,1,
+CG,Kongo,tk,HS J L1,0.5000,poza_polityka,1,
+CG,Kongo,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CG,Kongo,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CG,Kongo,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CG,Kongo,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CG,Kongo,konstytucja,L1,0.7500,poza_polityka,1,
+CH,Szwajcaria,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CH,Szwajcaria,konstytucja,L1 P,0.5000,poza_polityka,1,
+CI,Côte d’Ivoire,tk,HS L1,0.5000,S2,0,
+CI,Côte d’Ivoire,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CI,Côte d’Ivoire,rpo,HS L1,0.5000,S2,0,
+CI,Côte d’Ivoire,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CI,Côte d’Ivoire,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CI,Côte d’Ivoire,konstytucja,L1,0.6667,S4,0,
+CL,Chile,tk,HS J L1,0.6667,poza_polityka,1,
+CL,Chile,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CL,Chile,prokurator,HS J L1,0.5000,poza_polityka,1,
+CL,Chile,wybory,HS L1,0.5000,S2,0,
+CL,Chile,konstytucja,L1,0.6000,S3,0,
+CM,Kamerun,tk,HS J L1,0.5000,poza_polityka,1,
+CM,Kamerun,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CM,Kamerun,konstytucja,L1,0.5000,S1,0,
+CN,Chiny,prokurator,L1,0.5000,S1,0,
+CN,Chiny,konstytucja,L1,0.6667,S4,0,
+CO,Kolumbia,tk,L1,0.5000,S1,0,
+CO,Kolumbia,krs,J,0.5000,poza_polityka,0,
+CO,Kolumbia,rpo,HS L1,0.5000,S2,0,
+CO,Kolumbia,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CO,Kolumbia,prokurator,HS J,0.5000,poza_polityka,1,
+CO,Kolumbia,wybory,L1 O,0.5000,poza_polityka,1,
+CO,Kolumbia,konstytucja,L1,0.5000,S1,0,
+CR,Kostaryka,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CR,Kostaryka,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CR,Kostaryka,konstytucja,L1,0.6667,S4,0,
+CU,Kuba,prokurator,L1,0.5000,S1,0,
+CU,Kuba,wybory,L1,0.5000,S1,0,
+CU,Kuba,konstytucja,L1,0.6667,S4,0,
+CV,Republika Zielonego Przylądka,krs,J,0.5000,poza_polityka,0,
+CV,Republika Zielonego Przylądka,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CV,Republika Zielonego Przylądka,prokurator,G HS,0.5000,S2,0,
+CV,Republika Zielonego Przylądka,konstytucja,L1,0.6667,S4,0,
+CY,Cypr,tk,HS,0.5000,S2,0,
+CY,Cypr,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CY,Cypr,bank,HS,0.5000,S2,0,
+CY,Cypr,prokurator,HS,0.5000,S2,0,
+CY,Cypr,konstytucja,L1,0.6667,S4,0,
+CZ,Czechy,tk,HS L1,0.5000,S2,0,
+CZ,Czechy,bank,HS,0.5000,S2,0,
+CZ,Czechy,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+CZ,Czechy,konstytucja,L1,0.6000,S3,0,
+DE,Niemcy,tk,L1,0.5000,S1,0,
+DE,Niemcy,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+DE,Niemcy,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+DE,Niemcy,konstytucja,L1,0.6667,S4,0,
+DJ,Dżibuti,tk,HS J L1,0.5000,poza_polityka,1,
+DJ,Dżibuti,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+DJ,Dżibuti,rpo,HS,0.5000,S2,0,
+DJ,Dżibuti,konstytucja,L1 P,0.5000,poza_polityka,1,
+DK,Dania,konstytucja,L1 P,0.5000,poza_polityka,1,
+DM,Dominika,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+DM,Dominika,rpo,HS,0.5000,S1,0,
+DM,Dominika,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+DM,Dominika,wybory,HS,0.5000,S1,0,
+DM,Dominika,konstytucja,L1,0.6667,S4,0,
+DO,Dominikana,tk,J,0.5000,poza_polityka,0,
+DO,Dominikana,krs,J,0.5000,poza_polityka,0,
+DO,Dominikana,rpo,L1,0.5000,S1,0,
+DO,Dominikana,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+DO,Dominikana,prokurator,HS,0.5000,S2,0,
+DO,Dominikana,wybory,L1,0.5000,S1,0,
+DO,Dominikana,konstytucja,L1,0.6667,S4,0,
+DZ,Algieria,tk,HS J L1,0.5000,poza_polityka,1,
+DZ,Algieria,krs,J,0.5000,poza_polityka,0,
+DZ,Algieria,bank,HS,0.5000,S2,0,
+DZ,Algieria,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+DZ,Algieria,wybory,HS,0.5000,S2,0,
+DZ,Algieria,konstytucja,L1 P,0.5000,poza_polityka,1,
+EC,Ekwador,tk,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+EC,Ekwador,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+EC,Ekwador,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+EC,Ekwador,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+EC,Ekwador,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+EC,Ekwador,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+EC,Ekwador,konstytucja,L1,0.6667,S4,0,
+EE,Estonia,bank,HS,0.5000,S2,0,
+EE,Estonia,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+EE,Estonia,konstytucja,L1,0.6667,S4,0,
+EG,Egipt,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+EG,Egipt,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+EG,Egipt,prokurator,HS J,0.5000,poza_polityka,1,
+EG,Egipt,wybory,HS J,0.5000,poza_polityka,1,
+EG,Egipt,konstytucja,L1 P,0.6667,poza_polityka,1,
+ER,Erytrea,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+ER,Erytrea,bank,HS L1,0.5000,S2,0,
+ER,Erytrea,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+ER,Erytrea,wybory,HS L1,0.5000,S2,0,
+ER,Erytrea,konstytucja,L1,0.7500,poza_polityka,1,
+ES,Hiszpania,tk,G HS J L1,0.6667,poza_polityka,1,
+ES,Hiszpania,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+ES,Hiszpania,rpo,L1,0.5000,S1,0,
+ES,Hiszpania,prokurator,G HS,0.5000,S1,0,
+ES,Hiszpania,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+ES,Hiszpania,konstytucja,L1,0.6000,S3,0,
+ET,Etiopia,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+ET,Etiopia,rpo,L1,0.5000,S1,0,
+ET,Etiopia,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+ET,Etiopia,wybory,G L1,0.5000,S1,0,
+ET,Etiopia,konstytucja,L1,0.6667,S4,0,
+FI,Finlandia,rpo,L1,0.5000,S1,0,
+FI,Finlandia,bank,L1,0.5000,S1,0,
+FI,Finlandia,prokurator,HS,0.5000,S1,0,
+FI,Finlandia,konstytucja,L1,0.6667,S4,0,
+FJ,Fidżi,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+FJ,Fidżi,bank,HS,0.5000,S2,0,
+FJ,Fidżi,prokurator,G,0.5000,S1,0,
+FJ,Fidżi,wybory,HS,0.5000,S2,0,
+FJ,Fidżi,konstytucja,L1 P,0.7500,poza_polityka,1,
+FM,Mikronezja,konstytucja,L1 P,0.6667,poza_polityka,1,
+FR,Francja,tk,HS L1,0.5000,S2,0,
+FR,Francja,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+FR,Francja,rpo,HS,0.5000,S2,0,
+FR,Francja,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+FR,Francja,konstytucja,L1,0.6000,S3,0,
+GB,Wielka Brytania,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GB,Wielka Brytania,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GB,Wielka Brytania,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GB,Wielka Brytania,konstytucja,L1,0.6667,S4,0,
+GD,Grenada,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GD,Grenada,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GD,Grenada,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GD,Grenada,konstytucja,L1,0.6667,S4,0,
+GE,Gruzja,tk,HS J L1,0.6667,poza_polityka,1,
+GE,Gruzja,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GE,Gruzja,rpo,L1,0.5000,S1,0,
+GE,Gruzja,bank,HS,0.5000,S2,0,
+GE,Gruzja,prokurator,J L1,0.5000,poza_polityka,1,
+GE,Gruzja,wybory,HS,0.5000,S2,0,
+GE,Gruzja,konstytucja,L1,0.6667,S4,0,
+GH,Ghana,krs,J,0.5000,poza_polityka,0,
+GH,Ghana,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GH,Ghana,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GH,Ghana,prokurator,HS L1,0.5000,S2,0,
+GH,Ghana,wybory,HS,0.5000,S2,0,
+GH,Ghana,konstytucja,L1,0.6667,S4,0,
+GM,Gambia,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GM,Gambia,rpo,HS L1,0.5000,S2,0,
+GM,Gambia,bank,HS,0.5000,S2,0,
+GM,Gambia,prokurator,HS,0.5000,S2,0,
+GM,Gambia,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GM,Gambia,konstytucja,L1,0.7500,poza_polityka,1,
+GQ,Gwinea Równikowa,tk,HS,0.5000,S2,0,
+GQ,Gwinea Równikowa,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GQ,Gwinea Równikowa,rpo,HS L1,0.5000,S2,0,
+GQ,Gwinea Równikowa,prokurator,HS,0.5000,S2,0,
+GQ,Gwinea Równikowa,konstytucja,L1,0.7500,poza_polityka,1,
+GR,Grecja,tk,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GR,Grecja,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GR,Grecja,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GR,Grecja,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GR,Grecja,konstytucja,L1,0.6000,S3,0,
+GT,Gwatemala,tk,HS J L1,0.5000,poza_polityka,1,
+GT,Gwatemala,bank,HS,0.5000,S2,0,
+GT,Gwatemala,prokurator,HS,0.5000,S2,0,
+GT,Gwatemala,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GT,Gwatemala,konstytucja,L1,0.6667,S4,0,
+GW,Gwinea Bissau,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GW,Gwinea Bissau,prokurator,G HS,0.5000,S2,0,
+GW,Gwinea Bissau,konstytucja,L1,0.6667,S4,0,
+GY,Gujana,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GY,Gujana,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+GY,Gujana,prokurator,HS,0.5000,S2,0,
+GY,Gujana,wybory,HS,0.5000,S2,0,
+GY,Gujana,konstytucja,L1,0.6667,S4,0,
+HN,Honduras,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+HN,Honduras,rpo,L1,0.5000,S1,0,
+HN,Honduras,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+HN,Honduras,prokurator,L1,0.5000,S1,0,
+HN,Honduras,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+HN,Honduras,konstytucja,L1,0.6667,S4,0,
+HR,Chorwacja,tk,L1,0.6667,S4,0,
+HR,Chorwacja,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+HR,Chorwacja,rpo,L1,0.5000,S1,0,
+HR,Chorwacja,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+HR,Chorwacja,prokurator,L1,0.5000,S1,0,
+HR,Chorwacja,konstytucja,L1,0.6667,S4,0,
+HT,Haiti,tk,G J L1,0.6667,poza_polityka,1,
+HT,Haiti,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+HT,Haiti,rpo,HS L1,0.5000,S2,0,
+HT,Haiti,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+HT,Haiti,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+HT,Haiti,wybory,G J L1,0.5000,poza_polityka,1,
+HT,Haiti,konstytucja,L1,0.6667,S4,0,
+HU,Węgry,tk,L1,0.6667,S4,0,
+HU,Węgry,krs,J,0.5000,poza_polityka,0,
+HU,Węgry,rpo,HS L1,0.5000,S2,0,
+HU,Węgry,bank,HS,0.5000,S2,0,
+HU,Węgry,prokurator,HS L1,0.5000,S2,0,
+HU,Węgry,konstytucja,L1,0.6667,S4,0,
+ID,Indonezja,tk,HS J L1,0.5000,poza_polityka,1,
+ID,Indonezja,krs,J L1,0.5000,poza_polityka,1,
+ID,Indonezja,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+ID,Indonezja,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+ID,Indonezja,konstytucja,L1,0.5000,S1,0,
+IE,Irlandia,prokurator,G HS,0.5000,S2,0,
+IE,Irlandia,konstytucja,L1 P,0.6667,poza_polityka,1,
+IL,Izrael,krs,J,0.5000,poza_polityka,0,
+IL,Izrael,rpo,L1,0.5000,S1,0,
+IL,Izrael,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+IL,Izrael,konstytucja,L1,0.6667,S4,0,
+IN,Indie,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+IN,Indie,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+IN,Indie,prokurator,HS,0.5000,S2,0,
+IN,Indie,wybory,HS,0.5000,S2,0,
+IN,Indie,konstytucja,L1,0.6667,S4,0,
+IQ,Irak,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+IQ,Irak,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+IQ,Irak,prokurator,J L1,0.5000,poza_polityka,1,
+IQ,Irak,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+IQ,Irak,konstytucja,L1 P,0.6667,poza_polityka,1,
+IR,Iran,tk,HS L1,0.5000,S2,0,
+IR,Iran,prokurator,J,0.5000,poza_polityka,0,
+IR,Iran,konstytucja,L1 P,0.6667,poza_polityka,1,
+IS,Islandia,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+IS,Islandia,konstytucja,L1,0.6667,S4,0,
+IT,Włochy,tk,HS J L1,0.5000,poza_polityka,1,
+IT,Włochy,krs,J,0.5000,poza_polityka,0,
+IT,Włochy,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+IT,Włochy,konstytucja,L1,0.5000,S1,0,
+JM,Jamajka,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+JM,Jamajka,prokurator,G HS,0.5000,S1,0,
+JM,Jamajka,konstytucja,L1,0.6667,S4,0,
+JO,Jordania,tk,HS,0.5000,S1,0,
+JO,Jordania,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+JO,Jordania,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+JO,Jordania,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+JO,Jordania,konstytucja,L1,0.6667,S4,0,
+JP,Japonia,konstytucja,L1 P,0.6667,poza_polityka,1,
+KE,Kenia,krs,J,0.5000,poza_polityka,0,
+KE,Kenia,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+KE,Kenia,prokurator,HS L1,0.5000,S2,0,
+KE,Kenia,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+KE,Kenia,konstytucja,L1,0.6667,S4,0,
+KG,Kirgistan,tk,HS J L1,0.5000,poza_polityka,1,
+KG,Kirgistan,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+KG,Kirgistan,rpo,L1,0.5000,S1,0,
+KG,Kirgistan,bank,L1,0.5000,S1,0,
+KG,Kirgistan,prokurator,HS L1,0.5000,S2,0,
+KG,Kirgistan,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+KG,Kirgistan,konstytucja,L1,0.6667,S4,0,
+KH,Kambodża,tk,HS J L1,0.5000,poza_polityka,1,
+KH,Kambodża,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+KH,Kambodża,prokurator,HS J,0.5000,poza_polityka,1,
+KH,Kambodża,konstytucja,L1,0.6667,S4,0,
+KI,Kiribati,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+KI,Kiribati,prokurator,HS,0.5000,S2,0,
+KI,Kiribati,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+KI,Kiribati,konstytucja,L1,0.6667,S4,0,
+KM,Komory,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+KM,Komory,konstytucja,L1,0.7500,poza_polityka,1,
+KN,Saint Kitts i Nevis,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+KN,Saint Kitts i Nevis,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+KN,Saint Kitts i Nevis,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+KN,Saint Kitts i Nevis,konstytucja,L1,0.6667,S4,0,
+KP,Korea Północna,prokurator,L1,0.5000,S1,0,
+KP,Korea Północna,konstytucja,L1,0.6667,S4,0,
+KR,Korea Południowa,tk,HS J L1,0.5000,poza_polityka,1,
+KR,Korea Południowa,prokurator,HS,0.5000,S2,0,
+KR,Korea Południowa,wybory,HS J L1,0.5000,poza_polityka,1,
+KR,Korea Południowa,konstytucja,L1 P,0.6667,poza_polityka,1,
+KW,Kuwejt,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+KW,Kuwejt,konstytucja,L1,0.6667,S4,0,
+KZ,Kazachstan,tk,HS L1,0.5000,S2,0,
+KZ,Kazachstan,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+KZ,Kazachstan,rpo,HS,0.5000,S2,0,
+KZ,Kazachstan,bank,HS,0.5000,S2,0,
+KZ,Kazachstan,prokurator,HS,0.5000,S2,0,
+KZ,Kazachstan,wybory,HS L1,0.5000,S2,0,
+KZ,Kazachstan,konstytucja,L1,0.7500,poza_polityka,1,
+LA,Laos,prokurator,L1,0.5000,S1,0,
+LA,Laos,wybory,L1,0.5000,S1,0,
+LA,Laos,konstytucja,L1,0.6667,S4,0,
+LB,Liban,tk,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+LB,Liban,prokurator,J,0.5000,poza_polityka,0,
+LB,Liban,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+LB,Liban,konstytucja,L1,0.6667,S4,0,
+LC,Saint Lucia,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+LC,Saint Lucia,rpo,HS,0.5000,S1,0,
+LC,Saint Lucia,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+LC,Saint Lucia,wybory,HS,0.5000,S1,0,
+LC,Saint Lucia,konstytucja,L1,0.6667,S4,0,
+LI,Liechtenstein,tk,HS L1,0.5000,S2,0,
+LI,Liechtenstein,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+LI,Liechtenstein,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+LI,Liechtenstein,wybory,HS,0.5000,S2,0,
+LI,Liechtenstein,konstytucja,L1,0.7500,poza_polityka,1,
+LK,Sri Lanka,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+LK,Sri Lanka,rpo,HS L1,0.5000,S2,0,
+LK,Sri Lanka,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+LK,Sri Lanka,prokurator,HS,0.5000,S2,0,
+LK,Sri Lanka,wybory,HS,0.5000,S2,0,
+LK,Sri Lanka,konstytucja,L1,0.6667,S4,0,
+LR,Liberia,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+LR,Liberia,konstytucja,L1 P,0.6667,poza_polityka,1,
+LS,Lesotho,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+LS,Lesotho,rpo,HS L1,0.5000,S1,0,
+LS,Lesotho,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+LS,Lesotho,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+LS,Lesotho,wybory,HS,0.5000,S1,0,
+LS,Lesotho,konstytucja,L1,0.5000,S1,0,
+LT,Litwa,tk,HS J L1,0.5000,poza_polityka,1,
+LT,Litwa,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+LT,Litwa,bank,L1,0.5000,S1,0,
+LT,Litwa,prokurator,HS L1,0.5000,S2,0,
+LT,Litwa,wybory,L1,0.5000,S1,0,
+LT,Litwa,konstytucja,L1,0.6667,S4,0,
+LU,Luksemburg,tk,HS J,0.5000,poza_polityka,1,
+LU,Luksemburg,konstytucja,L1,0.6667,S4,0,
+LV,Łotwa,tk,L1,0.5000,S1,0,
+LV,Łotwa,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+LV,Łotwa,konstytucja,L1,0.6667,S4,0,
+LY,Libia,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+LY,Libia,konstytucja,L1,0.6667,S4,0,
+MA,Maroko,tk,HS L1,0.6667,S4,0,
+MA,Maroko,krs,J,0.5000,poza_polityka,0,
+MA,Maroko,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MA,Maroko,bank,G,0.5000,S1,0,
+MA,Maroko,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MA,Maroko,konstytucja,L1 P,0.6667,poza_polityka,1,
+MC,Monako,konstytucja,L1,0.6667,S4,0,
+MD,Mołdawia,tk,G J L1,0.5000,poza_polityka,1,
+MD,Mołdawia,krs,J,0.5000,poza_polityka,0,
+MD,Mołdawia,rpo,L1,0.5000,S1,0,
+MD,Mołdawia,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MD,Mołdawia,prokurator,L1,0.5000,S1,0,
+MD,Mołdawia,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MD,Mołdawia,konstytucja,L1,0.6667,S4,0,
+ME,Czarnogóra,tk,L1,0.6667,S4,0,
+ME,Czarnogóra,krs,J,0.5000,poza_polityka,0,
+ME,Czarnogóra,rpo,HS L1,0.5000,S2,0,
+ME,Czarnogóra,bank,L1,0.5000,S1,0,
+ME,Czarnogóra,prokurator,J L1,0.5000,poza_polityka,1,
+ME,Czarnogóra,konstytucja,L1,0.6667,S4,0,
+MG,Madagaskar,tk,HS J L1,0.5000,poza_polityka,1,
+MG,Madagaskar,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MG,Madagaskar,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MG,Madagaskar,prokurator,G J,0.5000,poza_polityka,1,
+MG,Madagaskar,konstytucja,L1 P,0.7500,poza_polityka,1,
+MH,Wyspy Marshalla,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MH,Wyspy Marshalla,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MH,Wyspy Marshalla,konstytucja,L1 P,0.6667,poza_polityka,1,
+MK,Macedonia Północna,tk,L1,0.5000,S1,0,
+MK,Macedonia Północna,krs,J,0.5000,poza_polityka,0,
+MK,Macedonia Północna,rpo,L1,0.5000,S1,0,
+MK,Macedonia Północna,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MK,Macedonia Północna,prokurator,L1,0.5000,S1,0,
+MK,Macedonia Północna,konstytucja,L1,0.6667,S4,0,
+ML,Mali,tk,HS J L1,0.5000,poza_polityka,1,
+ML,Mali,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+ML,Mali,konstytucja,L1 P,0.6667,poza_polityka,1,
+MM,Mjanma (Birma),tk,HS,0.5000,S2,0,
+MM,Mjanma (Birma),bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MM,Mjanma (Birma),prokurator,HS L1,0.5000,S2,0,
+MM,Mjanma (Birma),wybory,HS,0.5000,S2,0,
+MM,Mjanma (Birma),konstytucja,L1,0.7500,poza_polityka,1,
+MN,Mongolia,tk,L1,0.5000,S1,0,
+MN,Mongolia,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MN,Mongolia,prokurator,HS L1,0.5000,S2,0,
+MN,Mongolia,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MN,Mongolia,konstytucja,L1,0.7500,poza_polityka,1,
+MR,Mauretania,tk,HS L1,0.5000,S2,0,
+MR,Mauretania,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MR,Mauretania,konstytucja,L1 P,0.6667,poza_polityka,1,
+MT,Malta,tk,G HS,0.5000,S2,0,
+MT,Malta,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MT,Malta,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MT,Malta,prokurator,HS,0.5000,S2,0,
+MT,Malta,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MT,Malta,konstytucja,L1,0.6667,S4,0,
+MU,Mauritius,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MU,Mauritius,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MU,Mauritius,prokurator,HS,0.5000,S2,0,
+MU,Mauritius,wybory,J,0.5000,poza_polityka,0,
+MU,Mauritius,konstytucja,L1,0.6667,S4,0,
+MV,Malediwy,krs,J,0.5000,poza_polityka,0,
+MV,Malediwy,prokurator,HS L1,0.5000,S2,0,
+MV,Malediwy,wybory,HS L1,0.5000,S2,0,
+MV,Malediwy,konstytucja,L1,0.6667,S4,0,
+MW,Malawi,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MW,Malawi,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MW,Malawi,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MW,Malawi,prokurator,HS,0.5000,S2,0,
+MW,Malawi,wybory,J,0.5000,poza_polityka,0,
+MW,Malawi,konstytucja,L1,0.6667,S4,0,
+MX,Meksyk,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MX,Meksyk,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MX,Meksyk,bank,HS L1,0.5000,S2,0,
+MX,Meksyk,prokurator,L1,0.5000,S1,0,
+MX,Meksyk,wybory,L1,0.5000,S1,0,
+MX,Meksyk,konstytucja,L1,0.6667,S4,0,
+MY,Malezja,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MY,Malezja,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+MY,Malezja,prokurator,HS,0.5000,S2,0,
+MY,Malezja,wybory,HS,0.5000,S2,0,
+MY,Malezja,konstytucja,L1,0.6667,S4,0,
+MZ,Mozambik,tk,HS J L1,0.5000,poza_polityka,1,
+MZ,Mozambik,krs,J,0.5000,poza_polityka,0,
+MZ,Mozambik,rpo,L1,0.5000,S1,0,
+MZ,Mozambik,bank,HS,0.5000,S2,0,
+MZ,Mozambik,prokurator,HS,0.5000,S2,0,
+MZ,Mozambik,konstytucja,L1,0.6667,S4,0,
+NA,Namibia,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NA,Namibia,rpo,HS,0.5000,S2,0,
+NA,Namibia,bank,HS,0.5000,S2,0,
+NA,Namibia,prokurator,HS J,0.5000,poza_polityka,1,
+NA,Namibia,wybory,HS L1,0.5000,S2,0,
+NA,Namibia,konstytucja,L1,0.6667,S4,0,
+NE,Niger,tk,HS,0.5000,S2,0,
+NE,Niger,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NE,Niger,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NE,Niger,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NE,Niger,konstytucja,L1,0.7500,poza_polityka,1,
+NG,Nigeria,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NG,Nigeria,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NG,Nigeria,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NG,Nigeria,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NG,Nigeria,konstytucja,L1,0.6667,S4,0,
+NI,Nikaragua,krs,J,0.5000,poza_polityka,0,
+NI,Nikaragua,rpo,L1,0.5000,S1,0,
+NI,Nikaragua,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NI,Nikaragua,prokurator,L1,0.5000,S1,0,
+NI,Nikaragua,wybory,L1,0.5000,S1,0,
+NI,Nikaragua,konstytucja,L1,0.6000,S3,0,
+NL,Holandia,rpo,L1,0.5000,S1,0,
+NL,Holandia,prokurator,HS,0.5000,S1,0,
+NL,Holandia,konstytucja,L1,0.6667,S4,0,
+NO,Norwegia,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NO,Norwegia,konstytucja,L1,0.6667,S4,0,
+NP,Nepal,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NP,Nepal,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NP,Nepal,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NP,Nepal,wybory,HS,0.5000,S1,0,
+NP,Nepal,konstytucja,L1,0.6667,S4,0,
+NR,Nauru,konstytucja,L1,0.6667,S4,0,
+NZ,Nowa Zelandia,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NZ,Nowa Zelandia,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NZ,Nowa Zelandia,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NZ,Nowa Zelandia,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+NZ,Nowa Zelandia,konstytucja,L1,0.6667,S4,0,
+PA,Panama,rpo,L1,0.5000,S1,0,
+PA,Panama,prokurator,HS L1,0.5000,S2,0,
+PA,Panama,wybory,HS J L1,0.5000,poza_polityka,1,
+PA,Panama,konstytucja,L1,0.5000,S1,0,
+PE,Peru,tk,L1,0.6667,S4,0,
+PE,Peru,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PE,Peru,rpo,L1,0.5000,S1,0,
+PE,Peru,bank,G L1,0.5000,S1,0,
+PE,Peru,prokurator,J,0.5000,poza_polityka,0,
+PE,Peru,wybory,J,0.5000,poza_polityka,0,
+PE,Peru,konstytucja,L1 P,0.5000,poza_polityka,1,
+PG,Papua-Nowa Gwinea,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PG,Papua-Nowa Gwinea,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PG,Papua-Nowa Gwinea,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PG,Papua-Nowa Gwinea,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PG,Papua-Nowa Gwinea,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PG,Papua-Nowa Gwinea,konstytucja,L1,0.6667,S4,0,
+PH,Filipiny,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PH,Filipiny,rpo,HS L1,0.5000,S2,0,
+PH,Filipiny,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PH,Filipiny,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PH,Filipiny,konstytucja,L1 P,0.7500,poza_polityka,1,
+PK,Pakistan,krs,J,0.5000,poza_polityka,0,
+PK,Pakistan,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PK,Pakistan,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PK,Pakistan,prokurator,HS,0.5000,S2,0,
+PK,Pakistan,wybory,HS,0.5000,S2,0,
+PK,Pakistan,konstytucja,L1,0.6667,S4,0,
+PL,Polska,tk,L1,0.5000,S1,0,
+PL,Polska,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PL,Polska,rpo,L1,0.5000,S1,0,
+PL,Polska,bank,HS L1,0.5000,S2,0,
+PL,Polska,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PL,Polska,konstytucja,L1,0.6667,S4,0,
+PS,Terytoria Palestyńskie,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PS,Terytoria Palestyńskie,bank,HS L1,0.5000,S2,0,
+PS,Terytoria Palestyńskie,prokurator,HS J,0.5000,poza_polityka,1,
+PS,Terytoria Palestyńskie,konstytucja,L1,0.6667,S4,0,
+PT,Portugalia,tk,J L1,0.5000,poza_polityka,1,
+PT,Portugalia,krs,J,0.5000,poza_polityka,0,
+PT,Portugalia,rpo,L1,0.5000,S1,0,
+PT,Portugalia,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PT,Portugalia,prokurator,G HS,0.5000,S2,0,
+PT,Portugalia,konstytucja,L1,0.6667,S4,0,
+PW,Palau,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PW,Palau,wybory,L1,0.5000,S1,0,
+PW,Palau,konstytucja,L1 P,0.7500,poza_polityka,1,
+PY,Paragwaj,krs,J,0.5000,poza_polityka,0,
+PY,Paragwaj,rpo,L1,0.5000,S1,0,
+PY,Paragwaj,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PY,Paragwaj,prokurator,HS J L1,0.5000,poza_polityka,1,
+PY,Paragwaj,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+PY,Paragwaj,konstytucja,L1 P,0.5000,poza_polityka,1,
+QA,Katar,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+QA,Katar,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+QA,Katar,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+QA,Katar,konstytucja,L1,0.6667,S4,0,
+RO,Rumunia,tk,HS L1,0.5000,S2,0,
+RO,Rumunia,krs,J L1,0.5000,poza_polityka,1,
+RO,Rumunia,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+RO,Rumunia,prokurator,HS J,0.5000,poza_polityka,1,
+RO,Rumunia,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+RO,Rumunia,konstytucja,L1 P,0.6667,poza_polityka,1,
+RS,Serbia,tk,HS J L1,0.5000,poza_polityka,1,
+RS,Serbia,krs,L1,0.5000,S1,0,
+RS,Serbia,rpo,L1,0.5000,S1,0,
+RS,Serbia,bank,L1,0.5000,S1,0,
+RS,Serbia,prokurator,G L1,0.5000,S1,0,
+RS,Serbia,konstytucja,L1,0.6667,S4,0,
+RU,Rosja,tk,HS L1,0.5000,S2,0,
+RU,Rosja,rpo,L1,0.5000,S1,0,
+RU,Rosja,bank,HS L1,0.5000,S2,0,
+RU,Rosja,prokurator,HS L1,0.5000,S2,0,
+RU,Rosja,konstytucja,L1,0.6667,S4,0,
+RW,Rwanda,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+RW,Rwanda,rpo,HS L1,0.5000,S2,0,
+RW,Rwanda,prokurator,HS L1,0.5000,S2,0,
+RW,Rwanda,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+RW,Rwanda,konstytucja,L1,0.7500,poza_polityka,1,
+SA,Arabia Saudyjska,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SA,Arabia Saudyjska,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SA,Arabia Saudyjska,konstytucja,L1,0.6667,S4,0,
+SB,Wyspy Salomona,rpo,HS L1,0.5000,S1,0,
+SB,Wyspy Salomona,prokurator,G J,0.5000,poza_polityka,1,
+SB,Wyspy Salomona,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SB,Wyspy Salomona,konstytucja,L1,0.6667,S4,0,
+SC,Seszele,rpo,HS L1,0.5000,S2,0,
+SC,Seszele,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SC,Seszele,prokurator,HS,0.5000,S2,0,
+SC,Seszele,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SC,Seszele,konstytucja,L1,0.6667,S4,0,
+SD,Sudan,tk,HS J,0.5000,poza_polityka,1,
+SD,Sudan,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SD,Sudan,prokurator,HS J,0.5000,poza_polityka,1,
+SD,Sudan,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SD,Sudan,konstytucja,L1,0.6667,S4,0,
+SE,Szwecja,rpo,L1,0.5000,S1,0,
+SE,Szwecja,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SE,Szwecja,konstytucja,L1,0.5000,S1,0,
+SG,Singapur,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SG,Singapur,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SG,Singapur,prokurator,G HS,0.5000,S1,0,
+SG,Singapur,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SG,Singapur,konstytucja,L1,0.6667,S4,0,
+SI,Słowenia,tk,HS L1,0.5000,S2,0,
+SI,Słowenia,krs,J,0.5000,poza_polityka,0,
+SI,Słowenia,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SI,Słowenia,bank,L1,0.5000,S1,0,
+SI,Słowenia,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SI,Słowenia,konstytucja,L1,0.6667,S4,0,
+SK,Słowacja,tk,HS L1,0.5000,S2,0,
+SK,Słowacja,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SK,Słowacja,rpo,L1,0.5000,S1,0,
+SK,Słowacja,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SK,Słowacja,prokurator,HS L1,0.5000,S2,0,
+SK,Słowacja,konstytucja,L1,0.6000,S3,0,
+SL,Sierra Leone,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SL,Sierra Leone,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SL,Sierra Leone,prokurator,HS,0.5000,S2,0,
+SL,Sierra Leone,wybory,HS L1,0.5000,S2,0,
+SL,Sierra Leone,konstytucja,L1,0.6667,S4,0,
+SN,Senegal,tk,HS L1,0.5000,S2,0,
+SN,Senegal,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SN,Senegal,konstytucja,L1,0.5000,S1,0,
+SO,Somalia,tk,HS J L1,0.5000,poza_polityka,1,
+SO,Somalia,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SO,Somalia,rpo,HS L1,0.5000,S2,0,
+SO,Somalia,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SO,Somalia,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SO,Somalia,wybory,G HS L1,0.5000,S2,0,
+SO,Somalia,konstytucja,L1 P,0.6667,poza_polityka,1,
+SR,Surinam,tk,HS L1,0.5000,S2,0,
+SR,Surinam,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SR,Surinam,prokurator,HS,0.5000,S2,0,
+SR,Surinam,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SR,Surinam,konstytucja,L1,0.6667,S4,0,
+SS,Sudan Południowy,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SS,Sudan Południowy,rpo,HS,0.5000,S2,0,
+SS,Sudan Południowy,bank,HS L1,0.5000,S2,0,
+SS,Sudan Południowy,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SS,Sudan Południowy,wybory,HS,0.5000,S2,0,
+SS,Sudan Południowy,konstytucja,L1,0.6667,S4,0,
+ST,Wyspy Świętego Tomasza i Książęca,tk,HS L1,0.5000,S2,0,
+ST,Wyspy Świętego Tomasza i Książęca,prokurator,G HS,0.5000,S2,0,
+ST,Wyspy Świętego Tomasza i Książęca,konstytucja,L1,0.6667,S4,0,
+SV,Salwador,krs,L1,0.5000,S1,0,
+SV,Salwador,rpo,L1,0.5000,S1,0,
+SV,Salwador,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SV,Salwador,prokurator,L1,0.5000,S1,0,
+SV,Salwador,wybory,J L1 O,0.5000,poza_polityka,1,
+SV,Salwador,konstytucja,L1,0.6667,S4,0,
+SZ,Eswatini,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SZ,Eswatini,rpo,HS L1,0.5000,S2,0,
+SZ,Eswatini,bank,HS,0.5000,S2,0,
+SZ,Eswatini,prokurator,G HS,0.5000,S2,0,
+SZ,Eswatini,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+SZ,Eswatini,konstytucja,L1,0.6667,S4,0,
+TG,Togo,tk,HS J L1,0.5000,poza_polityka,1,
+TG,Togo,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+TG,Togo,rpo,G,0.5000,S1,0,
+TG,Togo,prokurator,G,0.5000,S1,0,
+TG,Togo,konstytucja,L1,0.6000,S3,0,
+TH,Tajlandia,tk,HS J L1,0.5000,poza_polityka,1,
+TH,Tajlandia,krs,J,0.5000,poza_polityka,0,
+TH,Tajlandia,rpo,HS L1,0.5000,S2,0,
+TH,Tajlandia,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+TH,Tajlandia,wybory,HS J L1,0.5000,poza_polityka,1,
+TH,Tajlandia,konstytucja,L1,0.6667,S4,0,
+TJ,Tadżykistan,tk,HS L1,0.5000,S2,0,
+TJ,Tadżykistan,bank,HS L1,0.5000,S2,0,
+TJ,Tadżykistan,prokurator,HS L1,0.5000,S2,0,
+TJ,Tadżykistan,wybory,L1,0.5000,S1,0,
+TJ,Tadżykistan,konstytucja,L1 P,0.6667,poza_polityka,1,
+TL,Timor Wschodni,krs,J,0.5000,poza_polityka,0,
+TL,Timor Wschodni,rpo,L1,0.5000,S1,0,
+TL,Timor Wschodni,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+TL,Timor Wschodni,prokurator,HS,0.5000,S2,0,
+TL,Timor Wschodni,konstytucja,L1,0.6667,S4,0,
+TM,Turkmenistan,rpo,HS L1,0.5000,S2,0,
+TM,Turkmenistan,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+TM,Turkmenistan,prokurator,HS L1,0.5000,S2,0,
+TM,Turkmenistan,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+TM,Turkmenistan,konstytucja,L1,0.6667,S4,0,
+TN,Tunezja,tk,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+TN,Tunezja,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+TN,Tunezja,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+TN,Tunezja,konstytucja,L1,0.6667,S4,0,
+TO,Tonga,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+TO,Tonga,rpo,L1,0.5000,S1,0,
+TO,Tonga,prokurator,HS,0.5000,S2,0,
+TO,Tonga,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+TO,Tonga,konstytucja,L1,0.6667,S4,0,
+TR,Turcja,tk,HS L1,0.6667,S4,0,
+TR,Turcja,krs,J L1,0.5000,poza_polityka,1,
+TR,Turcja,rpo,L1,0.5000,S1,0,
+TR,Turcja,prokurator,HS J,0.5000,poza_polityka,1,
+TR,Turcja,wybory,J,0.5000,poza_polityka,0,
+TR,Turcja,konstytucja,L1,0.6667,S4,0,
+TT,Trynidad i Tobago,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+TT,Trynidad i Tobago,rpo,HS,0.5000,S1,0,
+TT,Trynidad i Tobago,prokurator,HS,0.5000,S1,0,
+TT,Trynidad i Tobago,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+TT,Trynidad i Tobago,konstytucja,L1,0.6667,S4,0,
+TV,Tuvalu,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+TV,Tuvalu,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+TV,Tuvalu,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+TV,Tuvalu,konstytucja,L1,0.6667,S4,0,
+TW,Tajwan,tk,HS L1,0.5000,S2,0,
+TW,Tajwan,konstytucja,L1 P,0.7500,poza_polityka,1,
+TZ,Tanzania,tk,G,0.5000,S1,0,
+TZ,Tanzania,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+TZ,Tanzania,prokurator,HS,0.5000,S2,0,
+TZ,Tanzania,wybory,HS,0.5000,S2,0,
+TZ,Tanzania,konstytucja,L1,0.6667,S4,0,
+UA,Ukraina,tk,HS L1,0.5000,S2,0,
+UA,Ukraina,krs,J,0.5000,poza_polityka,0,
+UA,Ukraina,rpo,L1,0.5000,S1,0,
+UA,Ukraina,bank,L1,0.5000,S1,0,
+UA,Ukraina,prokurator,HS L1,0.5000,S2,0,
+UA,Ukraina,wybory,HS L1,0.5000,S2,0,
+UA,Ukraina,konstytucja,L1,0.6667,S4,0,
+UG,Uganda,tk,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+UG,Uganda,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+UG,Uganda,bank,HS L1,0.5000,S2,0,
+UG,Uganda,prokurator,HS L1,0.5000,S2,0,
+UG,Uganda,wybory,HS L1,0.5000,S2,0,
+UG,Uganda,konstytucja,L1,0.6667,S4,0,
+US,Stany Zjednoczone,konstytucja,L1,0.6667,S4,0,
+UY,Urugwaj,bank,HS,0.5000,S2,0,
+UY,Urugwaj,prokurator,HS L1,0.5000,S2,0,
+UY,Urugwaj,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+UY,Urugwaj,konstytucja,L1 P,0.6667,poza_polityka,1,
+UZ,Uzbekistan,tk,L1,0.5000,S1,0,
+UZ,Uzbekistan,krs,L1,0.5000,S1,0,
+UZ,Uzbekistan,rpo,L1,0.5000,S1,0,
+UZ,Uzbekistan,bank,L1,0.5000,S1,0,
+UZ,Uzbekistan,prokurator,HS L1,0.5000,S2,0,
+UZ,Uzbekistan,wybory,L1,0.5000,S1,0,
+UZ,Uzbekistan,konstytucja,L1,0.6667,S4,0,
+VC,Saint Vincent i Grenadyny,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+VC,Saint Vincent i Grenadyny,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+VC,Saint Vincent i Grenadyny,konstytucja,L1,0.6667,S4,0,
+VE,Wenezuela,tk,L1,0.5000,S1,0,
+VE,Wenezuela,rpo,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+VE,Wenezuela,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+VE,Wenezuela,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+VE,Wenezuela,wybory,L1,0.5000,S1,0,
+VE,Wenezuela,konstytucja,L1 P,0.6667,poza_polityka,1,
+VN,Wietnam,prokurator,L1,0.5000,S1,0,
+VN,Wietnam,wybory,L1,0.5000,S1,0,
+VN,Wietnam,konstytucja,L1,0.6667,S4,0,
+VU,Vanuatu,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+VU,Vanuatu,rpo,HS,0.5000,S2,0,
+VU,Vanuatu,prokurator,HS J,0.5000,poza_polityka,1,
+VU,Vanuatu,wybory,HS J,0.5000,poza_polityka,1,
+VU,Vanuatu,konstytucja,L1,0.6667,S4,0,
+WS,Samoa,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+WS,Samoa,rpo,HS L1,0.5000,S2,0,
+WS,Samoa,prokurator,G HS,0.5000,S2,0,
+WS,Samoa,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+WS,Samoa,konstytucja,L1,0.6667,S4,0,
+XK,Kosowo,tk,HS L1,0.6667,S4,0,
+XK,Kosowo,krs,J L1,0.5000,poza_polityka,1,
+XK,Kosowo,rpo,L1,0.5000,S1,0,
+XK,Kosowo,bank,HS,0.5000,S2,0,
+XK,Kosowo,prokurator,HS J,0.5000,poza_polityka,1,
+XK,Kosowo,wybory,HS L1 O,0.5000,poza_polityka,1,
+XK,Kosowo,konstytucja,L1,0.6667,S4,0,
+YE,Jemen,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+YE,Jemen,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+YE,Jemen,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+YE,Jemen,konstytucja,L1,0.7500,poza_polityka,1,
+ZA,Republika Południowej Afryki,tk,HS J,0.5000,poza_polityka,1,
+ZA,Republika Południowej Afryki,krs,J,0.5000,poza_polityka,0,
+ZA,Republika Południowej Afryki,rpo,HS L1,0.5000,S2,0,
+ZA,Republika Południowej Afryki,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+ZA,Republika Południowej Afryki,prokurator,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+ZA,Republika Południowej Afryki,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+ZA,Republika Południowej Afryki,konstytucja,L1,0.6667,S4,0,
+ZM,Zambia,tk,HS,0.5000,S2,0,
+ZM,Zambia,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+ZM,Zambia,rpo,HS L1,0.5000,S2,0,
+ZM,Zambia,bank,HS L1,0.5000,S2,0,
+ZM,Zambia,prokurator,HS L1,0.5000,S2,0,
+ZM,Zambia,wybory,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+ZM,Zambia,konstytucja,L1,0.6667,S4,0,
+ZW,Zimbabwe,tk,HS,0.5000,S2,0,
+ZW,Zimbabwe,krs,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+ZW,Zimbabwe,bank,,,ustawa,0,"konstytucja nie określa, kto wybiera: decyduje ustawa"
+ZW,Zimbabwe,prokurator,HS,0.5000,S2,0,
+ZW,Zimbabwe,wybory,HS J L1,0.5000,poza_polityka,1,
+ZW,Zimbabwe,konstytucja,L1,0.6667,S4,0,

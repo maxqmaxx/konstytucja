@@ -29,6 +29,8 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "warianty"))
 import load as variants  # noqa: E402
+sys.path.insert(0, str(HERE))
+import ccp_ref  # noqa: E402
 
 PM_WORDS = re.compile(r"prime minister|chancellor|\bpremier\b|head of (the )?government|chief minister|first minister|minister of state"
                       r"|(president|chair(man|person)?) of the (council of ministers|government|cabinet|executive yuan)", re.I)
@@ -129,10 +131,14 @@ def blocking_minority(clauses, without=()):
 
 
 # ---------------- building decisions from variants ----------------
+CCP_OVERPCT = {"2": .5, "3": .6, "4": 2 / 3, "5": .75}
+
+
 class Country:
-    def __init__(self, code, R, has_pm_office=True, formal_monarch=False):
+    def __init__(self, code, R, has_pm_office=True, formal_monarch=False, ccp=None):
         self.code, self.R, self.sources, self.flags = code, R, {}, {}
         self.has_pm_office, self.formal_monarch = has_pm_office, formal_monarch
+        self.ccp = ccp or {}  # expert coding (CCP v5, 2023): fills only what our reading left open, always flagged
 
     def v(self, topic, field):
         r = self.R.get((topic, self.code))
@@ -155,7 +161,14 @@ class Country:
 
     # --- structure ---
     def bicameral(self):
-        return self.v("legapp", "izby") == "dwie"
+        v = self.v("legapp", "izby")
+        if v in UNKNOWN and self.ccp.get("housenum") in ("2", "3"):
+            return self.ccp["housenum"] == "3"  # CCP: 2 = one chamber, 3 = two
+        return v == "dwie"
+
+    def hs_selection(self):
+        """CCP HOSELECT: dziedziczna / wybory / wybor_posredni / None."""
+        return {"1": "dziedziczna", "2": "wybory", "3": "wybor_posredni"}.get(self.ccp.get("hoselect"))
 
     def president_heads_government(self):
         v = self.v("hogelect", "szef_rzadu")
@@ -236,6 +249,11 @@ def law_clauses(c, dec, l2_mode=None, hs_veto=None):
     mode = c.hs_needs_government("weto_ustaw")
     actor = "G" if mode == "advice" else "HS"
     prog = c.v("override", "prog_odrzucenia")
+    if prog in UNKNOWN and c.ccp.get("overpct") in CCP_OVERPCT:
+        q = CCP_OVERPCT[c.ccp["overpct"]]
+        c.flag(dec, f"próg odrzucenia weta ({fmt_thr(q)}) uzupełniony z kodowania CCP")
+        out = [{"req": [actor], "ch": dict(cl["ch"])} for cl in base]
+        return out + [{"req": [], "ch": {ch: max(v, q) for ch, v in cl["ch"].items()}} for cl in base]
     if prog == "weto_ostateczne":
         return [{"req": [actor], "ch": dict(cl["ch"])} for cl in base]
     q = thr_of(c, dec, prog, default=.5, what="próg odrzucenia weta")
@@ -416,30 +434,47 @@ def build(c: Country):
 
 
 def gov_type(c: Country):
-    """Typology from the text: who the government answers to."""
+    """Typology from the text (who heads the government, whom it answers to) and, from CCP, how the head of state is chosen."""
+    sel = c.hs_selection()
     if c.president_heads_government():
-        if "parlament" in (c.v("hogelect", "kto_wskazuje") or []):
+        if "parlament" in (c.v("hogelect", "kto_wskazuje") or []):  # CCP's "elite group" also covers electoral colleges
             return "prezydent_z_parlamentu"
         return "prezydencki"
     who = [w for w in (c.v("cabdiss", "kto_odwoluje") or []) if not (w == "glowa_panstwa" and c.formal_monarch)]
     parl = "parlament" in who or "druga_izba" in who
-    if c.v("hogelect", "szef_rzadu") != "odrebny_premier":
+    hs = "glowa_panstwa" in who
+    if c.v("hogelect", "szef_rzadu") != "odrebny_premier" and not (sel and (parl or hs)):
         return "nieustalony"
-    if parl and "glowa_panstwa" in who:
+    if sel == "dziedziczna" or c.formal_monarch:
+        return "monarchia_parlamentarna" if parl else ("rzad_glowy_panstwa" if hs else "nieustalony")
+    if sel == "wybory":
+        if parl and hs:
+            return "polprezydencki_prezydencko_parlamentarny"
+        if parl:
+            return "polprezydencki_premierowski"
+    if parl and hs:
         return "podwojna_odpowiedzialnosc"
     if parl:
         return "parlamentarny"
-    if "glowa_panstwa" in who:
+    if hs:
         return "rzad_glowy_panstwa"
     return "nieustalony"
 
 
-TYPES = {"parlamentarny": "Rząd odpowiada przed parlamentem",
+TYPES = {"parlamentarny": "Parlamentarny (głowa państwa wybierana pośrednio)",
+         "monarchia_parlamentarna": "Monarchia parlamentarna",
+         "polprezydencki_premierowski": "Półprezydencki: prezydent z wyborów, rząd odpowiada przed parlamentem",
+         "polprezydencki_prezydencko_parlamentarny": "Półprezydencki: rząd odpowiada przed parlamentem i prezydentem",
+         "podwojna_odpowiedzialnosc": "Rząd odpowiada przed parlamentem i głową państwa (głowa wybierana pośrednio)",
+         "prezydencki": "Prezydencki: głowa państwa kieruje rządem",
          "prezydent_z_parlamentu": "Prezydent kieruje rządem, ale wybiera go parlament",
-         "podwojna_odpowiedzialnosc": "Rząd odpowiada przed parlamentem i głową państwa",
-         "rzad_glowy_panstwa": "Premier zależny tylko od głowy państwa",
-         "prezydencki": "Głowa państwa kieruje rządem",
+         "rzad_glowy_panstwa": "Rząd zależny tylko od głowy państwa",
          "nieustalony": "Nie wynika z tekstu"}
+# coarse groups used for comparisons and sanity checks
+TYPE_GROUP = {"prezydencki": "prezydencki", "prezydent_z_parlamentu": "prezydencki", "rzad_glowy_panstwa": "silna_glowa",
+              "polprezydencki_premierowski": "polprezydencki", "polprezydencki_prezydencko_parlamentarny": "polprezydencki",
+              "parlamentarny": "parlamentarny", "monarchia_parlamentarna": "parlamentarny", "podwojna_odpowiedzialnosc": "polprezydencki",
+              "nieustalony": "nieustalony"}
 
 
 def indicators(c: Country, D):
@@ -456,8 +491,145 @@ def indicators(c: Country, D):
     }
 
 
-def country_model(code, R, has_pm_office=True, formal_monarch=False):
-    c = Country(code, R, has_pm_office, formal_monarch)
+# ---------------- capture: what a political majority can take over on its own ----------------
+SCENARIOS = [("S1", "Większość w pierwszej izbie (i rząd)", .5, False), ("S2", "Większość i głowa państwa", .5, True),
+             ("S3", "3/5 mandatów (z głową państwa, jeśli współdecyduje)", .6, True), ("S4", "2/3 mandatów (z głową państwa, jeśli współdecyduje)", 2 / 3, True)]
+INSTITUTIONS = {"tk": "Sąd konstytucyjny", "krs": "Rada sądownictwa", "rpo": "Rzecznik praw (ombudsman)", "bank": "Bank centralny",
+                "prokurator": "Prokurator generalny", "wybory": "Organ wyborczy", "konstytucja": "Zmiana konstytucji"}
+NONPOLITICAL = {"J", "P", "O"}  # judges, the people, opposition/parties: a ruling majority does not control them
+
+
+def capture(c: Country):
+    """For each institution named in the constitution: who selects it and at what majority, and the weakest scenario
+    in which a ruling camp controls every selector. 'ustawa': the constitution names the institution but leaves the
+    selection to ordinary law, so the legislative majority decides."""
+    gmap = {"parlament": "L1", "glowa_panstwa": "HS", "rzad": c.g(), "sadownictwo": "J", "rada_sadownictwa": "J", "sady": "J",
+            "sedziowie": "J", "partie": "O", "rada_prokuratorska": "J", "inne": None}
+    out = {}
+
+    def add(key, topic, sel, thr=.5, note=""):
+        if not c.has(topic):
+            return
+        sel = [x for x in sel if x]
+        if not sel:
+            out[key] = {"selectors": [], "thr": None, "level": "ustawa", "note": "konstytucja nie określa, kto wybiera: decyduje ustawa"}
+            return
+        out[key] = {"selectors": sorted(set(sel)), "thr": thr, "note": note}
+    sel = [gmap.get(x) for x in (c.v("consel", "kto_wybiera") or [])]
+    add("tk", "consel", sel, 2 / 3 if c.v("consel", "wiekszosc_kwalifikowana") == "tak" else .5)
+    jc = c.v("jc", "kto_wybiera_sedziow_czlonkow")
+    add("krs", "jc", {"sedziowie": ["J"], "parlament": ["L1"], "mieszany": ["J", "L1"]}.get(jc, []))
+    om = c.v("ombuds", "kto_wybiera")
+    add("rpo", "ombuds", {"parlament": ["L1"], "glowa_panstwa": ["HS"], "rzad": [c.g()], "mieszany": ["L1", "HS"]}.get(om, []))
+    add("bank", "bank", [gmap.get(x) for x in (c.v("bank", "kto_powoluje_prezesa") or [])])
+    add("prokurator", "atgen", [gmap.get(x) for x in (c.v("atgen", "kto_powoluje") or [])])
+    add("wybory", "ecom", [gmap.get(x) for x in (c.v("ecom", "kto_powoluje") or [])])
+    if c.has("amend"):
+        t = THR.get(c.v("amend", "prog_parlament"), 2 / 3)
+        out["konstytucja"] = {"selectors": ["L1"] + (["P"] if c.v("amend", "referendum") == "zawsze" else []), "thr": t, "note": ""}
+
+    def controlled(actor, q, hs_allied):
+        if actor == "L1":
+            return True
+        if actor == "HS":
+            return hs_allied or c.hs_needs_government("-") == "advice"
+        if actor == "G":
+            return hs_allied or (not c.president_heads_government() and q >= .5)
+        return False
+    for key, x in out.items():
+        if x.get("level") == "ustawa":
+            continue
+        x["level"] = "poza_polityka"
+        for sid, _, q, allied in SCENARIOS:
+            if (x["thr"] or .5) <= q + 1e-9 and all(controlled(a, q, allied) for a in x["selectors"]):
+                x["level"] = sid
+                break
+        x["czesciowo"] = x["level"] == "poza_polityka" and any(a not in NONPOLITICAL for a in x["selectors"])
+        x["thr"] = None if x["thr"] is None else round(x["thr"], 4)
+    return out
+
+
+# ---------------- de jure judicial independence (text only) ----------------
+JUD = {"tk_wybor_wielu": "Sędziów TK wybiera więcej niż jeden organ albo większość kwalifikowana",
+       "tk_kadencja": "Kadencja sędziów TK co najmniej 9 lat albo do wieku emerytalnego",
+       "tk_jedna_kadencja": "Sędzia TK nie może być wybrany ponownie",
+       "rada_sedziowie": "Rada sądownictwa z większością sędziów",
+       "rada_wybor_sedziow": "Sędziowie-członkowie rady wybierani przez sędziów",
+       "nieusuwalnosc": "Nieusuwalność sędziów",
+       "odwolanie_sadowe": "O odwołaniu sędziego decyduje organ sądowy",
+       "przyczyny": "Odwołanie tylko z przyczyn określonych w ustawie",
+       "dostep": "Mniejszość parlamentarna lub obywatel może zaskarżyć ustawę do TK",
+       "wyroki": "Wyrok TK uchyla niekonstytucyjny przepis"}
+
+
+def judicial(c: Country):
+    sel = {x for x in (c.v("consel", "kto_wybiera") or [])}
+    term = c.v("conterm", "lata")
+    jr = set(c.v("jrem", "kto_decyduje") or [])
+    acc = set(c.v("conpow", "kto_moze_wniesc") or [])
+    has_cc, has_jc, has_rem = c.has("consel") or c.has("conpow") or c.has("conterm"), c.has("jc"), c.has("jrem")
+    comp = {
+        "tk_wybor_wielu": len(sel) >= 2 or c.v("consel", "wiekszosc_kwalifikowana") == "tak",
+        "tk_kadencja": (isinstance(term, (int, float)) and term >= 9) or c.v("conterm", "dozywotnio_lub_do_wieku") == "tak",
+        "tk_jedna_kadencja": c.v("conlim", "ponowny_wybor") == "zakazany",
+        "rada_sedziowie": c.v("jc", "sedziowie_wiekszoscia") == "tak",
+        "rada_wybor_sedziow": c.v("jc", "kto_wybiera_sedziow_czlonkow") == "sedziowie",
+        "nieusuwalnosc": c.v("jrem", "nieusuwalnosc") == "tak",
+        "odwolanie_sadowe": bool(jr) and jr <= {"sadownictwo", "rada_sadownictwa"},
+        "przyczyny": c.v("jrem", "tylko_z_przyczyn_w_ustawie") == "tak",
+        "dostep": bool(acc & {"mniejszosc_parlamentarna", "obywatel_skarga", "kazdy_actio_popularis"}),
+        "wyroki": c.v("conpow", "skutek_wyroku") == "utrata_mocy",
+    }
+    # components about an institution the constitution does not have are not counted (e.g. no constitutional court)
+    na = set()
+    if not has_cc:
+        na |= {"tk_wybor_wielu", "tk_kadencja", "tk_jedna_kadencja", "dostep", "wyroki"}
+    if not has_jc:
+        na |= {"rada_sedziowie", "rada_wybor_sedziow"}
+    if not has_rem:
+        na |= {"nieusuwalnosc", "odwolanie_sadowe", "przyczyny"}
+    app = [k for k in comp if k not in na]
+    comp = {k: (None if k in na else v) for k, v in comp.items()}
+    score = round(sum(bool(comp[k]) for k in app) / len(app) * 100, 1) if len(app) >= 4 else None
+    return {"components": comp, "score": score, "applicable": len(app)}
+
+
+# ---------------- robustness variants ----------------
+WEIGHTS = {"ustawa": 3, "budzet": 3, "konstytucja": 2, "powolanie_rzadu": 2, "odwolanie_rzadu": 2}
+VARIANTS = {"bazowy": "Model bazowy",
+            "wagi": "Wagi decyzji (ustawa i budżet x3, konstytucja i rząd x2)",
+            "bez_reguly_monarchy": "Bez reguły dla monarchii (kontrasygnata zawsze dzieli siłę)",
+            "progi_latwe": "Większości kwalifikowane łatwe (każdy próg jak zwykła większość)",
+            "progi_trudne": "Większości kwalifikowane nieosiągalne",
+            "tylko_kompletne": "Tylko decyzje bez założeń"}
+
+
+def transform(clauses, mode):
+    if mode == "progi_latwe":
+        return [{"req": c["req"], "ch": {k: min(v, .5) for k, v in c["ch"].items()}} for c in clauses]
+    if mode == "progi_trudne":
+        return [{"req": c["req"], "ch": {k: (1.0 if v > .5 else v) for k, v in c["ch"].items()}} for c in clauses]
+    return clauses
+
+
+def profile_variant(code, R, pm, formal, ccp, variant):
+    c = Country(code, R, pm, False if variant == "bez_reguly_monarchy" else formal, ccp)
+    D = build(c)
+    if variant == "tylko_kompletne":
+        D = {d: cl for d, cl in D.items() if not c.flags.get(d)}
+    if not D:
+        return None
+    prof, tot = {o: 0.0 for o in ORGANS}, 0
+    for d, cl in D.items():
+        w = WEIGHTS.get(d, 1) if variant == "wagi" else 1
+        for o, v in shapley(transform(cl, variant)).items():
+            prof[o] += v * w
+        tot += w
+    return {o: v / tot for o, v in prof.items()}
+
+
+def country_model(code, R, has_pm_office=True, formal_monarch=False, ccp=None):
+    c = Country(code, R, has_pm_office, formal_monarch, ccp)
     D = build(c)
     decisions = {}
     for dec, clauses in D.items():
@@ -488,7 +660,8 @@ def country_model(code, R, has_pm_office=True, formal_monarch=False):
     control = [{"decision": dec, "target": c.g() if TARGET[dec] == "G" else TARGET[dec], "by": sorted(x["shares"])}
                for dec, x in decisions.items() if dec in TARGET]
     hhi = sum(v * v for v in profile.values())
-    return {"code": code, "type": gov_type(c), "decisions": decisions, "complete": complete,
+    return {"code": code, "type": gov_type(c), "hs_selection": c.hs_selection(), "decisions": decisions, "complete": complete,
+            "przejecie": capture(c), "sady": judicial(c),
             "ranked": len(complete) >= MIN_DECISIONS,
             "profile": {k: round(v, 4) for k, v in profile.items()}, "hhi": round(hhi, 4),
             "blocks": blocks, "control": control, "indicators": indicators(c, D)}
@@ -501,9 +674,24 @@ def main():
     # fallback for "who heads the government": no prime-minister-like office and no monarch in the whole text
     pm = {d["country_code"]: any(PM_WORDS.search(t) or MONARCH.search(t) for _, t in d["articles"]) for d in art.values()}
     formal = {d["country_code"]: any(FORMAL_MONARCH.search(t) for _, t in d["articles"]) for d in art.values()}
-    out = {code: country_model(code, R, pm.get(code, True), formal.get(code, False)) for code in codes}
+    ccp = ccp_ref.load()
+    out = {code: country_model(code, R, pm.get(code, True), formal.get(code, False), ccp.get(code)) for code in codes}
     out = {k: v for k, v in out.items() if v["decisions"]}
-    meta = {"organs": ORGANS, "short": SHORT, "decisions": DECISIONS, "types": TYPES, "min_decisions": MIN_DECISIONS}
+    # robustness: head-of-state share and rank under each variant (ranked countries only)
+    ranked = [k for k, m in out.items() if m["ranked"]]
+    var = {}
+    for v in VARIANTS:
+        profs = {k: profile_variant(k, R, pm.get(k, True), formal.get(k, False), ccp.get(k), v) for k in ranked}
+        order = sorted((k for k in ranked if profs[k]), key=lambda k: -profs[k]["HS"])
+        var[v] = {k: {"HS": round(profs[k]["HS"], 4), "parl": round(profs[k]["L1"] + profs[k]["L2"], 4), "rank": order.index(k) + 1}
+                  for k in order}
+    for k in ranked:
+        out[k]["warianty"] = {v: var[v].get(k) for v in VARIANTS}
+        rs = [x["rank"] for x in out[k]["warianty"].values() if x]
+        out[k]["rank_range"] = [min(rs), max(rs)]
+    meta = {"organs": ORGANS, "short": SHORT, "decisions": DECISIONS, "types": TYPES, "type_group": TYPE_GROUP,
+            "min_decisions": MIN_DECISIONS, "institutions": INSTITUTIONS, "scenarios": [[a, b] for a, b, *_ in SCENARIOS],
+            "judicial": JUD, "variants": VARIANTS, "ccp": bool(ccp)}
     (HERE / "wladza.json").write_text(json.dumps({"meta": meta, "countries": out}, ensure_ascii=False, indent=0), encoding="utf-8")
     with open(HERE / "wladza_kraje.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
@@ -520,7 +708,24 @@ def main():
                             "" if x["blokujaca_mniejszosc"] is None else f'{x["blokujaca_mniejszosc"]:.4f}',
                             {None: "", -1: "nie_do_odrzucenia"}.get(x["blokujaca_mniejszosc_bez_HS"], f'{x["blokujaca_mniejszosc_bez_HS"]:.4f}' if x["blokujaca_mniejszosc_bez_HS"] is not None else ""),
                             "; ".join(x["flags"])])
-    print(json.dumps({"countries": len(out), "ranked": sum(m["ranked"] for m in out.values())}))
+    with open(HERE / "wladza_przejecie.csv", "w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
+        w.writerow(["kod", "instytucja", "kto_wybiera", "prog_izby", "poziom_przejecia", "czesciowo", "uwagi"])
+        for code, m in out.items():
+            for inst, x in m["przejecie"].items():
+                w.writerow([code, inst, " ".join(x["selectors"]), "" if x["thr"] is None else f'{x["thr"]:.4f}', x["level"], int(x.get("czesciowo", False)), x["note"]])
+    with open(HERE / "wladza_sady.csv", "w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
+        w.writerow(["kod", "indeks_0_100", *JUD])
+        for code, m in out.items():
+            w.writerow([code, "" if m["sady"]["score"] is None else m["sady"]["score"],
+                        *["" if m["sady"]["components"][k] is None else int(m["sady"]["components"][k]) for k in JUD]])
+    with open(HERE / "wladza_warianty.csv", "w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
+        w.writerow(["kod", *[f"{v}_{x}" for v in VARIANTS for x in ("sila_HS", "miejsce")]])
+        for code in ranked:
+            w.writerow([code, *[y for v in VARIANTS for y in ((f'{out[code]["warianty"][v]["HS"]:.4f}', out[code]["warianty"][v]["rank"]) if out[code]["warianty"][v] else ("", ""))]])
+    print(json.dumps({"countries": len(out), "ranked": sum(m["ranked"] for m in out.values()), "ccp": len(ccp)}))
 
 
 if __name__ == "__main__":

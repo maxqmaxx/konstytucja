@@ -142,5 +142,32 @@
   "value": "ogolna",
   "basis": "art. 47: wszystkie ustawy i dekrety królewskie podpisuje król oraz minister lub sekretarz stanu; art. 42 ust. 2: odpowiadają ministrowie, nie król (artykułów nie było we fragmencie)",
   "reviewed": "2026-11-07"
+ },
+ {
+  "topic": "bank",
+  "country_code": "PL",
+  "field": "kto_powoluje_prezesa",
+  "value": [
+   "parlament",
+   "glowa_panstwa"
+  ],
+  "basis": "art. 227 ust. 3: Prezesa NBP powołuje Sejm na wniosek Prezydenta RP",
+  "reviewed": "2026-11-07"
+ },
+ {
+  "topic": "amend",
+  "country_code": "FR",
+  "field": "referendum",
+  "value": "fakultatywne",
+  "basis": "art. 89: zmianę przyjętą przez obie izby zatwierdza referendum, chyba że Prezydent przedłoży ją Kongresowi, który przyjmuje ją większością 3/5",
+  "reviewed": "2026-11-07"
+ },
+ {
+  "topic": "amend",
+  "country_code": "FR",
+  "field": "prog_parlament",
+  "value": "trzy_piate",
+  "basis": "art. 89: zmianę przyjętą przez obie izby zatwierdza referendum, chyba że Prezydent przedłoży ją Kongresowi, który przyjmuje ją większością 3/5",
+  "reviewed": "2026-11-07"
  }
 ]

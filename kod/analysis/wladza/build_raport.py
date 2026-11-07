@@ -81,7 +81,7 @@ def build(data, public=False):
     top = sorted(R.items(), key=lambda kv: -kv[1]["profile"]["HS"])[:8]
     low_hhi = sorted(R.items(), key=lambda kv: kv[1]["hhi"])[:8]
     B.append(("ul", [
-        f"**Prezydent RP ma {pct(pl['profile']['HS'])} siły** (średnio w {len(pl['decisions'])} decyzjach). To {hs_rank}. miejsce z {n} od najsilniejszej głowy państwa "
+        f"**Prezydent RP ma {pct(pl['profile']['HS'])} siły** (średnio w {len(pl['decisions'])} decyzjach). To {hs_rank}. miejsce z {n} od najsilniejszej głowy państwa (przy innych założeniach modelu {pl['rank_range'][0]}.–{pl['rank_range'][1]}.) "
         f"i {eu_r.index('PL') + 1}. z {len(eu_r)} w UE. Mediana świata: {pct(statistics.median(m['profile']['HS'] for m in R.values()))}, średnia UE: {pct(eu['HS'])}.",
         f"**Sejm i Senat razem: {pct(parl(pl))}**, rząd {pct(pl['profile']['G'])}. Senat ma {pct(pl['profile']['L2'])}: jego sprzeciw wobec ustaw Sejm odrzuca bezwzględną większością (art. 121 ust. 3), więc w modelu nie przesądza o wyniku zwykłej ustawy. Siłę Senatu daje zmiana konstytucji (art. 235).",
         f"**Weto prezydenta RP** (art. 122 ust. 5) daje mu 10% siły przy ustawie: Sejm odrzuca je większością 3/5, więc zablokować może ponad 40% posłów popierających prezydenta. "
@@ -144,14 +144,83 @@ def build(data, public=False):
         B += [("h", 2, "Podstawa dla Polski (cytaty z wydania angielskiego)"),
               ("table", ["Decyzja", "Temat", "Artykuły we fragmencie", "Cytat (EN)", "Ręczna korekta"], srcs)]
 
+    # ---- capture of institutions ----
+    LV = {"S1": "zwykła większość w izbie", "S2": "większość i głowa państwa", "S3": "3/5 mandatów", "S4": "2/3 mandatów",
+          "poza_polityka": "poza zasięgiem samej polityki", "ustawa": "decyduje ustawa (zwykła większość)"}
+    inst = meta["institutions"]
+    B += [("h", 2, "Kto może sam przejąć instytucje"),
+          ("p", "Dla każdej instytucji opisanej w konstytucji: najsłabszy obóz polityczny, który sam wybiera wszystkich jej członków. "
+                "„Decyduje ustawa”: konstytucja nie mówi, kto wybiera. „Poza zasięgiem samej polityki”: współdecydują sędziowie, naród albo opozycja."),
+          ("table", ["Instytucja", "Polska", "Państw z tą instytucją", "Zwykła większość lub ustawa", "Potrzebna większość kwalifikowana lub sędziowie"],
+           [[label, LV.get(pl["przejecie"].get(k, {}).get("level"), "nie ma w konstytucji"),
+             sum(1 for m in R.values() if k in m["przejecie"]),
+             pct(sum(1 for m in R.values() if m["przejecie"].get(k, {}).get("level") in ("S1", "S2", "ustawa")) / max(1, sum(1 for m in R.values() if k in m["przejecie"]))),
+             pct(sum(1 for m in R.values() if m["przejecie"].get(k, {}).get("level") in ("S3", "S4", "poza_polityka")) / max(1, sum(1 for m in R.values() if k in m["przejecie"])))]
+            for k, label in inst.items()]),
+          ("p", "W Polsce sędziów Trybunału wybiera Sejm bez większości kwalifikowanej (art. 194), a konstytucja nie mówi, kto wybiera sędziów-członków KRS (art. 187 ust. 4 odsyła do ustawy). "
+                "Te dwie instytucje może więc obsadzić sama większość sejmowa. Prezesa NBP powołuje Sejm na wniosek Prezydenta (art. 227), więc potrzebna jest ich zgoda. Zmiana konstytucji wymaga 2/3 Sejmu i Senatu (art. 235).")]
+    # ---- judicial independence ----
+    js = {k: m["sady"]["score"] for k, m in R.items() if m["sady"]["score"] is not None}
+    eu_j = sorted((k for k in js if k in EU27), key=lambda k: -js[k])
+    B += [("h", 2, "Niezależność sądów zapisana w konstytucji"),
+          ("p", f"Indeks: odsetek z 10 gwarancji obecnych w tekście (spośród tych, które dotyczą danej konstytucji). Polska: {js.get('PL', 0):.0f} na 100, mediana świata {statistics.median(js.values()):.0f}, średnia UE {statistics.fmean(js[k] for k in eu_j):.0f}. "
+                "Brakuje dwóch: sędziów TK wybiera jeden organ zwykłą większością, a konstytucja nie mówi, że sędziów-członków KRS wybierają sędziowie."),
+          ("table", ["Gwarancja", "Polska", "Odsetek konstytucji"],
+           [[t, "tak" if pl["sady"]["components"].get(k) else ("nie dotyczy" if pl["sady"]["components"].get(k) is None else "nie"),
+             pct(sum(1 for m in R.values() if m["sady"]["components"].get(k)) / max(1, sum(1 for m in R.values() if m["sady"]["components"].get(k) is not None)))]
+            for k, t in meta["judicial"].items()]),
+          ("table", ["Państwo UE", "Indeks"], [[name_pl(k, k), f"{js[k]:.0f}"] for k in eu_j])]
+    # ---- reform scenarios for Poland (simulator, same code as the web page) ----
+    sims = simulate(meta)
+    if sims:
+        B += [("h", 2, "Jak reformy zmieniłyby układ sił w Polsce"),
+              ("p", "Wynik symulatora (strona Władza → Symulator) dla gotowych zestawów. „Instytucje”: ile z pięciu (TK, KRS, RPO, NBP, zmiana konstytucji) może obsadzić sama zwykła większość, z Prezydentem lub bez."),
+              ("table", ["Zestaw", "Sejm", "Senat", "Rząd", "Prezydent", "Naród", "Instytucje w zasięgu zwykłej większości"],
+               [[lbl, pct(p["L1"]), pct(p["L2"]), pct(p["G"]), pct(p["HS"]), pct(p["P"]), f"{cap} z 5"] for lbl, p, cap in sims])]
+    # ---- trust ----
+    W = json.loads((HERE / "walidacja.json").read_text()) if (HERE / "walidacja.json").exists() else {}
+    if W.get("pola"):
+        ty, sd, wy, wr = W["typologia"], W["sady"]["indeks_vs_melton_ginsburg"], W["wykonawcza"]["udzial_wykonawczej_vs_indeks"], W["wrazliwosc"]
+        f3 = lambda v: str(v).replace(".", ",")  # noqa: E731
+        B += [("h", 2, "Na ile ufać tym liczbom"), ("ul", [
+            f"**Odczyty a eksperci.** W {W['pola_razem']['n']} porównaniach z ręcznym kodowaniem Comparative Constitutions Project (wersja 5) zgodność wynosi {pct(W['pola_razem']['zgodnosc'])}. "
+            "Pola strukturalne: liczba izb 97%, próg odrzucenia weta 99%, rozwiązanie parlamentu 97%. Najsłabiej: kto odwołuje rząd (ok. 70%), bo CCP liczy też formalne odwołanie ministrów przez głowę państwa.",
+            f"**Typ ustroju.** Zgodność z klasyfikacją Cheibuba, Elkinsa i Ginsburga (2014): {pct(ty['zgodnosc'])} ({ty['n']} konstytucji, kappa {f3(ty['kappa'])}). "
+            f"Udział głowy państwa w naszym modelu rośnie zgodnie z ich typem: parlamentarne {pct(ty['hs_wg_typu_cheibub']['parlamentarny'])}, półprezydenckie {pct(ty['hs_wg_typu_cheibub']['polprezydencki'])}, prezydenckie {pct(ty['hs_wg_typu_cheibub']['prezydencki'])}.",
+            f"**Niezależność sądów.** Korelacja rang z indeksem Meltona i Ginsburga (2014): ρ = {f3(sd['rho'])} (95%: {f3(sd['ci95'][0])}–{f3(sd['ci95'][1])}). Umiarkowana: ich indeks dotyczy sądu najwyższego, nasz głównie TK i rady sądownictwa.",
+            f"**Indeks władzy wykonawczej CCP** (7 uprawnień) koreluje z naszym udziałem głowy państwa i rządu słabo (ρ = {f3(wy['rho'])}). Ten indeks liczy uprawnienia całej władzy wykonawczej, także premiera, i prawie nie różnicuje typów ustroju, więc mierzy co innego.",
+            f"**Założenia.** Przy innych założeniach (wagi decyzji, bez reguły dla monarchii, łatwe lub nieosiągalne większości kwalifikowane, tylko decyzje bez założeń) korelacja rang z modelem bazowym wynosi {f3(min(x['spearman_z_bazowym']['rho'] for x in wr['warianty'].values()))}–{f3(max(x['spearman_z_bazowym']['rho'] for x in wr['warianty'].values()))}, "
+            f"ale pojedyncze miejsce przesuwa się typowo o {wr['mediana_rozpietosci_miejsca']:.0f} pozycji. Dlatego podajemy przedziały.",
+        ])]
     B += [("h", 2, "Metoda i ograniczenia"), ("ul", [
         "Dane: 49 tematów wariantów odczytanych modelem językowym (Claude) z angielskich wydań Constitute dla 188 obowiązujących konstytucji. Kod sprawdza, że cytat występuje w tekście; odpowiedzi bez zgodnego cytatu pominięto. Wartości dla Polski sprawdzono ręcznie (korekty z podstawą prawną w korekty.json).",
         "Indeks Shapleya-Shubika: organy jednoosobowe są graczami, izba to duża grupa równych posłów. Weto odrzucane większością q daje głowie państwa udział równy szerokości okna między 50% a q. Liczone dokładnie, bez losowania. Profil państwa to średnia z decyzji, które da się zbudować z tekstu.",
         "Organy są jednolite: model nie zna partii, koalicji, kohabitacji ani praktyki. Kolejność działania (kto proponuje pierwszy) nie daje siły, liczy się tylko, czyja zgoda jest potrzebna. Obie izby głosują tą samą większością.",
+        "Liczbę izb i próg odrzucenia weta, gdy nie wynikały z odczytu, oraz sposób wyboru głowy państwa (do typologii) wzięto z kodowania CCP (Elkins i Ginsburg 2025).",
         "Gdy tekst czegoś nie określa, przyjęto założenie wypisane przy decyzji. Do rankingów trafiają państwa z co najmniej 6 decyzjami bez niewiadomych w strukturze (" + f"{n} ze {len(C)}).",
         "Wydania Constitute mogą nie uwzględniać najnowszych zmian. Raport nie obejmuje ustaw, regulaminów ani orzecznictwa.",
     ])]
     return B
+
+
+def simulate(meta):
+    """Run the simulator's own JavaScript (symulator.py) in Node for the preset reform packages."""
+    import shutil
+    import subprocess
+    import tempfile
+    sys.path.insert(0, str(HERE))
+    import symulator
+    if not shutil.which("node"):
+        return []
+    with tempfile.TemporaryDirectory() as d:
+        f = Path(d) / "sim.js"
+        f.write_text(symulator.js(meta, {}) + """
+const out=[];for(const [id,label,set] of PRESETS){const k={};KNOBS.forEach(([n,,o])=>k[n]=(set[n]||o[0][0]));const a=analyse(k);
+out.push([label,a.prof,a.cap.filter(r=>['S1','S2','ustawa'].includes(r[1])).length]);}console.log(JSON.stringify(out));""")
+        res = subprocess.run(["node", str(f)], capture_output=True, text=True)
+    if res.returncode:
+        return []
+    return [(lbl, {o: p.get(o, 0) for o in ORDER}, cap) for lbl, p, cap in json.loads(res.stdout)]
 
 
 def md(B):

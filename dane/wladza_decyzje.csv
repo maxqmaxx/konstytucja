@@ -91,8 +91,8 @@ AU,Australia,konstytucja,0.2500,0.2500,0.0000,0.0000,0.5000,0.0000,0.0000,L1 L2 
 AU,Australia,odwolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
 AU,Australia,rozwiazanie,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
 AU,Australia,usuniecie_glowy,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,"próg oskarżenia nie podany, przyjęto 2/3; kto orzeka, nie wynika z tekstu"
-AZ,Azerbejdżan,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,"próg odrzucenia weta nie podany, przyjęto większość"
-AZ,Azerbejdżan,budzet,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,0.5000,"próg odrzucenia weta nie podany, przyjęto większość"
+AZ,Azerbejdżan,ustawa,0.8333,0.0000,0.1667,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.3333,próg odrzucenia weta (2/3) uzupełniony z kodowania CCP
+AZ,Azerbejdżan,budzet,0.4722,0.0000,0.0972,0.4306,0.0000,0.0000,0.0000,G L1,0.5000,0.3333,próg odrzucenia weta (2/3) uzupełniony z kodowania CCP
 AZ,Azerbejdżan,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,"próg nie podany, przyjęto 2/3; referendum tylko dla części zmian: nie wliczono"
 AZ,Azerbejdżan,powolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 AZ,Azerbejdżan,odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,"próg wotum nieufności nie podany, przyjęto większość"
@@ -503,8 +503,8 @@ FJ,Fidżi,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.
 FJ,Fidżi,rozwiazanie,0.0000,0.0000,0.5000,0.5000,0.0000,0.0000,0.0000,G HS,,,
 FJ,Fidżi,ratyfikacja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 FJ,Fidżi,usuniecie_glowy,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,"próg oskarżenia nie podany, przyjęto 2/3"
-FM,Mikronezja,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,"próg odrzucenia weta nie podany, przyjęto większość"
-FM,Mikronezja,budzet,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,"próg odrzucenia weta nie podany, przyjęto większość"
+FM,Mikronezja,ustawa,0.7500,0.0000,0.2500,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.2500,próg odrzucenia weta (3/4) uzupełniony z kodowania CCP
+FM,Mikronezja,budzet,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,próg odrzucenia weta (3/4) uzupełniony z kodowania CCP
 FM,Mikronezja,konstytucja,0.6667,0.0000,0.0000,0.0000,0.3333,0.0000,0.0000,L1 P,0.3333,,"próg nie podany, przyjęto 2/3"
 FM,Mikronezja,powolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,głowa państwa kieruje rządem i dobiera ministrów; zatwierdzanie ministrów przez izbę nie jest modelowane
 FM,Mikronezja,odwolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
@@ -513,7 +513,7 @@ FM,Mikronezja,ratyfikacja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.
 FM,Mikronezja,usuniecie_glowy,0.6667,0.0000,0.0000,0.0000,0.0000,0.0000,0.3333,J L1,0.3333,,"próg oskarżenia nie podany, przyjęto 2/3"
 FR,Francja,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,"próg odrzucenia weta nie podany, przyjęto większość"
 FR,Francja,budzet,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,0.5000,"próg odrzucenia weta nie podany, przyjęto większość; gdy parlament nie uchwali budżetu, władza wykonawcza działa na podstawie swojego projektu"
-FR,Francja,konstytucja,0.2500,0.2500,0.0000,0.0000,0.5000,0.0000,0.0000,L1 L2 P,0.5000,,
+FR,Francja,konstytucja,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.4000,,
 FR,Francja,powolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
 FR,Francja,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 FR,Francja,rozwiazanie,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
@@ -658,7 +658,7 @@ ID,Indonezja,sedziowie_tk,0.2500,0.0000,0.3750,0.0000,0.0000,0.0000,0.3750,HS J 
 ID,Indonezja,stan_nadzwyczajny,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,udział parlamentu nie wynika z tekstu
 ID,Indonezja,wojna,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 ID,Indonezja,ratyfikacja,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
-ID,Indonezja,usuniecie_glowy,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,
+ID,Indonezja,usuniecie_glowy,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.3333,,
 IE,Irlandia,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 IE,Irlandia,budzet,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,,
 IE,Irlandia,konstytucja,0.3333,0.3333,0.0000,0.0000,0.3333,0.0000,0.0000,L1 L2 P,0.3333,,"próg nie podany, przyjęto 2/3"
@@ -674,8 +674,8 @@ IL,Izrael,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.
 IL,Izrael,rozwiazanie,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,"samorozwiązanie: przyjęto próg 2/3, jeśli tekst nie podaje innego"
 IL,Izrael,ratyfikacja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 IL,Izrael,usuniecie_glowy,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,"próg oskarżenia nie podany, przyjęto 2/3; kto orzeka, nie wynika z tekstu"
-IN,Indie,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,"próg odrzucenia weta nie podany, przyjęto większość"
-IN,Indie,budzet,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,"próg odrzucenia weta nie podany, przyjęto większość"
+IN,Indie,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,próg odrzucenia weta (większość) uzupełniony z kodowania CCP
+IN,Indie,budzet,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,próg odrzucenia weta (większość) uzupełniony z kodowania CCP
 IN,Indie,konstytucja,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.3333,,
 IN,Indie,powolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,"czy parlament głosuje nad rządem, nie wynika z tekstu"
 IN,Indie,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,"próg wotum nieufności nie podany, przyjęto większość"
@@ -1061,15 +1061,15 @@ MV,Malediwy,odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.
 MV,Malediwy,wojna,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 MV,Malediwy,ratyfikacja,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,zgoda parlamentu tylko dla części umów: model pokazuje umowy wymagające zgody
 MV,Malediwy,usuniecie_glowy,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,
-MW,Malawi,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,
-MW,Malawi,budzet,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
-MW,Malawi,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,referendum tylko dla części zmian: nie wliczono
+MW,Malawi,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,"siła drugiej izby nie wynika z tekstu: przyjęto, że nie blokuje"
+MW,Malawi,budzet,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,"siła drugiej izby nie wynika z tekstu: przyjęto, że nie blokuje"
+MW,Malawi,konstytucja,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.3333,,referendum tylko dla części zmian: nie wliczono
 MW,Malawi,powolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,głowa państwa kieruje rządem i dobiera ministrów; zatwierdzanie ministrów przez izbę nie jest modelowane
 MW,Malawi,odwolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
 MW,Malawi,stan_nadzwyczajny,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 MW,Malawi,wojna,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
 MW,Malawi,ratyfikacja,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
-MW,Malawi,usuniecie_glowy,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,"próg oskarżenia nie podany, przyjęto 2/3"
+MW,Malawi,usuniecie_glowy,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.3333,,"próg oskarżenia nie podany, przyjęto 2/3"
 MX,Meksyk,ustawa,0.4167,0.4167,0.1667,0.0000,0.0000,0.0000,0.0000,L1 L2,0.5000,0.3333,
 MX,Meksyk,budzet,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,
 MX,Meksyk,konstytucja,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.3333,,
@@ -1359,8 +1359,8 @@ SE,Szwecja,rozwiazanie,0.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,G,,,
 SE,Szwecja,wojna,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,,
 SE,Szwecja,ratyfikacja,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,,zgoda parlamentu tylko dla części umów: model pokazuje umowy wymagające zgody
 SE,Szwecja,usuniecie_glowy,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,"próg oskarżenia nie podany, przyjęto 2/3; kto orzeka, nie wynika z tekstu"
-SG,Singapur,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,"próg odrzucenia weta nie podany, przyjęto większość"
-SG,Singapur,budzet,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,,"próg odrzucenia weta nie podany, przyjęto większość"
+SG,Singapur,ustawa,0.8333,0.0000,0.0000,0.1667,0.0000,0.0000,0.0000,L1,0.5000,,próg odrzucenia weta (2/3) uzupełniony z kodowania CCP
+SG,Singapur,budzet,0.5000,0.0000,0.0000,0.5000,0.0000,0.0000,0.0000,G L1,0.5000,,próg odrzucenia weta (2/3) uzupełniony z kodowania CCP
 SG,Singapur,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,
 SG,Singapur,powolanie_rzadu,0.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,G,,,głowa państwa działa na wniosek rządu: decyduje rząd
 SG,Singapur,odwolanie_rzadu,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,,0.0000,0.5000,"próg wotum nieufności nie podany, przyjęto większość"
@@ -1454,8 +1454,8 @@ SV,Salwador,stan_nadzwyczajny,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L
 SV,Salwador,wojna,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 SV,Salwador,ratyfikacja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,"większość kwalifikowana (często tylko dla części umów, np. przekazania kompetencji)"
 SV,Salwador,usuniecie_glowy,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,"próg oskarżenia nie podany, przyjęto 2/3; kto orzeka, nie wynika z tekstu"
-SZ,Eswatini,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,"próg odrzucenia weta nie podany, przyjęto większość"
-SZ,Eswatini,budzet,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,"próg odrzucenia weta nie podany, przyjęto większość"
+SZ,Eswatini,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,próg odrzucenia weta (większość) uzupełniony z kodowania CCP
+SZ,Eswatini,budzet,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,próg odrzucenia weta (większość) uzupełniony z kodowania CCP
 SZ,Eswatini,konstytucja,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,L1 L2,0.3333,,"próg nie podany, przyjęto 2/3; referendum tylko dla części zmian: nie wliczono"
 SZ,Eswatini,powolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,
 SZ,Eswatini,odwolanie_rzadu,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.4000,,formalne odwołanie przez monarchę (odpowiadają ministrowie) pominięto
@@ -1587,8 +1587,8 @@ UA,Ukraina,stan_nadzwyczajny,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS
 UA,Ukraina,wojna,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 UA,Ukraina,ratyfikacja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,,
 UA,Ukraina,usuniecie_glowy,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,
-UG,Uganda,ustawa,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.5000,"próg odrzucenia weta nie podany, przyjęto większość"
-UG,Uganda,budzet,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,"próg odrzucenia weta nie podany, przyjęto większość"
+UG,Uganda,ustawa,0.8333,0.0000,0.1667,0.0000,0.0000,0.0000,0.0000,L1,0.5000,0.3333,próg odrzucenia weta (2/3) uzupełniony z kodowania CCP
+UG,Uganda,budzet,0.5000,0.0000,0.5000,0.0000,0.0000,0.0000,0.0000,HS L1,0.5000,nie_do_odrzucenia,próg odrzucenia weta (2/3) uzupełniony z kodowania CCP
 UG,Uganda,konstytucja,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,L1,0.3333,,referendum tylko dla części zmian: nie wliczono
 UG,Uganda,powolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,głowa państwa kieruje rządem i dobiera ministrów; zatwierdzanie ministrów przez izbę nie jest modelowane
 UG,Uganda,odwolanie_rzadu,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,HS,,,

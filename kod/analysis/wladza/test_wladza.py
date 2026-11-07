@@ -80,6 +80,27 @@ class Countries(unittest.TestCase):
         self.assertEqual(c.g(), "HS")
 
 
+class Simulator(unittest.TestCase):
+    def test_js_matches_python_for_poland(self):
+        import shutil
+        import subprocess
+        import tempfile
+        path = HERE / "wladza.json"
+        if not path.exists() or not shutil.which("node"):
+            self.skipTest("needs wladza.json and node")
+        import symulator
+        meta = json.loads(path.read_text())["meta"]
+        with tempfile.TemporaryDirectory() as d:
+            f = Path(d) / "sim.js"
+            f.write_text(symulator.js(meta, {}) + "\nconst k={};KNOBS.forEach(([n,,o])=>k[n]=o[0][0]);console.log(JSON.stringify(analyse(k).res));")
+            res = json.loads(subprocess.run(["node", str(f)], capture_output=True, text=True, check=True).stdout)
+        pl = json.loads(path.read_text())["countries"]["PL"]["decisions"]
+        self.assertEqual(set(res), set(pl))
+        for dec, x in pl.items():
+            for organ in set(x["shares"]) | set(res[dec]["s"]):
+                self.assertAlmostEqual(res[dec]["s"].get(organ, 0), x["shares"].get(organ, 0), places=3, msg=f"{dec} {organ}")
+
+
 class Output(unittest.TestCase):
     def test_built_data(self):
         path = HERE / "wladza.json"
@@ -93,6 +114,12 @@ class Output(unittest.TestCase):
         ranked = {k: m for k, m in data.items() if m["ranked"]}
         mean = lambda t: sum(m["profile"]["HS"] for m in ranked.values() if m["type"] == t) / max(1, sum(m["type"] == t for m in ranked.values()))
         self.assertGreater(mean("prezydencki"), 2 * mean("parlamentarny"))  # expectation written before computing
+        self.assertGreater(mean("polprezydencki_premierowski"), mean("parlamentarny"))
+        for code, m in data.items():
+            for inst, x in m["przejecie"].items():
+                self.assertIn(x["level"], {"S1", "S2", "S3", "S4", "poza_polityka", "ustawa"})
+            if m["sady"]["score"] is not None:
+                self.assertTrue(0 <= m["sady"]["score"] <= 100)
         for strong, weak in [("US", "DE"), ("BR", "PL"), ("SA", "DE"), ("RU", "HU")]:
             if strong in data and weak in data:
                 self.assertGreater(data[strong]["profile"]["HS"], data[weak]["profile"]["HS"], f"{strong} vs {weak}")
@@ -100,6 +127,11 @@ class Output(unittest.TestCase):
             pl = data["PL"]["decisions"]
             self.assertAlmostEqual(pl["ustawa"]["shares"]["HS"], .1, places=3)  # art. 122 ust. 5: 3/5 override
             self.assertAlmostEqual(pl["konstytucja"]["blokujaca_mniejszosc"], 1 / 3, places=3)  # art. 235 ust. 4
+            cap = data["PL"]["przejecie"]
+            self.assertEqual(cap["tk"]["level"], "S1")  # art. 194: Sejm chooses, no qualified majority
+            self.assertEqual(cap["krs"]["level"], "ustawa")  # art. 187: who chooses the judges is left to statute
+            self.assertEqual(cap["bank"]["level"], "S2")  # art. 227 ust. 3: Sejm on the President's motion
+            self.assertEqual(data["PL"]["type"], "polprezydencki_premierowski")
 
 
 if __name__ == "__main__":

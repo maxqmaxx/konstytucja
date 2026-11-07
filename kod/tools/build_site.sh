@@ -10,5 +10,6 @@ python3 analysis/rp/build.py
 python3 analysis/konstruktor/build.py
 python3 analysis/statystyki/build.py
 python3 analysis/wladza/model.py
+python3 analysis/wladza/walidacja.py
 python3 analysis/wladza/build.py
 python3 analysis/theme/apply.py

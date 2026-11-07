@@ -18,6 +18,8 @@ HERE = Path(__file__).resolve().parent
 A = HERE.parent
 sys.path.insert(0, str(A / "panstwa"))
 from build import page, name_pl  # noqa: E402
+sys.path.insert(0, str(HERE))
+import symulator  # noqa: E402
 
 DATA_DATE = "2026-11-07"
 EU27 = {"AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT",
@@ -88,6 +90,7 @@ const ctlSvg=c=>{const pos={L1:[90,60],L2:[90,170],HS:[420,60],G:[420,170],CC:[2
   s+='<path class="e" d="M'+sx+','+sy+' Q'+cx+','+cy+' '+ex+','+ey+'" stroke="'+col[d]+'" marker-end="url(#m-'+d+')"><title>'+esc(M.short[a]+' '+lab[d])+'</title></path>';});
  nodes.forEach(n=>{const [x,y]=pos[n]||[255,140];s+='<rect class="node" x="'+(x-58)+'" y="'+(y-15)+'" width="116" height="30" rx="4"/><text x="'+x+'" y="'+(y+4)+'" text-anchor="middle">'+esc(M.short[n])+'</text>';});
  s+='</svg><p class="legend">'+Object.entries(lab).map(([k,v])=>'<span><i style="background:'+col[k]+'"></i>'+v+'</span>').join('')+'</p>';return s;};
+const LV={S1:'większość w izbie',S2:'większość + głowa państwa',S3:'3/5 mandatów',S4:'2/3 mandatów',poza_polityka:'poza zasięgiem samej polityki',ustawa:'decyduje ustawa'};
 const blk=x=>x==null?'–':x===-1?'sprzeciwu nie da się odrzucić':(x===0?'izba nie blokuje':'ponad '+pct(x).replace(',0%','%'));
 function country(code){const c=C[code];if(!c)return '';
  let h='<div class="two"><div><h3>Profil siły: '+esc(c.name)+'</h3><p class="note">Średni udział organów w '+Object.keys(c.decisions).length+' decyzjach (indeks Shapleya-Shubika). Typ: '+esc(M.types[c.type])+'. Koncentracja (HHI): '+c.hhi.toFixed(2).replace('.',',')+(c.ranked?'':' · <b>za mało kompletnych decyzji, poza rankingami</b>')+'</p>'+stack(c.profile,true)+'<p class="legend">'+ORDER.filter(o=>c.profile[o]>0.0005).map(o=>'<span><i style="background:'+COL[o]+'"></i>'+esc(M.short[o])+' '+pct(c.profile[o])+'</span>').join('')+'</p></div><div><h3>Kto kogo powołuje i odwołuje</h3>'+ctlSvg(c)+'</div></div>';
@@ -99,6 +102,10 @@ function country(code){const c=C[code];if(!c)return '';
  h+='</tbody></table></div>';
  const ind=Object.entries(c.ind).filter(([k,v])=>v).map(([k])=>'<li>'+esc(M.ind[k])+'</li>').join('');
  if(ind)h+='<p class="note" style="margin-top:10px">Mechanizmy hamujące i wzmacniające:</p><ul class="flags">'+ind+'</ul>';
+ if(c.rr)h+='<p class="note">Miejsce w rankingu siły głowy państwa przy różnych założeniach: '+c.rr[0]+'–'+c.rr[1]+'.</p>';
+ const cap=Object.entries(c.cap);
+ h+='<div class="two" style="margin-top:12px"><div><h3>Kto przejmie instytucje</h3>'+(cap.length?'<table class="w"><tbody>'+cap.map(([k,x])=>'<tr><td>'+esc(M.institutions[k])+'</td><td>'+esc(LV[x.level])+(x.czesciowo?' (część składu wybiera polityka)':'')+'</td></tr>').join('')+'</tbody></table><p class="note">Najsłabszy obóz polityczny, który sam obsadzi instytucję.</p>':'<p class="note">Konstytucja nie opisuje tych instytucji.</p>')+'</div>';
+ const j=c.jud;h+='<div><h3>Niezależność sądów w tekście: '+(j.score==null?'za mało danych':pct(j.score/100).replace(',0%','%'))+'</h3><ul class="flags">'+Object.entries(j.components).filter(([k,v])=>v!==null).map(([k,v])=>'<li>'+(v?'✓ ':'✗ ')+esc(M.judicial[k])+'</li>').join('')+'</ul></div></div>';
  return h;}
 const sel=document.getElementById('kraj'),out=document.getElementById('kraj-out');
 const show=()=>{out.innerHTML=country(sel.value);try{localStorage.setItem('wladza-kraj',sel.value)}catch(e){}};
@@ -158,7 +165,7 @@ def main():
     # compact client data (no quotes: publisher rights)
     client = {"meta": {**meta, "ind": IND}, "countries": {
         k: {"name": m["name"], "type": m["type"], "eu": k in EU27, "ranked": m["ranked"], "profile": m["profile"], "hhi": m["hhi"],
-            "control": m["control"], "ind": m["indicators"],
+            "control": m["control"], "ind": m["indicators"], "cap": m["przejecie"], "jud": m["sady"], "rr": m.get("rank_range"),
             "decisions": {d: {"shares": x["shares"], "veto": x["veto"], "b": x["blokujaca_mniejszosc"], "bh": x["blokujaca_mniejszosc_bez_HS"],
                               "flags": x["flags"], "sources": {t: {"a": s["articles"], "k": bool(s["korekty"])} for t, s in x["sources"].items()}}
                           for d, x in m["decisions"].items()}}
@@ -219,24 +226,74 @@ def main():
     top_hs = sorted(ranked.items(), key=lambda kv: -kv[1]["profile"]["HS"])[:5]
     pl_rank = sorted(ranked, key=lambda k: -ranked[k]["profile"]["HS"]).index("PL") + 1 if pl and pl["ranked"] else None
 
+    # ---- capture of institutions ----
+    LV = {"S1": "większość w izbie", "S2": "większość + głowa państwa", "S3": "3/5 mandatów", "S4": "2/3 mandatów",
+          "poza_polityka": "poza zasięgiem samej polityki", "ustawa": "decyduje ustawa"}
+    LV_ORDER = ["S1", "ustawa", "S2", "S3", "S4", "poza_polityka"]
+    cap_rows = ""
+    for inst, label in meta["institutions"].items():
+        lv = Counter(m["przejecie"][inst]["level"] for m in ranked.values() if inst in m["przejecie"])
+        tot = sum(lv.values())
+        if not tot:
+            continue
+        cells = "".join(f'<td class="n">{round(lv[l] / tot * 100)}%</td>' for l in LV_ORDER)
+        plv = pl["przejecie"].get(inst, {}).get("level") if pl else None
+        cap_rows += f'<tr><td>{escape(label)}</td><td class="n">{tot}</td>{cells}<td>{escape(LV.get(plv, "nie ma w konstytucji"))}</td></tr>'
+    cap_tbl = ('<table class="w"><thead><tr><th>Instytucja</th><th>państw</th>' + "".join(f"<th>{escape(LV[l])}</th>" for l in LV_ORDER)
+               + "<th>Polska</th></tr></thead><tbody>" + cap_rows + "</tbody></table>")
+
+    def resil(m):
+        xs = [x["level"] for k, x in m["przejecie"].items() if k != "konstytucja"]
+        return sum(l in ("S3", "S4", "poza_polityka") for l in xs) / len(xs) if len(xs) >= 3 else None
+    res = {k: resil(m) for k, m in ranked.items() if resil(m) is not None}
+    res_eu = [v for k, v in res.items() if k in EU27]
+    res_top = sorted(res, key=lambda k: (-res[k], C[k]["name"]))[:12]
+    res_low = [k for k in sorted(res, key=lambda k: (res[k], C[k]["name"])) if res[k] == 0]
+    # ---- judicial independence ----
+    js = {k: m["sady"]["score"] for k, m in ranked.items() if m["sady"]["score"] is not None}
+    jcomp = "".join(f'<tr><td>{escape(t)}</td><td class="n">{round(sum(1 for m in ranked.values() if m["sady"]["components"].get(k)) / max(1, sum(1 for m in ranked.values() if m["sady"]["components"].get(k) is not None)) * 100)}%</td>'
+                    f'<td>{"tak" if pl and pl["sady"]["components"].get(k) else ("nie dotyczy" if pl and pl["sady"]["components"].get(k) is None else "nie")}</td></tr>' for k, t in meta["judicial"].items())
+    j_eu = sorted((k for k in js if k in EU27), key=lambda k: -js[k])
+    j_eu_rows = "".join(f'<tr{" class=\"pl\"" if k == "PL" else ""}><td>{escape(C[k]["name"])}</td><td class="n">{js[k]:.0f}</td></tr>' for k in j_eu)
+    # ---- trust: validation and robustness ----
+    W = json.loads((HERE / "walidacja.json").read_text()) if (HERE / "walidacja.json").exists() else {}
+    trust = ""
+    if W.get("pola"):
+        frow = "".join(f'<tr><td>{escape(r["pole"])}</td><td class="n">{r["n"]}</td><td class="n">{pct(r["zgodnosc"])}</td><td class="n">{"–" if r["kappa"] is None else str(r["kappa"]).replace(".", ",")}</td></tr>' for r in W["pola"])
+        ty, wy, sd = W["typologia"], W["wykonawcza"], W["sady"]
+        f3 = lambda v: str(v).replace(".", ",")
+        trust += f'''<div class="box"><h3>Zgodność odczytów z ekspertami CCP: {pct(W["pola_razem"]["zgodnosc"])}</h3>
+<p class="note">Nasze odczyty (model językowy, cytat sprawdzany w kodzie) porównane z ręcznym kodowaniem Comparative Constitutions Project (wersja 5, stan na 2023 r.) w {W["pola_razem"]["n"]} parach państwo × pole. Kappa poprawia zgodność o przypadek; przy polach, w których prawie wszystkie konstytucje mają tę samą odpowiedź (weto, dekrety), kappa jest bliska zera mimo wysokiej zgodności. Najsłabiej wypada odwołanie rządu: CCP liczy formalne odwołanie ministrów przez głowę państwa, a my tylko rzeczywiste.</p>
+<div class="tablewrap"><table class="w"><thead><tr><th>Pole</th><th>par</th><th>zgodność</th><th>kappa</th></tr></thead><tbody>{frow}</tbody></table></div></div>
+<div class="two"><div class="box"><h3>Typ ustroju: zgodność {pct(ty["zgodnosc"])}</h3><p class="note">Nasz typ (prezydencki, półprezydencki, parlamentarny) porównany z klasyfikacją Cheibuba, Elkinsa i Ginsburga (2014) dla {ty["n"]} konstytucji, które opisali w tej samej wersji (kappa {f3(ty["kappa"])}). Udział głowy państwa w naszym modelu maleje zgodnie z ich typem: prezydenckie {pct(ty["hs_wg_typu_cheibub"]["prezydencki"])}, półprezydenckie {pct(ty["hs_wg_typu_cheibub"]["polprezydencki"])}, parlamentarne {pct(ty["hs_wg_typu_cheibub"]["parlamentarny"])}.</p></div>
+<div class="box"><h3>Indeksy zewnętrzne</h3><p class="note">Niezależność sądów: korelacja rang z indeksem Meltona i Ginsburga (2014) ρ = {f3(sd["indeks_vs_melton_ginsburg"]["rho"])} (95%: {f3(sd["indeks_vs_melton_ginsburg"]["ci95"][0])}–{f3(sd["indeks_vs_melton_ginsburg"]["ci95"][1])}, {sd["indeks_vs_melton_ginsburg"]["n"]} konstytucji): umiarkowana, bo ich indeks dotyczy sądu najwyższego, a nasz głównie TK i rady sądownictwa.
+Siła władzy wykonawczej: z indeksem CCP (7 uprawnień) nasz udział głowy państwa i rządu koreluje słabo, ρ = {f3(wy["udzial_wykonawczej_vs_indeks"]["rho"])}. Ten indeks liczy uprawnienia całej władzy wykonawczej (także premiera) i prawie nie różnicuje typów ustroju (średnio {f3(wy["srednia_indeksu_wg_typu"].get("prezydencki"))} w prezydenckich, {f3(wy["srednia_indeksu_wg_typu"].get("monarchia_parlamentarna"))} w monarchiach parlamentarnych), więc mierzy co innego niż podział siły między organy.</p></div></div>'''
+    if W.get("wrazliwosc"):
+        wr = W["wrazliwosc"]
+        vrows = "".join(f'<tr><td>{escape(meta["variants"][v])}</td><td class="n">{str(x["spearman_z_bazowym"]["rho"]).replace(".", ",")}</td><td class="n">{pl["warianty"][v]["rank"] if pl and pl.get("warianty", {}).get(v) else "–"}</td></tr>' for v, x in wr["warianty"].items())
+        trust += f'''<div class="box"><h3>Wrażliwość na założenia</h3><p class="note">Ranking siły głowy państwa policzony przy innych założeniach. Korelacja rang z modelem bazowym jest wysoka, ale pojedyncze miejsce przesuwa się zwykle o {wr["mediana_rozpietosci_miejsca"]:.0f} pozycji, więc podajemy przedział. Polska: {pl["rank_range"][0]}.–{pl["rank_range"][1]}. miejsce z {n}.</p>
+<div class="tablewrap"><table class="w"><thead><tr><th>Wariant</th><th>korelacja z bazowym</th><th>miejsce Polski</th></tr></thead><tbody><tr class="pl"><td>Model bazowy</td><td class="n">1</td><td class="n">{pl["warianty"]["bazowy"]["rank"] if pl else "–"}</td></tr>{vrows}</tbody></table></div></div>'''
+
     opts = "".join(f'<option value="{k}"{" selected" if k == "PL" else ""}>{escape(m["name"])}{"" if m["ranked"] else " (niepełne)"}</option>' for k, m in client["countries"].items())
     dec_opts = "".join(f'<option value="{d}">{escape(t)}</option>' for d, t in meta["decisions"].items())
     grp_opts = '<option value="all">wszystkie</option><option value="eu">Unia Europejska</option>' + "".join(f'<option value="{t}">{escape(l)}</option>' for t, l in meta["types"].items() if types.get(t))
+    rr_txt = f"{pl['rank_range'][0]}–{pl['rank_range'][1]}" if pl and pl.get("rank_range") else "–"
     hero = (f'<div class="w-hero"><div><b>{len(C)}</b><span>konstytucji z modelem decyzji; {n} z co najmniej {meta["min_decisions"]} kompletnymi decyzjami w rankingach</span></div>'
             f'<div><b>{pct(pl["profile"]["HS"]) if pl else "–"}</b><span>średni udział Prezydenta RP w 11 decyzjach{f"; {pl_rank}. miejsce z {n}" if pl_rank else ""}</span></div>'
             f'<div><b>{pct(hs_med)}</b><span>mediana udziału głowy państwa na świecie</span></div>'
-            f'<div><b>{types.get("parlamentarny", 0)} / {types.get("prezydencki", 0)}</b><span>państw, gdzie rząd odpowiada przed parlamentem / głowa państwa kieruje rządem</span></div></div>')
+            f'<div><b>{rr_txt}</b><span>miejsce Prezydenta RP przy różnych założeniach modelu (z {n})</span></div></div>')
 
     body = f'''<p class="crumbs">Władza</p><h1>Kto rządzi, kto blokuje</h1>
 <p class="sub">Jak konstytucje dzielą decyzje między parlament, głowę państwa, rząd, naród i sądy. Każdą z 11 kluczowych decyzji (ustawa, budżet, zmiana konstytucji, powołanie i odwołanie rządu, rozwiązanie parlamentu, sędziowie TK, stan nadzwyczajny, wojna, umowy, usunięcie głowy państwa) opisujemy jako grę: kto musi się zgodzić i jaką większością. Z tego liczymy udział siły każdego organu (indeks Shapleya-Shubika), kto ma weto i jaka mniejszość w parlamencie wystarczy do blokady.</p>
 {hero}
+<p><a class="button" href="symulator.html">Symulator reform dla Polski →</a> Zmień jedną regułę (weto, Senat, wybór TK, KRS…) i zobacz, jak przesuwa się siła i kto mógłby przejąć instytucje.</p>
 <h2 id="panstwo">Państwo</h2>
 <div class="controls"><label>Państwo<select id="kraj">{opts}</select></label></div>
 <div class="box" id="kraj-out"></div>
 <h2>Porównanie</h2>
 <div class="box"><h3>Polska, Unia i świat</h3><p class="note">Średni udział organów w decyzjach; tylko państwa w rankingach.</p>
 <div class="tablewrap"><table class="w"><thead><tr><th></th><th>Podział siły</th><th>Głowa państwa</th><th>Rząd</th><th>Parlament</th></tr></thead><tbody>{cmp_rows}</tbody></table></div>{legend(meta)}</div>
-<div class="box"><h3>Typy ustroju</h3><p class="note">Typ wynika z tekstu: przed kim odpowiada rząd i kto nim kieruje. To uproszczenie (np. nie odróżnia głowy państwa wybieranej w wyborach powszechnych).</p>
+<div class="box"><h3>Typy ustroju</h3><p class="note">Typ wynika z tekstu (kto kieruje rządem i przed kim rząd odpowiada) oraz z kodowania CCP, czy głowę państwa wybierają obywatele. Półprezydencki „premierowski”: rząd odpowiada tylko przed parlamentem (Polska, Francja); „prezydencko-parlamentarny”: także przed prezydentem (Rosja).</p>
 <div class="tablewrap"><table class="w"><thead><tr><th>Typ</th><th>państw</th><th>Średni podział siły</th><th>Głowa państwa</th><th>Parlament</th></tr></thead><tbody>{type_rows}</tbody></table></div></div>
 <div class="box"><h3>Ranking: od najsilniejszej głowy państwa</h3><p class="note">Kliknij nagłówek, aby sortować; nazwa państwa otwiera jego profil. Najsilniejsze: {", ".join(escape(m["name"]) + " " + pct(m["profile"]["HS"]) for _, m in top_hs)}.</p>
 <div class="tablewrap"><table class="w" id="rank"><thead><tr><th data-s="0">Państwo</th><th data-s="1">Typ</th><th data-s="2">Podział siły</th><th data-s="3">Głowa państwa</th><th data-s="4">Rząd</th><th data-s="5">Parlament</th><th data-s="6">HHI</th><th data-s="7">decyzji</th></tr></thead><tbody>{rank_rows}</tbody></table></div></div>
@@ -247,19 +304,35 @@ def main():
 <div class="two"><div class="box"><h3>Weto</h3><p class="note">Odsetek państw, w których organ z wiersza jest niezbędny (ma weto) w co najmniej jednej decyzji, w której uczestniczy organ z kolumny.</p><div class="tablewrap">{veto_tbl}</div></div>
 <div class="box"><h3>Powoływanie i odwoływanie</h3><p class="note">Kto może usunąć lub wybrać inny organ; odsetek państw w rankingach.</p>{ctl_tbl}</div></div>
 <div class="box"><h3>Hamulce i wzmocnienia</h3>{ind_tbl}</div>
+<h2 id="przejecie">Odporność na przejęcie</h2>
+<div class="box"><h3>Jaki obóz sam obsadzi instytucję</h3><p class="note">Dla każdej instytucji opisanej w konstytucji: najsłabszy układ polityczny, który sam wybiera wszystkich jej członków (przy 3/5 i 2/3 mandatów razem z głową państwa, jeśli ona współdecyduje). „Decyduje ustawa”: konstytucja nie mówi, kto wybiera, więc wystarczy większość ustawodawcza. „Poza zasięgiem samej polityki”: współdecydują sędziowie, naród w referendum albo opozycja. Odsetek państw w rankingach, które mają daną instytucję w konstytucji.</p>
+<div class="tablewrap">{cap_tbl}</div></div>
+<div class="two"><div class="box"><h3>Najbardziej odporne</h3><p class="note">Udział instytucji (bez zmiany konstytucji), których nie przejmie zwykła większość nawet z głową państwa. Polska: {pct(res["PL"]) if "PL" in res else "–"}, średnia UE: {pct(statistics.fmean(res_eu)) if res_eu else "–"}.</p>
+<table class="w"><tbody>{"".join(f'<tr><td><a class="cty" href="#{k}" data-k="{k}">{escape(C[k]["name"])}</a></td><td class="n">{pct(res[k])}</td></tr>' for k in res_top)}</tbody></table></div>
+<div class="box"><h3>Wszystko w zasięgu zwykłej większości</h3><p class="note">Państwa (co najmniej 3 instytucje w konstytucji), w których żadnej z nich nie chroni większość kwalifikowana ani udział sędziów: {len(res_low)}.</p><p class="src">{", ".join(f'<a class="cty" href="#{k}" data-k="{k}">{escape(C[k]["name"])}</a>' for k in res_low)}</p></div></div>
+<h2 id="sady">Niezależność sądów w tekście konstytucji</h2>
+<div class="two"><div class="box"><h3>10 gwarancji: jak często i czy ma je Polska</h3><p class="note">Indeks to odsetek gwarancji zapisanych w konstytucji (spośród tych, które jej dotyczą, np. bez TK nie liczymy gwarancji TK). Polska: {js.get("PL", 0):.0f} na 100, mediana świata {statistics.median(js.values()):.0f}, średnia UE {statistics.fmean(js[k] for k in j_eu):.0f}.</p>
+<table class="w"><thead><tr><th>Gwarancja</th><th>konstytucji</th><th>Polska</th></tr></thead><tbody>{jcomp}</tbody></table></div>
+<div class="box"><h3>Unia Europejska</h3><div class="tablewrap" style="max-height:420px"><table class="w"><thead><tr><th>Państwo</th><th>indeks</th></tr></thead><tbody>{j_eu_rows}</tbody></table></div></div></div>
+<h2 id="zaufanie">Na ile ufać tym liczbom</h2>
+{trust}
 <h2>Metoda i ograniczenia</h2>
 <div class="box"><ul class="flags" style="color:inherit;font-size:14px">
 <li><b>Dane.</b> Wartości pochodzą z 49 tematów wariantów (ekstrakcja modelem językowym z angielskich wydań Constitute, cytat sprawdzany w kodzie, ręczne korekty opisane w <code>korekty.json</code>). Tylko tekst konstytucji: bez ustaw, regulaminów i praktyki.</li>
 <li><b>Gra decyzyjna.</b> Organy jednoosobowe (głowa państwa, rząd, naród w referendum, sądy) są graczami. Izba to duża grupa równych posłów: weto, które izba odrzuca większością 3/5, daje głowie państwa „okno” między 50% a 60% mandatów, czyli 10% siły w tej decyzji. Udziały sumują się do 100% w każdej decyzji; profil państwa to średnia z decyzji.</li>
 <li><b>Uproszczenia.</b> Organy traktujemy jako jednolite: model nie zna składu partyjnego, koalicji ani kohabitacji. Obie izby głosują tą samą większością. Gdy sędziów TK wybiera kilka organów, każdy dostaje równy udział (tak samo przy wspólnym wyborze i przy podziale puli). Gdy głowa państwa działa „na wniosek rządu”, decyzję przypisujemy rządowi; kontrasygnata dodaje rząd jako drugi niezbędny organ.</li>
+<li><b>Uzupełnienia z CCP.</b> Gdy z tekstu nie odczytaliśmy liczby izb albo progu odrzucenia weta, bierzemy je z kodowania ekspertów CCP (wersja 5) i zaznaczamy to przy decyzji. Sposób wyboru głowy państwa do typologii też pochodzi z CCP. Źródło: Elkins i Ginsburg, Characteristics of National Constitutions v5 (2025).</li>
 <li><b>Braki.</b> „Nie wynika z tekstu” nie znaczy „nie ma”. Przyjęte założenia są wypisane przy każdej decyzji. Do rankingów trafiają państwa z co najmniej {meta["min_decisions"]} decyzjami bez niewiadomych w strukturze.</li>
 <li><b>Mniejszość blokująca</b> to najmniejszy odsetek mandatów pierwszej izby, który zatrzyma decyzję, gdy wszystkie inne organy są za. „Gdy głowa państwa przeciw”: ile potrzeba do odrzucenia jej sprzeciwu.</li>
-</ul><p class="note">Dane: <code>dane/wladza_kraje.csv</code>, <code>dane/wladza_decyzje.csv</code> w repozytorium. Stan danych: {DATA_DATE}.</p></div>
+</ul><p class="note">Dane: <code>dane/wladza_kraje.csv</code>, <code>dane/wladza_decyzje.csv</code>, <code>dane/wladza_przejecie.csv</code>, <code>dane/wladza_sady.csv</code>, <code>dane/wladza_warianty.csv</code>, <code>dane/wladza_walidacja_pola.csv</code> w repozytorium. Stan danych: {DATA_DATE}.</p></div>
 <script type="application/json" id="wdata">{json.dumps(client, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")}</script>
 <script>{JS.replace("__ORDER__", json.dumps(ORDER)).replace("__COLORS__", json.dumps(COLORS)).replace("__TOPICS__", json.dumps(TOPIC_PAGE))}</script>'''
     html = page("Władza: kto rządzi, kto blokuje", body, description="Podział decyzji między parlament, głowę państwa, rząd, naród i sądy w 188 konstytucjach: udział siły, weto, mniejszość blokująca.",
                 css="../panstwa/style.css", current="wladza").replace("</head>", f"<style>{CSS}</style></head>")
     (HERE / "index.html").write_text(html, encoding="utf-8")
+    sim = page("Symulator reform: władza w Konstytucji RP", symulator.body(meta, COLORS), description="Zmień regułę Konstytucji RP (weto, Senat, wybór TK, KRS) i zobacz, jak zmienia się podział siły i odporność instytucji.",
+               css="../panstwa/style.css", current="wladza").replace("</head>", f"<style>{CSS}{symulator.SIM_CSS}</style></head>")
+    (HERE / "symulator.html").write_text(sim, encoding="utf-8")
     print(json.dumps({"countries": len(C), "ranked": n, "types": types, "pl": pl and pl["profile"]}, ensure_ascii=False))
 
 
